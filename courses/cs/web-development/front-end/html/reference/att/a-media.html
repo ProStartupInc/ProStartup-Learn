@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML atributy &gt; &lt;a&gt; - &apos;media&apos;">
+    <meta name="keywords" content="HTML, ProStartup Learn, atributy &lt;a&gt;, atribut media, jak použít &lt;media&gt;, media odkazy html, media html">
+    <title> media | Atribut &lt;a&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML atributy<br><br>&lt;a&gt;</p>
+            <h1>&apos;media&apos;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html" hreflang="cs">HTML</a>&nbsp;&gt; Atributy&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/reference/tag/a.html" hreflang="cs">&lt;a&gt;</a>&nbsp;&gt; &apos;hreflang&apos;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&apos;hreflang&apos;</span></strong> je <strong>nepovinný atribut elementu <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/a.html" hreflang="cs">&lt;a&gt;</a></strong>. Říká <strong>prohlížeči</strong>, v jakém jazyce je odkazovaná <strong>stránka</strong>/<strong>soubor</strong>, což napomáhá <strong>SEO</strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong>Atribut</strong> <em>musí</em> mít <strong>hodnotu</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    <span class="y">download</span>=<span class="r">&quot;Nepovinná hodnota&quot;</span>
+                </code>
+            </div>
+            <h2>Hodnota</h2>
+            <p><strong>Hodnotou <span class="codeOutsidePage">&apos;hreflang&apos;</span></strong> musí být jazykový kód ze specifikace <strong><a href="/courses/cs/web-development/front-end/html/general-info/list-lang-codes.html" hreflang="cs">ISO-639-1</a></strong>. Pokud chcete být ještě specifičtější &lpar;například kvůli rozlišení různých verzí jednoho jazyka; třeba britská a americká angličtina&rpar;, můžete za kód připsat pomlčku a kód země ze specifikace <strong><a href="/courses/cs/web-development/front-end/html/general-info/list-country-codes.html" hreflang="cs">ISO-3166-1</a></strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2</div>
+                <code class="exampleCode">
+                    <span class="y">hreflang</span>=<span class="r">&quot;cs&quot;</span><br>
+                    <span class="y">hreflang</span>=<span class="r">&quot;cs-CZ&quot;</span>
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong>Atribut</strong> se používá k informování <strong>prohlížeče</strong> o tom, v jakém jazyce je <strong>soubor</strong> nebo <strong>stránka</strong>, kam <strong>odkaz</strong> odkazuje.</p>
+            <p><strong><span class="codeOutsidePage">&apos;hreflang&apos;</span></strong> je obzvláště důležitý na <strong>webech</strong>, které mají obsah ve více jazycích - pomáhá <strong>prohlížečům</strong> si utvořit představu o jeho struktuře. To pomáhá <strong>SEO</strong>.</p>
+            <div class="example" title="Příklad odkazu vedoucího na stránku v angličtině.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;https://example.com&quot;</span> <span class="y">hreflang</span>=<span class="r">&quot;en&quot;</span>&gt;example.com&lt;<span class="b">/a</span>&gt;<br>
+                    </code>
+                </div>
+                <div class="exampleIframe">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/att/a-hreflang-EXAMPLE.html" title="Příklad odkazu vedoucího na stránku v angličtině." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/att/a-hreflang-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/08-links.html" hreflang="cs">HTML 101, lekce 8</a>: Lekce o <strong>odkazech</strong>, kde je <strong>atribut</strong> zmíněn.</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/a.html" rel="prev" hreflang="cs">--- Element: &lt;a&gt; ---</a>
+            </div>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/att/a-href.html" rel="next" hreflang="cs">&lt;&lt;&lt; Předchozí atribut: &apos;href&apos;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/att/a-media.html" rel="next" hreflang="cs">Příští atribut: &apos;media&apos; &gt;&gt;&gt;</a>
+            </div>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

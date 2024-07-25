@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twine 101, lekce 1 - Co je Twine a k čemu se používá?">
+    <meta name="keywords" content="Twine, ProStartup Learn, Twine 101, Twine kurz, Twine lekce, Twine hry, Twine vývoj her, Twine game dev, Twine engine, úvod do Twine, vývoj webovch her, interaktivní fikce, hypertextové hry, hypertextový fikce, interaktivní hry, jak vytvořit textovou hru, vývoj textových her">
+    <title>1. Úvod do Twine | Twine 101 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/game-development/web/twine/sidenav-twine101.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameTwine">
+            <p class="courseSign">Twine 101</p>
+            <h1>1. Úvod</h1>
+        </div>
+        <nav class="lessonBreadcrumbTwine">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/game-development/introduction.html" hreflang="cs">Videohry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/introduction.html" hreflang="cs">Webové hry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/twine/courses.html" hreflang="cs">Twine</a>&nbsp;&gt; Twine&nbsp;101&nbsp;&gt; Lekce&nbsp;1
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p>Vítejte v kurzu <strong>Twine 101</strong>! Tento kurz vás provede naprostými základy <strong>herního enginu Twine</strong>; od vytváření nových projektů po integraci <strong>HTML</strong> a dalších <strong>webových technologií</strong> do <strong>her</strong>.</p>
+            <p>V této lekci si <strong>Twine</strong> představíme a řekneme si, jak ho nainstalovat a na jaké typy projektů se hodí a na které ne.</p>
+            <h2>Co je Twine?</h2>
+            <p><strong>Twine</strong> je <strong>herní engine</strong> s <strong>otevřeným zdrojovým kódem</strong>, který byl vyvinut Chrisem Klimasem již v roce 2009. Je používán primárně na vývoj <strong>textových her</strong> s důrazem na rozhodnutí a větvící se příbeh.</p>
+            <p>Jde o <strong>engine</strong>, na jehož použití není nutná žádná znalost programování - použít ho může i naprostý začátečník. Jednoduchost, versatilita a zejména přehledné vizuální znázornění sekcí projektu jsou několika z důvodů, proč má v současnosti <strong>Twine</strong> poněkud znatelnou komunitu.</p>
+            <p>V době psaní této lekce &lpar;listopad 2023&rpar; bylo na <strong><a rel="external" href="https://itch.io" target="_blank">itch.io</a></strong> zveřejněno více než 13 000 her vytvořených v <strong>Twine</strong>. Mezi některé pozoruhodné projekty vytvořené v tomto <strong>enginu</strong> patří například <cite>Howling Dogs</cite> nebo <cite>The Writer Will Do Something</cite>.</p>
+            <h2>Instalace</h2>
+            <p>Existují dva způsoby, jakými lze <strong>Twine</strong> používat. První z ní je k němu přistupovat přes web - <strong>Twine</strong> je totiž na své oficiální stránce <strong><a rel="external" href="https://twinery.org" target="_blank">twinery.org</a></strong> dostupný jako webová aplikace. Veškeré <strong>projekty</strong> jsou v tomto případě ukládány do úložiště <strong>prohlížeče</strong>. Tato možnost má ale několik nevýhod:</p>
+            <ul>
+                <li><b>Omezené úložiště</b>: Velikost úložiště většiny <strong>prohlížečů</strong> se pohybuje kolem pěti megabajtů. To neumožňuje vývoj příliš komplexních nebo velkých <strong>her</strong>.</li>
+                <li><b>Horší výkon</b>: <strong>Webová verze enginu</strong> musí být spuštěna v <strong>prohlížeči</strong>, který ale spotřebovává nějaký výkon.</li>
+                <li><b>Možnost ztráty dat</b>: Protože jsou všechny projekty uložené v úložišti <strong>prohlížeče</strong>, mohou být smazány třeba během obyčejné aktualizace. Řešením je často zálohovat; lidé ale chybují a mohlo by se stát, že po jenom zapomenutém zálohování ztrátíte několik hodin práce. Používání <strong>iOS</strong> nebo obecně <strong>Safari</strong> navíc toto nebezpečí ještě stupňuje - po týdnu neaktivity jsou data mazána automaticky. Tomu sice lze na <strong>iOS</strong> předejít přidáním <strong><a rel="external" href="https://twinery.org" target="_blank">twinery.org</a></strong> na plochu, ale pokud používáte <strong>Safari</strong> na počítači, neexistuje nic, co by <strong>prohlížeči</strong> mohlo v mazání dat zabránit.</li>
+            </ul>
+            <p><strong>Desktopová verze</strong> se všem těmto problémům vyhýbá. Je dostupná na <strong>Windowsu</strong>, <strong>macOSu</strong> a na <strong>distribucích Linuxu</strong>, které podporují <strong>ARM64</strong>, <strong>IA-32</strong>, nebo <strong>x86</strong>. <strong><a rel="external" href="https://github.com/klembot/twinejs/releases" target="_blank">Lze stáhnout na GitHubu</a></strong>.</p>
+            <h2>Typy projektů</h2>
+            <p><strong>Twine</strong> se nejvíce hodí na <strong>webové textové hry</strong> se zaměřením na příběh. To ale není jediný typ <strong>projektů</strong>, na které lze tento <strong>engine</strong> použít. Lze ho využít třeba i na...</p>
+            <ul>
+                <li><strong>Interaktivní eseje</strong></li>
+                <li><strong>RPG hry</strong>: Díky možné integraci <strong>JavaScriptu</strong> je možné přidávat <strong>proměnné</strong>, <strong>podmínky</strong> a další, díky čemuž lze vytvářet i pokročilejší <strong>RPGčka</strong>.</li>
+                <li><strong>Prototypy</strong>: Jednoduchost a dostupná vizualizace jednotlivých sekcí <strong>hry</strong> a spojeními mezi nimi je <strong>Twine</strong> vhodný nástroj na <strong>prototypování</strong> nebo psaní příběhů do komplexnějších projektů.</li>
+            </ul>
+            <p>Díky tomu, že na vytváření <strong>projektů</strong> ve <strong>Twine</strong> není třeba umět programovat a že má velmi jednoduché uživatelské rozhraní je také velmi vhodný pro začátečníky. Nehodí se ale na následující typy projektů:</p>
+            <ul>
+                <li><b>Projekty využívající příliš velké množství multimédií</b>: <strong>Twine</strong> podporuje implementaci <strong>multimédií</strong> do projektů. Nicméně, pokud je váš projekt bude používat opravdu hodně a/nebo budete potřebovat pokročilé funkce &lpar;jako třeba <strong>animace</strong>&rpar;, měli byste se zamyslet nad jiným <strong>enginem</strong>.</li>
+                <li><b>Desktopové a mobilní aplikace</b>: <strong>Twine projekty</strong> mohou být exportovány pouze v <strong>HTML</strong>. Sice existují nástroje, který mohou dané <strong>HTML soubory</strong> zkompilovat &lpar;nejen&rpar; do formátu <strong>.exe</strong>, ale pokud <strong>web</strong> není vaší zamýšlenou platformou, bude lepší použít jiný <strong>engine</strong>.</li>
+                <li><b>Multiplayerové projekty</b>: <strong>Twine</strong> sám o sobě <strong>multiplayer</strong> nepodporuje. V tomto aspektu navíc existují mnohem lepší nástroje.</li>
+                <li><b>Hry s herním světem</b>: <strong>Twine</strong> je zaměřen na <strong>textové hry</strong>, ne na <strong>adventury</strong> nebo <strong>RPG</strong> využívající nějaký <strong>herní svět</strong>, ve kterém se <strong>hráč</strong> může pohybovat. Pro takové účely existují jiné <strong>enginy</strong>.</li>
+            </ul>
+            <h2>Alternativy</h2>
+            <p>Více informací naleznete v článku <strong><a href="/courses/cs/game-development/web/twine/alternatives.html" hreflang="cs">Alternativy</a></strong>.</p>
+            <ul>
+                <li><strong><a rel="external" href="https://renpy.org" target="_blank">Ren'Py</a></strong>: Trochu robustnější <strong>engine</strong> určený pro <strong>vizuální romány</strong>. Je sice přívětivý k začátečníkům, ale podporuje i skriptování v <strong>Pythonu</strong>.</li>
+                <li><strong><a rel="external" href="https://bitsy.org" target="_blank">Bitsy</a></strong>: Jednoduchý <strong>engine</strong> určený pro malé projekty. Podporuje <strong>otevřený svět</strong>.</li>
+                <li><strong><a rel="external" href="https://adventuron.io" target="_blank">Adventuron</a></strong>: <strong>Engine</strong> zaměřený na <strong>textové adventury</strong> s retro estetikou.</li>
+                <li><strong><a rel="external" href="https://ganelson.github.io/inform-website/" target="_blank">Inform</a></strong>: Jedna z nejpopulárnějších alternativ k <strong>Twine</strong>. Zaměřuje se na stejný typ <strong>her</strong>, ale je pokročilejší.</li>
+            </ul>
+            <h2>Shrnutí</h2>
+            <ul>
+                <li><strong>Twine</strong> je <strong>herní engine</strong> používaný na vývoj <strong>webových textových her</strong></li>
+            </ul>
+            <br>&nbsp;<br>&nbsp;<br>
+            <p>V příští lekci si vysvětlíme několik pojmů a konceptů.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/game-development/web/twine/twine101/02-concepts.html" rel="next" hreflang="cs">Příští lekce: Koncepty &gt;&gt;&gt;</a>
+            </div>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

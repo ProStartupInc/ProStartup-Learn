@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twine 101, lekce 4 - vytváření odkazů a nových pasáží.">
+    <meta name="keywords" content="Twine, ProStartup Learn, Twine 101, Twine kurz, Twine lekce, Twine hry, Twine vývoj her, Twine game dev, Twine engine, vývoj webových her, interaktivní fikce, hypertextové hry, hypertextové fikce, interaktivní hry, jak vytvořit textovou hru, vývoj textových her, odkazy Twine, jak vytvořit odkaz na jinou pasáž Twine, jak vytvořit novou pasáž Twine, nová pasáž Twine">
+    <title>4. Nové pasáže a odkazy | Twine 101 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/game-development/web/twine/sidenav-twine101.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameTwine">
+            <p class="courseSign">Twine 101</p>
+            <h1>4. Nové pasáže a odkazy</h1>
+        </div>
+        <nav class="lessonBreadcrumbTwine">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/game-development/introduction.html" hreflang="cs">Videohry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/introduction.html" hreflang="cs">Webové hry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/twine/courses.html" hreflang="cs">Twine</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/twine/twine101/01-introduction.html" hreflang="cs">Twine&nbsp;101</a>&gt; Lekce&nbsp;4
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p>V <a href="/courses/cs/game-development/web/twine/twine101/01-introduction.html" hreflang="cs" rel="prev">minulé lekci</a> jsme si založili nový <strong>příběh</strong> a upravili obsah a název <strong>pasáže</strong>. To je ale jen absolutní základ ze základu.</p>
+            <p>Stejně tak jako jedno slovo nedělá celou knihu, jedna <strong>pasáž</strong> nedělá celou <strong>hru</strong>. <strong>Hry</strong> vytvořené v <strong>Twine</strong> jsou relativně různorodé, ale jednu věc má společnou valná většina - neskládají se jen z jedné <strong>pasáže</strong>, ale často ze stovek i tisíců. V této lekci si ukážeme, jak vytvořit nové a jak je spojit dohromady s <strong>odkazy</strong>.</p>
+            <h2>Nová pasáž</h2>
+            <div class="imageFloatR" style="margin-top: 0;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/04-links-01.webp" class="imageFloatR" alt="Twine: Prázdná pasáž vedle té počáteční" style="width: 20em;">
+            </div>
+            <p>K vytvoření nové <strong>pasáže</strong> stačí kliknout v horním panelu na možnost <strong>&quot;Vytvořit&quot;</strong>, která poté jednu prázdnou vytvoří.</p>
+            <p>Avšak i přesto, že u ní třeba upravíte její obsah nebo ji přejmenujete, nebude to mít doopravdy žádný účinek - když si <strong>příběh</strong> přehrajete, tak tu <strong>pasáž</strong> prostě neuvidíte, protože není k té <strong>počáteční</strong> připojena <strong>odkazem</strong>.</p>
+            <h2>Základní odkazy</h2>
+            <div class="imageFloatR" style="margin-top: 0;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/04-links-02.webp" class="imageFloatR" alt="Twine: Několik spojených pasáží." style="width: 20em;">
+                <p class="imageFloatR">Čtyři pasáže spojené odkazy.</p>
+            </div>
+            <p><strong>Odkazy</strong> jsou hlavním zdrojem interakce mezi <strong>hráčem</strong> a <strong>příběhem</strong>. Spojují spolu <strong>pasáže</strong> a umožňují <strong>hráči</strong> ve <strong>hře</strong> postupovat.</p>
+            <p><strong>Odkaz</strong> lze vytvořit tím, že se do již existující <strong>pasáže</strong> napíše nějaký text, který se obklopí dvěmi <strong>hranatými závorkami [[]]</strong>. Text mezi těmi závorkami specifikuje název <strong>pasáže</strong>, na kterou má <strong>odkaz</strong> odkazovat. Pokud žádná s takovým názvem neexistuje, tak ji <strong>Twine</strong> automaticky vytvoří.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    [[<span class="b">Text</span>]]<br>
+                </code>
+            </div>
+            <p>Pokud jsou dvě <strong>pasáže</strong> spojeny <strong>odkazem</strong>, z té odkazující &lpar;v jiných slovech ta, ve které se <strong>odkaz</strong> nachází&rpar; se vytvoří šipka vedoucí na tu odkazovanou. Ta nemá žádnou jinou funkci kromě vizualizace spojení.</p>
+            <p>V jedné <strong>pasáži</strong> může být prakticky nekonečno odkazů.</p>
+            <div class="example" title="Příklad použití odkazu.">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Základní použití odkazu</h3>
+                <div class="columns">
+                    <div class="exampleCodeHeadingContainer">
+                        <p class="exampleCodeHeading">Pasáž: Start</p>
+                        <div class="exampleCodeContainerInHeading">
+                            <div class="exampleCodeLineNumber">1<br>2</div>
+                            <code class="exampleCode">
+                                Hello, World!<br>
+                                [[<span class="b">Co to znamená?</span>]]
+                            </code>
+                        </div>
+                    </div>
+                    <div class="exampleCodeHeadingContainer">
+                        <p class="exampleCodeHeading">Pasáž: Co to znamená?</p>
+                        <div class="exampleCodeContainerInHeading">
+                            <div class="exampleCodeLineNumber">1<br>2</div>
+                            <code class="exampleCode">
+                                &quot;Hello, World!&quot; je většinou první program, který někdo, kdo se učí nový programovací jazyk, napíše. Jedinou funkcí toho programu je vypsat do [[<span class="b">konzole</span>]] frázi &quot;Hello, World!&quot; (proto ten název).
+                            </code>
+                        </div>
+                    </div>   
+                </div>
+                <div class="exampleIframe" style="margin-bottom: 1vh;">
+                    <iframe style="min-height:16em;" class="exampleIframe" src="/courses/cs/game-development/web/twine/twine101/04-links-EXAMPLE.html" title="Twine: Přehrávaná hra">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/game-development/web/twine/twine101/04-links-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+                <div class="examplePhotoContainer">
+                    <img src="/courses/cs/game-development/web/twine/twine101/pictures/04-links-03.webp" alt="Twine: Dvě spojené pasáže." class="examplePhoto" loading="lazy">
+                </div>
+            </div>
+            <h2>Odkazy obsahující jiný text než názvy pasáží</h2>
+            <p>Někdy může být text v <strong>odkazech</strong> příliš dlouhý, což může ztížit práci s <strong>pasážemi</strong>, které budou mít stejně dlouhý název. To lze naštěstí vyřešit tím, že se v <strong>odkazu</strong> po textu, který se má <strong>hráči</strong> zobrazit, napíše znak <strong>svislé čáry |</strong> &lpar;<kbd>ALT&nbsp;GR</kbd>&nbsp;+&nbsp;<kbd>W</kbd> na české klávesnici&rpar; a následovně název požadované <strong>pasáže</strong>. To umožňuje jako názvy <strong>pasáží</strong> používat krátká <strong>ID</strong> místo dlouhých frází nebo dokonce vět, které se mají během <strong>hraní hráči</strong> zobrazit. Je to navíc mnohdy přehlednější.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    [[Text zobrazující se hráči|<span class="b">Název pasáže</span>]]<br>
+                </code>
+            </div>
+            <div class="example" title="Příklad použití odkazu zobrazujícího jiný text než název pasáže.">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Odkaz zobrazující jiný text než název pasáže</h3>
+                <div class="columns">
+                    <div class="exampleCodeHeadingContainer">
+                        <p class="exampleCodeHeading">Pasáž: Start</p>
+                        <div class="exampleCodeContainerInHeading">
+                            <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                            <code class="exampleCode">
+                                Zkontrolujte správnost tohoto příkladu: 1 + 1 = 3<br>
+                                [[Výsledek je správně|<span class="b">Ano</span>]]<br>
+                                [[Výsledek je špatně|<span class="b">Ne</span>]]
+                           </code>
+                        </div>
+                    </div>
+                    <div class="exampleCodeHeadingContainer">
+                        <p class="exampleCodeHeading">Pasáž: Ano</p>
+                        <div class="exampleCodeContainerInHeading">
+                            <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                            <code class="exampleCode">
+                                Ne. 1 + 1 je 2.
+                            </code>
+                        </div>
+                    </div> 
+                    <div class="exampleCodeHeadingContainer">
+                        <p class="exampleCodeHeading">Pasáž: Ne</p>
+                        <div class="exampleCodeContainerInHeading">
+                            <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                            <code class="exampleCode">
+                                Správně, protože 1 + 1 není 3, ale 2.
+                            </code>
+                        </div>
+                    </div>  
+                </div>
+                <div class="exampleIframe" style="margin-bottom: 1vh;">
+                    <iframe style="min-height:16em;" class="exampleIframe" src="/courses/cs/game-development/web/twine/twine101/04-links-EXAMPLE02.html" title="Twine: Přehrávaná hra">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/game-development/web/twine/twine101/04-links-EXAMPLE02.html">zde</a>.</iframe>
+                </div>
+                <div class="examplePhotoContainer">
+                    <img src="/courses/cs/game-development/web/twine/twine101/pictures/04-links-04.webp" alt="Twine: Dvě spojené pasáže." class="examplePhoto" loading="lazy">
+                </div>
+            </div>
+            <h2>Výběr pasáží</h2>
+            <p>Protože už můžeme pracovat s více <strong>pasážemi</strong>, je na čase si ukázat, jak je vybírat.</p>
+            <p>Jedna <strong>pasáž</strong> se dá vybrat obyčejným kliknutím na ni. To, že je vybrána poznáte tak, že se její barva změní na modrou.</p>
+            <p>Více <strong>pasáží</strong> lze vybrat klikáním na ně, zatímco budete držet buď <kbd>CTRL</kbd>, nebo <kbd>SHIFT</kbd>. Lze je také vybrat držením myši, zatímco ji budete táhnout po <strong>příběhové mapě</strong> &lpar;plocha, na které se <strong>pasáže</strong> nacházejí&rpar;.</p>
+            <p>Výběr lze zrušit kliknutím kdekoliv na <strong>příběhovou mapu</strong>.</p>
+            <h2>Změna počáteční pasáže</h2>
+            <div class="center" style="margin-bottom: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/04-links-06.webp" alt="Twine: Horní panel s nástroji z kategorie &quot;Pasáž&quot;." class="imageNormal" style="width: 99.999%;" loading="lazy">
+            </div>
+            <p>Pokud si během vývoje <strong>hry</strong> řeknete, že by jste chtěli mít jako <strong>počáteční pasáž</strong> nějakou jinou, buďte bez obav. Když je nějaká <strong>pasáž</strong> vybraná, tak můžete v horním panelu kliknout na položku <strong>&quot;Začít příběh zde&quot;</strong>, která z ní udělá <strong>počáteční</strong>.</p>
+            <p>Pamatujte: <strong>počáteční pasáž</strong> může být jen jedna.</p>
+            <h2>Přesouvání pasáží</h2>
+            <div class="imageFloatR" style="margin-top: 0;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/04-links-05.gif" class="imageFloatR" alt="Twine: Výběr více pasáží." style="width: 20em;">
+                <p class="imageFloatR">Výběr a přesouvání pasáží.</p>
+            </div>
+            <p><strong>Hry</strong> vyvinuté v <strong>Twine</strong> se skládají z mnoha propojených <strong>pasáží</strong>. Po nějaké době vývoje si jistě uvědomíte, že je potřeba nějaká organizace.</p>
+            <p>Vybrané <strong>pasáže</strong> lze naštěstí posouvat po <strong>příběhové mapě</strong> tažením myši. Lze je tak rozdělit na různé větvící se větve.</p>
+            <br>&nbsp;<br>&nbsp;<br>
+            <p style="clear: both;">Teoreticky by jste už mohli s tímto kurzem skončit, protože <strong>odkazy</strong> jsou pravděpodobně jediná věc, se kterou si k vytvoření vlastní <strong>hry</strong> vystačíte. Proč se ale spokojit s naprostým minimem?</p>
+            <p>V příští lekci se podíváme na něco, co může kompletně změnit strukturu a způsob fungování <strong>příběhu</strong> - <strong>příběhové formáty</strong>.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/game-development/web/twine/twine101/03-basics.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: První editace</a>
+                <a class="lesson" href="/courses/cs/game-development/web/twine/twine101/05-formats.html" rel="next" hreflang="cs">Příští lekce: Příběhové formáty &gt;&gt;&gt;</a>
+            </div>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

@@ -1,0 +1,133 @@
+# Diff Details
+
+Date : 2024-01-09 00:08:49
+
+Directory s:\\Documents\\GitHub\\ProStartup-Learn
+
+Total : 118 files,  1745 codes, 39 comments, 203 blanks, all 1987 lines
+
+[Summary](results.md) / [Details](details.md) / [Diff Summary](diff.md) / Diff Details
+
+## Files
+| filename | language | code | comment | blank | total |
+| :--- | :--- | ---: | ---: | ---: | ---: |
+| [CSS/fonts.css](/CSS/fonts.css) | CSS | 296 | 0 | 65 | 361 |
+| [CSS/layout.css](/CSS/layout.css) | CSS | 874 | 12 | 154 | 1,040 |
+| [SSI/cs/footerLesson.shtml](/SSI/cs/footerLesson.shtml) | HTML | 5 | 0 | 0 | 5 |
+| [SSI/cs/game-development/web/twine/sidenav-twine101.shtml](/SSI/cs/game-development/web/twine/sidenav-twine101.shtml) | HTML | 15 | 0 | 0 | 15 |
+| [SSI/cs/headLinks.shtml](/SSI/cs/headLinks.shtml) | HTML | 2 | 0 | 0 | 2 |
+| [SSI/cs/img-vs-picture.shtml](/SSI/cs/img-vs-picture.shtml) | HTML | 22 | 0 | 0 | 22 |
+| [SSI/cs/sidenav-html-elements.shtml](/SSI/cs/sidenav-html-elements.shtml) | HTML | 121 | 0 | 0 | 121 |
+| [SSI/cs/sidenav-html.shtml](/SSI/cs/sidenav-html.shtml) | HTML | 23 | 0 | 0 | 23 |
+| [SSI/cs/sidenav-html102.shtml](/SSI/cs/sidenav-html102.shtml) | HTML | 29 | 0 | 0 | 29 |
+| [SSI/cs/sidenav-html103.shtml](/SSI/cs/sidenav-html103.shtml) | HTML | 18 | 0 | 0 | 18 |
+| [SSI/cs/topnav.shtml](/SSI/cs/topnav.shtml) | HTML | 6 | 0 | 0 | 6 |
+| [courses/cs/game-development/web/twine/twine101/01-introduction.html](/courses/cs/game-development/web/twine/twine101/01-introduction.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/game-development/web/twine/twine101/02-concepts.html](/courses/cs/game-development/web/twine/twine101/02-concepts.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/game-development/web/twine/twine101/03-basics.html](/courses/cs/game-development/web/twine/twine101/03-basics.html) | HTML | 90 | 4 | -1 | 93 |
+| [courses/cs/game-development/web/twine/twine101/04-links-EXAMPLE.html](/courses/cs/game-development/web/twine/twine101/04-links-EXAMPLE.html) | HTML | 33 | 0 | 2 | 35 |
+| [courses/cs/game-development/web/twine/twine101/04-links.html](/courses/cs/game-development/web/twine/twine101/04-links.html) | HTML | 128 | 4 | 0 | 132 |
+| [courses/cs/game-development/web/twine/twine101/05-tags.html](/courses/cs/game-development/web/twine/twine101/05-tags.html) | HTML | 0 | 0 | 1 | 1 |
+| [courses/cs/networking/transmission-protocols/http/mime-types/images.html](/courses/cs/networking/transmission-protocols/http/mime-types/images.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/general-info/list-country-codes.html](/courses/cs/web-development/front-end/html/general-info/list-country-codes.html) | HTML | -2 | 0 | 0 | -2 |
+| [courses/cs/web-development/front-end/html/general-info/list-lang-codes.html](/courses/cs/web-development/front-end/html/general-info/list-lang-codes.html) | HTML | -2 | 0 | 0 | -2 |
+| [courses/cs/web-development/front-end/html/html101/01-cs-introduction.html](/courses/cs/web-development/front-end/html/html101/01-cs-introduction.html) | HTML | -6 | 0 | -1 | -7 |
+| [courses/cs/web-development/front-end/html/html101/02-concepts.html](/courses/cs/web-development/front-end/html/html101/02-concepts.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html101/03-basics.html](/courses/cs/web-development/front-end/html/html101/03-basics.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html101/04-text-formatting.html](/courses/cs/web-development/front-end/html/html101/04-text-formatting.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html101/05-block-inline-elements.html](/courses/cs/web-development/front-end/html/html101/05-block-inline-elements.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html101/06-entities.html](/courses/cs/web-development/front-end/html/html101/06-entities.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html101/07-directories.html](/courses/cs/web-development/front-end/html/html101/07-directories.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html101/08-links.html](/courses/cs/web-development/front-end/html/html101/08-links.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html101/09-images.html](/courses/cs/web-development/front-end/html/html101/09-images.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html101/10-lists.html](/courses/cs/web-development/front-end/html/html101/10-lists.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html101/11-tables.html](/courses/cs/web-development/front-end/html/html101/11-tables.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html101/12-next.html](/courses/cs/web-development/front-end/html/html101/12-next.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html101/list-101elements.html](/courses/cs/web-development/front-end/html/html101/list-101elements.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/html102/01-cs-introduction.html](/courses/cs/web-development/front-end/html/html102/01-cs-introduction.html) | HTML | -6 | 0 | 0 | -6 |
+| [courses/cs/web-development/front-end/html/html102/02-iframe.html](/courses/cs/web-development/front-end/html/html102/02-iframe.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/html102/03-iframe-security.html](/courses/cs/web-development/front-end/html/html102/03-iframe-security.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/html102/04-audio-element.html](/courses/cs/web-development/front-end/html/html102/04-audio-element.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/html102/05-audio-external.html](/courses/cs/web-development/front-end/html/html102/05-audio-external.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/html102/06-video-element.html](/courses/cs/web-development/front-end/html/html102/06-video-element.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/html102/07-video-external.html](/courses/cs/web-development/front-end/html/html102/07-video-external.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/html102/08-next.html](/courses/cs/web-development/front-end/html/html102/08-next.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/html102/list-102elements.html](/courses/cs/web-development/front-end/html/html102/list-102elements.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/html103/01-cs-introduction.html](/courses/cs/web-development/front-end/html/html103/01-cs-introduction.html) | HTML | -6 | 0 | 0 | -6 |
+| [courses/cs/web-development/front-end/html/html103/02-form-basics.html](/courses/cs/web-development/front-end/html/html103/02-form-basics.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/html103/03-text-form.html](/courses/cs/web-development/front-end/html/html103/03-text-form.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/html103/04-basic-input-atts.html](/courses/cs/web-development/front-end/html/html103/04-basic-input-atts.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/html103/05-fieldset-and-legend.html](/courses/cs/web-development/front-end/html/html103/05-fieldset-and-legend.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/html103/06-textarea.html](/courses/cs/web-development/front-end/html/html103/06-textarea.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/html103/07-checkbox.html](/courses/cs/web-development/front-end/html/html103/07-checkbox.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/html103/08-radio.html](/courses/cs/web-development/front-end/html/html103/08-radio.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/html103/09-select-form.html](/courses/cs/web-development/front-end/html/html103/09-select-form.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/html103/10-next.html](/courses/cs/web-development/front-end/html/html103/10-next.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/html103/list-103element.html](/courses/cs/web-development/front-end/html/html103/list-103element.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/info-multimedia/video-youtube.html](/courses/cs/web-development/front-end/html/info-multimedia/video-youtube.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/list/0-elements-list-category.html](/courses/cs/web-development/front-end/html/list/0-elements-list-category.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/list/0-elements-list.html](/courses/cs/web-development/front-end/html/list/0-elements-list.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/list/0-global-attribute-list.html](/courses/cs/web-development/front-end/html/list/0-global-attribute-list.html) | HTML | -4 | 0 | 0 | -4 |
+| [courses/cs/web-development/front-end/html/list/att-1-height-and-width-global.html](/courses/cs/web-development/front-end/html/list/att-1-height-and-width-global.html) | HTML | -5 | 0 | -1 | -6 |
+| [courses/cs/web-development/front-end/html/list/tag-DOCTYPE.html](/courses/cs/web-development/front-end/html/list/tag-DOCTYPE.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-a.html](/courses/cs/web-development/front-end/html/list/tag-a.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-abbr.html](/courses/cs/web-development/front-end/html/list/tag-abbr.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-address.html](/courses/cs/web-development/front-end/html/list/tag-address.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-area.html](/courses/cs/web-development/front-end/html/list/tag-area.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-article.html](/courses/cs/web-development/front-end/html/list/tag-article.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-aside.html](/courses/cs/web-development/front-end/html/list/tag-aside.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-audio.html](/courses/cs/web-development/front-end/html/list/tag-audio.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-b.html](/courses/cs/web-development/front-end/html/list/tag-b.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-base.html](/courses/cs/web-development/front-end/html/list/tag-base.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-bdi.html](/courses/cs/web-development/front-end/html/list/tag-bdi.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-bdo.html](/courses/cs/web-development/front-end/html/list/tag-bdo.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-blockquote.html](/courses/cs/web-development/front-end/html/list/tag-blockquote.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-body.html](/courses/cs/web-development/front-end/html/list/tag-body.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-br.html](/courses/cs/web-development/front-end/html/list/tag-br.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-button.html](/courses/cs/web-development/front-end/html/list/tag-button.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-canvas.html](/courses/cs/web-development/front-end/html/list/tag-canvas.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-caption.html](/courses/cs/web-development/front-end/html/list/tag-caption.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-cite.html](/courses/cs/web-development/front-end/html/list/tag-cite.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-code.html](/courses/cs/web-development/front-end/html/list/tag-code.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-col.html](/courses/cs/web-development/front-end/html/list/tag-col.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-colgroup.html](/courses/cs/web-development/front-end/html/list/tag-colgroup.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-comment.html](/courses/cs/web-development/front-end/html/list/tag-comment.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-data.html](/courses/cs/web-development/front-end/html/list/tag-data.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-datalist.html](/courses/cs/web-development/front-end/html/list/tag-datalist.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-dd.html](/courses/cs/web-development/front-end/html/list/tag-dd.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-del.html](/courses/cs/web-development/front-end/html/list/tag-del.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-details.html](/courses/cs/web-development/front-end/html/list/tag-details.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-dfn.html](/courses/cs/web-development/front-end/html/list/tag-dfn.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-dialog.html](/courses/cs/web-development/front-end/html/list/tag-dialog.html) | HTML | -3 | 0 | 0 | -3 |
+| [courses/cs/web-development/front-end/html/list/tag-div.html](/courses/cs/web-development/front-end/html/list/tag-div.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-dl.html](/courses/cs/web-development/front-end/html/list/tag-dl.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-dt.html](/courses/cs/web-development/front-end/html/list/tag-dt.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-em.html](/courses/cs/web-development/front-end/html/list/tag-em.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-embed.html](/courses/cs/web-development/front-end/html/list/tag-embed.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-fieldset.html](/courses/cs/web-development/front-end/html/list/tag-fieldset.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-figcaption.html](/courses/cs/web-development/front-end/html/list/tag-figcaption.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-figure.html](/courses/cs/web-development/front-end/html/list/tag-figure.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-footer.html](/courses/cs/web-development/front-end/html/list/tag-footer.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-form.html](/courses/cs/web-development/front-end/html/list/tag-form.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-head.html](/courses/cs/web-development/front-end/html/list/tag-head.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-header.html](/courses/cs/web-development/front-end/html/list/tag-header.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-headings.html](/courses/cs/web-development/front-end/html/list/tag-headings.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-hgroup.html](/courses/cs/web-development/front-end/html/list/tag-hgroup.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-hr.html](/courses/cs/web-development/front-end/html/list/tag-hr.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-html.html](/courses/cs/web-development/front-end/html/list/tag-html.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-i.html](/courses/cs/web-development/front-end/html/list/tag-i.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-iframe.html](/courses/cs/web-development/front-end/html/list/tag-iframe.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-img.html](/courses/cs/web-development/front-end/html/list/tag-img.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-input.html](/courses/cs/web-development/front-end/html/list/tag-input.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-ins.html](/courses/cs/web-development/front-end/html/list/tag-ins.html) | HTML | -5 | 0 | 0 | -5 |
+| [courses/cs/web-development/front-end/html/list/tag-kbd-EXAMPLE.html](/courses/cs/web-development/front-end/html/list/tag-kbd-EXAMPLE.html) | HTML | 13 | 0 | 0 | 13 |
+| [courses/cs/web-development/front-end/html/list/tag-kbd.html](/courses/cs/web-development/front-end/html/list/tag-kbd.html) | HTML | 90 | 4 | -1 | 93 |
+| [courses/cs/web-development/front-end/html/list/tag-label-EXAMPLE.html](/courses/cs/web-development/front-end/html/list/tag-label-EXAMPLE.html) | HTML | 14 | 0 | 0 | 14 |
+| [courses/cs/web-development/front-end/html/list/tag-label-EXAMPLE02.html](/courses/cs/web-development/front-end/html/list/tag-label-EXAMPLE02.html) | HTML | 17 | 0 | 0 | 17 |
+| [courses/cs/web-development/front-end/html/list/tag-label.html](/courses/cs/web-development/front-end/html/list/tag-label.html) | HTML | 135 | 4 | -1 | 138 |
+| [courses/cs/web-development/front-end/html/list/tag-legend-EXAMPLE.html](/courses/cs/web-development/front-end/html/list/tag-legend-EXAMPLE.html) | HTML | 24 | 0 | 0 | 24 |
+| [courses/cs/web-development/front-end/html/list/tag-legend.html](/courses/cs/web-development/front-end/html/list/tag-legend.html) | HTML | 98 | 4 | -1 | 101 |
+| [courses/cs/web-development/front-end/html/list/tag-li.html](/courses/cs/web-development/front-end/html/list/tag-li.html) | HTML | 98 | 4 | -1 | 101 |
+| [index-cs.html](/index-cs.html) | HTML | 44 | 3 | 0 | 47 |
+
+[Summary](results.md) / [Details](details.md) / [Diff Summary](diff.md) / Diff Details

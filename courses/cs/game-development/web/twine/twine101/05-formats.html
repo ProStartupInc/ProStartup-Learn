@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twine 101, lekce 5 - příběhové formáty a jejich role v Twine hrách.">
+    <meta name="keywords" content="Twine, ProStartup Learn, Twine 101, Twine kurz, Twine lekce, Twine hry, Twine vývoj her, Twine game dev, Twine engine, vývoj webových her, interaktivní fikce, hypertextové hry, hypertextové fikce, interaktivní hry, jak vytvořit textovou hru, vývoj textových her, příběhové formáty Twine, jak změnit formát příběhu Twine, co je příběhový formát Twine">
+    <title>5. Příběhové formáty | Twine 101 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/game-development/web/twine/sidenav-twine101.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameTwine">
+            <p class="courseSign">Twine 101</p>
+            <h1>5. Příběhové formáty</h1>
+        </div>
+        <nav class="lessonBreadcrumbTwine">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/game-development/introduction.html" hreflang="cs">Videohry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/introduction.html" hreflang="cs">Webové hry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/twine/courses.html" hreflang="cs">Twine</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/twine/twine101/01-introduction.html" hreflang="cs">Twine&nbsp;101</a>&gt; Lekce&nbsp;5
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p>V <a href="/courses/cs/game-development/web/twine/twine101/01-introduction.html" hreflang="cs" rel="prev">minulé lekci</a> jsme se naučili jsme se vytvářet nové <strong>pasáže</strong> a používat <strong>odkazy</strong>. V této si řekneme o něčem, co je vlastně samým jádrem jakékoliv <strong>hry</strong> vytvořené v <strong>Twine</strong> - <strong>příběhové formáty</strong>.</p>
+            <h2>Co jsou příběhové formáty?</h2>
+            <p><strong>Twine</strong> se stará hlavně o editace <strong>příběhů</strong>. Jsou to totiž <strong>příběhové formáty</strong>, které je přehrávají. Starají se o to, jak <strong>hru hráči</strong> prezentovat, jaké funkce budou defaulně implementovány...</p>
+            <p>Existuje jich široká škála. Zatímco některé se zaměřují na naprostý minimalismus, jiné usnadňují implementaci věcí jako <strong>proměnné</strong> a <strong>podmínky</strong>. Některé jsou zaměřeny na to, aby šly vývojářem <strong>hry</strong> co nejvíce rozšířit a posunout hranice <strong>interaktivní fikce</strong> dál.</p>
+            <p>Každý <strong>formát</strong> je vlastně jako svůj vlastní <strong>engine</strong> nebo <strong>programovací jazyk</strong>.</p>
+            <h2>Vestavěné formáty</h2>
+            <p><strong>Twine</strong> má v sobě vestavěny celkem čtyři <strong>příběhové formáty</strong>:</p>
+            <ul>
+                <li><strong>Harlowe</strong>: Výchozí <strong>formát</strong>. Je sice určen hlavně pro vývojáře, kteří nemají žádné zkušenosti s <strong>HTML</strong>, <strong>CSS</strong> a <strong>JavaScriptem</strong>, ale i přesto obsahuje vlastní skriptovací jazyk.</li>
+                <li><strong>SugarCube</strong>: Nejstarší <strong>formát</strong>, který je zároveň velmi přizpůsobivý. Má velkou komunitu a mnoho zdrojů, ze kterých lze čerpat.</li>
+                <li><strong>Chapbook</strong>: Jednoduchý <strong>formát</strong> zaměřený na čitelnost <strong>kódu</strong> a celkovou jednoduchost. V porovnání s ostatními je relativně nový, a tak k němu existuje celkem málo zdrojů.</li>
+                <li><strong>Snowman</strong>: Minimální <strong>formát</strong> určen pro vývojáře, kteří mají zkušenosti s <strong>CSS</strong> a <strong>JavaScriptem</strong>. Vysoká přizpůsobivost.</li>
+            </ul>
+            <h2>Jak změnit formát příběhu?</h2>
+            <div class="center" style="margin-bottom: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/05-formats-01.webp" alt="Twine: Horní panel s nástroji z kategorie &quot;Twine&quot;." class="imageNormal" style="width: 99.999%;" loading="lazy">
+            </div>
+            <div class="imageFloatR" style="margin-top: 0;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/05-formats-02.webp" class="imageFloatR" alt="Twine: Okno Podrobnosti." style="width: 20em;">
+                <p class="imageFloatR">Okno podrobností, kde lze změnit formát.</p>
+            </div>
+            <p>Ke změnení <strong>příběhového formátu</strong> u <strong>příběhu</strong> stačí v nejvýše položeném panelu kliknout na položku <strong>&quot;Příběh&quot;</strong> a poté v panelu níže stisknout položku <strong>&quot;Podrobnosti&quot;</strong>. Poté se vám ukáže okno, ze kterého můžete změnu provést - mějte ale na paměti, že to změní jen <strong>formát</strong> u <strong>příběhu</strong>, který zrovna editujete.</p>
+            <p><b>Poznámka</b>: Není příliš doporučeno měnit <strong>formát</strong> například v polovině vývoje, protože každý je kompletně jiný a přesun k jinému by s největší pravděpodobností vyžadoval přepsat veškerou funkcionalitu <strong>hry</strong> tak, aby fungovala i po změně. To znamená mnoho práce navíc.</p>
+            <div class="example" title="Příklad hry v Harlowe.">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Formát: Harlowe</h3>
+                <div class="exampleIframe" style="margin-bottom: 1vh;">
+                    <iframe loading="lazy" style="min-height:16em;" class="exampleIframe" src="/courses/cs/game-development/web/twine/twine101/04-links-EXAMPLE.html" title="Twine: Přehrávaná hra">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/game-development/web/twine/twine101/04-links-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <div class="example" title="Příklad hry v SugarCube.">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Formát: SugarCube</h3>
+                <div class="exampleIframe" style="margin-bottom: 1vh;">
+                    <iframe loading="lazy" style="min-height:16em;" class="exampleIframe" src="/courses/cs/game-development/web/twine/twine101/05-formats-EXAMPLE.html" title="Twine: Přehrávaná hra">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/game-development/web/twine/twine101/05-formats-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <div class="example" title="Příklad hry v Chapbook.">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Formát: Chapbook</h3>
+                <div class="exampleIframe" style="margin-bottom: 1vh;">
+                    <iframe loading="lazy" style="min-height:16em;" class="exampleIframe" src="/courses/cs/game-development/web/twine/twine101/05-formats-EXAMPLE02.html" title="Twine: Přehrávaná hra">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/game-development/web/twine/twine101/05-formats-EXAMPLE02.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <div class="example" title="Příklad hry v .">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Formát: Snowman</h3>
+                <div class="exampleIframe" style="margin-bottom: 1vh;">
+                    <iframe loading="lazy" style="min-height:16em;" class="exampleIframe" src="/courses/cs/game-development/web/twine/twine101/05-formats-EXAMPLE03.html" title="Twine: Přehrávaná hra">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/game-development/web/twine/twine101/05-formats-EXAMPLE03.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <br>&nbsp;<br>&nbsp;<br>
+            <p>Více se o jednotlivých <strong>formátech</strong> můžete dozvědět v jejich příslušných dokumentacích.</p>
+            <p>V příští lekci si řekneme, jak v <strong>příbězích</strong> integrovat <strong>HTML</strong>, <strong>CSS</strong> a <strong>JavaScript</strong>.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/game-development/web/twine/twine101/04-links.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Nové pasáže a odkazy</a>
+                <a class="lesson" href="/courses/cs/game-development/web/twine/twine101/06-html-css-js.html" rel="next" hreflang="cs">Příští lekce: HTML, CSS, JS &gt;&gt;&gt;</a>
+            </div>
+            <hr>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" target="_blank" hreflang="en" href="https://twine2.neocities.org/">Oficiální dokumentace Harlowe</a></li>
+                <li><a rel="external" target="_blank" hreflang="en" href="http://www.motoslave.net/sugarcube/2/#documentation">Oficiální dokumentace SugarCube</a></li>
+                <li><a rel="external" target="_blank" hreflang="en" href="https://klembot.github.io/chapbook/guide/">Oficiální dokumentace Chapbook</a></li>
+                <li><a rel="external" target="_blank" hreflang="en" href="https://videlais.github.io/snowman/#/">Oficiální dokumentace Snowman</a></li>
+            </ul>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

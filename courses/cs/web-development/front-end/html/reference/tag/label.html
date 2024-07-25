@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - titulky vstupních polí ve formulářích &lt;label&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, &lt;label&gt; HTML tutorial, &lt;label&gt;, &lt;label&gt; html, element &lt;label&gt;, co je &lt;label&gt;, jak použít &lt;label&gt;, titulek vstupních polí html, název formulářových polí html">
+    <title>&lt;label&gt;| ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;label&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html" hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;label&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;label&gt;</span></strong> je <strong>element</strong> používaný pro vytváření názvů pro <strong>vstupní pole</strong> ve <strong>formulářích</strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;label&gt;</span></strong> je <strong>párový tag</strong>. Mezi tím <strong>počátečním</strong> a <strong>koncovým</strong> se nachází název pro <strong>pole</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;Název pole&lt;<span class="b">/label</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;label&gt;</span></strong> má jeden <strong>vlastní atribut</strong> - <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/label-for.html" hreflang="cs">for</a>&apos;</strong>. Tento <strong>atribut</strong> specifikuje, ke kterému <strong>elementu</strong> vlastně má název patřit. <strong>Hodnotou</strong> by mělo být <strong><a href="/courses/cs/web-development/front-end/html/reference/att/global/id.html" hreflang="cs">id</a></strong> požadovaného <strong>elementu</strong>. <strong>Atribut</strong> by se měl zahrnovat vždy, pokud není požadovaný <strong>element</strong> přímo <strong>potomkem <span class="codeOutsidePage">&lt;label&gt;</span>.</strong></p>
+            <p><strong>Element</strong> podporuje také <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;label&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Defaultně jde o <strong>řádkový element</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                <code class="exampleCode">
+                    <span class="cb">label</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">inline</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;label&gt;</span></strong> se používá na vytváření a přiřazování názvů následujícím <strong>elementům</strong>:</p>
+            <ul>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/button.html" hreflang="cs">&lt;button&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/input.html" hreflang="cs">&lt;input&gt;</a></strong> &lpar;kromě <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-hidden.html" hreflang="cs">&lt;input&nbsp;type=&quot;hidden&quot;&gt;</a></strong>&rpar;</li> 
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/meter.html" hreflang="cs">&lt;meter&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/output.html" hreflang="cs">&lt;output&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/progress.html" hreflang="cs">&lt;progress&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/select.html" hreflang="cs">&lt;select&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/textarea.html" hreflang="cs">&lt;textarea&gt;</a></strong></li>
+            </ul>
+            <div class="example" title="Příklad &lt;label&gt;">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;priklad&quot;</span>&gt;Jméno: &lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;text&quot;</span> <span class="y">name</span>=<span class="r">&quot;jmeno&quot;</span> <span class="y">id</span>=<span class="r">&quot;priklad&quot;</span>&gt;<br>
+                        &lt;<span class="b">/form</span>&gt;<br>
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height:4em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/label-EXAMPLE.html" title="Příklad &lt;label&gt;" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/label-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <p>Přestože se nemusí <strong><span class="codeOutsidePage">&lt;label&gt;</span></strong> použít a jako název lze prostě vedle požadovaného <strong>elementu</strong> využít obyčejný text, není to příliš doporučeno. <strong><span class="codeOutsidePage">&lt;label&gt;</span></strong> nabízí totiž nad textem několik výhod:</p>
+            <ul>
+                <li><strong>Praktičtější pro uživatele</strong>: Text <strong><span class="codeOutsidePage">&lt;label&gt;</span></strong> se v <strong>HTML</strong> počítá k <strong>elementu</strong>, pro který je určen. To znamená, že kliknutí na ten text znamená vlastně kliknutí na <strong>element</strong>. To dělá například <strong>zaškrtávací formuláře</strong> mnohem praktičtější, zejména na mobilních zařízeních, kde <strong>uživatel</strong> není tak precizní jako na desktopu.</li>
+                <li><strong>Přístupnost</strong>: Protože spojení textu s příslušným <strong>elementem</strong> je v <strong>kódu dokumentu</strong> jasně definováno a není jen vizuální, <strong>uživatelé čteček obrazovek</strong> si dokážou lépe interpretovat, jaký typ dat vlastně do <strong>formuláře</strong> vlastně zadat - <strong>čtečky</strong> totiž mohou obsah <strong><span class="codeOutsidePage">&lt;label&gt;</span></strong> přečíst spolu v kombinaci s daným <strong>polem</strong>.</li>
+            </ul>
+            <p></p>
+            <div class="example" title="Příklad zaškrtávácího formuláře s a bez &lt;label&gt;">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;Níže je základní zaškrtávací formulář se dvěmi poli - první má element &amp;<span class="b">lt</span>;label&amp;<span class="b">gt</span>; a druhé ne. Zkuste kliknout na text vedle každého pole a uvidíte, co se stane.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;priklad1&quot;</span>&gt;S &amp;<span class="b">lt</span>;label&amp;<span class="b">gt</span>;&lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;checkbox&quot;</span> <span class="y">name</span>=<span class="r">&quot;priklad1&quot;</span> <span class="y">id</span>=<span class="r">&quot;priklad1&quot;</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Bez &amp;<span class="b">lt</span>;label&amp;<span class="b">gt</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;checkbox&quot;</span> <span class="y">name</span>=<span class="r">&quot;priklad2&quot;</span> <span class="y">id</span>=<span class="r">&quot;priklad2&quot;</span>&gt;<br>
+                        &lt;<span class="b">/form</span>&gt;<br>
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height:9em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/label-EXAMPLE02.html" title="Příklad zaškrtávácího formuláře s a bez &lt;label&gt;" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/label-EXAMPLE02.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>&lt;label&gt; bez atributu &apos;for&apos;</h3>
+            <p>Existují celkem dva způsoby, jak v kódu napsat <strong><span class="codeOutsidePage">&lt;label&gt;</span></strong>. Ten první jsme si ukázali v příkladech výše - k propojení s příslušným <strong>elementem</strong> je potřeba specifikovat <strong>atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/label-for.html" hreflang="cs">for</a>&apos;</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;priklad&quot;</span>&gt;Jméno: &lt;<span class="b">/label</span>&gt;<br>
+                    &lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;text&quot;</span> <span class="y">name</span>=<span class="r">&quot;jmeno&quot;</span> <span class="y">id</span>=<span class="r">&quot;priklad&quot;</span>&gt;<br>
+                </code>
+            </div>
+            <p>Ten <strong>atribut</strong> lze vynechat tím, že se požadovaný <strong>element</strong> vpíše mezi <strong>počáteční</strong> a <strong>koncový tag <span class="codeOutsidePage">&lt;label&gt;</span></strong> - bude jeho <strong>potomkem</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">label</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Jméno: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;text&quot;</span> <span class="y">name</span>=<span class="r">&quot;jmeno&quot;</span> <span class="y">id</span>=<span class="r">&quot;priklad&quot;</span>&gt;<br>
+                    &lt;<span class="b">/label</span>&gt;
+                </code>
+            </div>
+            <p>Oba způsoby jsou stejně validní - záleží jen na vás, který z nich si vyberete.</p>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/form.html"><span class="codeOutside">&lt;form&gt;</span></a>: <strong>Formuláře</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/input.html"><span class="codeOutside">&lt;input&gt;</span></a>: Jednotlivá <strong>pole formulářů</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/html103/01-cs-introduction.html">HTML 103</a>: Začátečnický kurz o <strong>formulářích</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements-categorized.html#forms">Kategorizovaný seznam všech elementů</a>: <strong>Formuláře / Vstup</strong></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/forms.html#the-label-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-formulare/html-label-popisek-poli-formulare-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: label - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_label.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;label&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;label&gt;: The Label element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/kbd.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;kbd&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/legend.html" rel="next" hreflang="cs">Příští element: &lt;legend&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

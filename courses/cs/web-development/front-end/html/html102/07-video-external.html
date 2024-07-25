@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML 102, lekce 7 - Vkládání videí z externích webů za použití iframu.">
+    <meta name="keywords" content="HTML, ProStartup Learn, HTML 102, HTML kurz, HTML lekce, atributy, elementy, tagy, iframe, &lt;iframe&gt;, &lt;iframe&gt; z externích webů, jak použít iframe na vkládání videí, vkládání videí, externí videa, vkládání videí na stránku tutoriál, vkládání videí na web, vkládání videí na web z YouTubu, jak z Vimea vložit videa, jak z YoUTubu vložit hudbu, YouTube, Vimeo, jak embedovat videa">
+    <title>7. Externí videa | HTML 102 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html102.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">HTML 102</p>
+            <h1>7. Externí videa</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/html102/01-cs-introduction.html" hreflang="cs">HTML&nbsp;102</a>&nbsp;&gt; Lekce&nbsp;7
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p>V <a href="/courses/cs/web-development/front-end/html/html102/06-video-element.html" hreflang="cs" rel="prev">minulé lekci</a> jsme probrali vkládání <strong>lokálních videí</strong> na <strong>stránku</strong>. V mnoha případech je ale lepší použít <strong>externí stránky</strong>, protože <strong>videa</strong> zabírají často mnoho místa na disku. V dnešní lekci si proto ukážeme, jak na <strong>stránku</strong> vložit <strong>videa</strong> z <strong>externích zdrojů</strong>.</p>
+            <p>K vkládání <strong>externích videí</strong> budeme - stejně jako u <strong>audia</strong> - používat <strong>iframy</strong>. Podíváme se opět jen na dvě platformy: <strong>YouTube</strong> a <strong>Vimeo</strong>.</p>
+            <h2>Výhody a nevýhody</h2>
+            <p>Níže je tabulka porovnávající výhody a nevýhody <strong>lokálních</strong> a <strong>externích souborů</strong>.</p>
+            <p><b>Poznámka</b>: Tahle tabulka se vztahuje na <u>všechny</u> <strong>soubory</strong>, ne jen na <strong>videa</strong>. Můžete přeskočit.</p>
+            <!--#include virtual="/courses/cs/web-development/front-end/html/general-info/external-files-table.shtml" -->
+            <h2>YouTube</h2>
+            <div class="photoGallery">
+                <div class="photoGalleryContainer">
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-01.webp" alt="Hlavní strana youtube.com">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-01.webp" alt="Hlavní strana youtube.com">
+                            <p class="photoGalleryDropdown">1. Běžte na stránku <a rel="external" href="https://youtube.com" rel="external" target="_blank" >youtube.com</a> a vyhledejte si video, které chcete vložit na <strong>stránku</strong></p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-02.webp" alt="YouTube - výsledky vyhledávání &quot;Never Gonna Give You Up&quot;">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-02.webp" alt="YouTube - výsledky vyhledávání &quot;Never Gonna Give You Up&quot;">
+                            <p class="photoGalleryDropdown">2. Klikněte na video, které chcete vložit na <strong>stránku</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-03.webp" alt="YouTube - menu &quot;sdílení&quot;.">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-03.webp" alt="YouTube - menu &quot;sdílení&quot;.">
+                            <p class="photoGalleryDropdown">3. Klikněte na tlačítko <strong>sdílet</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-04.webp" alt="YouTube - menu &quot;sdílení&quot;.">
+                        <div class="photoGalleryDropdownRight">
+                            <img class="photoGalleryDropdown" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-04.webp" alt="YouTube - menu &quot;sdílení&quot;.">
+                            <p class="photoGalleryDropdown">4. Klikněte na položku <strong>vložit</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-05.webp" alt="YouTube: Menu embedování.">
+                        <div class="photoGalleryDropdownRight">
+                            <img class="photoGalleryDropdown" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-05.webp" alt="YouTube: Menu embedování.">
+                            <p class="photoGalleryDropdown">5. Klikněte na tlačítko <strong>kopírovat</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-06.webp" alt="YouTube: Menu embedování">
+                        <div class="photoGalleryDropdownRight">
+                            <img class="photoGalleryDropdown" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-06.webp" alt="YouTube: Menu embedování.">
+                            <p class="photoGalleryDropdown">6. <strong>Kód iframu</strong> je zkopírován a můžete ho vložit na <strong>stránku</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="photoGalleryHint">Pro instrukce a zobrazení obrázku ve větší velikosti musíte nad ním přejet myší &lpar;případně ho můžete otevřít v nové kartě&rpar;.</p>
+            </div>
+            <div class="example" title="Příklad vložení YouTube videa na stránku s iframem">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Vložení YouTube videa na stránku</h3>
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">width</span>=<span class="r">&quot;560&quot;</span> <span class="y">height</span>=<span class="r">&quot;315&quot;</span> <span class="y">src</span>=<span class="r">&quot;https://www.youtube.com/embed/dQw4w9WgXcQ&quot;</span> <span class="y">title</span>=<span class="r">&quot;YouTube video player&quot;</span> <span class="y">frameborder</span>=<span class="r">&quot;0&quot;</span> <span class="y">allow</span>=<span class="r">&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot;</span> <span class="y">allowfullscreen</span>&gt;</iframe>
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 22.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/html102/07-video-external-example01.html" title="Příklad vložení YouTube videa na stránku s iframem"></iframe>
+                </div>
+            </div>
+            <h2>Vimeo</h2>
+            <div class="photoGallery">
+                <div class="photoGalleryContainer">
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-07.webp" alt="Hlavní strana Vimea">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-07.webp" alt="Hlavní strana Vimea">
+                            <p class="photoGalleryDropdown">1. Běžte na stránku <a rel="external" href="https://vimeo.com" rel="external" target="_blank">vimeo.com</a> a vyhledejte si video, kterou chcete vložit na stránku.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-08.webp" alt="Vimeo: výsledky vyhledávání &quot;sunset&quot;">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-08.webp" alt="Vimeo: výsledky vyhledávání &quot;sunset&quot;">
+                            <p class="photoGalleryDropdown">2. Klikněte na požadované video.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-09.webp" alt="Vimeo: video">
+                        <div class="photoGalleryDropdownRight">
+                            <img class="photoGalleryDropdown" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-09.webp" alt="Vimeo: video">
+                            <p class="photoGalleryDropdown">3. Klikněte na položku <strong>Sdílet</strong> &lpar;<strong>Share</strong> v angličtině&rpar;.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-10.webp" alt="Vimeo: kopírování kódu přehrávače">
+                        <div class="photoGalleryDropdownRight">
+                            <img class="photoGalleryDropdown" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-10.webp" alt="Vimeo: kopírování kódu přehrávače">
+                            <p class="photoGalleryDropdown">4. Pokud chcete, přizpůsobte si iframe &lpar;některé funkce a nastavení jsou dostupná jen v PRO verzi Vimea&rpar;. Až budete hotovi, vyberte a zkopírujte kód. Potom ho můžete vložit na stránku.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="photoGalleryHint">Pro instrukce a zobrazení obrázku ve větší velikosti musíte nad ním přejet myší &lpar;případně ho můžete otevřít v nové kartě&rpar;.</p>
+            </div>
+            <div class="example" title="Příklad vložení videa z Vimea na stránku s iframem">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Vložení videa z Vimea na stránku</h3>
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">src</span>=<span class="r">&quot;https://player.vimeo.com/video/345238009?h=beacaa1e10&quot;</span> <span class="y">width</span>=<span class="r">&quot;640&quot;</span> <span class="y">height</span>=<span class="r">&quot;360&quot;</span> <span class="y">frameborder</span>=<span class="r">&quot;0&quot;</span> <span class="y">allow</span>=<span class="r">&quot;autoplay; fullscreen; picture-in-picture&quot;</span> <span class="y">allowfullscreen</span>&gt;&lt;<span class="b">/iframe</span>&gt;&lt;<span class="b">p</span>&gt;&lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;https://vimeo.com/user7776401&quot;</span>&gt;Sunset&lt;<span class="b">/a</span>&gt; from &lt;<span class="b">a</span> <span class="y">src</span>=<span class="r">&quot;https://vimeo.com/user7776401&quot;</span>&gt;Valentin Ishmaev&lt;<span class="b">/a</span>&gt; on &lt;<span class="b">a</span> <span class="y">src</span>=<span class="r">https://vimeo.com</span>&gt;Vimeo&lt;<span class="b">/a</span>&gt;.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 28em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/html102/07-video-external-example02.html" title="Příklad vložení videa z Vimea na stránku s iframem"></iframe>
+                </div>
+            </div>
+            <p><b>Poznámka</b>: Video bylo vytvořeno <a rel="external" href="https://vimeo.com/user7776401" hreflang="cs" rel="external">Valentinem Ishmaevem</a> a nachází se <a rel="external" href="https://vimeo.com/345238009" hreflang="cs" rel="external">zde</a>.</p>
+            <br>
+            <p>A tohle by k tomuto kurzu mohlo být vše. V příští lekci si řekneme, jak pokračovat.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html102/06-video-element.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Element &lt;video&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html102/08-next.html" rel="next" hreflang="cs">Příští lekce: Jak pokračovat? &gt;&gt;&gt;</a>
+            </div>
+            </div>
+         </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

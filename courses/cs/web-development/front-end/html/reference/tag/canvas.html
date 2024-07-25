@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Kreslící plátno &lt;canvas&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, plátno html, &lt;canvas&gt; HTML tutorial, &lt;canvas&gt;, &lt;canvas&gt; html, element &lt;canvas&gt;, co je &lt;canvas&gt;, jak použít &lt;canvas&gt;, jak vytvořit plátno v HTML">
+    <title>&lt;canvas&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;canvas&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;canvas&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;canvas&gt;</span></strong> je <strong>párový tag</strong> používaný pro vytvoření &quot;plátna&quot;, na které se s pomocí skriptování v <strong>JavaScriptu</strong> mohou vytvářet animace. Lze také použít jako kreslící plocha, na kterou bude moct <strong>uživatel</strong> kreslit.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;canvas&gt;</span></strong> je <strong>párový tag</strong>. Mezi ten <strong>počáteční</strong> a <strong>koncový</strong> se může dát text, který se ukáže <strong>uživateli</strong> v případě, že <strong>element</strong> není v jeho <strong>prohlížeči</strong> podporován.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">canvas</span> <span class="y">atribut</span>=<span class="r">&quot;hodnot&quot;</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;Text pro případ, že element není podporován&lt;<span class="b">/canvas</span>&gt;<br>
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;canvas&gt;</span></strong> má několik vlastních <strong>atributů</strong>. Kromě nich podporuje i ty <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální</a></strong>.</p>
+            <table>
+                <tr>
+                    <th>Název</th>
+                    <th>Povinné?</th>
+                    <th>Popis</th>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/canvas-height-and-width.html" hreflang="cs">height</a></th>
+                    <td>Ano</td>
+                    <td>Specifikuje v pixelech, jak vysoká je kreslící plocha elementu.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/canvas-moz-opaque.html" hreflang="cs">moz-opaque</a></th>
+                    <td>Ne</td>
+                    <td>Atribut specifický jen k prohlížečům založených na Mozzile. Specifikuje, zda plátno podporuje průhlednost &lpar;defaultně ano&rpar;.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/canvas-height-and-width.html" hreflang="cs">width</a></th>
+                    <td>Ano</td>
+                    <td>Specifikuje v pixelech, jak široká je kreslící plocha elementu.</td>
+                </tr>
+            </table>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;canvas&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Defaultně nemá žádný vzhled - bez trochy <strong>CSS</strong> ho tak není schopné odlišit od zbytku <strong>stránky</strong>.</p>
+            <p><strong>CSS vlastnosti</strong> sice mohou ovlivnit viditelnou šířku a výšku <strong>elementu</strong>, ale nemůžou ovlivnit šířku a výšku samotné kreslící plochy - k tomu jsou potřeba <strong>atributy &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/canvas-height-and-width.html" hreflang="cs">height</a>&apos;</strong> a <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/canvas-height-and-width.html" hreflang="cs">width</a>&apos;</strong>.</p>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;canvas&gt;</span></strong> nemá defaultně žádnou funkcionalitu - je potřeba použít <strong>JavaScript</strong>. Z toho důvodu si tu neukážeme, jak tento <strong>element</strong> použít.</p>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/#the-canvas-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-multimedia/canvas-html-5-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: canvas - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_canvas.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;canvas&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;br&gt;: The Graphics Canvas element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/button.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;button&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/caption.html" rel="next" hreflang="cs">Příští element: &lt;caption&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

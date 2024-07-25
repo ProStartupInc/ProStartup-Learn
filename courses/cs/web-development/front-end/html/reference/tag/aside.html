@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Sekce &lt;aside&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, vedlejší obsah html, &lt;aside&gt; HTML tutorial, &lt;aside&gt;, &lt;aside&gt; html, element &lt;aside&gt;, co je &lt;aside&gt;, jak použít &lt;aside&gt;">
+    <title>&lt;aside&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;aside&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;aside&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;aside&gt;</span></strong> je <strong>párový tag</strong> používaný pro vytváření sekce <strong>stránky</strong>, kde se má nacházet vedlejší obsah, jež s jejím hlavním obsahem souvisí jen nepřímo. Používá se například na <strong>reklamy</strong> nebo poznámky k textu.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;aside&gt;</span></strong> je <strong>párový tag</strong>. Mezi tím <strong>počátečním</strong> a <strong>koncovým</strong> se nachází obsah, který se zobrazí <strong>uživateli</strong>. Tím obsahem může být tatřka cokoliv, co může být <strong>potomkem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/body.html" hreflang="cs">&lt;body&gt;</a></strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">aside</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;Obsah&lt;<span class="b">/article</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;aside&gt;</span></strong> nemá žádné vlastní <strong>atributy</strong>, ale podporuje ty <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;aside&gt;</span></strong> lze v <strong>CSS</strong> stylovat.  Defaultně nemá žádné <strong>CSS vlastnosti</strong>, které by ovlivňovaly jeho vzhled. Jde o <strong>blokový element</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                <code class="exampleCode">
+                    <span class="cb">aside</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">block</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;aside&gt;</span></strong> by se měl využívat na části <strong>stránky</strong>, které jejího hlavního obsahu příliš netýkají. Mezi tato využití patří poznámky k textu, <strong>reklamy</strong>, vysvětlivky...Cokoliv, co nezapadá do hlavního obsahu <strong>stránky</strong>.</p>
+            <div class="example" title="Příklad &lt;aside&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">body</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;Element &amp;<span class="b">lt</span>;aside&amp;<span class="b">gt</span>; se používá pro obsah, který přímo nesouvisí s hlavním obsahem stránky.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">aside</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;index.html&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">h3</span>&gt;ProStartup Learn&lt;<span class="b">h3</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;Potřebujete se naučit HTML, ale v češtině? Ztrácíte na jiných stránkách pozornost kvůli reklamám? Tak v tom případě navštivte ProStartup Learn!&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">img</span> <span class="y">src</span>=<span class="r">&quot;code.jpg&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/a</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/aside</span>&gt;<br>
+                        &lt;<span class="b">/body</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 18.9em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/aside-EXAMPLE.html" title="Příklad &lt;aside&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/aside-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <p><b>Poznámka</b>: Obrázek v příkladě výše byl vytvořen <b>Martinem Vorlem</b> a byl stažen z <b>Wikimedia Commons</b>.</p>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/sections.html#the-aside-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-rozlozeni/aside-html-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: aside - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/aside.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;aside&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;aside&gt; - The Aside element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/article.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;article&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/audio.html" rel="next" hreflang="cs">Příští element: &lt;audio&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

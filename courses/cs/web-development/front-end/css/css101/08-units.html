@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS 101, lekce 9 - jednotky délky v CSS &lpar;px, procenta, em, rem, vh, vw&rpar;.">
+    <meta name="keywords" content="HTML, ProStartup Learn, CSS 101, CSS kurz, CSS lekce, CSS jednotky, jednotky délky CSS">
+    <title> 8. Jednotky délky | CSS 101 | ProStartup Learn</title>
+    <style>
+        span.g {
+            color: #8BC34A;
+        }
+        span.r {
+            color: #F44336;
+        }
+        span.b {
+            color: #2196F3;
+        }
+        span.y {
+            color: #FFFF00;
+        }
+        span.cb {
+            color: #90c4ee;
+        }
+        span.cy {
+            color: #fafa83
+        }
+        span.cr {
+            color: #ff8c84;
+        }
+        span.cg {
+            color: #a8ca80;
+        }
+        nav.lessonBreadcrumbCSS {
+            background-color: #9db1fa;
+        }
+        div.LessonNameCSS {
+            background-color: #2465f1;
+        }
+        div.exampleCode {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        div.example {
+            background-color: #c2c2c2;
+        }
+        iframe {
+            background-color: white;
+        }
+    </style>
+    <!--#include virtual="/SSI/cs/headLinksNoCSS.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/web-development/front-end/css/sidenav-css101.shtml" -->
+    <div class="lessonContentArea">
+        <main class="lessonContent">
+            <div class="LessonNameCSS">
+                <p class="courseSign">CSS 101</p>
+                <h1>8. Jednotky délky</h1>
+            </div>
+            <nav class="lessonBreadcrumbCSS">
+                <hr>
+                <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/courses.html" hreflang="cs">CSS</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/css101/01-introduction.html" hreflang="cs">CSS&nbsp;101</a>&nbsp;&gt; Lekce&nbsp;8
+                <hr>
+            </nav>
+            <div class="margin"></div>
+            <p>V předchozí lekci jsme se dopracovali k <strong>vlastnosti <code><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/background-size.html" hreflang="cs">background-size</a></code></strong>. K jejímu co nejefektivnějšímu použití je ale nutností znát <strong>jednotky délky</strong> používané v <strong>CSS</strong>. A nevztahuje se to jen k <strong><code><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/background-size.html" hreflang="cs">background-size</a></code></strong> - přesně specifikovat velikosti je potřeba u mnoha jiných aspektů <strong>web designu</strong> než jen u <strong>pozadí</strong>, například u velikosti <strong>písma</strong>, šířky a výšky <strong>elementů</strong>, <strong>okraje</strong>, a podobně.</p>
+            <p>V této lekci se zaměříme jen na několik základních a nejpoužívanějších jednotek; v <strong>CSS</strong> jich ale existuje mnohem více &lpar;viz <a href="/courses/cs/web-development/front-end/css/lists/units-length.html" hreflang="cs">Seznam jednotek délky v CSS</a>&rpar;. Nezabývejte se zatím <strong>vlastnostmi</strong>, které jsou v této lekci k demostraci <strong>jednotek</strong> použity - všechny z nich si v tomto nebo následujícím kurzu probereme.</p>
+            <h2>Absolutní a relativní jednotky</h2>
+            <p>Nejdříve bychom si měli říci o kategorizaci <strong>jednotek</strong> na základě jejich chování. V <strong>CSS</strong> se dělí do dvou skupin:</p>
+            <ul>
+                <li><strong>Absolutní</strong>: Jejich velikost je pevně daná &lpar;<strong><code>px</code></strong>, <strong><code>cm</code></strong>, <strong><code>mm</code></strong>, <strong><code>pt</code></strong>, <strong><code>pc</code></strong>, <strong><code>in</code></strong>, <strong><code>q</code></strong>&rpar;.</li>
+                <li><strong>Relativní</strong>: Jejich velikost je k něčemu relativní, např. k velikosti <strong>fontu elementu</strong> &lpar;<strong><code>em</code></strong>, <strong><code>%</code></strong>, <strong><code>vw</code></strong>, <strong><code>vh</code></strong>, <strong><code>vmin</code></strong>, <strong><code>vmax</code></strong>, <strong><code>ex</code></strong>, <strong><code>rem</code></strong>, <strong><code>ch</code></strong>&rpar;.</li>
+            </ul>
+            <h2>Pixel &lpar;px&rpar;</h2>
+            <p>Absolutně základní <strong>jednotkou délky</strong> je <strong>pixel</strong>. Jde o <strong>absolutní jednotku</strong>. V <strong>CSS</strong> se při jejich použití musí za číslo napsat <strong><code>px</code></strong>. Výchozí velikostí písma v <strong>prohlížečích</strong> je <strong>16 pixelů</strong>.</p>
+            <p><strong>Pixely</strong> je nejvhodnější používat na dekorační prvky, jejichž velikost nebude potřeba při změně velikosti <strong>obrazovky</strong> měnit &lpar;například <strong>podtržení textu</strong> nebo <strong>okraje</strong>&rpar;.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-size: 20px&quot;</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-size: 10px&quot;</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="100px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE.html" title="Příklad použití pixelů.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE.html">zde</a>.</iframe>    
+            </div>
+            <h2>Procenta &lpar;%&rpar;</h2>
+            <p>Další velmi používanou <strong>jednotkou</strong> jsou <strong>procenta</strong>. Ta jsou na rozdíl od <strong>pixelů</strong> už <strong>relativními jednotkami</strong> - jedno <strong>procento</strong> je rovno jedné setině šířky nebo výšky <strong>rodičovského elementu</strong>.</p>
+            <p><strong>Procenta</strong> se hodí hlavně v <strong>rozložení</strong> &lpar;<strong>layoutu</strong>&rpar; <strong>stránek</strong>. Většinou se také používají na šířku <strong>elementů</strong>.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">div</span> <span class="y">style</span>=<span class="r">&quot;width: 25%; background-color: red;&quot;</span>&gt;<span class="b">&amp;nbsp;</span>&lt;<span class="b">/div</span>&gt;<br>
+                    </code>
+                </div><br>
+                <iframe height="100px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE02.html" title="Příklad použití procent.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE02.html">zde</a>.</iframe>    
+            </div>
+            <p>Trochu jiná je situace například u <strong>velikosti písma</strong> - zde <strong><code>100%</code></strong> odpovídá normální hodnotě. To znamená, že pokud chcete např. text o <strong><code>50%</code></strong> zvětšit, budete muset napsat <strong><code>150%</code></strong>.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-size: 100%&quot;</span>&gt;Normální velikost písma.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-size: 150%&quot;</span>&gt;150% velikost písma.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="110px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE03.html" title="Příklad použití procent u textu.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE03.html">zde</a>.</iframe>    
+            </div>
+            <h2>Em &lpar;em&rpar;</h2>
+            <p><strong>Em</strong> je <strong>jednotka</strong> používaná hlavně na <strong>odstupové okraje</strong> a <strong>stylování</strong> text. Jeden <strong>em</strong> se rovná velikosti velkého písmena v <strong>rodičovském elementu</strong>.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">div</span> <span class="y">style</span>=<span class="r">&quot;font-size: 100%;&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-size: 2em&quot;</span>&gt;Velikost písma: 2em.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/div</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">div</span> <span class="y">style</span>=<span class="r">&quot;font-size: 55%;&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-size: 2em&quot;</span>&gt;Velikost písma: 2em.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/div</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="150px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE04.html" title="Příklad použití jednotek em.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE04.html">zde</a>.</iframe>    
+            </div>
+            <h2>Rem &lpar;rem&rpar;</h2>
+            <p>Pokud chcete určovat velikosti podle <strong>písma</strong>, ale trochu konzistentněji, můžete použít <strong>jednotku rem</strong>. Ta se rovná velikosti <strong>písma kořenového elementu</strong> - což znamená <strong>tag <code>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/html.html" hreflang="cs">html</a>&gt;</code></strong>.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">div</span> <span class="y">style</span>=<span class="r">&quot;font-size: 100%;&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-size: 2rem&quot;</span>&gt;Velikost písma: 2rem.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/div</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">div</span> <span class="y">style</span>=<span class="r">&quot;font-size: 55%;&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-size: 2rem&quot;</span>&gt;Velikost písma: 2rem.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/div</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="175px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE05.html" title="Příklad použití jednotek rem.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE05.html">zde</a>.</iframe>    
+            </div>
+            <h2>Výška a šířka viewportu &lpar;vh a vw&rpar;</h2>
+            <p>V <strong>rozložení</strong> se často používají jednotky <strong>vh</strong> a <strong>vw</strong>, přičemž obě jsou relativní k velikosti viditelné části <strong>stránky</strong> v <strong>prohlížeči</strong> &lpar;tzv. <strong>viewport</strong>&rpar; - <strong><code>1vh</code></strong> &lpar;<b>v</b>iewport <b>h</b>eight&rpar; se rovná jedné setině výšky <strong>viewportu</strong> a <strong><code>1vw</code></strong> &lpar;<b>v</b>iewport <b>w</b>idth&rpar; zase jedné setině <strong>šířky</strong>.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">div</span> <span class="y">style</span>=<span class="r">&quot;width: 100vw; background-color: red;&quot;</span>&gt;<span class="b">&amp;nbsp;</span>&lt;<span class="b">/div</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">div</span> <span class="y">style</span>=<span class="r">&quot;width: 25vw; height: 25vh; background-color: green;&quot;</span>&gt;<span class="b">&amp;nbsp;</span>&lt;<span class="b">/div</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">div</span> <span class="y">style</span>=<span class="r">&quot;width: 25vh; height: 25vw; background-color: blue;&quot;</span>&gt;<span class="b">&amp;nbsp;</span>&lt;<span class="b">/div</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="250px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE06.html" title="Příklad použití jednotek závislých na velikosti viewportu.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/08-units-EXAMPLE06.html">zde</a>.</iframe>    
+            </div>
+            <h2>Shrnutí</h2>
+            <ul>
+                <li><strong>Jednotky délky</strong> se v <strong>CSS</strong> dělí na dva typy: <strong>absolutní</strong> &lpar;jsou pevně dané&rpar; a <strong>relativní</strong> &lpar;jejich velikost je určena na základě něčeho jiného&rpar;</li>
+                <li><strong>Pixely</strong> se značí jako <strong><code>px</code></strong>; normální text má výšku <strong>16 pixelů</strong></li>
+                <li><strong>Procenta</strong> se značí znakem procenta <strong><code>%</code></strong>; jedno se rovná setině šířky mebo výšky <strong>rodičovského elementu</strong></li>
+                <li><strong>Em</strong> se značí jako <strong><code>em</code></strong>; jeden se rovná velikosti <strong>písma</strong> v <strong>rodičovském elementu</strong></li>
+                <li><strong>Rem</strong> se značí jako <strong><code>rem</code></strong>; jeden se rovná velikosti <strong>písma</strong> v <strong>elementu <code>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/html.html" hreflang="cs">html</a>&gt;</code></strong></li>
+                <li>Setina výšky <strong>viewportu</strong> &lpar;velikost viditelné části <strong>stránky</strong>&rpar; se značí jako <strong><code>vh</code></strong></li> 
+                <li>Setina šířky <strong>viewportu</strong> se značí jako <strong>vw</strong></li>
+            </ul>
+            <br>&nbsp;<br>
+            <p>S těmito a dříve probranými <strong>vlastnostmi</strong> začínají tyto lekce &lpar;a vaše <strong>HTML dokumenty</strong>, pokud zkoušíte to, co jsme se naučili&rpar; nabývat na kráse. V příští lekci si povíme něco o <strong>jednotkách</strong> používaných v <strong>CSS</strong>.</p>
+            <a href="/courses/cs/web-development/front-end/css/css101/07-background.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Pozadí</a><br>
+            <a href="/courses/cs/web-development/front-end/css/css101/09-fonts.html" rel="next" hreflang="cs">Příští lekce: Základy fontů &gt;&gt;&gt;</a>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

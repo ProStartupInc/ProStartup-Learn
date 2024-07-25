@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS 101, lekce 9 - základy fontů, bezpečné fonty a písma z Google Fonts.">
+    <meta name="keywords" content="HTML, ProStartup Learn, CSS 101, CSS kurz, CSS lekce, CSS jak změnit font, fonty CSS, CSS ja použít fonty z Google Fonts, bezpečné fonty CSS, web-safe fonty CSS, co jsou generické rodiny CSS">
+    <title> 9. Základy fontů | CSS 101 | ProStartup Learn</title>
+    <style>
+        span.g {
+            color: #8BC34A;
+        }
+        span.r {
+            color: #F44336;
+        }
+        span.b {
+            color: #2196F3;
+        }
+        span.y {
+            color: #FFFF00;
+        }
+        span.cb {
+            color: #90c4ee;
+        }
+        span.cy {
+            color: #fafa83
+        }
+        span.cr {
+            color: #ff8c84;
+        }
+        span.cg {
+            color: #a8ca80;
+        }
+        nav.lessonBreadcrumbCSS {
+            background-color: #9db1fa;
+        }
+        div.LessonNameCSS {
+            background-color: #2465f1;
+        }
+        div.exampleCode {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        div.example {
+            background-color: #c2c2c2;
+        }
+        iframe {
+            background-color: white;
+        }
+        @font-face {
+            font-family: MontserratBold;
+            src: url("/fonts/Montserrat-Bold.ttf");
+            font-weight: normal;
+            font-style: normal;
+         }  
+
+         @font-face {
+            font-family: ComicNeue;
+            src: url("/fonts/ComicNeue-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+         }  
+
+         @font-face {
+            font-family: MontserratThin;
+            src: url("/fonts/Montserrat-Thin.ttf");
+            font-weight: normal;
+            font-style: normal;
+         }  
+
+         @font-face {
+            font-family: MontserratBlackItalic;
+            src: url("/fonts/Montserrat-BlackItalic.ttf");
+            font-weight: normal;
+            font-style: normal;
+         }  
+        @font-face {
+                font-family: MontserratSemi;
+                src: url("/fonts/Montserrat-SemiBold.ttf");
+                font-weight: normal;
+                font-style: normal;
+        }  
+         @font-face {
+            font-family: MontserratRegular;
+            src: url("/fonts/Montserrat-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }  
+        @font-face {
+            font-family: RobotoBold;
+            src: url("/fonts/Roboto-Bold.ttf");
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: RobotoRegular;
+            src: url("/fonts/Roboto-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: BlinkerSemi;
+            src: url("/fonts/Blinker-SemiBold.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }  
+        @font-face {
+            font-family: BlinkerRegular;
+            src: url("/fonts/Blinker-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }  
+        body {
+            font-family: RobotoRegular, sans-serif;
+        }
+        @font-face {
+            font-family: RobotoItalic;
+            src: url("/fonts/RobotoCondensed-Regular.ttf");
+            font-weight: normal;
+            font-style: italic;
+        }  
+        @font-face {
+            font-family: UbuntuMono;
+            src: url("/fonts/UbuntuMono-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: UbuntuMonoItalic;
+            src: url("/fonts/UbuntuMono-Regular.ttf");
+            font-weight: normal;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: Chalkduster;
+            src: url("/fonts/Chalkduster.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }  
+        p.codeExample, code, span.codeOutsidePage, a.codeOutside {
+            font-family: UbuntuMono, monospace;
+        }
+        a {
+            font-family: RobotoBold;
+        }
+        h1 {
+            font-family: BlinkerSemi;
+        }
+        h2, h2.white {
+            font-family: BlinkerSemi;
+        }
+        h3 {
+            font-family: BlinkerSemi;
+        }
+        p.courseSign {
+            font-family: BlinkerRegular;
+        }
+    </style>
+    <!--#include virtual="/SSI/cs/headLinksNoCSS.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/web-development/front-end/css/sidenav-css101.shtml" -->
+    <div class="lessonContentArea">
+        <main class="lessonContent">
+            <div class="LessonNameCSS">
+                <p class="courseSign">CSS 101</p>
+                <h1>9. Základy fontů</h1>
+            </div>
+            <nav class="lessonBreadcrumbCSS">
+                <hr>
+                <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/courses.html" hreflang="cs">CSS</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/css101/01-introduction.html" hreflang="cs">CSS&nbsp;101</a>&nbsp;&gt; Lekce&nbsp;9
+                <hr>
+            </nav>
+            <div class="margin"></div>
+            <p><strong>Fonty</strong> &lpar;nebo také <strong>písma</strong>&rpar; tvoří v současné době velmi důležitou část <strong>web designu</strong>, protože do velké míry určují pocit, který budou <strong>uživatelé</strong> ze <strong>stránky</strong> mít. V této lekci si ukážeme, jak je u různých <strong>elementů</strong> měnit a jak přidávat nové.</p>
+            <h2>Dělení fontů</h2>
+            <p>Každý <strong>font</strong> je obvykle součástí nějaké <strong>rodiny fontů</strong>, která zahrnuje jeho další varianty - např. <strong>rodina Montserrat</strong> zahrnuje 18 <strong>fontů</strong>, které se liší svou tloušťkou a přítomností <strong>kurzívy</strong>.</p>
+            <ul>
+                <li><span style="font-family: MontserratThin;">Montserrat Thin</span></li>
+                <li><span style="font-family:MontserratRegular">Montserrat Regular</span></li>
+                <li><span style="font-family:MontserratBold">Montserrat Bold</span></li>
+                <li><span style="font-family: MontserratBlackItalic">Montserrat Black Italic</span></li>
+            </ul>
+            <p>Každá <strong>rodina fontů</strong> náleží ještě do jedné z několika <strong>generických rodin</strong> specifikovaných v <strong>CSS</strong>. Níže je pět základních:</p>
+            <ul>
+                <li><strong>Serif</strong> &lpar;bezpatková písma; např. <strong>Arial</strong>, <strong>Montserrat</strong>, <strong>Calibri</strong>...&rpar;</li>
+                <li><span style="font-family: 'Times New Roman', Times, serif"><strong>Sans-serif</strong> &lpar;patková písma; např. <strong>Times New Roman</strong>, <strong>Garamond</strong>...&rpar;</span></li>
+                <li><span style="font-family: 'Courier New', Courier, monospace;"> <strong>Monospace</strong> &lpar;neproporcionální písma; např. <strong>Consolas</strong>, <strong>Courier New</strong>, <strong>Ubuntu Mono</strong>&rpar;</span></li>
+                <li><span style="font-family: 'ComicNeue', cursive"><strong>Cursive</strong> &lpar;ručně psaná písma; např. <strong>Comic Sans MS</strong>, <strong>Papyrus</strong>, <strong>Comic Neue</strong>...</span>&rpar;</li>
+                <li><span style="font-family: 'Chalkduster', fantasy"></span><strong>Fantasy</strong> &lpar;dekorativní písma; např. <strong>Impact</strong>, <strong>Luminari</strong>, <strong>Chalkduster</strong>...&rpar;</li>
+            </ul>
+            <h2>Vlastnost font-family</h2>
+            <p>Defaultně téměř všechny <strong>elementy</strong> používají <strong>font <span style="font-family: 'Times New Roman', Times, serif;">Times New Roman</span></strong>. Ten ale není pro <strong>webové stránky</strong> zrovna ideální - je hůře čitelný než jiné modernější <strong>fonty</strong> a vypadá zastarale. Naštěstí se ho lze zbavit <strong>vlastností <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/font-family.html" hreflang="cs">font-family</a></strong>, která umožňuje k vybranému <strong>elementu</strong> přiřadit nějaký jiný <strong>font</strong>.</p>
+            <div class="exampleCode">
+                <code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-family</span>: <i><span class="cr">font</span></i>;
+                </code>
+            </div>
+            <p>Jako <strong>hodnotu</strong> lze použít buď pouze název požadovaného <strong>fontu</strong>, nebo název <strong>fontu</strong> i s kategorií, do které patří &lpar;přičemž obě věci jsou odděleny čárkou&rpar;. Druhá možnost se používá hlavně v případech, kdy se něco může pokazit - pokud se vámi vybrané <strong>písmo</strong> nebude chtít z nějakého důvodu načíst, <strong>prohlížeč</strong> bude schopen vybrat nějaké jiné, které náleží ke specifikované kategorii, díky čemuž nebudou rozdíly ve vzhledu příliš velké &lpar;většinou. Stojí za zmínku, že specifikovanou kategorií by měla být ta, do které požadovaný <strong>font</strong> náleží&rpar;.</p>
+            <p>Pokud budete používat <strong>font</strong>, který ve svém názvu obsahuje <strong>mezery</strong>, měli by jste jeho název obklopit <strong>uvozovkami "</strong> nebo <strong>apostrofy '</strong> &lpar;pokud se název <strong>písma</strong> už v uvozovkách nachází - napříkad kvůli <strong>atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/style" hreflang="cs">style</a>&apos;</strong> - měli by jste použít pouze apostrofy, aby nedošlo k předčasnému uzavření uvozovek. To stejné platí, pokud se název již nachází v apostrofech, jen opačně - obalíte ho uvozovkami&rpar;.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-family: &apos;Trebuchet MS&apos;, sans-serif&quot;</span>&gt;Specifikován pouze font.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-family: &apos;Trebuchwt MS&apos;, sans-serif;&quot;</span>&gt;Specifikována jak kategorie, tak font. Název fontu je napsán špatně záměrně.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div><br>
+                <iframe loading="lazy"  height="90px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/09-fonts-EXAMPLE.html" title="Příklad vlastnosti font-family.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/09-fonts-EXAMPLE.html">zde</a>.</iframe>    
+            </div>
+            <p>Pokud budete chtít změnit <strong>font</strong> celého <strong>dokumentu</strong>, bude díky <strong>kaskádovým stylům</strong> stačit <strong>vlastnost <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/font-family.html" hreflang="cs">font-family</a></strong> použít na <strong>element &lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/body.html" hreflang="cs">body</a>&gt;</strong> nebo <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/html.html" hreflang="cs">html</a>&gt;</strong> &lpar;nebo prostě použít <strong>univerzální selektor</strong>&rpar;.</p>
+            <h2>Bezpečné fonty</h2>
+            <p><strong>Bezpečné fonty</strong> &lpar;anglicky <strong>web-safe fonts</strong>&rpar; se tak jmenují proto, že jsou již předinstalovány na velké většině zařízení, díky čemuž mají vysokou podporu a je tak možné je téměř bezstarostně používat. Těmi nejvíce používanými jsou...</p>
+            <ul>
+                <li><span style="font-family: Times New Roman">Times New Roman</span> &lpar;<strong>serif</strong>&rpar;</li>
+                <li><span style="font-family: Arial">Arial</span> &lpar;<strong>sans-serif</strong>&rpar;</li>
+                <li><span style="font-family: Courier New">Courier New</span> &lpar;<strong>monospace</strong>&rpar;</li>
+            </ul>
+            <p>K jejich použití není potřeba téměř nic dělat - stačí jen jejich název napsat a máte hotovo.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-family: Arial, sans-serif;&quot;</span>&gt;Tohle je Arial.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-family: Courier New, monospace;&quot;</span>&gt;Tohle je pro změnu Courier New.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div><br>
+                <iframe loading="lazy"  height="90" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/09-fonts-EXAMPLE02.html" title="Příklad bezpečných fontů.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/09-fonts-EXAMPLE02.html">zde</a>.</iframe>    
+            </div>
+            <h2>Fonty Google</h2>
+            <p>Velmi populárním <strong>webem</strong> pro přidávání nových <strong>fontů</strong> na <strong>stránku</strong> jsou <strong><a href="https://fonts.google.com/" target="_blank">Fonty Google</a></strong>, což je služba od Googlu poskytující tisíce <strong>fontů</strong>, které jsou zdarma i ke komerčnímu použití. Pokud chcete jeden z nich použít, jednou z možností je propojit žádáný <strong>font</strong> s <strong>CSS souborem</strong> za pomoci <strong>elementu &lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/link.html" hreflang="cs">link</a>&gt;</strong>.</p>
+            <p><strong>Nepárový tag &lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/link.html" hreflang="cs">link</a>&gt;</strong> je <strong>potomkem &lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/head.html" hreflang="cs">head</a>&gt;</strong> a využívá se k používání <strong>externích souborů</strong> - včetně <strong>fontů</strong> - v <strong>HTML dokumentech</strong> a k specifikování jejich vztahu k nim. Má dva základní <strong>atributy</strong>:</p>
+            <ul>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/link-rel.html" hreflang="cs">rel</a>&apos;</strong>: Určuje vztah mezi <strong>externím souborem</strong> a <strong>HTML dokumentem</strong>. <strong>Hodnotou</strong> by v případě <strong>fontů</strong> mělo být <strong><code>&quot;stylesheet&quot;</code></strong>.</li>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/link-href.html" hreflang="cs">href</a>&apos;</strong>: Specifikuje <strong>odkaz</strong> na požadovaný <strong>externí soubor</strong>.</li>
+            </ul>
+            <p>Pokud chcete tedy použít <strong>font</strong> z <strong>Google Fonts</strong>, váš <strong>element &lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/link.html" hreflang="cs">link</a>&gt;</strong> by měl vypadat takhle:</p>
+            <div class="exampleCode">
+                <code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">link</span> <span class="y">rel</span>=<span class="r">&quot;stylesheet&quot;</span> <span class="y">href</span>=<span class="r">&quot;https://fonts.googleapis.com/css?family=Montserrat&quot;</span>&gt;
+                </code>
+            </div>
+            <p>Místo <strong>&quot;Montserrat&quot;</strong> můžete napsat název <strong>fontu</strong>, který chcete vy. Pokud má v názvu nějaké mezery, musíte je nahradit znamínky <strong>plus +</strong>.</p>
+            <div class="exampleCode">
+                <code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">link</span> <span class="y">rel</span>=<span class="r">&quot;stylesheet&quot;</span> <span class="y">href</span>=<span class="r">&quot;https://fonts.googleapis.com/css?family=Montserrat+Alternates&quot;</span>&gt;
+                </code>
+            </div>
+            <p>Pokud chcete použít více <strong>písem</strong>, stačí v <strong>URL</strong> za název jednoho <strong>fontu</strong> napsat znak svislé čáry <strong>|</strong> &lpar;na české klávesnici <strong><code>Alt Gr</code> + <code>W</code></strong>&rpar;, po kterém bude následovat název dalšího <strong>fontu</strong>.</p>
+            <div class="exampleCode">
+                <code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">link</span> <span class="y">rel</span>=<span class="r">&quot;stylesheet&quot;</span> <span class="y">href</span>=<span class="r">&quot;https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates&quot;</span>&gt;
+                </code>
+            </div>
+            <p>Co se týče použití takto importovaných <strong>fontů</strong>, v <strong>CSS</strong> stačí zapisovat jejich název tak, jak vypadá na <strong>Google Fonts</strong> &lpar;takže např. <strong>Open Sans</strong> bude v <strong>CSS</strong> pořád <strong>Open Sans</strong>&rpar;.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">!DOCTYPE</span> <span class="y">html</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">html</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">head</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">link</span> <span class="y">rel</span>=<span class="r">&quot;stylesheet&quot;</span> <span class="y">href</span>=<span class="r">&quot;https://fonts.googleapis.com/css?family=Open+Sans|Montserrat&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">style</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cb">body</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-family</span>: <span class="cr">&quot;Open Sans&quot;, serif-sans</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cb">h1, h2</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-family</span>: <span class="cr">Montserrat, serif-sans</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/style</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/head</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">body</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">h1</span>&gt;Hlavní nadpis&lt;<span class="b">/h1</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">h2</span>&gt;Nadpis&lt;<span class="b">/h2</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;Praesent a vestibulum odio, at gravida ipsum.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/body</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/html</span>&gt;
+                    </code>
+                </div><br>
+                <iframe loading="lazy"  height="210px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/09-fonts-EXAMPLE03.html" title="Příklad písem z Google Fonts.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/09-fonts-EXAMPLE03.html">zde</a>.</iframe>    
+            </div>
+            <h2>Shrnutí</h2>
+            <ul>
+                <li><strong>Fonty</strong> obvykle patří do nějaké <strong>rodiny</strong>, která obsahuje jeho další varianty</li>
+                <li>V <strong>CSS</strong> je specifikováno několik tzv. <strong>generických rodin</strong> &lpar;např. <strong><code>sans-serif</code></strong>, <strong><code>serif</code></strong>, <strong><code>monospace</code></strong>, <strong><code>cursive</code></strong>, <strong><code>fantasy</code></strong>...&rpar;</li>
+                <li><strong>Font elementu</strong> se může změnit s vlastností <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/font-family.html" hreflang="cs">font-family</a></strong></li>
+                <ul>
+                    <li><strong>Hodnotou</strong> je název <strong>fontu</strong>, název jedné z <strong>generických rodin</strong>, nebo obojí, přičemž musí být jedno odděleno od toho druhého čárkou</li>
+                    <ul>
+                        <li>Pokud má <strong>font</strong> v názvu mezery, musí se obklopit jeho název buď uvozovkami, nebo apostrofy</li>
+                    </ul>
+                </ul>
+                <li>Na <strong>webech</strong> lze také použít <strong>fonty</strong> z <strong><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></strong></li>
+                <ul>
+                    <li>Požadované <strong>fonty</strong> se musí importovat s <strong>nepárovým tagem &lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/link.html" hreflang="cs">link</a>&gt;</strong>, který je <strong>potomkem &lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/head.html" hreflang="cs">head</a>&gt;</strong></li>
+                    <ul>
+                        <li><strong>Odkaz</strong> v <strong>atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/link-href.html" hreflang="cs">href</a>&apos;</strong> by měl vypadat takto: <strong><code>https://fonts.googleapis.com/css?family=Montserrat</code></strong></li>
+                        <ul>
+                            <li><strong><code>Montserrat</code></strong> lze nahradit názvem kteréhokoliv jiného <strong>fontu</strong>, který chcete</li>
+                            <li>Pokud jsou v názvu <strong>fontu</strong> mezery, musí se nahradit znakem <strong>plus +</strong></li>
+                            <li>Pokud je potřeba importovat více <strong>fontů</strong>, stačí jejich názvy oddělit <strong>svislými čarami |</strong></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+            <br>&nbsp;<br>
+            <p>V příští lekci se podíváme na to, jak specifikovat a použít vlastní lokální <strong>fonty</strong>.</p>
+            <a href="/courses/cs/web-development/front-end/css/css101/08-units.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Jednotky délky</a><br>
+            <a href="/courses/cs/web-development/front-end/css/css101/10-custom-fonts.html" rel="next" hreflang="cs">Příští lekce: Vlastní fonty &gt;&gt;&gt;</a>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - doporučené možnosti ve formuláři &lt;datalist&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, skupina sloupců v tabulce html, &lt;datalist&gt; HTML tutorial, &lt;datalist&gt;, &lt;datalist&gt; html, element &lt;datalist&gt;, co je &lt;datalist&gt;, jak použít &lt;datalist&gt;, jak k formuláři přidat doporučené možnosti HTML">
+    <title>&lt;datalist&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;datalist&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;datalist&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;datalist&gt;</span></strong> je <strong>párový tag</strong> používaný pro vytváření nepovinných, doporučených možností pro <strong>pole</strong> ve <strong>formulářích</strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;datalist&gt;</span></strong> je <strong>párový tag</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">input</span> <span class="y">id</span>=<span class="r">&quot;hodnota&quot;</span>&gt;<br>
+                    &lt;<span class="b">datalist</span> <span class="y">id</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">atribut</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;&lt;<span class="b">/colgroup</span>&gt;<br>
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;datalist&gt;</span></strong> podporuje jen <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>. Nejdůležitějším z nich je bezesporu <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/id.html" hreflang="cs">id</a>&apos;</strong>, jehož <strong>hodnota</strong> se dá použít k propojení <strong>elementu</strong> s požadovaným <strong>polem</strong> ve <strong>formuláři</strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;dtalist&gt;</span></strong> lze sice v <strong>CSS</strong> stylovat, ale je to kompletně zbytečné. Velká část <strong>CSS vlastností</strong> u tohoto <strong>elementu</strong> nefunguje. Defaultně nemá žádný vzhled.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                <code class="exampleCode">
+                    <span class="cb">datalist</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">none</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2 style=>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;datalist&gt;</span></strong> se používá k vytváření doporučených možností u typů <strong>formulářových polí</strong>, kam může <strong>uživatel</strong> zadat libovolnou <strong>hodnotu</strong>. Lze ho použít v kombinaci s většinou typů <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/input.html" hreflang="cs">&lt;input&gt;</a></strong> - je potřeba jen dát <strong>elementu <span class="codeOutsidePage">&lt;datalist&gt;</span> atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/id.html" hreflang="cs">id</a>&apos;</strong> a <strong>elementu <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/input.html" hreflang="cs">&lt;input&gt;<a class="codeOutside" atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-list.html" hreflang="cs">list</a>&apos;</strong>, přičemž oba <strong>atributy</strong> budou mít stejné <strong>hodnotami</strong>.</p>
+            <p>Možnosti samotné se vytváří s <strong>potomky <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/option.html" hreflang="cs">&lt;option&gt;</a></strong>.</p>
+            <h3>U textových formulářů</h3>
+            <p>U <strong>textových formulářů</strong> se <strong>možnosti</strong> automaticky ukážou po kliknutí na <strong>formulářové pole</strong>. Když <strong>uživatel</strong> klikne &lpar;nebo jen přejede myší&rpar; na nějaké pole propojené s <strong><span class="codeOutsidePage">&lt;datalist&gt;</span></strong>, v mnoha <strong>prohlížečích</strong> se uvnitř toho <strong>pole</strong> ukáže obrácený trojúheleník - indikátor toho, že jsou nějaké nepovinné <strong>možnosti</strong> dostupné. Jako <strong>textové formuláře</strong> se v tomto kontextu berou:</p>
+            <ul>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-email.html" hreflang="cs">&lt;input&nbsp;type=&quot;email&quot;&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-number.html" hreflang="cs">&lt;input type=&quot;number&quot;&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-search.html" hreflang="cs">&lt;input type=&quot;search&quot;&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-tel.html" hreflang="cs">&lt;input type=&quot;tel&quot;&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-text.html" hreflang="cs">&lt;input type=&quot;text&quot;&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-url.html" hreflang="cs">&lt;input&nbsp;type=&quot;url&quot;&gt;</a></strong></li>
+            </ul>
+            <div class="example" title="Příklad &lt;datalist&gt; u textových formulářů.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>5<br>6<br>7<br>8<br>9</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;formular&quot;</span>&gt;Jazyk: &lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;text&quot;</span> <span class="y">list</span>=<span class="r">&quot;jazyky&quot;</span> <span class="y">name</span>=<span class="r">&quot;formular&quot;</span>&gt;&lt;<span class="b">br</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">datalist</span> <span class="y">id</span>=<span class="r">&quot;jazyky&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;Čeština&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;Slovenčina&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;English&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/datalist</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;submit&quot;</span>&gt;<br>
+                        &lt;<span class="b">/form</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 6em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/datalist-EXAMPLE.html" title="Příklad &lt;datalist&gt; u textových formulářů." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/datalist-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>U časových formulářů</h3>
+            <p>U <strong>časových formulářů</strong> se <strong>možnosti</strong> z <strong><span class="codeOutsidePage">&lt;datalist&gt;</span></strong> obvykle ukážou v menu, kde se vybírá datum a/nebo čas. Jako <strong>časové formuláře</strong> se berou:</p>
+            <ul>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-date.html" hreflang="cs">&lt;input&nbsp;type=&quot;date&quot;&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-datetime-local.html" hreflang="cs">&lt;input&nbsp;type=&quot;datetime-local&quot;&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-month.html" hreflang="cs">&lt;input&nbsp;type=&quot;month&quot;&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-time.html" hreflang="cs">&lt;input&nbsp;type=&quot;time&quot;&gt;</a></strong></li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-week.html" hreflang="cs">&lt;input&nbsp;type=&quot;week&quot;&gt;</a></strong></li>
+            </ul>
+            <div class="example" title="Příklad &lt;datalist&gt; u časových formulářů.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>5<br>6<br>7<br>8<br>9</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;formular&quot;</span>&gt;Datum: &lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;date&quot;</span> <span class="y">list</span>=<span class="r">&quot;datum&quot;</span> <span class="y">name</span>=<span class="r">&quot;formular&quot;</span>&gt;&lt;<span class="b">br</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">datalist</span> <span class="y">id</span>=<span class="r">&quot;datum&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;2023-10-31&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;2023-11-30&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;2023-12-31&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/datalist</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;submit&quot;</span>&gt;<br>
+                        &lt;<span class="b">/form</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 6em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/datalist-EXAMPLE02.html" title="Příklad &lt;datalist&gt; u časových formulářů." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/datalist-EXAMPLE02.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>U &lt;input type=&quot;range&quot;&gt;</h3>
+            <p>U <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-range.html" hreflang="cs">&lt;input&nbsp;type=&quot;range&quot;&gt;</a></strong> se <strong>hodnoty</strong> specifikované v <strong><span class="codeOutsidePage">&lt;datalist&gt;</span></strong> zobrazí jako body v rozmezí, které bude moct <strong>uživatel</strong> vybrat snadněji a precizněji.</p>
+            <div class="example" title="Příklad &lt;datalist&gt; u formuláře s rozsahem.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>5<br>6<br>7<br>8<br>9</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;formular&quot;</span>&gt;Hodnocení (0 - 100%): &lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;range&quot;</span> <span class="y">list</span>=<span class="r">&quot;rozsah&quot;</span> <span class="y">name</span>=<span class="r">&quot;formular&quot;</span> <span class="y">min</span>=<span class="r">&quot;0&quot;</span> <span class="y">max</span>=<span class="r">&quot;100&quot;</span>&gt;&lt;<span class="b">br</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">datalist</span> <span class="y">id</span>=<span class="r">&quot;rozsah&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;25&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;50&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;75&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/datalist</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;submit&quot;</span>&gt;<br>
+                        &lt;<span class="b">/form</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 6em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/datalist-EXAMPLE03.html" title="Příklad &lt;datalist&gt; u formuláře s rozsahem." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/datalist-EXAMPLE03.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>U &lt;input type=&quot;color&quot;&gt;</h3>
+            <p>U <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-color.html" hreflang="cs">&lt;input&nbsp;type=&quot;color&quot;&gt;</a></strong> se <strong>hodnoty</strong> specifikované v <strong><span class="codeOutsidePage">&lt;datalist&gt;</span></strong> zobrazí v menu vybírání barvy.</p>
+            <div class="example" title="Příklad &lt;datalist&gt; u formuláře s &lt;input type=&quot;color&quot;&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>5<br>6<br>7<br>8<br>9</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;formular&quot;</span>&gt;Barva: &lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;color&quot;</span> <span class="y">list</span>=<span class="r">&quot;barvy&quot;</span> <span class="y">name</span>=<span class="r">&quot;formular&quot;</span> <span class="y">min</span>=<span class="r">&quot;0&quot;</span> <span class="y">max</span>=<span class="r">&quot;100&quot;</span>&gt;&lt;<span class="b">br</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">datalist</span> <span class="y">id</span>=<span class="r">&quot;barvy&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;#ff0000&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;#00ff00&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">option</span> <span class="y">value</span>=<span class="r">&quot;#0000ff&quot;</span>&gt;&lt;<span class="b">/option</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/datalist</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;submit&quot;</span>&gt;<br>
+                        &lt;<span class="b">/form</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 6em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/datalist-EXAMPLE04.html" title="Příklad &lt;datalist&gt; u formuláře s &lt;input type=&quot;color&quot;&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/datalist-EXAMPLE04.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/input.html"><span class="codeOutside">&lt;input&gt;</span></a>: Jednotlivá <strong>pole formulářů</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/option.html"><span class="codeOutside">&lt;option&gt;</span></a>: Jednotlivé <strong>možnosti</strong> pro <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/select.html" hreflang="cs">&lt;select&gt;</a></strong> a <strong><span class="codeOutsidePage">&lt;datalist&gt;</span></strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/html103/01-cs-introduction.html">HTML 103</a>: Kurz o <strong>formulářích</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-seznamy/datalist-html-5-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: col - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_datalist.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;datalist&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;datalist&gt;: The HTML Data List element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/data.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;data&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/dd.html" rel="next" hreflang="cs">Příští element: &lt;dd&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

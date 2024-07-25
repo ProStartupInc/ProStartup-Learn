@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS 101, lekce 3 - základní CSS selektory, od typových, přes třídní a po univerzální.">
+    <meta name="keywords" content="HTML, ProStartup Learn, CSS 101, CSS kurz, CSS lekce, CSS selektory, základní selektory CSS, třídní selektory CSS, typové selektory CSS, typy selektorů CSS, univerzální selektor CSS, identifikátorové selektory">
+    <title> 3. Selektory | CSS 101 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinksNoCSS.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/web-development/front-end/css/sidenav-css101.shtml" -->
+    <div class="lessonContentArea">
+        <main class="lessonContent">
+            <div class="LessonNameCSS">
+                <p class="courseSign">CSS 101</p>
+                <h1>3. Selektory</h1>
+            </div>
+            <hr>
+            <nav class="lessonBreadcrumbCSS">
+                <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/courses.html" hreflang="cs">CSS</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/css101/01-introduction.html" hreflang="cs">CSS&nbsp;101</a>&nbsp;&gt; Lekce&nbsp;3
+            </nav>
+            <hr>
+            <div class="margin"></div>
+            <p>V <strong><a href="/courses/cs/web-development/front-end/css/css101/02-syntax.html" hreflang="cs" href="prev">minulé lekci</a></strong> jsme si řekli, že <strong>selektory</strong> jsou prvním prvkem <strong>CSS pravidel</strong> a specifikují, ke kterým <strong>HTML elementům</strong> se vztahují. V této lekci si řekneme, jaké základní typy <strong>selektorů</strong> vlastně existují.</p>
+            <h2>Typový selektor</h2>
+            <p>Nejjednodušší typ <strong>selektorů</strong>, který vybírá <strong>elementy</strong> specifikovaného typu. Zapisuje se v nich jen název požadovaného <strong>elementu</strong> &lpar;tedy vše, co se nachází mezi <strong>počáteční</strong> a <strong>uzavírací špičatou závorkou počátečního tagu</strong>&rpar;. <strong>Pravidlo</strong> v příkladě níže vykreslí všechny odstavce červené.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code>
+            <h2>Třídní selektor</h2>
+            <p>Typ <strong>selektorů</strong>, který vybírá <strong>elementy</strong> na základě <strong>hodnoty</strong> jejich <strong>globálního atributu &apos;<code><i><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/class.html" hreflang="cs">class</a></i></code>&apos;</strong>. Pokud se má <strong>pravidlo</strong> vztahovat na všechny <strong>elementy</strong> s jednou <strong>třídou</strong> nehledě na jejich typ, stačí jako <strong>selektor</strong> napsat tečku a hned po ní &lpar;bez mezery&rpar; název <strong>třídy</strong>. Příklad níže tedy obarví červeně všechny <strong>elementy</strong>, které mají <strong>třídu</strong> <i><code>červená</code></i>, nehledě na jejich typ.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.červená {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code><br><br>
+            <iframe height="140px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/03-selectors-EXAMPLE03.html" title="Příklad třídového selektoru.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/03-selectors-EXAMPLE03.html">zde</a>.</iframe>
+            <p>Pokud se má ale <strong>pravidlo</strong> vztahovat jen k jednomu typu <strong>elementů</strong>, před tečku v <strong>selektoru</strong> se musí napsat jeho název. Příklad níže obarví červeně všechny odstavce s <strong>třídou</strong> </i></code>červená</code></i>.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.červená {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code><br><br>
+            <iframe height="140px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/03-selectors-EXAMPLE04.html" title="Příklad třídového selektoru omezeného jen na odstavce.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/03-selectors-EXAMPLE04.html">zde</a>.</iframe>
+            <h2>Identifikátorový selektor</h2>
+            <p>Typ <strong>selektorů</strong> vybírající <strong>element</strong> na základě <strong>hodnoty</strong> jeho <strong>globálního atributu &apos;<code><i><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/id.html" hreflang="cs">id</a></i></code>&apos;</strong>. Vzhledem k tomu, že <strong>identifikátor</strong> &lpar;zkráceně <strong>ID</strong>&rpar; <em>musí</em> být unikátní &lpar;neboli se v <strong>dokumentu</strong> objevit pouze u jednoho <strong>elementu</strong>&rpar;, se tento typ <strong>selektorů</strong> zaměřuje jen na jeden specifický <strong>element</strong>. Má navíc větší prioritu než <strong>třídní</strong>.<br><strong>Identifikátorové selektory</strong> se zapisuje stejně jako <strong>třídní</strong>, jen se místo <strong>tečky</strong> píše <strong>křížek #</strong>. Příklad níže obarví <strong>element</strong> s <strong>ID</strong> <i><code>červená</code></i> červeně.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#červená {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code>
+            <p>Stejně jako u <strong>třídních selektorů</strong> lze opět specifikovat, ke kterému typu <strong>elementů</strong> se bude ten <strong>identifikátorový</strong> vztahovat. Avšak vzhledem k tomu, že každé <strong>ID</strong> je unikátní, je tohle zbytečné.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p#červená {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code>
+            <p><strong>Identifikátorové selektory</strong> mají <em>vyšší</em> prioritu než <strong>třídní</strong>. To znamená, že pokud jedno <strong>pravidlo</strong> s <strong>třídním selektorem</strong> říká, že má být <strong>element</strong> modrý a druhé <strong>pravidlo</strong> s <strong>identifikátorovým selektorem</strong> říká, že by měl být červený, <strong>prohlížeč</strong> se bude řídit tím <strong>identifikátorovým</strong>, i kdyby se nacházel na začátku <strong>stylesheetu</strong> před <strong>pravidlem</strong> se <strong>selektorem třídním</strong>.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p#červená {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.modrá {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}    
+            </code><br><br>
+            <iframe height="50px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/03-selectors-EXAMPLE.html" title="Červený odstavec.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/03-selectors-EXAMPLE.html">zde</a>.</iframe>
+            <h2>Skupinový selektor</h2>
+            <p>Dejme tomu, že potřebujete, aby červenou barvu měly všechny odstavce, nadpisy <strong><code><a href="/courses/cs/web-development/front-end/html/reference/tag/headings.html" hreflang="cs">h2</a></code></strong> a <strong>elementy</strong> s <strong>třídou</strong> <code><i>červená</i></code>. Je možné vytvořit tři <strong>pravidla</strong>, která toho dosáhnou:</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h2 {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.červená {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}            
+            </code>
+            <p>Tento způsob se ale příliš zdlouhavý a zabírá zbytečně mnoho místa. Místo tří <strong>pravidel</strong> lze naštěstí vytvořit jen jedno, kde jsou všechny <strong>selektory</strong> vedle sebe, ale odděleny čárkou.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p, h1, .červená {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code>
+            <p><strong>Selektorů</strong> lze takhle seskupit neomezeně mnoho.</p>
+            <h2>Univerzální selektor</h2>
+            <p><strong>Univerzální selektor</strong> je <strong>selektor</strong>, který vybere všechny <strong>elementy</strong> v <strong>dokumentu</strong>. Zapisuje se se znakem hvězdičky <strong>*</strong>.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code><br><br>
+            <iframe height="110px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/03-selectors-EXAMPLE02.html" title="Dokument se všemi elementy červeně.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/03-selectors-EXAMPLE02.html">zde</a>.</iframe>
+            <h2>Shrnutí</h2>
+            <ul>
+                <li><strong>Typové selektory</strong> se vztahují k nějakému typu <strong>HTML elementů</strong>. <strong>Selektorem</strong> je název požadovaného <strong>elementu</strong> &lpar;např. <code>p</code>&rpar;.</li>
+                <li><strong>Třídní selektory</strong> se týkají nějaké <strong>HTML třídy</strong>. <strong>Selektorem</strong> je tečka, po které následuje název <strong>třídy</strong> &lpar;např. <code>.červená</code>&rpar;. Před tečkou se může nacházet název <strong>elementu</strong>, na který <strong>selektor</strong> omezit &lpar;např. <code>p.červená</code>&rpar;.</li>
+                <li><strong>Identifikátorové selektory</strong> platí na nějaké specifické <strong>ID elementu</strong>. Mají vyšší prioritu než <strong>třídní</strong>. <strong>Selektorem</strong> je symbol křížku <strong>#</strong>, po kterém následuje samotné <strong>ID</strong> &lpar;např. <code>#červená</code>&rpar;.</li>
+                <li><strong>Skupinový selektor</strong> je vlastně více <strong>selektorů</strong> sebe; jsou jen odděleny čárkou &lpar;např. <code>p, h2, #červená, .modrá</code>&rpar;.</li>
+                <li><strong>Univerzálním selektorem</strong> je znak hvězdičky <strong>*</strong>. Vybírá všechny <strong>elementy</strong> v <strong>dokumentu</strong>.</li>
+            </ul>
+            <br>&nbsp;<br>
+            <p>V následující lekci se pustíme vrátíme krátce do <strong>HTML</strong> - povíme si o <strong>elementech &lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/div.html" hreflang="cs">div</a>&gt;</strong> a <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">span</a>&gt;</strong>.</p>
+            <a href="/courses/cs/web-development/front-end/css/css101/02-syntax.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Syntaxe</a><br>
+            <a href="/courses/cs/web-development/front-end/css/css101/04-div-span.html" rel="next" hreflang="cs">Příští lekce: &lt;div&gt; a &lt;span&gt; &gt;&gt;&gt;</a>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

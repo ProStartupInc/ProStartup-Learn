@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vkládání videí na stránku z YouTubu">
+    <meta name="keywords" content="HTML, ProStartup Learn, HTML 102, HTML kurz, HTML lekce, atributy, elementy, tagy, iframe, &lt;iframe&gt;, &lt;iframe&gt; z youtube, jak použít iframe na vkládání videí z youtubu, vkládání videí, externí videa, vkládání videí na stránku tutoriál, vkládání videí na web, vkládání youtube videí na web, jak z YoUTubu vložit hudbu, YouTube, jak embedovat videa">
+    <title>YouTube | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html102.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Multimédia - Videa</p>
+            <h1>YouTube</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; Multimédia&nbsp;&gt; Videa&nbsp;&gt;<a href="/courses/cs/web-development/front-end/html/info-multimedia/video-youtube.html" hreflang="cs">YouTube</a>
+        </nav>
+        <main class="lessonContent">
+            <p  ><strong>YouTube</strong> je nejpopulárnější platformou pro sdílení <strong>videí</strong> na světě. Je velmi jednoduché ho používat a je navíc zdarma, bez limitací na nahraná <strong>videa</strong>.</p>
+            <p>V této lekci si ukážeme, jak z této platformy na <strong>stránku</strong> vkládat <strong>videa</strong>.</p>
+            <h2>Vložení videa přes menu &quot;sdílet&quot;</h2>
+            <p>Tohle je nejjednodušší způsob, jak z <strong>YouTubu</strong> vložit <strong>video</strong>.</p>
+            <div class="photoGuideContainer">
+                <img class="photoGuide" style="grid-column: 1 / 2; grid-row: 1 / 2;" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-01.jpg" loading="lazy" alt="Hlavní strana youtube.com">
+                <p     class="noIndent" style="grid-column: 1 / 2; grid-row: 2 / 3;">1. Běžte na stránku <a rel="external" href="https://youtube.com" rel="external">youtube.com</a> a vyhledejte si video, které chcete vložit na <strong>stránku.</strong></p>
+                <img class="photoGuide" style="grid-column: 2 / 3; grid-row: 1 / 2;" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-02.jpg" loading="lazy" alt="YouTube - výsledky vyhledávání &quot;Never Gonna Give You Up&quot;">
+                <p     class="noIndent" style="grid-column: 2 / 3; grid-row: 2 / 3;">2. Klikněte na video, které chcete vložit na <strong>stránku</strong>.</p>
+                <img class="photoGuide" style="grid-column: 1 / 2; grid-row: 3 / 4;" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-03.jpg" loading="lazy" alt="YouTube - video &quot;Never Gonna Give You Up">
+                <p     class="noIndent" style="grid-column: 1 / 2; grid-row: 4 / 5;">3. Klikněte na tlačítko <strong>sdílet</strong>.</p>
+                <img class="photoGuide" style="grid-column: 2 / 3; grid-row: 3 / 4;" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-04.jpg" loading="lazy" alt="YouTube - nabídka &quot;sdílení&quot;">
+                <p     class="noIndent" style="grid-column: 2 / 3; grid-row: 4 / 5;">4. Klikněte na položku <strong>vložit</strong>.</p>
+                <img class="photoGuide" style="grid-column: 1 / 2; grid-row: 5 / 6;" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-05.jpg" loading="lazy" alt="Spotify - vkládání přehrávače">
+                <p     class="noIndent" style="grid-column: 1 / 2; grid-row: 6 / 7;">5. Klikněte na tlačítko <strong>kopírovat</strong>.</p>
+                <img class="photoGuide" style="grid-column: 2 / 3; grid-row: 5 / 6;" src="/courses/cs/web-development/front-end/html/html102/pictures/07-video-external-06.jpg" loading="lazy" alt="Spotify - kopírování kódu přehrávače">
+                <p     class="noIndent" style="grid-column: 2 / 3; grid-row: 6 / 7;">6. <strong>Kód iframu</strong> je zkopírován a můžete ho vložit na <strong>stránku</strong>.</p>
+            </div>
+            <div class="example" title="Příklad vložení YouTube videa na stránku s iframem">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Vložení YouTube videa přes &quot;sdílet&quot;</h3>
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">width</span>=<span class="r">&quot;560&quot;</span> <span class="y">height</span>=<span class="r">&quot;315&quot;</span> <span class="y">src</span>=<span class="r">&quot;https://www.youtube.com/embed/dQw4w9WgXcQ&quot;</span> <span class="y">title</span>=<span class="r">&quot;YouTube video player&quot;</span> <span class="y">frameborder</span>=<span class="r">&quot;0&quot;</span> <span class="y">allow</span>=<span class="r">&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot;</span> <span class="y">allowfullscreen</span>&gt;</iframe>
+                    </div>
+                </div>
+                <div class="exampleIframe">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/html102/07-video-external-example01.html" title="Příklad vložení YouTube videa na stránku s iframem"></iframe>
+                </div>
+            </div>
+
+            <br>
+            <p>A tohle by k tomuto kurzu mohlo být vše &lpar;alespoň co se týče základů&rpar;. V příští lekci si řekneme, jak pokračovat.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html102/06-video-element.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Element &lt;video&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html102/08-next.html" rel="next" hreflang="cs">Příští lekce: Jak pokračovat? &gt;&gt;&gt;</a>
+            </div>
+            </div>
+         </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

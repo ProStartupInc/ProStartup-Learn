@@ -1,0 +1,20 @@
+<div class="sidenavWrapper">
+    <nav class="sidenavWrapper">
+        <ul class="sidenav">
+            <li class="sidenavSection">CSS 101</li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/01-introduction.html" hreflang="cs">1. Úvod</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/02-box-model.html" hreflang="cs">2. Box model</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/03-border-outline.html" hreflang="cs">3. Okraje a obrysy</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/04-margin-padding.html" hreflang="cs">4. Vnější a vnitřní okraje</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/05-height-width.html" hreflang="cs">5. Výška a šířka elementů</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/06-box-sizing.html" hreflang="cs">6. Box-Sizing</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/07-display.html" hreflang="cs">7. Vykreslování</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/08-position.html" hreflang="cs">8. Typy pozic</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/09-positioning.html" hreflang="cs">9. Pozicování</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/10-z-index.html" hreflang="cs">10. Z-Index</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/11-overflow.html" hreflang="cs">11. Přetečení</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/12-lists.html" hreflang="cs">12. Plovoucí elementy</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css102/14-next.html" hreflang="cs">13. Jak pokračovat?</a></li>
+        </ul>
+    </nav>
+</div>

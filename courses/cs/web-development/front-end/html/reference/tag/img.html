@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - obrázky &lt;img&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, &lt;img&gt; HTML tutorial, &lt;img&gt;, &lt;img&gt; html, element &lt;img&gt;, co je &lt;img&gt;, jak použít &lt;img&gt;, jak vkládat na web obrázky, obrázky html">
+    <title>&lt;img&gt;| ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;img&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html" hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;img&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;img&gt;</span></strong> &lpar;<b>im</b>a<b>g</b>e&rpar; je <strong>element</strong> používaný k vkládání <strong>obrázků</strong> do <strong>dokumentu</strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;img&gt;</span></strong> je <strong>nepárový tag</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">img</span> <span class="y">src</span>=<span class="r">&quot;URL&quot;</span> <span class="y">atribut</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;img&gt;</span></strong> má několik <strong>vlastních atributů</strong>. K jeho správnému fungování je ale potřeba jen <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-src.html" hreflang="cs">src</a>&apos;</strong>, který určuje lokaci vkládaného <strong>obrázku</strong>. Měl by se také vždy zahrnovat <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-alt.html" hreflang="cs">alt</a>&apos;</strong>.</p>
+            <table>
+                <tr>
+                    <th>Název</th>
+                    <th>Povinné?</th>
+                    <th>Popis</th>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-alt.html" hreflang="cs">alt</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje text, který se zobrazí v případě, že se obrázek nenačte. Jako hodnotu by měl obsahovat jeho popis; pokud je hodnota prázdná, obrázek je prohlížečem brán jen jako dekorativní.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-crossorigin.html" hreflang="cs">crossorigin</a></th>
+                    <td>Ne</td>
+                    <td>Určuje, zda bude obrázek získán za pomoci požadavku <abbr title="Cross-origin resource sharing">CORS</abbr>.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-decoding.html" hreflang="cs">decoding</a></th>
+                    <td>Ne</td>
+                    <td>Radí prohlížeči, zda provést dekódování obrázku.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-elementtiming.html" hreflang="cs">elementtiming</a></th>
+                    <td>Ne</td>
+                    <td>Označí element pro PerformanceElementTiming API.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-fetchpriority.html" hreflang="cs">fetchpriority</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje relativní prioritu obrázku během načítání.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-height-and-width.html" hreflang="cs">height</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje výšku obrázku v pixelech.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-ismap.html" hreflang="cs">ismap</a></th>
+                    <td>Ne</td>
+                    <td>Booleanovský atribut. Pokud je přítomen, tak může být obrázek použit jako obrázková mapa používaná například elementy <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/map.html" hreflang="cs">&lt;map&gt;</a></strong> a <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/area.html" hreflang="cs">&lt;area&gt;</a></strong>.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-loading.html" hreflang="cs">loading</a></th>
+                    <td>Ne</td>
+                    <td>Říká prohlížeči, jak obrázek načíst.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-referrerpolicy.html" hreflang="cs">referrerpolicy</a></th>
+                    <td>Ne</td>
+                    <td>???.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-sizes.html" hreflang="cs">sizes</a></th>
+                    <td>Ne</td>
+                    <td>Určuje velikosti obrázku pro různé velikosti obrazovek.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-src.html" hreflang="cs">src</a></th>
+                    <td>Ano</td>
+                    <td>Specifikuje umístění vkládaného obrázku.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-srcset.html" hreflang="cs">srcset</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje více umístění vkládaného obrázku. Prohlížeče vyberou během načítání stránky ideální soubor například na základě rychlosti připojení.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-height-and-width.html" hreflang="cs">width</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje šířku obrázku v pixelech.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-srcset.html" hreflang="cs">usemap</a></th>
+                    <td>Ne</td>
+                    <td>Určuje, které obrázkové mapy je vlastně obrázek součástí.</td>
+                </tr>
+            </table>
+            <p><strong>Element</strong> také podporuje <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;img&gt;</span></strong> je v <strong>CSS</strong> stylovatelný. Defaultně je o <strong>řádkový blokový element</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                <code class="exampleCode">
+                    <span class="cb">html</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">inline-block</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;img&gt;</span></strong> se používá na vkládání jak <strong>lokálních</strong>, tak <strong>externích obrázků</strong> do <strong>HTML dokumentu</strong>.</p>
+            <div class="example" title="Příklad &lt;img&gt;">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">img</span> <span class="y">src</span>=<span class="r">&quot;/courses/cs/web-development/front-end/html/html101/pictures/08-images-02.webp&quot;</span> <span class="y">alt</span>=<span class="r">&quot;Logo HTML.&quot;</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 10.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/img-EXAMPLE.html" title="Příklad &lt;img&gt;" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/img-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>Jako obrázková mapa</h3>
+            <p><strong>Obrázky</strong> lze použít jako <strong>obrázkové mapy</strong> &lpar;tj. <strong>obrázky</strong>, jejichž jednotlivé části obsahují <strong>odkazy</strong>&rpar;.</p>
+            <p>K vytvoření <strong>obrázkové mapy</strong> je potřeba mít <strong>element <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/map.html" hreflang="cs">&lt;map&gt;</a></strong>, který bude mít <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs">globální atribut</a> &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/id.html" hreflang="cs">id</a>&apos;</strong> s nějakou libovolnou <strong>hodnotou</strong>. Poté je třeba nějaký vložený <strong>obrázek</strong> s <strong>atributem &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-usemap.html" hreflang="cs">usemap</a>&apos;</strong>, jehož <strong>hodnota</strong> bude stejná, jako u <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/id.html" hreflang="cs">id</a>&apos;</strong> v <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/map.html" hreflang="cs">&lt;map&gt;</a></strong>. Nakonec stačí do <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/map.html" hreflang="cs">&lt;map&gt;</a></strong> vložit jednoho či více <strong>potomků <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/area.html" hreflang="cs">&lt;area&gt;</a></strong> a přizpůsobit je k použití.</p>
+            <div class="example" title="Příklad obrázkové mapy">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">img</span> <span class="y">src</span>=<span class="r">&quot;/graphics/priklad.webp&quot;</span> <span class="y">usemap</span>=<span class="r">&quot;#img&quot;</span> <span class="y">alt</span>=<span class="r">&quot;Obrázek rozdělen na dvě barevné plochy - vpravo je červená, vlevo modrá.&quot;</span>&gt;<br>
+                        &lt;<span class="b">map</span> <span class="y">id</span>=<span class="r">&quot;img&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">area</span> <span class="y">shape</span>=<span class="r">&quot;rect&quot;</span> <span class="y">coords</span>=<span class="r">&quot;0,150,150,0&quot;</span> <span class="y">href</span>=<span class="r">&quot;https://example.com&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">area</span> <span class="y">shape</span>=<span class="r">&quot;rect&quot;</span> <span class="y">coords</span>=<span class="r">&quot;151,150,300,0&quot;</span> <span class="y">href</span>=<span class="r">&quot;https://google.com&quot;</span>&gt;<br>
+                        &lt;<span class="b">/map</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 12em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/img-EXAMPLE02.html" title="Příklad obrázkové mapy" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/img-EXAMPLE02.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>V kombinaci s &lt;figure&gt;</h3>
+            <p><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/figure.html" hreflang="cs">&lt;figure&gt;</a></strong> označuje obsah, který je samostatný - tedy že není na <strong>stránce</strong> tím hlavním, ale je v ní zmíněn a jeho pozice nemá na ni žádný vliv. Dá se použít jako <strong>rodičovský element</strong> pro <strong>obrázky</strong>, které se nachází například v nějakém <strong>cestovním blogu</strong> nebo <strong>článku</strong> na Wikipedii, kde není nutné dbát na jejich pořadí.</p>
+            <div class="example" title="Příklad obrázku v &lt;figure&gt;">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">figure</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">img</span> <span class="y">src</span>=<span class="r">/graphics/longyarbyen.jpg</span> <span class="y">alt</span>=<span class="r">&quot;Fotografie Longyearbyenu, hlavního města Špicberk.&quot;</span> <span class="y">height</span>=<span class="r">&quot;200&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">figcaption</span>&gt;Fotografie Longyearbyenu &lpar;2008&rpar;&lt;<span class="b">br</span>&gt;Zdroj: &lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;https://commons.wikimedia.org/wiki/User:Mateusz_War.&quot;</span>&gt;&lt;<span class="b">/a</span>&gt;; pod licencí CC-BY-SA-3.0,2.5,2.0,1.0&lt;<span class="b">/figcaption</span>&gt;<br>
+                        &lt;<span class="b">/figure</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;Longyearbyen je hlavní a zároveň největší město norského souostroví Špicberky. Žije tam přes 1,5 tisíců obyvatel, což z něj činí nejsevernější lidské osídlení s populací přes 1000. Město je spojené s okolním světem hlavně přes své letiště.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 21.4em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/img-EXAMPLE03.html" title="Příklad obrázku v &lt;figure&gt;" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/img-EXAMPLE03.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>Jako fallback u &lt;picture&gt;</h3>
+            <p><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/picture.html" hreflang="cs">&lt;picture&gt;</a></strong> je moderní alternativa k <strong><span class="codeOutisdePage">&lt;img&gt;</span></strong> nabízející více funkcí a potenciálně lepší <strong>uživatelský zážitek</strong>. Nicméně, nemusí být podporován ve starších <strong>prohlížečích</strong>. V tut chvíli na scénu nastupuje <strong><span class="codeOutsidePage">&lt;img&gt;</span></strong> jako <strong>potomek</strong> - <strong>prohlížeče</strong> nepodporující <strong><span class="codeOutsidePage">&lt;picture&gt;</span></strong> mohou místo toho použít <strong><span class="codeOutsidePage">&lt;img&gt;</span></strong>.</p>
+            <div class="example" title="Příklad &lt;img&gt; v &lt;picture&gt;">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">picture</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">source</span> <span class="y">src</span>=<span class="r">/graphics/longyarbyen.jpg</span> <span class="y">type</span>=<span class="r">&quot;image/jpeg&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">img</span> <span class="y">src</span>=<span class="r">&quot;/graphics/longyarbyen.jpg&quot;</span> <span class="y">height</span>=<span class="r">&quot;200&quot;</span>&gt;<br>
+                        &lt;<span class="b">/picture</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 16em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/img-EXAMPLE04.html" title="Příklad &lt;img&gt; v &lt;picture&gt;" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/img-EXAMPLE04.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Formáty souborů</h2>
+            <p><strong><a rel="external" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element" hreflang="en">Oficiální specifikace HTML</a></strong> neobsahuje žádný seznam podporováných <strong>formátů obrázků</strong>, protože je to spíše věc <strong>prohlížečů</strong>. Níže je <strong>tabulka</strong> s těmi nejpoužívanějšími <strong>formáty</strong>.</p>
+            <table title="Tabulka s formáty obrázků a jejich podporou v prohlížečích.">
+                <tr>
+                    <th>Přípona</th>
+                    <th>Chrome</th>
+                    <th>Firefox</th>
+                    <th>Edge</th>
+                    <th>Opera</th>
+                    <th>Safari</th>
+                </tr>
+                <tr>
+                    <th>.apng</th>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                </tr>
+                <tr>
+                    <th>.avif</th>
+                    <td>Ano</td>
+                    <td><abbr title="Podpora jen pro statické obrázky, animace nepodporovány">Částečná</abbr></td>
+                    <td>Ne</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                </tr>
+                <tr>
+                    <th>.bmp</th>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                </tr>
+                <tr>
+                    <th>.cur</th>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                </tr>
+                <tr>
+                    <th>.gif</th>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                </tr>
+                <tr>
+                    <th>.ico</th>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                </tr>
+                <tr>
+                    <th>.jpeg</th>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                </tr>
+                <tr>
+                    <th>.png</th>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                </tr>
+                <tr>
+                    <th>.svg</th>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                </tr>
+                <tr>
+                    <th>.tiff</th>
+                    <td>Ne</td>
+                    <td>Ne</td>
+                    <td>Ne</td>
+                    <td>Ne</td>
+                    <td>Ano</td>
+                </tr>
+                <tr>
+                    <th>.webp</th>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                    <td>Ano</td>
+                </tr>
+            </table>
+            <p>Díky lepší a méně ztrátové kompresi i menší velikosti souboru je lepší používat <strong>.webp</strong> a <strong>.avif</strong> nad <strong>.jpg</strong> a <strong>.gif</strong>. <strong>.png</strong> se hodí v případě, že by měl být <strong>obrázek</strong> &lpar;například loga&rpar; bezztrátový.</p>
+            <p>Více informací zjistíte na <strong>stránce <a href="/courses/cs/networking/protocols/http/mime-types/images.html" hreflang="cs">MIME typy obrázků</a></strong>.</p>
+            <h2>Výkon</h2>
+            <p><strong>Obrázků</strong> si můžete dát do <strong>HTML dokumentu</strong> tolik, kolik chcete. Každý ale prodlužuje dobu načítání, takže je lepší jich nevkládat na jednu <strong>stránku</strong> příliš moc.</p>
+            <h2>Přístupnost</h2>
+            <p>Během vkládání <strong>obrázků</strong> na <strong>stránku</strong> je nutné mít na paměti několik věcí.</p>
+            <h3>Atribut &apos;alt&apos;</h3>
+            <p><strong>Atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-alt.html" hreflang="cs">alt</a>&apos;</strong> by se měl zahrnovat vždy i přesto, že ke správné funkci <strong>elementu</strong> není potřebný. Měl by obsahovat popis <strong>obrázku</strong>, ať už pro <strong>čtečky obrazovek</strong> nebo <strong>prohlížeče</strong>, které je nezobrazují.</p>
+            <p>Popis &lpar;tedy <strong>hodnota</strong>&rpar; by měl vystihovat obsah <strong>obrázku</strong> - neměl by jen sdělovat, že jde o <strong>obrázek</strong>. Výjimka se dá udělat u pouze čistě <strong>dekorativních obrázků</strong>, u kterých by ale měl být popis prázdný.</p>
+            <p>Pokud není <strong>atribut</strong> přítomen, některé <strong>čtečky obrazovek</strong> místo jeho <strong>hodnoty</strong> přečtou název souboru <strong>obrázku</strong>, což může být poněkud matoucí, pokud název nereprezentuje obsah.</p>
+            <h3>Atribut &apos;title&apos;</h3>
+            <p><strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs">Globální atribut</a> &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/title.html" hreflang="cs">title</a>&apos;</strong> by <em>neměl</em> nahrazovat <strong>atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-alt.html" hreflang="cs">alt</a>&apos;</strong>, co se týče popisu. Neměl by také mít stejnou <strong>hodnotu</strong> - může to zmást <strong>uživatele</strong>, když <strong>čtečka obrazovky</strong> přečte nejdříve <strong>hodnotu</strong> jednoho a poté druhého <strong>atributu</strong>, přičemž obě budou stejné.</p>
+            <p><strong>Atribut</strong> by také neměl nahrazovat roli titulku. Zatímco může obsahovat nějaké dodatečné informace, nepředpokládejte, že si je přečte každý <strong>uživatel</strong> - někteří používají mobilní zařízení, zatímco jiní jen klávesnici. Obě možnosti mají společnou jednu věc - nejsou s <strong>atributem</strong> kompatibilní.</p>
+            <h3>.svg a VoiceOver</h3>
+            <p>Ve <strong>čtečce obrazovky VoiceOver</strong> od <strong>Applu</strong> existuje <strong>bug</strong> týkající se <strong>formátu souboru .svg</strong> - <strong>čtečka</strong> není schopna si ho správně interpretovat. Pro spravení tohoto problému stačí použít <strong>atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/2-role-aria.html" hreflang="cs">role</a>&apos;</strong> s <strong>hodnotou &quot;<span class="codeOutsidePage">img</span>&quot;</strong>.</p>
+            <h2>Alternativy</h2>
+            <p>K <strong><span class="codeOutsidePage">&lt;img&gt;</span></strong> existuje alternativa ve formě <strong>elementu <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/picture.html" hreflang="cs">&lt;picture&gt;</a></strong>, který je modernější a nabízí více funkcí &lpar;například možnost nabízení více <strong>formátů souborů</strong>&rpar;.</p>
+            <!--#include virtual="/SSI/cs/img-vs-picture.shtml" -->
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/09-images.html">HTML 101, lekce 9</a>: Základy <strong>obrázků</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/area.html"><span class="codeOutside">&lt;area&gt;</span></a>: Vytváření <strong>odkazů</strong> v <strong>obrázkových mapách</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/map.html"><span class="codeOutside">&lt;map&gt;</span></a>: <strong>Obrázková mapa</strong></li>
+                <li><a href="/courses/cs/networking/protocols/http/mime-types/images.html" hreflang="cs">Seznam formátů souborů u obrázků</a>: Seznam <strong>formátů souborů obrázků</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements-categorized.html#multimedia">Kategorizovaný seznam všech elementů</a>: <strong>Multimédia</strong></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-multimedia/img-html-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: img - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_img.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;img&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;img&gt;: The Image Embed element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/iframe.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;iframe&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/input.html" rel="next" hreflang="cs">Příští element: &lt;input&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

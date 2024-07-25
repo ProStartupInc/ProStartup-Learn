@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML 102, lekce 4 - Jak na stránku vkládat audio s pomocí elementu &lt;audio&gt;?">
+    <meta name="keywords" content="HTML, ProStartup Learn, HTML 102, HTML kurz, HTML lekce, atributy, elementy, tagy, video HTML, video, &lt;video&gt;, základy &lt;video&gt;, jak dát na web video, vkládání videí na stránku, video HTML tutoriál">
+    <title>6. Element &lt;video&gt; | HTML 102 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html102.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">HTML 102</p>
+            <h1>6. Element &lt;video&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/html102/01-cs-introduction.html" hreflang="cs">HTML&nbsp;102</a>&nbsp;&gt; Lekce&nbsp;6
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p>V <a href="/courses/cs/web-development/front-end/html/html102/05-audio-external.html" hreflang="cs" rel="prev">minulé lekci</a> jsme se podívali na to, jak na <strong>stránku</strong> vložit <strong>externí audio stopy</strong>. V této lekci se podíváme na to, jak na na ni dát <strong>lokální videa</strong>.</p>
+            <h2>Element &lt;video&gt;</h2>
+            <p><strong>Videa</strong> se na <strong>stránku</strong> vkládají s <strong>párovým tagem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/video.html" hreflang="cs">&lt;video&gt;</a></strong>. Ten je strukturou velmi podobný <strong>elementu <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/audio.html" hreflang="cs">&lt;audio&gt;</a></strong>, se kterým sdílí několik <strong>atributů</strong>:</p>
+            <ul>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-controls.html" hreflang="cs">controls</a>&apos;</strong>: <strong>Booleanovský atribut</strong>, který přidává <strong>ovládací prvky</strong> k <strong>přehrávači audia</strong>.</li>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-src.html" hreflang="cs">src</a>&apos;</strong>: Specifikuje <strong>umístění souboru</strong>.</li>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-muted.html" hreflang="cs">muted</a>&apos;</strong>: <strong>Booleanovský atribut</strong>, jež nastaví výchozí hlasitost <strong>videa</strong> na nulu.</li>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-autoplay.html" hreflang="cs">autoplay</a>&apos;</strong>: <strong>Booleanovský atribut</strong>, jež automaticky spustí přehrávání <strong>videa</strong>. Na <strong>Chromium prohlížečích</strong> funguje jen v kombinaci s <strong>atributem &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-muted.html" hreflang="cs">muted</a>&apos;</strong></li>
+            </ul>
+            <br>
+            <p>Vedle těchto <strong>atributů</strong> ale přibylo několik nových:</p>
+            <ul>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-height-and-width.html" hreflang="cs">height</a>&apos;</strong>: Definuje výšku <strong>přehrávače videa</strong> v pixelech. Když se nespecifikuje ani <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-height-and-width.html" hreflang="cs">height</a>&apos;</strong>, ani <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-height-and-width.html" hreflang="cs">width</a>&apos;</strong>, tak <strong>prohlížeč</strong> zobrazí <strong>video</strong> ve stejné velikosti, jako je jeho rozlišení. To může způsobit potíže s <strong>rozložením</strong>.</li>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-height-and-width.html" hreflang="cs">width</a>&apos;</strong>: Definuje šířku <strong>přehrávače videa</strong> v pixelech.</li>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-poster.html" hreflang="cs">poster</a>&apos;</strong>: Určuje, jaký <strong>soubor</strong> bude použit na <strong>náhled videa</strong> &lpar;<strong>obrázek</strong>, jež se zobrazí před přehráním <strong>videa</strong>&rpar;. <strong>Hodnotou</strong> je <strong>umístění souboru</strong> nebo jeho <strong>URL</strong>. Pokud se nepoužije, jako <strong>náhled</strong> se použije <u>první</u> <strong>snímek videa</strong>.</li>
+            </ul>
+            <br>
+            <p>Stejně jako v případě <strong>iframů</strong> by se měla mezi <strong>počáteční</strong> a <strong>koncový tag</strong> dát zpráva pro případ, že <strong>uživatelův prohlížeč</strong> nepodporuje <strong>element <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/video.html" hreflang="cs">&lt;video&gt;</a></strong>.</p>
+            <div class="example" title="Příklad elementu &lt;video&gt;">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Element &lt;video&gt;</h3>
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">video</span> <span class="y">controls</span> <span class="y">src</span>=<span class="r">&quot;/videos/ocean-waves-01.mp4&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Omlouváme se, ale váš prohlížeč bohužel nepodporuje element video :&lpar;<br>
+                        &lt;<span class="b">/video</span>&gt;<br>
+                        &lt;<span class="b">br</span>&gt;<br>
+                        &lt;<span class="b">video</span> <span class="y">controls</span> <span class="y">src</span>=<span class="r">&quot;/videos/ocean-waves-01.mp4&quot;</span> <span class="y">autoplay</span> <span class="y">muted</span> <span class="y">height</span>=<span class="r">&quot;150&quot;</span> <span class="y">width</span>=<span class="r">&quot;300&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Omlouváme se, ale váš prohlížeč bohužel nepodporuje element audio :&lpar;<br>
+                        &lt;<span class="b">/video</span>&gt;<br>
+                        &lt;<span class="b">br</span>&gt;<br>
+                        &lt;<span class="b">video</span> <span class="y">controls</span> <span class="y">src</span>=<span class="r">&quot;/videos/ocean-waves-01.mp4&quot;</span> <span class="y">height</span>=<span class="r">&quot;150&quot;</span> <span class="y">width</span>=<span class="r">&quot;300&quot;</span> <span class="y">poster</span>=<span class="r">&quot;/graphics/ocean-waves-01.jpg&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Omlouváme se, ale váš prohlížeč bohužel nepodporuje element audio :&lpar;<br>
+                        &lt;<span class="b">/video</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleExplanationContainer">
+                    <div class="exampleExplanationLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11</div>
+                    <div class="exampleExplanation">
+                        Počáteční tag &lt;video&gt; s booleanovským atributem &apos;controls&apos;, jež přidává ovládání; a atributem &apos;src&apos;, jež odkazuje na lokální soubor &quot;ocean-waves-01.mp4&quot;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Text, jež se zobrazí v případě, že se video soubor nenačte<br>
+                        Koncový tag &lt;video&gt;<br>
+                        Nový řádek<br>
+                        Počáteční tag &lt;video&gt; s booleanovským atributem &apos;controls&apos;, jež přidává ovládání; atributem &apos;src&apos;, jež odkazuje na lokální soubor &quot;ocean-waves-01.mp4&quot;; booleanovským atributem &apos;autoplay&apos;; booleanovským atributem &apos;muted&apos;; atributem &apos;height&apos; s hodnotou &quot;150&quot;; a atributem &apos;width&apos; s hodnotou &quot;300&quot;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Text, jež se zobrazí v případě, že se video nenačte<br>
+                        Koncový tag &lt;video&gt;<br>
+                        Nový řádek<br>
+                        Počáteční tag &lt;video&gt; s booleanovským atributem &apos;controls&apos;, jež přidává ovládání; atributem &apos;src&apos;, jež odkazuje na lokální soubor &quot;ocean-waves-01.mp4&quot;; výškou &quot;150&quot; pixelů; šířkou &quot;300&quot; pixelů; a atributem &apos;poster&apos;, jež odkazuje na lokální soubor &quot;ocean-waves-01.jpg&quot;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Text, jež se zobrazí v případě, že se video nenačte<br>
+                        Koncový tag &lt;video&gt;
+                    </div>
+                </div>
+                <div class="exampleIframe">
+                    <iframe style="height: 15em;" class="exampleIframe" src="/courses/cs/web-development/front-end/html/html102/06-video-element-example01.html" title="Příklad tří elementů &lt;audio&gt; - jeden téměř bez atributů, druhý s atributy a třetí s atributem &apos;poster&apos;" >Váš prohlížeč nepodporuje element iframe D:</iframe>
+                </div>
+            </div>
+            <p><b>Poznámka</b>: Video bylo vytvořeno <a rel="external" href="https://pixabay.com/users/crey_zz-35842619/" hreflang="en" rel="external">CREY_zz</a> a staženo <a rel="external" href="https://pixabay.com/videos/ocean-beach-waves-breaking-waves-160767/" hreflang="en" rel="external">zde</a>.</p>
+            <p><b>Poznámka II</b>: Obrázek pro atribut &apos;poster&apos; byl vytvořen <a rel="external" href="https://pixabay.com/users/dimitrisvetsikas1969-1857980/" hreflang="en" rel="external">dimitrisvetsikas1969</a> a stáhnut <a rel="external" href="https://pixabay.com/photos/waves-sea-ocean-beach-blue-water-3473335/" hreflang="en" rel="external">zde</a>.</p>
+            <h2>Element &lt;source&gt;</h2>
+            <p>Stejně jako u <strong>elementu <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/audio.html" hreflang="cs">&lt;audio&gt;</a></strong> lze do <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/video.html" hreflang="cs">&lt;video&gt;</a></strong> vložit <strong>element <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/source.html" hreflang="cs">&lt;source&gt;</a></strong>. Funguje naprosto stejně jako u <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/audio.html" hreflang="cs">&lt;audio&gt;</a></strong>, jen <strong>hodnoty atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/source-type.html" hreflang="cs">type</a>&apos;</strong> jsou jiné:</p>
+            <table>
+                <tr>
+                    <th>Formát souboru</th>
+                    <th>Hodnota &apos;type&apos;</th>
+                </tr>
+                <tr>
+                    <th>.mp4</th>
+                    <td>audio/mpeg</td>
+                </tr>
+                <tr>
+                    <th>.ogg</th>
+                    <td>audio/ogg</td>
+                </tr>
+                <tr>
+                    <th>.webm</th>
+                    <td>audio/webm</td>
+                </tr>
+            </table>
+            <div class="example" title="Příklad elementu &lt;source&gt;">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Element &lt;source&gt;</h3>
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">video</span> <span class="y">controls</span> <span class="y">preload</span>=<span class="r">&quot;metadata&quot;</span> <span class="y">height</span>=<span class="r">&quot;150&quot;</span> <span class="y">width</span>=<span class="r">&quot;300&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">source</span> <span class="y">src</span>=<span class="r">&quot;/videos/ocean-waves-01.mp4&quot;</span> <span class="y">type</span>=<span class="r">&quot;audio/mpeg&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">source</span> <span class="y">src</span>=<span class="r">&quot;/videos/ocean-waves-01.ogg&quot;</span> <span class="y">type</span>=<span class="r">&quot;audio/ogg&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">source</span> <span class="y">src</span>=<span class="r">&quot;/videos/ocean-waves-01.webm&quot;</span> <span class="y">type</span>=<span class="r">&quot;audio/wav&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Omlouváme se, ale váš prohlížeč bohužel nepodporuje element video :&lpar;<br>
+                        &lt;<span class="b">/video</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleExplanationContainer">
+                    <div class="exampleExplanationLineNumber">1<br>2<br>3<br>4<br>5<br>6</div>
+                    <div class="exampleExplanation">
+                        Počáteční tag &lt;video&gt; s booleanovským atributem &apos;controls&apos;, jež přidává ovládání; výškou &quot;150&quot; pixelů; a šířkou &quot;300&quot;&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Element &lt;source&gt; s atributem &apos;src&apos;, jež odkazuje na lokální soubor &quot;ocean-waves-01.mp4&quot;; a atributem &apos;type&apos;, jež má hodnotu &quot;video/mpeg&quot;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Element &lt;source&gt; s atributem &apos;src&apos;, jež odkazuje na lokální soubor &quot;ocean-waves-01.ogg&quot;; a atributem &apos;type&apos;, jež má hodnotu &quot;video/ogg&quot;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Element &lt;source&gt; s atributem &apos;src&apos;, jež odkazuje na lokální soubor &quot;ocean-waves-01.webm&quot;; a atributem &apos;type&apos;, jež má hodnotu &quot;video/wav&quot;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Text, jež se zobrazí v případě, že se video nenačte<br>
+                        Koncový tag &lt;video&gt;
+                    </div>
+                </div>
+                <div class="exampleIframe">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/html102/06-video-element-example02.html" title="Příklad elementu &lt;audio&gt; se třemi potomky &lt;source&gt;"></iframe>
+                </div>
+            </div>
+            <h2>Shrnutí</h2>
+            <ul>
+                <li>Lokálně uložená <strong>videa</strong> se na <strong>stránku</strong> vkládají s <strong>párovým tagem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/video.html" hreflang="cs">&lt;video&gt;</a></strong></li>
+                <li class="child">K tomu, aby měl <strong>uživatel</strong> nad <strong>videem</strong> kontrolu, se musí přidat <strong>booleanovský atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-controls.html" hreflang="cs">controls</a>&apos;</strong></li>
+                <li class="child">Na <strong>soubor videa</strong> se odkazuje s <strong>atributem &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-src.html" hreflang="cs">src</a>&apos;</strong></li>
+                <li class="child">Mezi <u>podporované</u> <strong>formáty</strong> patří <strong>.mp4</strong>, <strong>.ogg</strong> a <strong>.webm</strong></li>
+                <li class="child"><strong>Booleanovský atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-muted.html" hreflang="cs">muted</a>&apos;</strong> nastaví hlasitost <strong>videa</strong> na nulu</li>
+                <li class="child"><strong>Booleanovský atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-autoplay.html" hreflang="cs">autoplay</a>&apos;</strong> začne automaticky přehrávat <strong>video</strong>; na <strong>Chromium prohlížečích</strong> funguje jen v kombinaci s <strong>atributem &apos;muted&apos;</strong></li>
+                <li class="child"><strong>Atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-height-and-width.html" hreflang="cs">height</a>&apos;</strong> specifikuje výšku <strong>přehrávače videa</strong> v pixelech</li>        
+                <li class="child"><strong>Atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-height-and-width.html" hreflang="cs">width</a>&apos;</strong> specifikuje šířku <strong>přehrávače videa</strong> v pixelech</li>        
+                <li class="child"><strong>Atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-poster.html" hreflang="cs">poster</a>&apos;</strong> specifikuje <strong>náhledový obrázek</strong>. Jeho <strong>hodnotou</strong> je <strong>cesta k souboru</strong> nebo jeho <strong>URL</strong></li>        
+                <li>U <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/video.html" hreflang="cs">&lt;video&gt;</a></strong> se dá <strong>atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/textarea-src.html" hreflang="cs">src</a>&apos;</strong> nahradit s <strong>párovým tagem</strong> a <strong>potomkem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/source.html" hreflang="cs">&lt;source&gt;</a></strong></li>
+            </ul>
+            <br>
+            <p>Stejně jako v případě <strong>audio stop</strong> &lpar;ačkoliv u <strong>videí</strong> je to ještě důležitější&rpar; je lepší použít nějakou <strong>externí stránku</strong>, proto se v příští lekci podíváme na to, jak na <strong>stránku vkládat videa</strong> z jiných <strong>webů</strong>.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html102/04-audio-element.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Externí audio</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html102/07-video-external.html" rel="next" hreflang="cs">Příští lekce: Externí videa &gt;&gt;&gt;</a>
+            </div>
+            </div>
+         </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

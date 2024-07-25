@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Tučný text &lt;b&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, tučný text html, &lt;b&gt; HTML tutorial, &lt;b&gt;, &lt;b&gt; html, element &lt;b&gt;, co je &lt;b&gt;, jak použít &lt;b&gt;, jak vytvořit tučný text html">
+    <title>&lt;b&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;b&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;b&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;b&gt;</span></strong> je <strong>párový tag</strong> používaný pro vytváření nesémantického tučného textu.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;b&gt;</span></strong> je <strong>párový tag</strong>. Mezi tím <strong>počátečním</strong> a <strong>koncovým</strong> se nachází text, jež má být ztučněn. Nemusí mít žádného <strong>rodiče</strong> &lpar;kromě <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/body.html" hreflang="cs">&lt;body&gt;</a></strong>&rpar;, ale často se používá jako <strong>potomek <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/p.html" hreflang="cs">&lt;p&gt;</a></strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">b</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;Obsah&lt;<span class="b">/b</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;b&gt;</span></strong> nemá žádné vlastní <strong>atributy</strong>, ale podporuje ty <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;b&gt;</span></strong> lze v <strong>CSS</strong> stylovat.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                <code class="exampleCode">
+                    <span class="cb">b</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">inline</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-weight</span>: <span class="cr">bold</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;b&gt;</span></strong> by se měl využívat na text, který je potřeba zvýraznit, ale nemá žádnou důležitost. Podle <strong>oficiální HTML specifikaci</strong> by se měl používat jako poslední možnost; před jeho použitím by se mělo zvážit, zda není lepší použít nějaký jiný <strong>element</strong>, jako třeba <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/strong.html" hreflang="cs">&lt;strong&gt;</a></strong> nebo <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/em.html" hreflang="cs">&lt;em&gt;</a></strong>.</p>
+            <div class="example" title="Příklad &lt;b&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">p</span>&gt;Tento text není tučný...&lt;<span class="b">b</span>&gt;ale tento je!&lt;<span class="b">/b</span>&gt;&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 4.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/b-EXAMPLE.html" title="Příklad &lt;b&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/b-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/04-text-formatting.html">HTML 101, lekce 4</a>: Základní vysvětlení <strong><span class="codeOutsidePage">&lt;b&gt;</span></strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-text/b-html-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: b - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/b.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;b&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;b&gt;: The Bring Attention To element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/audio.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;audio&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/base.html" rel="next" hreflang="cs">Příští element: &lt;base&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

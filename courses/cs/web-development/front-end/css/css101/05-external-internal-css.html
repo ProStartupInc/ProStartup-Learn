@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS 101, lekce 4 - propojení CSS s HTML dokumentem.">
+    <meta name="keywords" content="HTML, ProStartup Learn, CSS 101, CSS kurz, CSS lekce, jak propojit CSS s HTML, jak použít CSS v HTML, interní CSS, externí CSS, řádkové CSS, inline CSS">
+    <title> 4. Externí a interní CSS | CSS 101 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinksNoCSS.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/web-development/front-end/css/sidenav-css101.shtml" -->
+    <div class="lessonContentArea">
+        <main class="lessonContent">
+            <div class="LessonNameCSS">
+                <p class="courseSign">CSS 101</p>
+                <h1>5. Externí a interní CSS</h1>
+            </div>
+            <hr>
+            <nav class="lessonBreadcrumbCSS">
+                <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/courses.html" hreflang="cs">CSS</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/css101/01-introduction.html" hreflang="cs">CSS&nbsp;101</a>&nbsp;&gt; Lekce&nbsp;5
+            </nav>
+            <hr>
+            <div class="margin"></div>
+            <p>V posledních třech lekcích jsme se učili o <strong>syntaxi</strong>, <strong>selektorech</strong> a do menší míry i o <strong>HTML</strong>. To vám je ale zatím kompletně k ničemu - neumíte to zatím implementovat do <strong>HTML dokumentu</strong>. To se ale v této lekci změní - řekneme si o <strong>externím</strong>, <strong>interním</strong> a <strong>řádkovém CSS</strong>.</p>
+            <h2>Externí CSS</h2>
+            <p><strong>Externí CSS</strong> je vlastně samostatný <strong>soubor .css</strong>, který se připojí k <strong>HTML dokumentu</strong> za pomoci <strong>elementu <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/link.html" hreflang="cs">link</a></strong>. Ten je <strong>potomkem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/head.html" hreflang="cs">head</a></strong> a měl by obsahovat <strong>atributy &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/link-href.html" hreflang="cs">href</a>&apos;</strong> &lpar;který specifikuje <strong>cestu k souboru</strong>&rpar;, <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/link-rel.html" hreflang="cs">rel</a>&apos;</strong> &lpar;určuje vztah mezi <strong>HTML dokumentem</strong> a připojovaným <strong>souborem</strong>&rpar; s <strong>hodnotou &quot;<code>stylesheet</code>&quot;</strong> a <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/link-type.html" hreflang="cs">type</a>&apos;</strong> &lpar;říká <strong>prohlížeči</strong>, kterého typu vlastně připojovaný <strong>soubor</strong> je&rpar; s <strong>hodnotou &quot;<code>text/css</code>&quot;</strong></p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;nazevSouboru.css&quot;>
+            </code>
+            <p><strong>Externí stylesheety</strong> mají tu výhodu, že <strong>CSS</strong> je od <strong>HTML</strong> kompletně oddělené, což přispívá k lepší organizaci <strong>kódu</strong>. Navíc lze jeden použít na libovolný počet <strong>stránek</strong>, takže pokud celý váš <strong>web</strong> používá jeden <strong>stylesheet</strong> a potřebujete změnit nějaký styl, je to záležitost úpravy jen jednoho <strong>souboru</strong>.</p>
+            <p>Je také možné použít <strong>stylesheet</strong> z <strong>externího webu</strong>. To ale není zrovna nejspolehlivější - pokud se ten <strong>stylesheet</strong> náhodou stane nedostupným, vaše <strong>stránky</strong> ztratí veškeré <strong>stylování</strong> z něj.</p>
+            <h2>Interní CSS</h2>
+            <p><strong>Interní CSS</strong> se používá hlavně v případě, kdy je nějaká <strong>stránka stylována</strong> jinak než ty ostatní nebo je potřeba přepsat nějaký <strong>styl</strong> bez zásahů v <strong>stylesheetu</strong> - má totiž vyšší prioritu než <strong>externí CSS</strong>. Vytváří se s <strong>elementem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/style.html" hreflang="cs">style</a></strong>, který je <strong>potomkem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/head.html" hreflang="cs">head</a></strong>.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;
+            </code>
+            <h2>Řádkové CSS</h2>
+            <p><strong>Řádkové CSS</strong> &lpar;nazýváno také jako &quot;<strong>inline</strong>&quot;&rpar; je <strong>CSS</strong> vepsané přímo do <strong>elementu</strong> za pomoci <strong>globálního atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/style.html" hreflang="cs">style</a>&apos;</strong>. Hodí se, když je jeden <strong>stylován</strong> jinak než zbytek a je zbytečné vytvářet pro něj novou <strong>třídu</strong> nebo <strong>ID</strong>. Navíc má vyšší prioritu než <strong>externí</strong> a <strong>interní CSS</strong>.</strong></p>
+            <code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p style=&quot;color: red;&quot;&gt;Příklad.&lt;/p&gt;</code>
+            <p>Tento způsob by se neměl příliš používat, protože je nepřehledný.</p>
+            <br>&nbsp;<br>
+            <p>V následující lekci se konečně dáme do nějakého <strong>stylování</strong> - začneme u <strong>barev elementů</strong>.</p>
+            <a href="/courses/cs/web-development/front-end/css/css101/04-div-span.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: &lt;div&gt; a &lt;span&gt;</a><br>
+            <a href="/courses/cs/web-development/front-end/css/css101/06-colors.html" rel="next" hreflang="cs">Příští lekce: Barva elementů &gt;&gt;&gt;</a>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

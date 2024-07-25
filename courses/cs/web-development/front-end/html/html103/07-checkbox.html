@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="description" content="HTML 103, lekce 7 - Zaškrtávací formuláře.">
+    <meta name="keywords" content="HTML, ProStartup Learn, HTML 103, HTML kurz, HTML lekce, atributy, elementy, tagy, zaškrtávací formuláře, formuláře, input type checkbox, checkbox formulář, checkbox formuláře CZ tutoriál, co je checkbox formulář">
+    <title>7. Zaškrtávací formuláře | HTML 103 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html103.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">HTML 103</p>
+            <h1>7. Zaškrtávací formuláře</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/html103/01-cs-introduction.html" hreflang="cs">HTML&nbsp;103</a>&nbsp;&gt; Lekce&nbsp;7
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p>V <a href="/courses/cs/web-development/front-end/html/html103/06-textarea.html" hreflang="cs" rel="prev">minulé lekci</a> se probraly <strong>víceřádkové textové formuláře</strong>. V této lekci se podíváme na další typ <strong>formulářů</strong>, tentokrát na <strong>zaškrtávací</strong>.</p>
+            <h2>Základy zaškrtávacích formulářů</h2>
+            <p><strong>Zaškrtávací formuláře</strong> jsou <strong>formuláře</strong>, u kterých má <strong>uživatel</strong> na výběr z několika možností, ze kterých si může vybrat jednu či více. Možnosti se vytváří s <strong>elementem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/input.html" hreflang="cs">&lt;input&gt;</a></strong>, který má <strong>atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type.html" hreflang="cs">type</a>&apos;</strong> s <strong>hodnotou &quot;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-checkbox.html" hreflang="cs">checkbox</a>&quot;</strong>, přičemž jeden <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/input.html" hreflang="cs">&lt;input&gt;</a></strong> = jedna možnost.</p>
+            <p>Všechny možnosti, které jsou součástí jedné otázky, by měly mít <strong>hodnotu atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-name.html" hreflang="cs">name</a>&apos;</strong> stejnou. Také by měly mít <strong>atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-value.html" hreflang="cs">value</a>&apos;</strong> s <strong>hodnotou</strong>, kterou reprezentují - bez něj se na <strong>server</strong> pošle jen výchozí <strong>hodnota &quot;on&quot;</strong> &lpar;např. možnost reprezentující <strong>hodnotu</strong> Čeština by měla mít <strong>atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-value.html" hreflang="cs">value</a>&apos;</strong> s <strong>hodnotou &quot;cz&quot;</strong>&rpar;.</p>
+            <div class="example" title="Příklad základního zaškrtávacího formuláře.">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Základní přepínací formulář</h3>
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">fieldset</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">legend</span>&gt;Jaké jazyky ovládáte?&lt;<span class="b">/legend</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;checkbox&quot;</span> <span class="y">id</span>=<span class="r">&quot;checkbox-1&quot;</span> <span class="y">name</span>=<span class="r">&quot;jazyk&quot;</span> <span class="y">value</span>=<span class="r">&quot;cz&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;checkbox-1&quot;</span>&gt; Čeština&lt;<span class="b">/label</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;checkbox&quot;</span> <span class="y">id</span>=<span class="r">&quot;checkbox-2&quot;</span> <span class="y">name</span>=<span class="r">&quot;jazyk&quot;</span> <span class="y">value</span>=<span class="r">&quot;en&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;checkbox-2&quot;</span>&gt; English&lt;<span class="b">/label</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;checkbox&quot;</span> <span class="y">id</span>=<span class="r">&quot;checkbox-3&quot;</span> <span class="y">name</span>=<span class="r">&quot;jazyk&quot;</span> <span class="y">value</span>=<span class="r">&quot;jiné&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;checkbox-3&quot;</span>&gt; Jiné&lt;<span class="b">/label</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;submit&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/fieldset</span>&gt;<br>
+                        &lt;<span class="b">/form</span>&gt;<br>
+                    </code>
+                </div>
+                <div class="exampleIframe" style="height: 9.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/html103/07-checkbox-example01.html" title="Příklad základního zaškrtávacího formuláře." >Váš prohlížeč nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/html103/07-checkbox-example01.html" hreflang="cs">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Atribut &apos;checked&apos;</h2>
+            <p><strong>Zaškrtávací formuláře</strong> mají jeden nový <strong>atribut</strong> - <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-checked.html" hreflang="cs">checked</a>&apos;</strong>. <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-checked.html" hreflang="cs">checked</a>&apos;</strong> je <strong>booleanovský atribut</strong> patřící k <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-text.html" hreflang="cs">&lt;input&nbsp;type=&quot;checkbox&quot;&gt;</a></strong> a <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-text.html" hreflang="cs">&lt;input&nbsp;type=&quot;radio&quot;&gt;</a></strong>, který - když je přítomen - automaticky označí zaškrtávací políčko za defaultně označené. To znamená, že políčko bude označeno automaticky bez jakékoliv interakce <strong>uživatele</strong>, hned po načtení <strong>stránky</strong>. <strong>Uživatel</strong> samozřejmě může odškrtnutí políčka zrušit.</p>
+            <div class="example" title="Příklad zaškrtávacího formuláře, kde má jedna z možností atribut &apos;checked&apos;.">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Použití atributu &apos;checked&apos;</h3>
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">fieldset</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">legend</span>&gt;Co vás zajímá?&lt;<span class="b">/legend</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;checkbox&quot;</span> <span class="y">id</span>=<span class="r">&quot;checkbox-1&quot;</span> <span class="y">name</span>=<span class="r">&quot;zajem&quot;</span> <span class="y">value</span>=<span class="r">&quot;html&quot;</span> <span class="y">checked</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;checkbox-1&quot;</span>&gt; HTML&lt;<span class="b">/label</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;checkbox&quot;</span> <span class="y">id</span>=<span class="r">&quot;checkbox-2&quot;</span> <span class="y">name</span>=<span class="r">&quot;zajem&quot;</span> <span class="y">value</span>=<span class="r">&quot;css&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;checkbox-2&quot;</span>&gt; CSS&lt;<span class="b">/label</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;submit&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/fieldset</span>&gt;<br>
+                        &lt;<span class="b">/form</span>&gt;<br>
+                    </code>
+                </div>
+                <div class="exampleIframe" style="height: 8.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/html103/07-checkbox-example02.html" title="Příklad zaškrtávacího formuláře, kde má jedna z možností atribut &apos;checked&apos;." >Váš prohlížeč nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/html103/07-checkbox-example02.html" hreflang="cs">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Shrnutí</h2>
+            <ul>
+                <li><strong>Zaškrtávací formuláře</strong> jsou <strong>formuláře</strong>, kde je na výběr z více možností, ze kterých jich <strong>uživatel</strong> může vybrat, kolik chce</li>
+                <li><strong>Jednotlivé možnosti</strong> se vytváří s <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-checkbox.html" hreflang="cs">&lt;input&nbsp;type=&quot;checkbox&quot;&gt;</a></strong></li>
+                <li>Přítomnost <strong>booleanovského atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-checked.html" hreflang="cs">checked</a>&apos;</strong> specifikuje, zda je možnost hned po načtení <strong>stránky</strong> zaškrtnutnebo ne clpar <strong>uživatel to samozřejmě může změnit&rpar;</strong></li>
+            </ul>
+            <br>
+            <p>V přístí lekci se podíváme na velmi podobný, ale stále odlišný typ <strong>formulářů</strong> - <strong>přepínací</strong>.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html103/06-textarea.html" hreflang="cs" rel="prev">&lt;&lt;&lt; Předchozí lekce: Víceřádková pole</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html103/08-radio.html" hreflang="cs" rel="next">Příští lekce: Přepínací formuláře &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

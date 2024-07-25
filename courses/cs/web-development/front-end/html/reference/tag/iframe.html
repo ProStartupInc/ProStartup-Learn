@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - vkládání stránek do dokumentu &lt;iframe&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, &lt;iframe&gt; HTML tutorial, &lt;iframe&gt;, &lt;iframe&gt; html, element &lt;iframe&gt;, co je &lt;iframe&gt;, jak použít &lt;iframe&gt;, jak vkládat weby přes iframy">
+    <title>&lt;iframe&gt;| ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;iframe&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html" hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;iframe&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;iframe&gt;</span></strong> &lpar;<b>i</b>nline <b>frame</b>&rpar; je <strong>element</strong> používaný k vkládání <strong>externích HTML dokumentů</strong> na <strong>stránku</strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;iframe&gt;</span></strong> je <strong>párový tag</strong>. Mezi <strong>počáteční</strong> a <strong>koncový tag</strong> se může dát text, který se zobrazí v případě, že se <strong>iframe</strong> správně nenačte.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">iframe</span> <span class="y">src</span>=<span class="r">&quot;URL&quot;</span> <span class="y">atribut</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Text<br>
+                    &lt;<span class="b">/iframe</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;iframe&gt;</span></strong> má několik <strong>vlastních atributů</strong>. Ke správnému fungování <strong>elementu</strong> je ale potřeba jen jeden - <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/iframe-src.html" hreflang="cs">src</a>&apos;</strong>, který určuje <strong>adresu</strong> vkládaného <strong>dokumentu</strong>.</p>
+            <table>
+                <tr>
+                    <th>Název</th>
+                    <th>Povinné?</th>
+                    <th>Popis</th>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-allow.html" hreflang="cs">allow</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje, jaká oprávnění by měla být iframu udělena &lpar;například používání mikrofonu, kamery, atd.&rpar;.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-allowfullscreen.html" hreflang="cs">allowfullscreen</a></th>
+                    <td>Ne</td>
+                    <td>Určuje, zda může iframe vyvolat režim celé obrazovky.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-credentialless.html" hreflang="cs">credentialless</a></th>
+                    <td>Ne</td>
+                    <td>Říká prohlížeči, zda je iframe důvěryhodný či ne. Pokud je hodnota nastavená na &quot;<span class="codeOutsidePage">true</span>&quot;, vložená stránka nebude mít přístup k síti, cookies a jiným datům, která jsou spojena s jejím původem.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-csp.html" hreflang="cs">csp</a></th>
+                    <td>Ne</td>
+                    <td>Vynutí pro iframe Content Security Policy.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-height-width.html" hreflang="cs">height</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje výšku iframu v CSS pixelech.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-loading.html" hreflang="cs">loading</a></th>
+                    <td>Ne</td>
+                    <td>Určuje, jak bude iframe načten.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-name.html" hreflang="cs">name</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje název, který budou moct použít elementy <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/a.html" hreflang="cs">&lt;a&gt;</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/base.html" hreflang="cs">&lt;base&gt;</a> a <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/form.html" hreflang="cs">&lt;form&gt;</a> s atributem &apos;<span class="codeOutsidePage">target</span>&apos;; nebo <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/button.html" hreflang="cs">&lt;button&gt;</a> a <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/input.html" hreflang="cs">&lt;input&gt;</a>.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-referrerpolicy.html" hreflang="cs">referrerpolicy</a></th>
+                    <td>Ne</td>
+                    <td>???.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-sandbox.html" hreflang="cs">sandbox</a></th>
+                    <td>Ne</td>
+                    <td>Určuje, jaká omezení se na iframe budou vztahovat &lpar;např. zakázání JavaScriptu, stahování, a podobně&rpar;. Pokud nemá žádnou hodnotu, omezení jsou aplikována všechna.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-src.html" hreflang="cs">src</a></th>
+                    <td>Ano</td>
+                    <td>Specifikuje umístění vkládaného dokumentu.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-srcdoc.html" hreflang="cs">srcdoc</a></th>
+                    <td>Ne</td>
+                    <td>Pokud je určen, lze vynechat atribut &apos;<span class="codeOutsidePage">src</span>&apos;. Specifikuje HTML &lpar;které musí být vepsáno v hodnotě&rpar;, které bude vloženo.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/iframe-height-width.html" hreflang="cs">width</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje šířku iframu v CSS pixelech.</td>
+                </tr>
+            </table>
+            <p><strong>Element</strong> také podporuje <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;iframe&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Defaultně je o <strong>řádkový element</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</div>
+                <code class="exampleCode">
+                    <span class="cb">iframe</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">inline</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">overflow-clip-margin</span>: <span class="cr">content-box</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">overflow</span>: <span class="cr">clip</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">border-width</span>: <span class="cr">2px</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">border-style</span>: <span class="cr">inset</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">border-color</span>: <span class="cr">initial</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">border-image</span>: <span class="cr">initial</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;iframe&gt;</span></strong> se využívá na vkládání jiných <strong>HTML dokumentů</strong> na <strong>stránku</strong>. To se sice může zdát poněkud omezené, ale má to obrovský potenciál - kromě &quot;obyčejných&quot; <strong>webů</strong> lze také vkládat služby jako <strong>mapy</strong> a <strong>sociální videa</strong>, sdílet <strong>videa</strong> a <strong>audio</strong> z příslušných platforem, <strong>dokumenty</strong>, <strong>widgety</strong>...de facto cokoliv, co může internet nabídnout.</p>
+            <h3>Základní iframe</h3>
+            <p>K naprosto základnímu <strong>iframu</strong> je potřeba použít jen <strong>atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/iframe-src.html" hreflang="cs">src</a>&apos;</strong> a <strong>dokument</strong>, který má být vložen.</p>
+            <div class="example" title="Příklad &lt;iframe&gt;">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">src</span>=<span class="r">&quot;https://example.com&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Je nám líto, ale váš prohlížeč bohužel nepodporuje element iframe :&rpar;<br>
+                        &lt;<span class="b">/iframe</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 12em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/iframe-EXAMPLE.html" title="Příklad &lt;iframe&gt;" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/iframe-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>Vkládání audia</h3>
+            <p>Přes <strong>iframy</strong> lze z <strong>externích platforem</strong> &lpar;jako třeba <strong>Spotify</strong>&rpar; vložit na <strong>stránku audio stopy</strong>. Výhodou je, že není třeba se starat o místo, které <strong>audio</strong> může na disku <strong>serveru</strong> potenciálně zabrat.</p>
+            <p><strong>Audio</strong> lze z <strong>externích platforem</strong> většinou vkládat přes <strong>tlačítko &quot;Sdílet&quot;</strong> &lpar;anglicky &quot;<strong>Share</strong>&quot;&rpar; a možnost &quot;<strong>Vložit</strong>&quot; &lpar;anglicky &quot;<strong>Embed</strong>&quot;&rpar;.</p>
+            <div class="example" title="Příklad iframu vkládajícího audio ze Spotify">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">style</span>=<span class="r">&quot;border-radius:12px&quot;</span> <span class="y">src</span>=<span class="r">&quot;https://open.spotify.com/embed/track/2TK2KSrzXD6W01qjXVjNGh?utm_source=generator&quot;</span> <span class="y">width</span>=<span class="r">&quot;100%&quot;</span> <span class="y">height</span>=<span class="r">&quot;152&quot;</span> <span class="y">frameBorder</span>=<span class="r">&quot;0&quot;</span> <span class="y">allowfullscreen</span>=<span class="r">&quot;&quot;</span> <span class="y">allow</span>=<span class="r">&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot;</span> <span class="y">loading</span>=<span class="r">&quot;lazy&quot;</span>&gt;&lt;<span class="b">/iframe</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 12em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/iframe-EXAMPLE02.html" title="Příklad iframu vkládajícího audio ze Spotify" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/iframe-EXAMPLE02.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>Vkládání videí</h3>
+            <p>Přes <strong>iframy</strong> lze z <strong>externích platforem</strong> vkládat i <strong>videa</strong>. U nich je ale vkládání více žádoucí, protože narozdíl od <strong>hudby</strong> a <strong>podcastů</strong> mohou na disku vyžadovat až <strong>gigabajty</strong>, což se může poněkud prodražit. Způsob <strong>vkládání</strong> se stejný jako u <strong>audio stop</strong>.</p>
+            <div class="example" title="Příklad iframu vkládajícího video z YouTube">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">width</span>=<span class="r">&quot;560&quot;</span> <span class="y">height</span>=<span class="r">&quot;315&quot;</span> <span class="y">src</span>=<span class="r">&quot;https://www.youtube-nocookie.com/embed/f6U7YFPrz6Y?si=8EgHolr4-Qea4n_p&quot;</span> <span class="y">title</span>=<span class="r">&quot;YouTube video player&quot;</span> <span class="y">frameborder</span>=<span class="r">&quot;0&quot;</span> <span class="y">allow</span>=<span class="r">&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; <span class="y">allowfullscreen</span></span>&gt;&lt;<span class="b">/iframe</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 22.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/iframe-EXAMPLE03.html" title="Příklad iframu vkládajícího video z YouTube" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/iframe-EXAMPLE03.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>Vkládání map</h3>
+            <p>Mnoho poskytovatelů <strong>map</strong> &lpar;například <strong>Google Mapy</strong> a <strong>OpenStreetMaps</strong>&rpar; podporuje možnost vkládání na jiné <strong>stránky</strong> s <strong>iframy</strong>. Proces je opět podobný vkládání <strong>videí</strong> a <strong>audio stop</strong>.</p>
+            <div class="example" title="Příklad iframu vkládajícího mapu z OpenStreetMaps">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">width</span>=<span class="r">&quot;100%&quot;</span> <span class="y">height</span>=<span class="r">&quot;350&quot;</span> <span class="y">src</span>=<span class="r">&quot;https://www.openstreetmap.org/export/embed.html?bbox=16.26062393188477%2C49.027457429031585%2C16.356410980224613%2C49.05851371151929&amp;amp;layer=mapnik&quot;</span> <span class="y">style</span>=<span class="r">&quot;border: 1px solid black&quot;</span>&gt;&lt;<span class="b">/iframe</span>&gt;&lt;<span class="b">br/</span>&gt;&lt;<span class="b">small</span>&gt;&lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;https://www.openstreetmap.org/#map=14/49.0430/16.3085&quot;</span>&gt;Zobrazit Větší Mapu&lt;<span class="b">/a</span>&gt;&lt;<span class="b">/small</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 25em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/iframe-EXAMPLE04.html" title="Příklad iframu vkládajícího mapu z OpenStreetMaps" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/iframe-EXAMPLE04.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>Vkládání příspěvků ze sociálních sítí</h3>
+            <p>Velká většina <strong>sociálních sítí</strong> podporuje sdílení <strong>příspěvků</strong> přes <strong>vkládání</strong> do <strong>HTML dokumentů</strong>. Proces je velmi podobný jako u <strong>map</strong>, <strong>videí</strong> a <strong>audia</strong>.</p>
+            <div class="example" title="Příklad iframu vkládajícího příspěvek z Mastodonu">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">src</span>=<span class="r">&quot;https://mastodon.social/@taylorlorenz/111540005232522061/embed&quot;</span> <span class="y">class</span>=<span class="r">&quot;mastodon-embed&quot;</span> <span class="y">style</span>=<span class="r">&quot;max-width: 100%; border: 0&quot;</span> <span class="y">width</span>=<span class="r">&quot;400&quot;</span> <span class="y">allowfullscreen</span>=<span class="r">&quot;allowfullscreen&quot;</span>&gt;&lt;<span class="b">/iframe</span>&gt;&lt;<span class="b">script</span> <span class="y">src</span>=<span class="r">&quot;https://mastodon.social/embed.js&quot;</span> <span class="y">async</span>=<span class="r">&quot;async&quot;</span>&gt;&lt;<span class="b">/script</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 15em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/iframe-EXAMPLE06.html" title="Příklad iframu vkládajícího příspěvek z Mastodonu" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/iframe-EXAMPLE06.html">zde</a>.</iframe>
+                </div>
+            </div><br><br>
+            <p>S <strong>iframy</strong> lze vkládat na <strong>stránku</strong> i mnoho jiných věcí, ale výše byly ty nejpoužívanější případy.</p>
+            <h2>Výkon</h2>
+            <p>Přestože můžete na <strong>stránku</strong> vložit tolik <strong>iframů</strong>, kolik chcete, neměli byste to přehánět - každý znamená o <strong>stránku</strong> více, kterou musí <strong>prohlížeče</strong> zpracovat. To znamená větší požadavky na výkon &lpar;zejména RAM&rpar; a pomalejší načítání, přičemž obě věci mohou výrazně ovlivnit <strong>uživatelský zážitek</strong>. Je také mít potřeba na paměti, jak náročné vkládané <strong>stránky</strong> jsou - zatímco některé jsou spíše nenáročné &lpar;například obyčejné <strong>HTML dokumenty</strong>&rpar;, jiné už více výkonu vyžadují &lpar;třeba online aplikace&rpar;.</p>
+            <h2>Zabezpečení</h2>
+            <p>Přestože mohou být <strong>iframy</strong> velmi užitečné nástroje, mohou být poměrně rizikové. Jsou s nimi například spojeny hrozby <strong>XSS</strong> a <strong>clickjackingu</strong>. Je také důležité vkládat na <strong>stránku</strong> <em>jen</em> důvěryhodné <strong>stránky</strong> - pokud vložíte do <strong>dokumentu</strong> nějakou nebezpečnou, tak tím zkompromitujete jeho zabezpečení.</p>
+            <h2>Přístupnost</h2>
+            <p>Je-li to možné, <strong>iframy</strong> by měly obsahovat <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs">globální atribut</a> &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/title.html" hreflang="cs">title</a>&apos;</strong> obsahující stručný popis <strong>elementu</strong> - mohou ho totiž použít <strong>čtečky obrazovek</strong>.</p>
+            <p>Pokud <strong>iframe</strong> neobsahuje <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/title.html" hreflang="cs">title</a>&apos;</strong>, tak <strong>čtečky obrazovky</strong> budou za cílem vyhodnocení <strong>obsahu</strong> číst celý jeho <strong>obsah</strong>. Nicméně, to může být pro <strong>uživatele</strong> využívající tyto technologie zdlouhavé a matoucí.</p>
+            <h2>Alternativy</h2>
+            <p>K <strong>iframům</strong> existuje v <strong>HTML</strong> několik alternativ. Každá z nich má ale mírně jinou funkci.</p>
+            <ul>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/embed.html" hreflang="cs">&lt;embed&gt;</a></strong>: Vkládání obsahu poskytnutého nějakou externí aplikací.</li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/object.html" hreflang="cs">&lt;object&gt;</a></strong>: Vkládání externího obsahu, který může být považován buď za obrázek, nebo vlastní <strong>stránku</strong>.</li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/portal.html" hreflang="cs">&lt;portal&gt;</a></strong>: Experimentální <strong>element</strong>. Umožňuje vkládat <strong>stránky</strong> stejně jako <strong><span class="codeOutsidePage">&lt;iframe&gt;</span></strong>, ale má omezenou interaktivitu. Je spíše určen pro vytváření náhledů <strong>stránek</strong>.</li>
+            </ul>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html102/02-iframe.html">HTML 102, lekce 2</a>: Základy <strong><span class="codeOutsidePage">&lt;iframe&gt;</span></strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/html102/03-iframe-security.html">HTML 102, lekce 2</a>: Rizika <strong>iframů</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements-categorized.html#multimedia">Kategorizovaný seznam všech elementů</a>: <strong>Multimédia</strong></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-ostatni/iframe-html-5-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: iframe - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_iframe.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;iframe&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;iframe&gt;: The Inline Frame element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/i.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;i&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/img.html" rel="next" hreflang="cs">Příští element: &lt;img&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

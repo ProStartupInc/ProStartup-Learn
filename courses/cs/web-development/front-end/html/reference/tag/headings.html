@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Nadpisy &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; a &lt;h6&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, nadpisy html, &lt;h1&gt; HTML tutorial, &lt;h1&gt;, &lt;h1&gt; html, element &lt;h1&gt;, co je &lt;h1&gt;, jak použít &lt;h1&gt;, &lt;h1&gt; nadpis, &lt;h2&gt; HTML tutorial, &lt;h2&gt;, &lt;h2&gt; html, element &lt;h2&gt;, co je &lt;h2&gt;, jak použít &lt;h2&gt;, &lt;h2&gt; nadpis, &lt;h3&gt; HTML tutorial, &lt;h3&gt;, &lt;h3&gt; html, element &lt;h3&gt;, co je &lt;h3&gt;, jak použít &lt;h3&gt;, &lt;h3&gt; nadpis, &lt;h4&gt; HTML tutorial, &lt;h4&gt;, &lt;h4&gt; html, element &lt;h4&gt;, co je &lt;h4&gt;, jak použít &lt;h4&gt;, &lt;h4&gt; nadpis,&lt;h5&gt; HTML tutorial, &lt;h5&gt;, &lt;h5&gt; html, element &lt;h5&gt;, co je &lt;h5&gt;, jak použít &lt;h5&gt;, &lt;h5&gt; nadpis,&lt;h6&gt; HTML tutorial, &lt;h6&gt;, &lt;h6&gt; html, element &lt;h6&gt;, co je &lt;h6&gt;, jak použít &lt;h6&gt;, &lt;h6&gt; nadpis">
+    <title>&lt;h1&gt; - &lt;h6&gt;| ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;h1&gt; - &lt;h6&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;h1&gt; - &lt;h6&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p>V <strong>HTML</strong> existuje šest <strong>elementů</strong>, které se používají na <strong>nadpisy</strong> - <strong><span class="codeOutsidePage">&lt;h1&gt;</span></strong>, <strong><span class="codeOutsidePage">&lt;h2&gt;</span></strong>, <strong><span class="codeOutsidePage">&lt;h3&gt;</span></strong>, <strong><span class="codeOutsidePage">&lt;h4&gt;</span></strong>, <strong><span class="codeOutsidePage">&lt;h5&gt;</span></strong> a <strong><span class="codeOutsidePage">&lt;h6&gt;</span></strong>. Každý z nich má jinou úroveň <strong>sémantické</strong> důležitosti - zatímco <strong><span class="codeOutsidePage">&lt;h1&gt;</span></strong> má podle <strong>prohlížečů</strong> největší význam, <strong><span class="codeOutsidePage">&lt;h6&gt;</span></strong> ho má nejmenší.</p>
+            <h2>Syntaxe</h2>
+            <p>Všechny <strong>nadpisy</strong> jsou <strong>párové tagy</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">h1</span>&gt;Nejdůležitější nadpis&lt;<span class="b">/h1</span>&gt;<br>
+                    &lt;<span class="b">h2</span>&gt;Druhý nejdůležitější nadpis&lt;<span class="b">/h2</span>&gt;<br>
+                    &lt;<span class="b">h3</span>&gt;Třetí nejdůležitější nadpis&lt;<span class="b">/h3</span>&gt;<br>
+                    &lt;<span class="b">h4</span>&gt;Čtvrtý nejdůležitější nadpis&lt;<span class="b">/h4</span>&gt;<br>
+                    &lt;<span class="b">h5</span>&gt;Páty nejdůležitější nadpis&lt;<span class="b">/h5</span>&gt;<br>
+                    &lt;<span class="b">h6</span>&gt;Nejméně důležitý nadpis&lt;<span class="b">/h6</span>&gt;
+                </code>
+            </div>
+            <p>Měly by po sobě jít hiearchicky. To znamená, že po <strong><span class="codeOutsidePage">&lt;h1&gt;</span></strong> nebude přímo následovat jiný <strong>nadpis</strong> než <strong><span class="codeOutsidePage">&lt;h2&gt;</span></strong>. To platí i pro <strong>nadpisy</strong> jiných úrovní.</p>
+            <p>Důvodem je fakt, že mnoho <strong>uživatelů</strong> se <strong>čtečkami obrazovek</strong> rychle přeskakuje od <strong>nadpisu</strong> k <strong>nadpisu</strong> k tomu, aby rychle vyhodnotili obsah <strong>stránky</strong>. Když se ale vynechá jednnebo více <strong>úrovní nadpisů</strong>, <strong>uživatel</strong> se bude pravděpodobně divit, kam se to podělo.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumberWrong">1<br>2</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">h1</span>&gt;ŠPATNĚ&lt;<span class="b">/h1</span>&gt;<br>
+                    &lt;<span class="b">h3</span>&gt;ŠPATNĚ&lt;<span class="b">/h3</span>&gt;<br>
+                </code>
+            </div>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumberCorrect">1<br>2</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">h1</span>&gt;SPRÁVNĚ&lt;<span class="b">/h1</span>&gt;<br>
+                    &lt;<span class="b">h2</span>&gt;SPRÁVNĚ&lt;<span class="b">/h2</span>&gt;<br>
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p>Žádný z <strong>nadpisů</strong> nemá vlastní <strong>atributy</strong>. Podporují pouze ty <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong>Nadpisy</strong> lze stylovat v <strong>CSS</strong>. Každý má jinou velikost než ten předchozí.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40</div>
+                <code class="exampleCode">
+                    <span class="cb">h1, h2, h3, h4, h5, h6</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">block</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-left</span>: <span class="cr">0</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-right</span>: <span class="cr">0</span>;<br>
+                    }<br><br>
+                    <span class="cb">h1 </span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-size</span>: <span class="cr">2em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-top</span>: <span class="cr">0.67em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-bottom</span>: <span class="cr">0.67em</span>;<br>
+                    }<br><br>
+                    <span class="cb">h2 </span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-size</span>: <span class="cr">1.5em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-top</span>: <span class="cr">0.83em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-bottom</span>: <span class="cr">0.83em</span>;<br>
+                    }<br><br>
+                    <span class="cb">h3 </span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-size</span>: <span class="cr">1.17em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-top</span>: <span class="cr">1em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-bottom</span>: <span class="cr">1em</span>;<br>
+                    }<br><br>
+                    <span class="cb">h4 </span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-top</span>: <span class="cr">1.33em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-bottom</span>: <span class="cr">1.33em</span>;<br>
+                    }<br><br>
+                    <span class="cb">h5 </span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-size</span>: <span class="cr">0.83em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-top</span>: <span class="cr">1.67em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-bottom</span>: <span class="cr">1.67em</span>;<br>
+                    }<br><br>
+                    <span class="cb">h6 </span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-size</span>: <span class="cr">0.67em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-top</span>: <span class="cr">2.33em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-bottom</span>: <span class="cr">2.33em</span>;<br>
+                    }<br><br>
+
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong>Nadpisy</strong> se využívají k rozdělování <strong>HTML dokumentu</strong> na <strong>sekce</strong>. <strong><span class="codeOutsidePage">&lt;h1&gt;</span></strong> by se měl použít pouze jednou, jako titulek celé <strong>stránky</strong>.</p>
+            <div class="example" title="Příklad nadpisů.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">h1</span>&gt;Webové technologie&lt;<span class="b">/h1</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;Webové technologie se dají obecně rozdělit na dva typy.&lt;<span class="b">/p</span>&gt;<br>
+                        &lt;<span class="b">h2</span>&gt;Front-End&lt;<span class="b">/h2</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;Front-End technologie jsou ty, které jsou zpracovávány na straně klienta - tedy na uživatelově prohlížeči. Jsou zodpovědné za prezentaci stránky a za její obsah. Existují tři hlavní, které by měl znát každý front-end vývojář.&lt;<span class="b">/p</span>&gt;<br>
+                        &lt;<span class="b">h3</span>&gt;HTML&lt;<span class="b">/h3</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;HTML je značkovací jazyk, který se stará o obsah stránky.&lt;<span class="b">/p</span>&gt;<br>
+                        &lt;<span class="b">h3</span>&gt;CSS&lt;<span class="b">/h3</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;CSS je jazyk používaný pro stylování stránek. Stará se o jejich vzhled, rozložení, atd.&lt;<span class="b">/p</span>&gt;<br>
+                        &lt;<span class="b">h3</span>&gt;JavaScript&lt;<span class="b">/h3</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;JavaScript se stará o to, aby byly stránky nějak interaktivní.&lt;<span class="b">/p</span>&gt;<br>
+                        &lt;<span class="b">h2</span>&gt;Back-End&lt;<span class="b">/h2</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;Back-End technologie jsou ty, které běží na serverech. Starají se třeba o databáze, atd. Příkladem je třeba PHP nebo Node.js.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 16em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/headings-EXAMPLE.html" title="Příklad nadpisů." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/headings-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/04-text-formatting.html">HTML 101, lekce 4</a>: Základní vysvětlení <strong>formulářů</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/sections.html#the-h1-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-text/html-nadpisy-h1-h2-h3-h4-h5-h6" hreflang="cs" target="_blank">itnetwork.cz</a>: Nadpisy - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-text/h1-html-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: h1 - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-text/h2-html-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: h2 - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-text/h3-html-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: h3 - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_hn.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;h1&gt; to &lt;h6&gt; Tags</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;h1&gt; - &lt;h6&gt;: The HTML Section Headings elements</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/form.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;form&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/head.html" rel="next" hreflang="cs">Příští element: &lt;head&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

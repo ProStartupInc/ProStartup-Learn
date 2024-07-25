@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS 101, lekce 2 - syntaxe a priority pravidel v CSS.">
+    <meta name="keywords" content="HTML, ProStartup Learn, CSS 101, CSS kurz, CSS lekce, CSS syntaxe, základy CSS syntaxe, pravidla syntaxe v CSS, pravidla CSS">
+    <title> 2. Syntaxe | CSS 101 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinksNoCSS.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/web-development/front-end/css/sidenav-css101.shtml" -->
+    <div class="lessonContentArea">
+        <main class="lessonContent">
+            <div class="LessonNameCSS">
+                <p class="courseSign">CSS 101</p>
+                <h1>2. Syntaxe</h1>
+            </div>
+            <hr>
+            <nav class="lessonBreadcrumbCSS">
+                <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/courses.html" hreflang="cs">CSS</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/css101/01-introduction.html" hreflang="cs">CSS&nbsp;101</a>&nbsp;&gt; Lekce&nbsp;2
+            </nav>
+            <hr>
+            <div class="margin"></div>
+            <p><strong>Syntaxe</strong> je řada pravidel, kterými se musí <strong>kód</strong> řídit. Každý <strong>programovací jazyk</strong> má nějakou, od <strong>assemberu Intel 4004</strong> přes <strong>Python</strong> až po <strong>HTML</strong> a <strong>CSS</strong>. A právě o <strong>syntaxi CSS</strong> si v této lekci řekneme.</p>
+            <p><strong>Syntaxe CSS</strong> je velmi jednoduchá - nic se nemusí dělat v žádném daném pořadí, nemusí se využívat <strong>tabulátory</strong> &lpar;i když je dobrou praktikou je kvůli přehlednosti používat&rpar; a podobně. V <strong>CSS</strong> se navíc používá jedna struktura - <strong>pravidla</strong>.</p>
+            <h2>Pravidla</h2>
+            <p><strong>Pravidla</strong> jsou základními bloky <strong>CSS kódu</strong>, které většinou odkazují na nějaký specifický <strong>element</strong>, který posléze <strong>stylují</strong>.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code>
+            <p>Skládají z několika částí:</p>
+            <ul>
+                <li><strong>Selektor</strong>: Specifikuje, na který <strong>element pravidlo</strong> odkazuje. Nachází se <em>vždy</em> na začátku <strong>pravidla</strong>. <strong>Selektorem</strong> v příkladě výše je <i><code>p</code></i>, což znamená, že <strong>pravidlo</strong> odkazuje na všechny <strong>odstavce</strong>. Více si o nich řekneme v následující lekci.</li>
+                <li><strong>Složené závorky {}</strong>: Obklopují <strong>deklarace</strong>. Následují hned po <strong>selektoru</strong>.</li>
+                <li><strong>Deklarace</strong>: Určují styl pro <strong>elementy</strong>, na které <strong>selektor</strong> odkazuje. Skládají se ze dvou částí - <strong>vlastnosti</strong> a její <strong>hodnoty</strong>, přičemž oba prvky jsou odděleny <strong>dvojtečkou :</strong>. Každá <strong>deklarace</strong> je poté zakončena <strong>středníkem ;</strong>. V příkladě výše se nachází jen jedna <strong>deklarace</strong>, kterou tvoří <strong>vlastnost <code><i><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/color.html" hreflang="cs">color</a></i></code></strong> s <strong>hodnotou &quot;<i><code>red</i></code>&quot;</strong>. To znamená, že barva <strong>elementu</strong>, na který <strong>selektor</strong> odkazuje, bude červená. <strong>Deklarací</strong> se v každém <strong>pravidle</strong> může nacházet neomezeně. Na konci toho posledního se sice <strong>středník</strong> nemusí, ale je to doporučeno.</li>
+            </ul>
+            <p><strong>Pravidlo</strong> výše tedy znamená, že všechny <strong>odstavce</strong> budou mít červenou barvu.</p><br>&nbsp;<br>
+            <img src="/courses/cs/web-development/front-end/css/css101/pictures/02-syntax-01.webp" width="99.5%" alt="Diagram znázorňující jednotlivé části CSS pravidla.">
+            <h2>Řádkování</h2>
+            <p>V <strong>CSS</strong> nezáleží na tom, co se nachází na jakém řádku. Všechny příklady níže jsou tedy validní:</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code>
+            <hr>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {color: red;}
+            </code>
+            <hr>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;red;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code>
+            <p>Pro přehlednost je dobrou praktikou psát <strong>selektor</strong> a <strong>počáteční složenou závorku</strong> na jednom řádku, každou <strong>deklaraci</strong> na jiný následující řádek, a <strong>uzavírající složenou závorku</strong> na řádek po poslední <strong>deklaraci</strong>.</p>
+            <h2>Priorita pravidel</h2>
+            <p>V <strong>CSS</strong> platí, že vyšší prioritu má <strong>pravidlo</strong>, které se nachází v <strong>kódu</strong> níže. <strong>Jazyk</strong> je totiž <strong>prohlížeči</strong> interpretován řádek po řádku. Dejme tomu, že existuje <strong>pravidlo</strong>, které změní barvu všech odstavců na červenou. Mělo by fungovat normálně.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code><br><br>
+            <iframe height="50px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/02-syntax-EXAMPLE.html" title="Červený odstavec.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/02-syntax-EXAMPLE.html">zde</a>.</iframe>
+            <p>Pokud se ale kdekoliv pod to <strong>pravidlo</strong> napíše jiné, které změní barvu všech odstavců na modrou, tak <strong>prohlížeč</strong> bude ignorovat to první a bude se řídit tím níže položeným.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code><br><br>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            </code><br><br>
+            <iframe height="50px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/02-syntax-EXAMPLE02.html" title="Modrý odstavec.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/02-syntax-EXAMPLE02.html">zde</a>.</iframe>
+            <h2>Komentáře</h2>
+            <p>Stejně jako prakticky všechny <strong>programovací jazyky</strong> umožňuje i <strong>CSS</strong> používat <strong>komentáře</strong>. Ty jsou vlastně části <strong>kódu</strong>, které <strong>prohlížeče</strong> ignorují.</p>
+            <p>V <strong>CSS</strong> existuje jen jeden jejich druh. Začínájí s <strong><code>/*</code></strong> a končí s <strong><code>*/</code></strong>, přičemž mezi tím může být cokoliv.</p>
+                <code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red; /* červená */<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                </code>
+            <p>Mohou být víceřádkové.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    /* pravidlo výše specifikuje...<br>
+                    ...červenou barvu u odstavců. */
+            </code>
+            <h2>Shrnutí</h2>
+            <ul>
+                <li>V <strong>CSS</strong> se používá jen jedna struktura kódu - <strong>pravidla</strong></li>
+                <li><strong>Pravidla</strong> se skládají ze dvou částí:</li>
+                <li>
+                    <ul>
+                        <li><strong>Selektor</strong>: odkazuje na <strong>element</strong>, jež bude stylován</li>
+                        <li><strong>Deklarace</strong>: obaleny <strong>složenými závorkami {}</strong>. Skládá se ze dvou částí - <strong>vlastnosti</strong> a <stong>hodnoty</stong>, přičemž obojí je odděleno <strong>dvojtečkou :</strong>. <strong>Deklarace</strong> jsou zakončeny <strong>středníkem ;</strong>.</li>
+                    </ul>
+                </li>
+                <li>Na <strong>řádkování</strong> <em>nezáleží</em></li>
+                <li>Níže položená <strong>pravidla</strong> mají vyšší prioritu než ta, která jsou položena výše</li>
+                <li>Komentáře začínají s <code>/*</code> a končí s <code>*/</code></li>
+            </ul>
+            <br>&nbsp;<br>
+            <p>A to je vlastně všechno, alespoň co se týče <strong>syntaxe</strong>. V příští lekci si řekneme něco více o <strong>selektorech</strong>.</p>
+            <a href="/courses/cs/web-development/front-end/css/css101/01-introduction.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Úvod</a><br>
+            <a href="/courses/cs/web-development/front-end/css/css101/03-selectors.html" rel="next" hreflang="cs">Příští lekce: Selektory &gt;&gt;&gt;</a>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

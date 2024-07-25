@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Odstraněný text &lt;del&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, odstraněný text html, přeškrtnutý text html&lt;del&gt; HTML tutorial, &lt;del&gt;, &lt;del&gt; html, element &lt;del&gt;, co je &lt;del&gt;, jak použít &lt;del&gt;, formátování textu HTML">
+    <title>&lt;del&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;del&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;del&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;del&gt;</span></strong> &lpar;<b>d</b>eleted&rpar; je <strong>párový tag</strong> používaný pro přeškrtávání již neplatného textu.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;del&gt;</span></strong> je <strong>párový tag</strong>. Mezi <strong>počáteční</strong> a <strong>koncový tag</strong> se dává text, jež má být přeškrtnut.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">dl</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">dd</span> <span class="y">atribut</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;Obsah&lt;<span class="b">/dd</span>&gt;<br>
+                    &lt;<span class="b">/dl</span>&gt;<br>
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;del&gt;</span></strong> má dva vlastní <strong>atributy</strong>. Podporuje také ty <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální</a></strong>.</p>
+            <table>
+                <tr>
+                    <th>Název</th>
+                    <th>Povinné?</th>
+                    <th>Popis</th>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/del-cite.html" hreflang="cs">cite</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje odkaz, kde je vysvětleno, proč byl text označen za neplatný.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/del-datetime.html" hreflang="cs">datetime</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje datum a čas, kdy byl text označen za neplatný.</td>
+                </tr>
+            </table>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;del&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Níže jsou defaultní <strong>CSS vlastnosti</strong>:</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                <code class="exampleCode">
+                    <span class="cb">dd</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">inline</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">text-decoration</span>: <span class="cr">line-through</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2 style=>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;del&gt;</span></strong> se používá k označování již neplatného nebo odstraněného textu. Má <strong>sémantický</strong> význam - pokud chcete přeškrtnout text jenom jako dekoraci, použijte <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/s.html" hreflang="cs">&lt;s&gt;</a></strong>.</p>
+            <div class="example" title="Příklad &lt;del&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">p</span>&gt;HTML je &lt;<span class="b">del</span>&gt;programovací&lt;<span class="b">/del</span>&gt; značkovací jazyk.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 4.25em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/del-EXAMPLE.html" title="Příklad &lt;del&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/dd-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/s.html"><span class="codeOutside">&lt;s&gt;</span></a>: <strong>Nesémantický</strong> přeškrtnutý text</li>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/04-text-formatting.html">HTML 101, lekce 4</a>: Základní vysvětlení <strong><span class="codeOutsidePage">&lt;del&gt;</span></strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/edits.html#the-del-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-text/del-html-5-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: del - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_del.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;del&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;del&gt;: The Deleted Text element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/dd.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;dd&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/details.html" rel="next" hreflang="cs">Příští element: &lt;details&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

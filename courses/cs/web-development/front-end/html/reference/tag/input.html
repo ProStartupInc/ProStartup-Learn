@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - prvky formulářů &lt;input&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, &lt;input&gt; HTML tutorial, &lt;input&gt;, &lt;input&gt; html, element &lt;input&gt;, co je &lt;input&gt;, jak použít &lt;input&gt;, jak vytvářet formuláře html, pole formulářů html">
+    <title>&lt;input&gt;| ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;input&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html" hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;input&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;input&gt;</span></strong> je <strong>element</strong> používaný pro vytváření jednotlivých <strong>prvků</strong> a <strong>polí</strong> pro <strong>uživatelský vstup</strong> ve <strong>formulářích</strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;input&gt;</span></strong> je <strong>nepárový tag</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">atribut</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;input&gt;</span></strong> má poněkud velké množství <strong>vlastních atributů</strong>. Těmi dvěmi nejdůležitějšími jsou <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type.html" hreflang="cs">type</a>&apos;</strong>, který určuje typ vytvořeného <strong>vstupového pole</strong>, a <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-name.html" hreflang="cs">name</a>&apos;</strong>, podle kterého bude možné v <strong>databázi</strong> identifikovat, co vlastně <strong>data</strong> odeslaná <strong>uživatelem</strong> vlastně reprezentují.</p>
+            <table>
+                <tr>
+                    <th>Název</th>
+                    <th>Povinné?</th>
+                    <th>Popis</th>
+                    <th>Hodnoty &apos;type&apos;</th>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-accept.html" hreflang="cs">accept</a></th>
+                    <td>Ne</td>
+                    <td>Nápověda ohledně očekávaného typu nahraného souboru pro programy, odkud uživatel soubor nahrává.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-file.html" hreflang="cs">file</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-alt.html" hreflang="cs">alt</a></th>
+                    <td>Ne</td>
+                    <td>Poskytuje alternativní text.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-image.html" hreflang="cs">image</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-autocapitalize.html" hreflang="cs">autocapitalize</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje, jak &lpar;jestli vůbec&rpar; budou písmena v uživatelem zadaném textu automaticky zvětšována.</td>
+                    <td>Všechny kromě <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-url.html" hreflang="cs">url</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-password.html" hreflang="cs">password</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-email.html" hreflang="cs">email</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-autocomplete.html" hreflang="cs">autocomplete</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje, zda může prohlížeč uživateli navrhovat hodnoty, ktré zadal již dříve u podobných formulářů.</td>
+                    <td>Všechny kromě tlačítek, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-checkbox.html" hreflang="cs">checkbox</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-radio.html" hreflang="cs">radio</a>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-capture.html" hreflang="cs">capture</a></th>
+                    <td>Ne</td>
+                    <td>???.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-file.html" hreflang="cs">file</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-checked.html" hreflang="cs">checked</a></th>
+                    <td>Ne</td>
+                    <td>Booleanovský atribut. pokud je přítomen, pole bude zaškrtnuto automaticky hned po načtení stránky.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-checkbox.html" hreflang="cs">checkbox</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-radio.html" hreflang="cs">radio</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-dirname.html" hreflang="cs">dirname</a></th>
+                    <td>Ne</td>
+                    <td>???.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-hidden.html" hreflang="cs">hidden</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-text.html" hreflang="cs">text</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-search.html" hreflang="cs">search</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-url.html" hreflang="cs">url</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-tel.html" hreflang="cs">tel</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-email.html" hreflang="cs">email</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-disabled.html" hreflang="cs">disabled</a></th>
+                    <td>Ne</td>
+                    <td>Booleanovský atribut. Pokud je přítomen, uživatel nebude moct nic do pole zadávat nebo s ním jinak interagovat</td>
+                    <td>Všechny</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-form.html" hreflang="cs">form</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje, s jakým formulářem bude pole propojeno.</td>
+                    <td>Všechny</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-formaction.html" hreflang="cs">formaction</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje, které URL bude k odesílání formuláře použito.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-image.html" hreflang="cs">image</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-submit.html" hreflang="cs">submit</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-formenctype.html" hreflang="cs">formenctype</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje, v jaké sadě znaků bude odeslaný uživatelský vstup enkódován.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-image.html" hreflang="cs">image</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-submit.html" hreflang="cs">submit</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-formmethod.html" hreflang="cs">formmethod</a></th>
+                    <td>Ne</td>
+                    <td>Určuje, která HTTP metoda bude během odesílání formuláře použita.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-image.html" hreflang="cs">image</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-submit.html" hreflang="cs">submit</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-formnovalidate.html" hreflang="cs">formnovalidate</a></th>
+                    <td>Ne</td>
+                    <td>Booleanovský atribut. Pokud je přítomen, data odeslaná z pole nebudou podstupovat validaci.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-image.html" hreflang="cs">image</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-file.html" hreflang="cs">submit</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-height-and-width.html" hreflang="cs">height</a></th>
+                    <td>Ne</td>
+                    <td>Určuje výšku tlačítka v pixelech.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-image.html" hreflang="cs">image</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-list.html" hreflang="cs">list</a></th>
+                    <td>Ne</td>
+                    <td>???.</td>
+                    <td>Všechny kromě tlačítek, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-hidden.html" hreflang="cs">hidden</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-password.html" hreflang="cs">password</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-checkbox.html" hreflang="cs">checkbox</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-radio.html" hreflang="cs">radio</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-max.html" hreflang="cs">max</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje maximální možnou hodnotu, kterou může uživatel zadat.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-date.html" hreflang="cs">date</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-month.html" hreflang="cs">month</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-week.html" hreflang="cs">week</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-time.html" hreflang="cs">time</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-datetime-local.html" hreflang="cs">datetime-local</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-number.html" hreflang="cs">number</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-range.html" hreflang="cs">range</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-maxlength.html" hreflang="cs">maxlength</a></th>
+                    <td>Ne</td>
+                    <td>Určuje maximální povolený počet znaků zadaného vstupu.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-text.html" hreflang="cs">text</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-search.html" hreflang="cs">search</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-url.html" hreflang="cs">url</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-tel.html" hreflang="cs">tel</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-email.html" hreflang="cs">email</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-password.html" hreflang="cs">password</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-min.html" hreflang="cs">min</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje minimální možnou hodnotu, kterou může uživatel zadat.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-date.html" hreflang="cs">date</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-month.html" hreflang="cs">month</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-week.html" hreflang="cs">week</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-time.html" hreflang="cs">time</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-datetime-local.html" hreflang="cs">datetime-local</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-number.html" hreflang="cs">number</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-range.html" hreflang="cs">range</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-minlength.html" hreflang="cs">minlength</a></th>
+                    <td>Ne</td>
+                    <td>Určuje minimální povolený počet znaků zadaného vstupu.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-text.html" hreflang="cs">text</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-search.html" hreflang="cs">search</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-url.html" hreflang="cs">url</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-tel.html" hreflang="cs">tel</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-email.html" hreflang="cs">email</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-password.html" hreflang="cs">password</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-multiple.html" hreflang="cs">multiple</a></th>
+                    <td>Ne</td>
+                    <td>Booleanovský atribut. Pokud je přítomen, uživatel může zadat více hodnot.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-email.html" hreflang="cs">email</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-file.html" hreflang="cs">file</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-name.html" hreflang="cs">name</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje název, který bude poslán spolu s daty na server a bude podle něj možné identifikovat, z jakého pole byla data poslána.</td>
+                    <td>Všechny</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-pattern.html" hreflang="cs">pattern</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje vzor, kterým se musí vstup řídit k tomu, aby byl validní.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-text.html" hreflang="cs">text</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-search.html" hreflang="cs">search</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-url.html" hreflang="cs">url</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-tel.html" hreflang="cs">tel</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-email.html" hreflang="cs">email</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-password.html" hreflang="cs">password</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-placeholder.html" hreflang="cs">placeholder</a></th>
+                    <td>Ne</td>
+                    <td>Určuje text, který se v poli zobrazje &lpar;např. jako nápověda&rpar;, když v něm není zadána ještě žádná hodnota.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-text.html" hreflang="cs">text</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-search.html" hreflang="cs">search</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-url.html" hreflang="cs">url</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-tel.html" hreflang="cs">tel</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-email.html" hreflang="cs">email</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-password.html" hreflang="cs">password</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-number.html" hreflang="cs">number</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-popovertarget.html" hreflang="cs">popovertarget</a></th>
+                    <td>Ne</td>
+                    <td>Nastaví tlačítko jako ovládání pro vyskakovací element.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-button.html" hreflang="cs">button</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-popovertargetaction.html" hreflang="cs">popovertargetaction</a></th>
+                    <td>Ne</td>
+                    <td>Určuje, kterou akci bude tlačítko s předchozím atributem dělat.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-button.html" hreflang="cs">button</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-readonly.html" hreflang="cs">readonly</a></th>
+                    <td>Ne</td>
+                    <td>Booleanovský atribut. Pokud je přítomen, uživatel nebude s polem moct interagovat - bude jen na čtení.</td>
+                    <td>Všechny kromě tlačítek, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-checkbox.html" hreflang="cs">checkbox</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-color.html" hreflang="cs">color</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-hidden.html" hreflang="cs">hidden</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-radio.html" hreflang="cs">radio</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-range.html" hreflang="cs">range</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-pattern.html" hreflang="cs">required</a></th>
+                    <td>Ne</td>
+                    <td>Booleanovský atribut. pokud je přítomen, pole bude muset být k odeslání formuláře povinně vyplněno.</td>
+                    <td>Všechny kromě tlačítek, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-color.html" hreflang="cs">color</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-hidden.html" hreflang="cs">hidden</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-range.html" hreflang="cs">range</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-size.html" hreflang="cs">size</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje délku pole v počtu znaků.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-image.html" hreflang="cs">text</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-image.html" hreflang="cs">search</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-url.html" hreflang="cs">url</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-tel.html" hreflang="cs">tel</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-email.html" hreflang="cs">email</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-password.html" hreflang="cs">password</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-src.html" hreflang="cs">src</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje umístění obrázku.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-image.html" hreflang="cs">image</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-pattern.html" hreflang="cs">step</a></th>
+                    <td>Ne</td>
+                    <td>???.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-date.html" hreflang="cs">date</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-month.html" hreflang="cs">month</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-week.html" hreflang="cs">week</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-time.html" hreflang="cs">time</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-datetime-local.html" hreflang="cs">datetime-local</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-number.html" hreflang="cs">number</a>, <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-range.html" hreflang="cs">range</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-type.html" hreflang="cs">type</a></th>
+                    <td>Ano</td>
+                    <td>Určuje typ vstupního pole.</td>
+                    <td>Všechny</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-value.html" hreflang="cs">value</a></th>
+                    <td>Ne</td>
+                    <td>Určuje počáteční hodnotu pole.</td>
+                    <td>Všechny kromě <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-image.html" hreflang="cs">image</a></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/img-height-and-width.html" hreflang="cs">width</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje šířku obrázku pole v pixelech.</td>
+                    <td><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-image.html" hreflang="cs">image</a></td>
+                </tr>
+            </table>
+            <p><strong>Element</strong> také podporuje <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;input&gt;</span></strong> lze v <strong>CSS</strong> stylovat. S každou <strong>hodnotou &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type.html" hreflang="cs"></a></strong> ale přichází i jiný vzhled, proto si tu výchozí <strong>CSS vlastnosti</strong> neukážeme.</p>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;input&gt;</span></strong> se používá do <strong>formulářů</strong> jako <strong>vstupní pole</strong>, do kterých <strong>uživatel</strong> zadává <strong>data</strong>, jež budou posléze odeslána <strong>serveru</strong> a tam nějak zpracována &lpar;například uložena do <strong>databáze</strong>&rpar;.</p>
+            <p>Vzhledem k tomu, že každá <strong>hodnota &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type.html" hreflang="cs">type</a>&apos;</strong> ovlivňuje <strong><span class="codeOutsidePag">&lt;input&gt;</span></strong> jinak, si tu moc příkladů využití neukážeme - více zjistíte na individuálních <strong>stránkách</strong> každé <strong>hodnoty</strong> &lpar;viz <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-1-list">Seznam hodnot &apos;type&apos;</a></strong>&rpar;.</p>
+            <h3>Základní textový formulář</h3>
+            <p>Základní <strong>textové formuláře</strong> lze vytvořit jen s <strong>elementy <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/form.html" hreflang="cs"></strong>, <strong><span class="codeOutsidePage">&lt;input&gt;</span></strong> a <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/label.html" hreflang="cs">&lt;label&gt;</a></strong>. V příkladě níže je <strong><span class="codeOutsidePage">&lt;input&gt;</span></strong> využit dvakrát, přičemž jejich <strong>atributy &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type.html" hreflang="cs">type</a>&apos;</strong> mají <strong>hodnoty <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-text.html" hreflang="cs">&quot;text&quot;</a></strong> a <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/img-type-submit.html" hreflang="cs">&quot;submit&quot;</a></strong>.</p>
+            <div class="example" title="Příklad &lt;input&gt;">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;formular&quot;</span>&gt;Text: &lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;text&quot;</span> <span class="y">id</span>=<span class="r">&quot;formular&quot;</span> <span class="y">name</span>=<span class="r">&quot;jmeno&quot;</span>&gt;&lt;<span class="b">br</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;submit&quot;</span>&gt;<br>
+                        &lt;<span class="b">/form</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height:6em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/input-EXAMPLE.html" title="Příklad &lt;input&gt;" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/input-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html103/01-cs-introduction.html">HTML 103</a>: Základy <strong>formulářů</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/form.html"><span class="codeOutside">&lt;form&gt;</span></a>: <strong>Formuláře</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/label.html"><span class="codeOutside">&lt;label&gt;</span></a>: Názvy <strong>vstupních polí</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/att/img-type-1-list.html" hreflang="cs">Seznam hodnot &apos;type&apos;</a></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements-categorized.html#forms">Kategorizovaný seznam všech elementů</a>: <strong>Formuláře / Vstup</strong></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/input.html#the-input-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-formulare/input-html-5-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: input - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_input.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;input&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;input&gt;: The Input &lpar;Form Input&rpar; element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/img.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;img&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/ins.html" rel="next" hreflang="cs">Příští element: &lt;ins&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

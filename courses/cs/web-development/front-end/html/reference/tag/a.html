@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Komentáře &lt;!-- --&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, odkazy, hypertextové odkazy, odkazy HTML tutorial, &lt;a&gt;, odkazy html, hypertextové odkazy html, element &lt;a&gt;, co je &lt;a&gt;, jak použít &lt;a&gt;, jak použít odkazy html, jak vytvořit odkazy html">
+    <title>&lt;a&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;a&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;a&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;a&gt;</a></strong> &lpar;<b>a</b>nchor&rpar; je <strong>párový tag</strong> používaný k vytváření <strong>odkazů</strong> vedoucích ať už na různé <strong>elementy</strong> nacházející se na stejné <strong>stránce</strong>, <strong>soubory</strong>, anebo - nejčastěji - jiné <strong>HTML dokumenty</strong>&nbsp;-&nbsp;prostě věci, na které lze nějak odkázat s <strong>URL</strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;a&gt;</a></strong> je <strong>párový tag</strong>. Mezi tím <strong>počátečním</strong> a <strong>koncovým</strong> se nachází část, která se zobrazí <strong>uživateli</strong> a je s ní možné <strong>odkaz</strong> aktivovat, ať už jde o <strong>obrázek</strong>, <strong>tabulku</strong>, nebo jen obyčejný text.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;URL&quot;</span> <span class="y">jiný-atribut</span>=<span class="r">&quot;hodnota&quot;</span></span>&gt;Část odkazu, jež se zobrazí uživateli&lt;<span class="b">/a</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p>Kromě vlastních <strong>atributů</strong> níže podporuje <strong><span class="codeOutsidePage">&lt;a&gt;</a></strong> i <a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs">globální atributy</a>.</p>
+            <table>
+                <tr>
+                    <th>Název</th>
+                    <th>Povinné?</th>
+                    <th>Popis</th>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/a-download.html" hreflang="cs">download</a></th>
+                    <td>Ne</td>
+                    <td>Booleanovský atribut. Pokud je přítomen, soubor/stránka, kam atribut &apos;href&apos; odkazuje, bude stáhnut místo toho, aby byl otevřen.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/a-href.html" hreflang="cs">href</a></th>
+                    <td>Ano</td>
+                    <td>Určuje, na jaký dokument nebo soubor odkaz odkazuje.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/a-hreflang.html" hreflang="cs">hreflang</a></th>
+                    <td>Ne</td>
+                    <td>Určuje, v jakém jazyce je odkazovaný dokument.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/a-media.html" hreflang="cs">media</a></th>
+                    <td>Ne</td>
+                    <td><!-- sdadsdasdasdasdasdasdasdasdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdd --></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/a-methods.html" hreflang="cs">methods</a></th>
+                    <td>Ne</td>
+                    <td><!-- kjsjdsdlansjdnsjdsnjdnjsndsjdnjsndjnjsdnjsndsndjsdsjdsndjsjdnjnjd --></td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/a-ping.html" hreflang="cs">ping</a></th>
+                    <td>Ne</td>
+                    <td>Používán ke specifikování stránky, která bude upozorněna, pokud je odkaz aktivován.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/a-rel.html" hreflang="cs">rel</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje, jaký vztah je mezi odkazovaným dokumentem a dokumentem, na kterém se nachází odkaz s tímto atributem.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/a-target.html" hreflang="cs">target</a></th>
+                    <td>Ne</td>
+                    <td>Určuje, jak prohlížeč odkaz otevře.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/a-type.html" hreflang="cs">type</a></th>
+                    <td>Ne</td>
+                    <td>Říká prohlížeči, jakým typem souboru je odkazovný soubor.</td>
+                </tr>
+            </table>
+            <h2>Relativní vs Absolutní odkazy</h2>
+            <p><strong>Odkazy</strong> se dají rozdělit do dvou skupin:</p>
+            <ul>
+                <li><strong>Relativní</strong>: Odkazují jen na <strong>lokální soubory</strong>. <strong>Hodnota atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/a-href.html" hreflang="cs">href</a>&apos;</strong> obsahuje jen <strong>cestu k souboru</strong> &lpar;viz <a href="/courses/cs/web-development/front-end/html/html101/07-directories.html" hreflang="cs" rel="prev">HTML 101, lekce 7</a>&rpar;.</li>
+                <li><strong>Absolutní</strong>: Odkazují většinou na <strong>externí soubory</strong>. <strong>Hodnota atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/a-href.html" hreflang="cs">href</a>&apos;</strong> obsahuje <strong>URL</strong>.</li>
+            </ul>
+            <h2>Vzhled</h2>
+            <p><strong>Odkazy</strong> lze v <strong>CSS</strong> stylovat. Ve velké části &lpar;ne-li všech&rpar; nejpoužívanějších <strong>prohlížečů</strong> vypadají modře a jsou podtrženy. Pokud byly již dříve aktivovány, tak budou mít nafialovou barvu. Aktivované <strong>odkazy</strong> mají většinou barvu červenou. Níže jsou rozepsány <strong>CSS vlastnosti</strong>, kterými jsou většinou <strong>prohlížeči</strong> stylovány.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18</div>
+                <code class="exampleCode">
+                    <span class="cb">a</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">color</span>: <span class="cr">###</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">cursor</span>: <span class="cr">auto</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">text-decoration</span>: <span class="cr">underline</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">inline</span>;<br>
+                    }<br><br>
+                    <span class="cb"><span class="cb">a:visited</span></span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">color</span>: <span class="cr">###</span>; <span class="g">/* Hodnota odlišná než u ostatních */</span><br>
+                    }<br><br>
+                    <span class="cb"><span class="cb">a:active</span></span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">color</span>: <span class="cr">###</span>; <span class="g">/* Hodnota odlišná než u ostatních */</span><br>
+                    }<br><br>
+                    <span class="cb"><span class="cb">a:visited:active</span></span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">color</span>: <span class="cr">###</span>; <span class="g">/* Hodnota odlišná než u ostatních */</span><br>
+                    }<br>
+                </code>
+            </div>
+            <p><b>Poznámka</b>: <b>###</b> znamená, že hodnota se může u každého prohlížeče lišit.</p>
+            <h2>Využití</h2>
+            <h3 style="margin-top: 0;">Odkazování na HTML dokumenty a soubory</h3>
+            <p>Odkazování na jiné <strong>HTML dokumenty</strong> a <strong>soubory</strong> je nepochybně účel, ke kterému je <strong><span class="codeOutsidePage">&lt;a&gt;</a></strong> používán nejvíce. Aby byl ale ten účel schopen plnit, musí se v něm nacházet <strong>atribut &apos; <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/a-href.html" hreflang="cs">href</a>&apos;</strong>, jehož <strong>hodnotou</strong> je <strong>URL</strong> nebo <strong>cesta k souboru</strong>, která k požadovanému <strong>souboru</strong> vede.</p>
+            <div class="example" title="Příklad odkazování na soubory a HTML dokumenty">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;07-links-01-desc.webp&quot;</span>&gt;Relativní odkaz&lt;<span class="b">/a</span>&gt;&lt;<span class=b>br</span>&gt;<br>
+                        &lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;https://example.com&quot;</span>&gt;Absolutní odkaz&lt;<span class="b">/a</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleExplanationContainer">
+                    <div class="exampleExplanationLineNumber">1<br>2</div>
+                    <div class="exampleExplanation">
+                        Relativní odkaz, který vede na lokální obrázek.<br>
+                        Absolutní odkaz, který vede na web example.com.
+                    </div>
+                </div>
+                <div class="exampleIframe">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE.html" title="Příklad odkazování na soubory a HTML dokumenty." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>Odkazování na elementy na stejné stránce</h3>
+            <p>S odkazováním na <strong>elementy</strong> nacházejícími se na stejné <strong>stránce</strong> se lze setkat na mnoha místech, přičemž s asi tím nejznámnějším příkladem se můžete setkat na téměř jakémkoliv článku na Wikipedii, kde jsou implementovány <strong>odkazy</strong> vedoucí na <strong>nadpisy</strong>.</p>
+            <p>Na Wikipedii se ovšem tyto <strong>odkazy</strong> vytváří automaticky, čehož v samotném <strong>HTML</strong> nedocílíme - můžeme si je ale vytvořit manuálně. Je nutné mít nějaký element s <strong>globálním atributem &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/id.html" hreflang="cs">id</a>&apos;</strong> a <strong>element <span class="codeOutsidePage">&lt;a&gt;</span></strong>, který bude mít jako <strong>hodnotu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/a-href.html" hreflang="cs">href</a>&apos;</strong> specifikovanou <strong>hodnotu atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/id.html" hreflang="cs">id</a>&apos;</strong> u minule zmíněného <strong>elementu</strong> - jen s tím rozdílem, že se mezi počáteční uvozovku a <strong>hodnotu</strong> vloží znak křížku &lpar;<strong>#</strong>&rpar;.</p>
+            <p>Lepší bude, když si to ukážeme na příkladě:</p>
+            <div class="example" title="Příklad odkazování na elementy na stejné stránce">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;#nadpis&quot;</span>&gt;Odkaz na nadpis&lt;<span class="b">/a</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;<span class="b">/p</span>&gt;<br>
+                        &lt;<span class="b">h2</span> <span class="y">id</span>=<span class="r">&quot;nadpis&quot;</span>&gt;Nadpis...&lt;<span class="b">/h2</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.&lt;<span class="b">/p</span>&gt;<br>
+                    </code>
+                </div>
+                <div class="exampleIframe">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE02.html" title="Příklad odkazování na elementy na stejné stránce." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE02.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>Odkazování na email</h3>
+            <p>Pokud chcete, aby byl <strong>uživatel</strong> po stisknutí <strong>odkazu</strong> přesměrován na nějakou emailovou službu kvůli poslání nové zprávy na nějaký specifický email, budete potřebovat <strong>element <span class="codeOutsidePage">&lt;a&gt;</span></strong>, který má jako <strong>hodnotu atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/a-href.html" hreflang="cs">href</a>&apos;</strong> specifikován emailovou adresu, přičemž se mezi ní a začátkem uvozovek bude nacházet předpona <strong><span class="codeOutsidePage">mailto:</a></strong>.  Pro více detailů se podívejte na standard <strong><a rel="external" href="https://datatracker.ietf.org/doc/html/rfc6068" hreflang="en" target="_blank">RFC 6068</a></strong>.</p>
+            <div class="example" title="Příklad odkazování na email.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">p</span>&gt;Pokud máte nějaké připomínky, napište na &lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;mailto:prostartupinc@gmail.com&quot;</span>&gt;prostartupinc@gmail.com&lt;<span class="b">/a</span>&gt;!&lt;<span class="b">/p</span>&gt;<br>
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 4.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE03.html" title="Příklad odkazování na email." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE03.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>Odkazování na telefonní čísla</h3>
+            <p>Vedle emailů lze s pomocí <strong>odkazů</strong> odkazovat i na telefonní čísla - stačí jen napsat do <strong>atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/a-href.html" hreflang="cs">href</a>&apos;</strong> telefonní číslo <b>i s předvolbou</b>, přičemž se mezi samotným číslem a uvozovkou ohraničující <strong>hodnotu</strong> musí nacházet předpona <strong><span class="codeOutsidePage">tel:</a></strong>. Pro více detailů se podívejte na standard <strong><a rel="external" href="https://datatracker.ietf.org/doc/html/rfc3966" hreflang="en" target="_blank">RFC 3966</a></strong>.</p>
+            <div class="example" title="Příklad odkazování na telefonní číslo.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">p</span>&gt;Pokud máte nějaké připomínky, zavolejte na &lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;tel:+420.123.456.789&quot;</span>&gt;123 456 789&lt;<span class="b">/a</span>&gt;!&lt;<span class="b">/p</span>&gt;<br>
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 4.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE07.html" title="Příklad odkazování na telefonní číslo." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE07.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>Stahování souborů</h3>
+            <p>Když je odkaz aktivován, normálně jen otevře <strong>soubor</strong> nebo <strong>stránku</strong>, na kterou odkazuje. Tohle chování lze ale změnit s <strong>booleanovským atributem &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/a-download.html" hreflang="cs">download</a>&apos;</strong> - pokud je přítomen, tak místo toho, aby byl <strong>soubor</strong> otevřen, bude stažen. </p>
+            <div class="example" title="Příklad atributu &apos;download&apos;">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">h1</span>&gt;07-links-01-desc.webp&lt;<span class="b">/h1</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;&lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;07-links-01-desc.webp&quot;</span> <span class="y">download</span>&gt;Stáhnout&lt;<span class="b">/a</span>&gt;&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 8.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE06.html" title="Příklad atributu &apos;download&apos;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE06.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Časté chyby</h2>
+            <h3 style="margin-top: 0;">Obsah odkazu</h3>
+            <p>Obsah <strong>odkazu</strong> &lpar;neboli to, co je mezi <strong>počátečním</strong> a <strong>koncovým tagem</strong>&rpar; by - pokud je to možné - měl indikovat, kam vede. <strong>Čtečky obrazovek</strong> totiž mají často seznam všech <strong>odkazů</strong> na <strong>stránce</strong>; ten je ale k ničemu, pokud jsou <strong>odkazy</strong> reprezentovány slovy jako &quot;<b>zde</b>&quot;.</p>
+            <div class="example" title="Příklad nedeskriptivního odkazu">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">p</span>&gt;Pro více informací o této stránce klikněte &lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;https://example.com&quot;</span>&gt;zde&lt;<span class="b">/a</span>&gt;&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 4.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE04.html" title="Příklad nedeskriptivního odkazu." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE04.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <p>Jak to ale napravit? Jednoduše stačí dělat <strong>odkazy</strong> trochu deskriptivní &lpar;neboli tak, aby bylo možné poznat jejich cíl i mimo kontext&rpar;. Je sice obtížné aplikovat tohle pravidlo všude, ale mělo by se dodržovat alespoň tak, kde je možné.</p>
+            <div class="example" title="Příklad deskriptivního odkazu">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">p</span>&gt;&lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;https://example.com&quot;</span>&gt;Více informací o tomto webu&lt;<span class="b">/a</span>&gt;&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 4.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE05.html" title="Příklad deskriptivního odkazu." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/a-EXAMPLE05.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>Použití jako tlačítka</h3>
+            <p><strong>Odkazy</strong> jsou často používány jako <strong>tlačíka</strong> - to je ale špatně. <strong>Odkazy</strong> by měly být používány jen na odkazování na jiné <strong>webové stránky</strong>, <strong>soubory</strong>, apod. - na <strong>tlačítka</strong> existuje <strong>element <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/button.html" hreflang="cs">&lt;button&gt;</a></strong>.</p>
+            <h3>Odkazy vedoucí na stejnou stránku</h3>
+            <p><strong>Odkazy</strong> by nikdy neměly vést na stejnou <strong>stránku</strong> jaku tu, na které se nachází. To může jinak poškodit <strong>SEO webu</strong>, protože <strong>internetové vyhledávače</strong> mohou být takovými <strong>odkazy</strong> zmateny a <strong>stránku</strong> špatně indexovat.</p>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/08-links.html" hreflang="cs">HTML 101, lekce 8</a>: Lekce o <strong>odkazech</strong>.</li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/link.html"><span class="codeOutside">&lt;area&gt;</span></a>: <strong>Odkazy</strong> v <strong>obrázcích</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/link.html"><span class="codeOutside">&lt;link&gt;</span></a>: Odkazování na externí soubory a specifikaci jejich vztahu k <strong>HTML dokumentu</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/list-101elements.html" hreflang="cs">Seznam elementů probraných v HTML 101</a></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-ostatni/a-html-5-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: a - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_a.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;a&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;a&gt; - The Anchor element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/DOCTYPE.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;!DOCTYPE&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/abbr.html" rel="next" hreflang="cs">Příští element: &lt;abbr&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

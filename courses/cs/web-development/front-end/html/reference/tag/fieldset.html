@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Seskupování prvků formulářů &lt;fieldset&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, seskupování prvků formuláře html, &lt;fieldset&gt; HTML tutorial, &lt;fieldset&gt;, &lt;fieldset&gt; html, element &lt;fieldset&gt;, co je &lt;fieldset&gt;, jak použít &lt;fieldset&gt;, formuláře HTML">
+    <title>&lt;fieldset&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;fieldset&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;fieldset&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;fieldset&gt;</span></strong> je <strong>párový tag</strong> používaný pro seskupování souvisejících <strong>prvků formulářů</strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;fieldset&gt;</span></strong> je <strong>párový tag</strong>. Je <strong>potomkem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/form.html" hreflang="cs">&lt;form&gt;</a></strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">form</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">fieldset</span> <span class="y">atribut</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obsah.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/fieldset</span>&gt;<br>
+                    &lt;<span class="b">/form</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;embed&gt;</span></strong> podporuje několik vlastních <strong>atributů</strong>. Podporuje také <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <table>
+                <tr>
+                    <th>Název</th>
+                    <th>Povinné?</th>
+                    <th>Popis</th>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/fieldset-disabled.html" hreflang="cs">disabled</a></th>
+                    <td>Ne</td>
+                    <td>Booleanovský atribut. Pokud je přítomen, uživatel nebude moct interagovat s potomky elementu.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/fieldset-form.html" hreflang="cs">form</a></th>
+                    <td>Ano</td>
+                    <td>Specifikuje, ke kterému formuláři element vlastně patří. Nedědí se na potomky - musí se použít zvlášť na ně a na &lt;fieldset&gt;.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/fieldset-name.html" hreflang="cs">name</a></th>
+                    <td>Ne</td>
+                    <td>Určuje název spojený se skupinou.</td>
+                </tr>
+            </table>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;fieldset&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Níže jsou výchozí <strong>CSS vlastnosti</strong>:</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+                <code class="exampleCode">
+                    <span class="cb">details</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">block</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-top</span>: <span class="cr">2px</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-bottom</span>: <span class="cr">2px</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">padding-top</span>: <span class="cr">0.35em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">padding-bottom</span>: <span class="cr">0.625em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">padding-left</span>: <span class="cr">0.75em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">padding-right</span>: <span class="cr">0.75em</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">border</span>: <span class="cr">###</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;fieldset&gt;</span></strong> se používá na seskupování <strong>prvků formulářů</strong>, které spolu nějak souvisí &lpar;nejčastěji tématicky; např. <strong>pole</strong> vztažena na osobní informace&rpar;. To je obzvláště užitečné v dlouhých <strong>formulářích</strong>.</p>
+            <div class="example" title="Příklad &lt;fieldset&gt; bez &lt;legend&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">fieldset</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;jmeno&quot;</span>&gt;Jméno: &lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;text&quot;</span> <span class="y">id</span>=<span class="r">&quot;jmeno&quot;</span> <span class="y">name</span>=<span class="r">&quot;jmeno&quot;</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;prijmeni&quot;</span>&gt;Příjmení: &lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;text&quot;</span> <span class="y">id</span>=<span class="r">&quot;prijmeni&quot;</span> <span class="y">name</span>=<span class="r">&quot;prijmeni&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/fieldset</span>&gt;<br>
+                        &lt;<span class="b">form</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 6em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/fieldset-EXAMPLE.html" title="Příklad &lt;fieldset&gt; bez &lt;legend&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/fieldset-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h3>S &lt;legend&gt;</h3>
+            <p><strong><span class="codeOutsidePage">&lt;fieldset&gt;</span></strong> je možné použít s <strong>elementem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/legend.html" hreflang="cs">&lt;legend&gt;</a></strong>, který je jeho <strong>potomkem</strong>. <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/legend.html" hreflang="cs">&lt;legend&gt;</a></strong> se používá k vytváření titulku/nadpisu pro sekci obklopenou <strong><span class="codeOutsidePage">&lt;fieldset&gt;</span></strong>.</p>
+            <div class="example" title="Příklad &lt;fieldset&gt; s &lt;legend&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">fieldset</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">legend</span>&gt;Základní informace&lt;<span class="b">/legend</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;jmeno&quot;</span>&gt;Jméno: &lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;text&quot;</span> <span class="y">id</span>=<span class="r">&quot;jmeno&quot;</span> <span class="y">name</span>=<span class="r">&quot;jmeno&quot;</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;prijmeni&quot;</span>&gt;Příjmení: &lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;text&quot;</span> <span class="y">id</span>=<span class="r">&quot;prijmeni&quot;</span> <span class="y">name</span>=<span class="r">&quot;prijmeni&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/fieldset</span>&gt;<br>
+                        &lt;<span class="b">form</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 7em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/fieldset-EXAMPLE02.html" title="Příklad &lt;fieldset&gt; s &lt;legend&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/fieldset-EXAMPLE02.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/legend.html"><span class="codeOutside">&lt;legend&gt;</span></a>: Popisek/nadpis pro <strong><span class="codeOutsidePage">&lt;fieldset&gt;</span></strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/form.html"><span class="codeOutside">&lt;form&gt;</span></a>: <strong>Formuláře</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/input.html"><span class="codeOutside">&lt;input&gt;</span></a>: Jednotlivá <strong>pole formulářů</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/html103/05-fieldset-and-legend.html">HTML 103, lekce 5</a>: Základní vysvětlení <strong><span class="codeOutsidePage">fieldset</span></strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-formulare/fieldset-html-5-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: fieldset - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_fieldset.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;fieldset&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;fieldset&gt;: The Field Set element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/embed.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;embed&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/figcaption.html" rel="next" hreflang="cs">Příští element: &lt;figcaption&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

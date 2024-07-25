@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Interaktivní widget skrývající bližší informace &lt;details&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, widget skrývající informace html, rozšířitelný widget html, widget &lt;details&gt; HTML tutorial, &lt;details&gt;, &lt;details&gt; html, element &lt;details&gt;, co je &lt;details&gt;, jak použít &lt;details&gt;">
+    <title>&lt;details&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;details&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;details&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;details&gt;</span></strong> je <strong>párový tag</strong> používaný k vytváření interaktivních <strong>widgetů</strong>, které po kliknutí expandují a odhalí bližší informace.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;details&gt;</span></strong> je <strong>párový tag</strong>. Mezi <strong>počáteční</strong> a <strong>koncový tag</strong> se dává obsah, jež by se měl ve <strong>widgetu</strong> nacházet a <strong>potomek <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/summary.html" hreflang="cs">&lt;summary&gt;</a></strong>, který pro něj poskytuje <strong>titulek</strong>/<strong>nadpis</strong> &lpar;pokud není <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/summary.html" hreflang="cs">&lt;summary&gt;</a></strong> specifikován, <strong>prohlížeč</strong> ukáže <strong>uživateli</strong> svůj vlastní, defaultní text&rpar;.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">details</span> <span class="y">atribut</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">summary</span>&gt;&lt;<span class="b">/summary</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;Obsah.<br>
+                    &lt;<span class="b">/details</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;details&gt;</span></strong> má jeden vlastní, <strong>booleanovský atribut</strong> - <strong>open</strong>. Pokud je přítomen, tak bude <strong>widget</strong> defaultně ve svém expandovaném stavu. <strong>Element</strong> také podporuje <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;details&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Defaultně jde o <strong>blokový element</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                <code class="exampleCode">
+                    <span class="cb">details</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">block</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2 style=>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;details&gt;</span></strong> se používá k vytváření <strong>widgetů</strong>, které se po kliknutí rozloží a odhalí dodatečné informace. To se hodí na <strong>stránky</strong> s velkým množstvím obsahu.</p>
+            <p><strong>Widget</strong> je defaultně v zavřeném &lpar;nebo neexpandovaném&rpar; stavu, kdy se zobrazuje jen jeho <strong>titulek</strong>, před kterým se nachází ikona trojúhelníku. V otevřeném &lpar;nebo expandovaném&rpar; stavu se pod <strong>titulkem</strong> objeví obsah <strong>widgetu</strong> a ikona trojúhelníku se obrátí o 90 stupňů doleva.</p>
+            <div class="example" title="Příklad &lt;details&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">details</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">summary</span>&gt;Co je HTML?&lt;<span class="b">/summary</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;HTML je značkovací jazyk používaný pro vytváření webových stránek.<br>
+                        &lt;<span class="b">/details</span>&gt;<br>
+                        &lt;<span class="b">details</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">summary</span>&gt;Kde se naučit HTML?&lt;<span class="b">/summary</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;HTML se lze naučit na mnoha stránkách. V angličtině existují zdroje jako W3schools a MDN Web Docs. V češtině máme např. itnetwork nebo ProStartup Learn.<br>
+                        &lt;<span class="b">/details</span>&gt;
+                        </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 8em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/details-EXAMPLE.html" title="Příklad &lt;details&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/details-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/summary.html"><span class="codeOutside">&lt;summary&gt;</span></a>: <strong>Titulek</strong> pro <strong><span class="codeOutsidePage">&lt;details&gt;</span></strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-rozlozeni/details-html-5-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: details - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_details.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;details&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;details&gt;: The Details disclosure element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/del.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;del&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/dfn.html" rel="next" hreflang="cs">Příští element: &lt;dfn&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

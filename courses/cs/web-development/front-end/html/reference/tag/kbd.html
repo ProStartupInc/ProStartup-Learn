@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - vyznačení uživatelského vstupu v textu &lt;kbd&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, &lt;kbd&gt; HTML tutorial, &lt;kbd&gt;, &lt;kbd&gt; html, element &lt;kbd&gt;, co je &lt;kbd&gt;, jak použít &lt;kbd&gt;, vyznačení uživatelského vstupu html">
+    <title>&lt;kbd&gt;| ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;kbd&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html" hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;kbd&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;kbd&gt;</span></strong> je <strong>element</strong> využívaný pro zvýrazňování textu, který má reprezentovat <strong>uživatelský vstup</strong> &lpar;ať už třeba klávesnicí nebo hlasovými příkazy&rpar;.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;kbd&gt;</span></strong> je <strong>párový tag</strong>. Mezi tím <strong>počátečním</strong> a <strong>koncovým</strong> se nachází text, jež má být vyznačen.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">kbd</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;Text&lt;<span class="b">/kbd</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;kbd&gt;</span></strong> podporuje pouze <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;kbd&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Defaultně jde o <strong>řádkový element</strong>, přičemž text mezi <strong>počátečním</strong> a <strong>koncovým tagem</strong> je &lpar;alespoň ve většině <strong>prohlížečů</strong>&rpar; vykreslen v <strong>neproporciálním</strong> &lpar;<strong>monospace</strong>&rpar; <strong>písmu</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                <code class="exampleCode">
+                    <span class="cb">kbd</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">inline</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-family</span>: <span class="cr">monospace</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;kbd&gt;</span></strong> se používá na vyznačování <strong>uživatelského vstupu</strong> zmíněného v textu, což se hodí nejvíce třeba do nějakých <strong>dokumentací aplikací</strong>. V závislosti na jeho <strong>potomcích</strong> nebo <strong>rodičích</strong> může mít více významů:</p>
+            <ul>
+                <li><strong><span class="codeOutsidePage">&lt;kbd&gt;</span> uvnitř <span class="codeOutsidePage">&lt;kbd&gt;</span></strong>: <strong>Element</strong> reprezentuje například specifickou klávesu na klávesnici nebo hlasový příkaz bez jakéhokoliv spojení s nějakým programem</li>
+                <li><strong><span class="codeOutsidePage">&lt;kbd&gt;</span> uvnitř <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/samp.html" hreflang="cs">&lt;samp&gt;</a></strong>: <strong>Element</strong> reprezentuje <strong>vstup</strong> tak, jak byl interpretován programem</li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/samp.html" hreflang="cs">&lt;samp&gt;</a> uvnitř <span class="codeOutsidePage">&lt;kbd&gt;</span></strong>: <strong>Element</strong> reprezentuje <strong>vstup</strong>, jež je závislý na <strong>výstupu</strong> nějakého programu &lpar;například vyvolání položky v nějaké nabídce&rpar;</li>
+            </ul>
+            <p>Tyto významy ale můžete klidně ignorovat a na označení jakéhokoliv <strong>vstupu</strong> prostě použít jen jeden <strong><span class="codeOutsidePage">&lt;kbd&gt;</span></strong> bez jakýchkoliv <strong>potomků</strong> nebo <strong>rodičů <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/samp.html" hreflang="cs">&lt;samp&gt;</a></strong>.</p>
+            <div class="example" title="Příklad &lt;kbd&gt;">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">p</span>&gt;Klávesová zkratka &lt;<span class="b">kbd</span>&gt;ALT&lt;<span class="b">/kbd</span>&gt; a &lt;<span class="b">kbd</span>&gt;TAB&lt;<span class="b">/kbd</span>&gt; vám ve Windowsu umožní rychle přepínat mezi okny.&lt;<span class="b">/p</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;Možnost &lt;<span class="b">kbd</span>&gt;&lt;<span class="b">samp</span>&gt;Uložit jako...&lt;<span class="b">/samp</span>&gt;&lt;<span class="b">/kbd</span>&gt; vám ve většině, ne-li všech programech, umožní uložit soubor pod novým názvem.&lt;<span class="b">/p</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;Zatímco v některých programech se po stisknutí &lt;<span class="b">kbd</span>&gt;&lt;<span class="b">kbd</span>&gt;ENTER&lt;<span class="b">/kbd</span>&gt;&lt;<span class="b">/kbd</span>&gt; vytvoří &lt;<span class="b">samp</span>&gt;&lt;<span class="b">kbd</span>&gt;nový řádek&lt;<span class="b">/kbd</span>&gt;&lt;<span class="b">/samp</span>&gt;, jiné zase vytvoří &lt;<span class="b">samp</span>&gt;&lt;<span class="b">kbd</span>&gt;nový odstavec&lt;<span class="b">/kbd</span>&gt;&lt;<span class="b">/samp</span>&gt;.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height:9em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/kbd-EXAMPLE.html" title="Příklad &lt;kbd&gt;" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/kbd-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/04-text-formatting.html">HTML 101, lekce 4</a>: <strong>Formátování textu</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/code.html"><span class="codeOutside">&lt;code&gt;</span></a>: Reprezentace <strong>kódu</strong> v textu</li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/pre.html"><span class="codeOutside">&lt;pre&gt;</span></a>: Neformátovaný text</li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/samp.html"><span class="codeOutside">&lt;samp&gt;</span></a>: Reprezentace <strong>výstupu</strong> programu v textu</li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/var.html"><span class="codeOutside">&lt;var&gt;</span></a>: Reprezentace <strong>proměnných</strong> v textu</li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements-categorized.html#text">Kategorizovaný seznam všech elementů</a>: <strong>Formátování textu</strong></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-kbd-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-text/kbd-html-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: kbd - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_kbd.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;kbd&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;kbd&gt;: The Keyboard Input element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/ins.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;ins&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/label.html" rel="next" hreflang="cs">Příští element: &lt;label&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

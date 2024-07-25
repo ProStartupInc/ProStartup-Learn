@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twine 101, lekce 7 - Debuggování a korekturní formáty.">
+    <meta name="keywords" content="Twine, ProStartup Learn, Twine 101, Twine kurz, Twine lekce, Twine hry, Twine vývoj her, Twine game dev, Twine engine, vývoj webových her, interaktivní fikce, hypertextové hry, hypertextové fikce, interaktivní hry, jak vytvořit textovou hru, vývoj textových her, korekturní formáty Twine, testování Twine, debuggování Twine, jak debuggovat Twine hru">
+    <title>7. Debuggování | Twine 101 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/game-development/web/twine/sidenav-twine101.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameTwine">
+            <p class="courseSign">Twine 101</p>
+            <h1>7. Debuggování</h1>
+        </div>
+        <nav class="lessonBreadcrumbTwine">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/game-development/introduction.html" hreflang="cs">Videohry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/introduction.html" hreflang="cs">Webové hry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/twine/courses.html" hreflang="cs">Twine</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/twine/twine101/01-introduction.html" hreflang="cs">Twine&nbsp;101</a>&gt; Lekce&nbsp;7
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p>Přestože je mnohými <strong>vývojáři</strong> přehlíženo, <strong>debuggování</strong> a <strong>testování softwaru</strong> je v jeho vývoji velmi důležité. K čemu je více funkcí, když ani ty základní nefungují tak, jak mají?</p>
+            <p>Co se týče <strong>Twine her</strong>, neexistuje zde příliš mnoho prostoru pro pokažení něčeho jiného než <strong>odkazů</strong>, gramatiky a celkového stylu psaní &lpar;pokud tedy nepoužíváte <strong>JavaScript</strong> nebo jakékoliv jiné <strong>skripty příběhových formátů</strong>&rpar;. I přesto je ale důležité si vše, co jste napsali, projít a zkontrolovat, proto si v této lekci řekneme, jak na to.</p>
+            <h2>Způsob&nbsp;1: Přehrání příběhu</h2>
+            <div class="center" style="margin-bottom: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-07.webp" alt="Twine: Horní panel s nástroji z kategorie &quot;Nástroje&quot;." class="imageNormal" style="width: 99.999%;" loading="lazy">
+            </div>
+            <p>Nejčastějším a nejjednodušším způsobem pro <strong>debuggování</strong> je prostě si váš <strong>příběh</strong> zahrát.</p>
+            <p>Tento způsob má ale jednu velkou nevýhodu - nevidíte to, co se děje pod povrchem, jen to, co uvidí <strong>hráč</strong>. To znamená, že nebudete moct zkontrolovat <strong>proměnné</strong> a jiné pokročilejší funkce. To je sice v pořádku, pokud si váš <strong>projekt</strong> na komplexitu příliš nehraje, ale pokud se na spoléhá na funkce implemetované s <strong>JavaScriptem</strong> &lpar;nebo jakýkoliv jiným skriptem&rpar;, tak bude lepší vyzkoušet způsob níže.</p>
+            <p>Další nevýhodou je fakt, že přehrát <strong>příběh</strong> lze jen od <strong>počáteční pasáže</strong>, což je poněkud nevýhodné, pokud potřebujete otestovat jen jednu jeho část. To lze sice obejít dočasnou změnou <strong>počáteční pasáže</strong>, ale není to ideální.</p>
+            <div class="center" style="margin: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-01.webp" alt="Twine: Přehrávaná hra. Vypadá přesně tak, jak by se ukázala uživateli." class="imageNormal" style="width: 99.999%; margin-top: 1em;"  loading="lazy">
+            </div>
+            <h2>Způsob&nbsp;2: Testování</h2>
+            <div class="center" style="margin-bottom: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-02.webp" alt="Twine: Horní panel s nástroji z kategorie &quot;Nástroje&quot;." class="imageNormal" style="width: 99.999%;" loading="lazy">
+            </div>
+            <p>Druhý způsob nabízí poněkud více možností, přičemž je stejně jednoduché ji spustit jako ten minulý - jednoduše stačí v horním panelu kliknout na položku <strong>&quot;Otestovat&quot;</strong>, která se nachází hned vlevo od možnosti <strong>&quot;Přehrát&quot;</strong>.</p>
+            <p>Po kliknutí na možnost se začne <strong>příběh</strong> v nové kartě automaticky přehrávat, stejně jako u předchozí možnosti. Avšak jeden rozdíl tu je - v dolním pravém rohu obrazovky se nachází <strong>debuggovací okno</strong>, které vám například ukáže <strong>proměnné</strong> a jejich současné <strong>hodnoty</strong>, <strong>errory kódu</strong>, strukturu současné <strong>pasáže</strong> a podobně. V galerii níže se můžete podívat na nejdůležitější prvky toho okna.</p>
+            <div class="photoGallery">
+                <div class="photoGalleryContainer">
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-03.webp" alt="Twine: Testování." loading="lazy">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-03.webp" alt="Twine: Testování." loading="lazy">
+                            <p class="photoGalleryDropdown">Zobrazení současných proměnných. Náš příklad žádné nemá, a tak se žádné neukazují.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-04.webp" alt="Twine: Testování." loading="lazy">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-04.webp" alt="Twine: Testování." loading="lazy">
+                            <p class="photoGalleryDropdown">Zobrazení errorů. Náš příklad nemá JS, a tak se žádné nemohou ani ukázat.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-05.webp" alt="Twine: Testování." loading="lazy">
+                        <div class="photoGalleryDropdownRight">
+            				<img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-05.webp" alt="Twine: Testování." loading="lazy">
+                            <p class="photoGalleryDropdown">Zobrazení pasáže přesně tak, jak vypadá v editačním okně.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-06.webp" alt="Twine: Testování." loading="lazy">
+                        <div class="photoGalleryDropdownRight">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-06.webp" alt="Twine: Testování." loading="lazy">
+                            <p class="photoGalleryDropdown">Zapnutý debuggovací pohled.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-07.webp" alt="Twine: DOM." loading="lazy">
+                        <div class="photoGalleryDropdownRight">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-07.webp" alt="Twine: DOM." loading="lazy">
+                            <p class="photoGalleryDropdown">Zapnuté překrytí, které zobrazuje DOM pasáže. Hodí se pro HTML, CSS a JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="photoGalleryHint">Pro popis a zobrazení obrázku ve větší velikosti musíte nad ním přejet myší &lpar;případně ho můžete otevřít v nové kartě&rpar;.</p>
+            </div>
+            <div class="center" style="margin-bottom: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-08.webp" alt="Twine: Horní panel s nástroji z kategorie &quot;Pasáž&quot;." class="imageNormal" style="width: 99.999%;" loading="lazy">
+            </div>
+            <p>Co když ale nechcete začít testovat od <strong>počáteční pasáže</strong>?</p>
+            <p>V tom případě stačí vybrat <strong>pasáž</strong>, od které chcete začít <strong>testovat</strong>, a v horním panelu kliknout na položku <strong>&quot;Testovat odsud&quot;</strong>, která se nachází v kategorii <strong>&quot;Pasáž&quot;</strong>.</p>
+            <h2>Způsob 3: Korektura</h2>
+            <div class="center" style="margin-bottom: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-09.webp" alt="Twine: Horní panel s nástroji z kategorie &quot;Nástroje&quot;." class="imageNormal" style="width: 99.999%;" loading="lazy">
+            </div>
+            <p>Třetí způsob je spíše určen pro kontrolu textu než na skutečné <strong>testování</strong> - jde v zásadě o kartu v <strong>prohlížeči</strong>, kde je zobrazen textový obsah všech <strong>pasáží</strong>, který si můžete jednoduše projít. Tento způsob může být tak užitečný pro přehodnocení veškerého textu bez jakýchkoliv vyrušení.</p>
+            <p>Do režimu <strong>korektury</strong> lze vstoupit kliknutím na položku <strong>&quot;Korektura&quot;</strong>, která se nachází v horním panelu vedle položky <strong>&quot;Přehrát&quot;</strong>.</p>
+            <p><strong>Korektury</strong> se opírají o tzv. <strong>korekturní formáty</strong>. V tomto kurzu si o nich ale nic neřekneme, protože nejsou příliš důležité - předinstalovaný <strong>Paperthin</strong> je dostačující.</p>
+            <div class="center">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/07-testing-10.webp" alt="Twine: Korektura ve formátě Paperthin." class="imageNormal" style="width: 99.999%;" loading="lazy">
+            </div>
+            <br>&nbsp;<br>&nbsp;<br>
+            <p style="clear: both;">V příští lekci, která bude už tou předposlední, se podíváme na závěr vývoje - <strong>exportování</strong> a vydání vaší <strong>hry</strong>.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/game-development/web/twine/twine101/06-html-css-js.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: HTML, CSS, JS</a>
+                <a class="lesson" href="/courses/cs/game-development/web/twine/twine101/08-exporting.html" rel="next" hreflang="cs">Příští lekce: Exportování &gt;&gt;&gt;</a>
+            </div>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

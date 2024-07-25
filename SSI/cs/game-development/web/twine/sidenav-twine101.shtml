@@ -1,0 +1,17 @@
+<div class="sidenavWrapper">
+    <nav class="sidenavWrapper">
+        <ul class="sidenav">
+            <li class="sidenavSection">Twine 101</li>
+            <li class="sidenavNormal"><a href="/courses/cs/game-development/web/twine/twine101/01-introduction.html" hreflang="cs">1. Úvod</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/game-development/web/twine/twine101/02-concepts.html" hreflang="cs">2. Koncepty</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/game-development/web/twine/twine101/03-basics.html" hreflang="cs">3. První editace</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/game-development/web/twine/twine101/04-links.html" hreflang="cs">4. Nové pasáže a odkazy</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/game-development/web/twine/twine101/05-formats.html" hreflang="cs">5. Příběhové formáty</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/game-development/web/twine/twine101/06-html-css-js.html" hreflang="cs">6. HTML, CSS, JS</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/game-development/web/twine/twine101/07-testing.html" hreflang="cs">7. Debuggování</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/game-development/web/twine/twine101/08-exporting.html" hreflang="cs">8. Exportování</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/game-development/web/twine/twine101/09-next.html" hreflang="cs">9. Jak pokračovat?</a></li>
+            <li class="sidenavSection">Ostatní informace</li>
+        </ul>
+    </nav>
+</div>

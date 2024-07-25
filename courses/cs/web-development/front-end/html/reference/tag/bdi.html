@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Izolace textu s neznámým směrem &lt;bdi&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, izolace textu s neznámým směrem html, &lt;bdi&gt; HTML tutorial, &lt;bdi&gt;, &lt;bdi&gt; html, element &lt;bdi&gt;, co je &lt;bdi&gt;, jak použít &lt;bdi&gt;">
+    <title>&lt;bdi&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;bdi&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;bdi&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;bdi&gt;</span></strong> &lpar;<b>B</b>i<b>d</b>irectional <b>i</b>solation&rpar; je <strong>párový tag</strong> používaný pro izolaci textu od toho okolního, pokud není jasný jeho směr. Používá se hlavně na uživatelská jména a obsah.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;bdi&gt;</span></strong> je <strong>párový tag</strong>. Mezi tím <strong>počátečním</strong> a <strong>koncovým</strong> se nachází text, jež má být izolován od toho ostatního.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">bdi</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;Obsah&lt;<span class="b">/bdi</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;bdi&gt;</span></strong> nemá žádné vlastní <strong>atributy</strong>, ale podporuje ty <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální</a></strong>.</p>
+            <p><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/dir.html" hreflang="cs">dir</a>&apos;</strong> se chová v <strong><span class="codeOutsidePage">&lt;bdi&gt;</span></strong> jinak než v jiných <strong>elementech</strong> -  jeho <strong>hodnota</strong> není děděna od <strong>rodičovského elementu</strong> jako obvykle, ale místo toho je defaultně nastavena na <strong>&quot;<span class="codeOutsidePage">auto</span>&quot;</strong> &lpar;pokud to tedy v <strong>kódu</strong> nebudete specifikovat jinak&rpar;.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;bdi&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Defaultně nemá žádné zvláštní <strong>CSS vlastnosti</strong>.</p>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;bdi&gt;</span></strong> by se měl využívat na text, kde není jasné, kterým směrem by měl jít &lpar;jako třeba jakýkoliv uživatelský obsah v arabštině&rpar;. Proč se ale s tímto <strong>elementem</strong> zaobírat? Důvod je relativně jednoduchý - <strong>prohlížeče</strong> používají k určování směru textu tzv. <strong>Unicode Bidirectional Algorithm</strong>, který defaultně vypíše všechen text podle toho, v jakém jazyce jsou a jakým směrem se v něm píše. Problém ale nastává, když se text v např. arabštině nebo hebrejštině &lpar;jazyky zprava doleva&rpar; nachází v např. češtině nebo angličtině &lpar;jazyky zleva doprava&rpar; - již zmíněný <strong>algoritmus</strong> totiž některé znaky &lpar;např. mezery a speciální znaky&rpar; bere jako neutrální a přiřazuje jim směr jen na základě okolních znaků. To znamená, že může vzniknout nepořádek jako tento:</p>
+            <div class="example" title="Příklad bez &lt;bdi&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">h2</span>&gt;Skóre&lt;<span class="b">/h2</span>&gt;<br>
+                        &lt;<span class="b">ul</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">li</span>&gt;Petr Novák: 30 bodů&lt;<span class="b">/li</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">li</span>&gt;<bdi>مثل</bdi>: 20 bodů&lt;<span class="b">/li</span>&gt;<br>
+                        &lt;<span class="b">ul</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 9em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/bdi-EXAMPLE.html" title="Příklad bez &lt;bdi&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/bdi-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <p>Tento problém lze vyřešit obalením jakéhokoliv uživatelského obsahu &lpar;např. uživatelských jmen v příkladě výše&rpar; <strong>elementem <span class="codeOutsidePage">&lt;bdi&gt;</span></strong>:</p>
+            <div class="example" title="Příklad &lt;bdi&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">h2</span>&gt;Skóre&lt;<span class="b">/h2</span>&gt;<br>
+                        &lt;<span class="b">ul</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">li</span>&gt;&lt;<span class="b">bdi</span>&gt;Petr Novák&lt;<span class="b">/bdi</span>&gt;: 30 bodů&lt;<span class="b">/li</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">li</span>&gt;&lt;<span class="b">bdi</span>&gt;<bdi>مثل</bdi>&lt;<span class="b">/bdi</span>&gt;: 20 bodů&lt;<span class="b">/li</span>&gt;<br>
+                        &lt;<span class="b">ul</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 9em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/bdi-EXAMPLE02.html" title="Příklad &lt;bdi&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/bdi-EXAMPLE02.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/bdo.html"><span class="codeOutside">&lt;bdo&gt;</span></a>: Určení směru textu</li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdi-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-ostatni/bdi-html-5-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: bdi - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/bdi.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;bdi&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;bdi&gt;: The Bidirectional Isolate element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/base.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;base&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/bdo.html" rel="next" hreflang="cs">Příští element: &lt;bdo&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

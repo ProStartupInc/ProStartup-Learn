@@ -1,0 +1,23 @@
+<div class="sidenavWrapper">
+    <nav class="sidenavWrapper">
+        <ul class="sidenav">
+            <li class="sidenavSection">HTML 101</li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/01-cs-introduction.html" hreflang="cs">1. Úvod</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/02-concepts.html" hreflang="cs">2. HTML Koncepty</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/03-basics.html" hreflang="cs">3. Základní elementy</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/04-text-formatting.html" hreflang="cs">4. Formátování textu</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/05-block-inline-elements.html" hreflang="cs">5. Blokové, řádkové elementy</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/06-entities.html" hreflang="cs">6. Entity</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/07-directories.html" hreflang="cs">7. Umístění souborů</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/08-links.html" hreflang="cs">8. Odkazy</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/09-images.html" hreflang="cs">9. Obrázky</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/10-lists.html" hreflang="cs">10. Seznamy</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/11-tables.html" hreflang="cs">11. Tabulky</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/12-next.html" hreflang="cs">12. Jak pokračovat?</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html101/list-101elements.html" hreflang="cs">Probrané elementy</a></li>
+            <li class="sidenavSection">Ostatní informace</li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Seznam všech elementů</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/general-info/list-lang-codes.html" hreflang="cs">Seznam kódů ISO-396-1</a></li>
+        </ul>
+    </nav>
+</div>

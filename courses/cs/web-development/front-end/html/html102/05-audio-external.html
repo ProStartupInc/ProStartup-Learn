@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML 102, lekce 5 - Vkládání audio stop z externích webů za použití iframu.">
+    <meta name="keywords" content="HTML, ProStartup Learn, HTML 102, HTML kurz, HTML lekce, atributy, elementy, tagy, iframe, &lt;iframe&gt;, &lt;iframe&gt; z externích webů, jak použít iframe na vkládání audia, vkládání hudby, externí zvuky, vkládání zvuků na stránku tutoriál, vkládání hudby na web, vkládání zvuků na web, jak ze SoundCloudu vložit hudbu, jak ze Spotify vložit hudbu, Spotify, SoundCloud, jak embedovat audio">
+    <title>5. Externí audio | HTML 102 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html102.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">HTML 102</p>
+            <h1>5. Externí audio</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/html102/01-cs-introduction.html" hreflang="cs">HTML&nbsp;102</a>&nbsp;&gt; Lekce&nbsp;5
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p>V <a href="/courses/cs/web-development/front-end/html/html102/04-audio-element.html" hreflang="cs" rel="prev">minulé lekci</a> jsme probrali vkládání <strong>lokálních audio souborů</strong> na <strong>stránku</strong>. Někdy je ale lepší použít <strong>externí audio stopy</strong> z <strong>jiných webů</strong>, proto se v této lekci se podíváme, jak na to.</p>
+            <p>Ke všem metodám vkládání <strong>audio stop</strong> z jiných <strong>webů</strong> budeme používat <strong>iframy</strong>. Podíváme se navíc jen na dvě platformy - <strong>Spotify</strong> a <strong>SoundCloud</strong> &lpar;u ostatních služeb je proces velmi podobný, takže nemusíte mít žádné obavy&rpar;.</p>
+            <h2>Výhody a nevýhody</h2>
+            <p>Níže je tabulka porovnávající výhody a nevýhody <strong>lokálních</strong> a <strong>externích souborů</strong>.</p>
+            <p><b>Poznámka</b>: Tahle tabulka se vztahuje na <u>všechny</u> <strong>soubory</strong>, ne jen na <strong>audio</strong>.</p>
+            <!--#include virtual="/courses/cs/web-development/front-end/html/general-info/external-files-table.shtml" -->
+            <h2>Spotify</h2>
+            <div class="photoGallery">
+                <div class="photoGalleryContainer">
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-01.webp" alt="Hlavní stránka Spotify.">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-01.webp" alt="Hlavní stránka Spotify.">
+                            <p class="photoGalleryDropdown">1. Běžte na stránku <a rel="external" href="https://open.spotify.com" rel="external" target="_blank">open.spotify.com</a> a vyhledejte si skladbu, kterou chcete na stránku vložit.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-02.webp" alt="Spotify: Stránka skladby Tjärnheden.">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-02.webp" alt="Spotify: Stránka skladby Tjärnheden.">
+                            <p class="photoGalleryDropdown">2. Na stránce skladby najeďte na ikonu tří teček <b>...</b> a najeďte na položku <b>Sdílet</b>. poté klikněte na položku <b>Vložit nahrávku</b>, která se objeví.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-03.webp" alt="Spotify: Menu vkládání skladby ze Spotify.">
+                        <div class="photoGalleryDropdownRight">
+            				<img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-03.webp" alt="Spotify: Menu vkládání skladby ze Spotify.">
+                            <p class="photoGalleryDropdown">3. Pokud chcete, iframe si přizpůsobte. Poté klikněte na tlačítko <b>Kopírovat</b>.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-04.webp" alt="Spotify: Menu vkládání skladby ze Spotify.">
+                        <div class="photoGalleryDropdownRight">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-04.webp" alt="Spotify: Menu vkládání skladby ze Spotify.">
+                            <p class="photoGalleryDropdown">4. Hotovo! Iframe nyní můžete zkopírovat do kódu své stránky.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="photoGalleryHint">Pro instrukce a zobrazení obrázku ve větší velikosti musíte nad ním přejet myší &lpar;případně ho můžete otevřít v nové kartě&rpar;.</p>
+            </div>
+            <div class="example" title="Příklad vložení Spotify skladby na stránku s iframem">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Vložení Spotify skladby na stránku</h3>
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">style</span>=<span class="r">&quot;border-radius:12px&quot;</span> <span class="y">src</span>=<span class="r">&quot;https://open.spotify.com/embed/track/2YFtpiy2WoAQVQbM1SIwES?utm_source=generator&quot;</span> <span class="y">width</span>=<span class="r">&quot;100%&quot;</span> <span class="y">height</span>=<span class="r">&quot;352&quot;</span> <span class="y">frameBorder</span>=<span class="r">&quot;0&quot;</span> <span class="y">allowfullscreen</span>=<span class="r">&quot;&quot;</span> <span class="y">allow</span>=<span class="r">&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot;</span> <span class="y">loading</span>=<span class="r">&quot;lazy&quot;</span>&gt;&lt;<span class="b">/iframe</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/html102/05-audio-external-example01.html" title="Příklad vložení Spotify skladby na stránku s iframem" style="height: 400px;">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/html102/05-audio-external-example01.html" rel="external" target="_blank">zde</a></iframe>
+                </div>
+            </div>
+            <h2>SoundCloud</h2>
+            <div class="photoGallery">
+                <div class="photoGalleryContainer">
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-05.webp" alt="Hlavní stránka webu SoundCloud.">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-05.webp" alt="Hlavní stránka webu SoundCloud.">
+                            <p class="photoGalleryDropdown">1. Běžte na stránku <a rel="external" href="https://soundcloud.com" rel="external" target="_blank">soundcloud.com</a> a najděte skladbu, kterou chcete na stránku vložit.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-06.webp" alt="SoundCloud: Výsledek vyhledávání &quot;never gonna give you up&quot;">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-06.webp" alt="SoundCloud: Výsledek vyhledávání &quot;never gonna give you up&quot;">
+                            <p class="photoGalleryDropdown">2. Najděte požadovanou skladbu a klikněte u ní na položku <b>Share</b>.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-07.webp" alt="SoundCloud: Menu sdílení">
+                        <div class="photoGalleryDropdownRight">
+            				<img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-07.webp" alt="SoundCloud: Menu sdílení">
+                            <p class="photoGalleryDropdown">3. Na obrazovce se vám ukáže menu sdílení. V horním panelu klikněte na položku <b>Embed</b>.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-08.webp" alt="SoundCloud: Menu embedování">
+                        <div class="photoGalleryDropdownRight">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/web-development/front-end/html/html102/pictures/05-audio-external-08.webp" alt="SoundCloud: Menu embedování">
+                            <p class="photoGalleryDropdown">4. Pokud chcete, iframe si přizpůsobte. Pak kód zkopírujte a hotovo, můžete ho vložit na svou stránku.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="photoGalleryHint">Pro instrukce a zobrazení obrázku ve větší velikosti musíte nad ním přejet myší &lpar;případně ho můžete otevřít v nové kartě&rpar;.</p>
+            </div>
+            <div class="example" title="Příklad vložení SoundCloud skladby na stránku s iframem">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Vložení SoundCloud skladby na stránku</h3>
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">width</span>=<span class="r">&quot;100%&quot;</span> <span class="y">height</span>=<span class="r">&quot;300&quot;</span> <span class="y">scrolling</span>=<span class="r">&quot;no&quot;</span> <span class="y">frameborder</span>=<span class="r">&quot;no&quot;</span> <span class="y">allow</span>=<span class="r">&quot;autoplay&quot;</span> <span class="y">src</span>=<span class="r">&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1242868615&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true&quot;</span>&gt;&lt;<span class="b">/iframe</span>&gt;&lt;<span class="b">div</span> <span class="y">style</span>=<span class="r">&quot;font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;&quot;</span>&gt;&lt;<span class="b">a</span> <span class="y">href</span>=<span class="r">&quot;https://soundcloud.com/rick-astley-official&quot;</span> <span class="y">title</span>=<span class="r">&quot;Rick Astley&quot;</span> <span class="y">target</span>=<span class="r">&quot;_blank&quot;</span> <span class="y">style</span>=<span class="r">&quot;#cccccc; text-decoration: none;&quot;</span>&gt;Rick Astley&lt;<span class="b">/a</span>&gt; · &lt;<span class="y">a</span>&gt; <span class="y">href</span>=<span class="r">&quot;https://soundcloud.com/rick-astley-official/never-gonna-give-you-up-4&quot;</span> <span class="y">title</span>=<span class="r">&quot;Never Gonna Give You Up&quot;</span> <span class="y">target</span>=<span class="r">&quot;_blank&quot;</span> <span class="y">style</span>=<span class="r">&quot;color: #cccccc; text-decoration: none;&quot;</span>&gt;Never Gonna Give You Up&lt;<span class="b">/a</span>&gt;&lt;<span class="b">/div</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="height: 22.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/html102/05-audio-external-example02.html" title="Příklad vložení SoundCloud skladby na stránku s iframem">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/html102/05-audio-external-example02.html" rel="external" target="_blank">zde</a>.</iframe>
+                </div>
+            </div>
+            <br>
+            <p>V příští lekci se podíváme na to, jak na <strong>stránku</strong> vkládat <strong>lokální videa</strong>.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html102/04-audio-element.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Element &lt;audio&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html102/06-video-element.html" rel="next" hreflang="cs">Příští lekce: Element &lt;video&gt; &gt;&gt;&gt;</a>
+            </div>
+            </div>
+         </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

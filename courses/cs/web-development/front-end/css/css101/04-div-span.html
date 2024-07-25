@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS 101, lekce 5 - HTML elementy &lt;div&gt; a &lt;span&gt; a jejich role v CSS stylování.">
+    <meta name="keywords" content="HTML, ProStartup Learn, CSS 101, CSS kurz, CSS lekce, HTML element &lt;div&gt;, HTML element &lt;span&gt;">
+    <title> 4. &lt;div&gt; a &lt;span&gt; | CSS 101 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinksNoCSS.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/web-development/front-end/css/sidenav-css101.shtml" -->
+    <div class="lessonContentArea">
+        <main class="lessonContent">
+            <div class="LessonNameCSS">
+                <p class="courseSign">CSS 101</p>
+                <h1>5. &lt;div&gt; a &lt;span&gt;</h1>
+            </div>
+            <hr>
+            <nav class="lessonBreadcrumbCSS">
+                <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/courses.html" hreflang="cs">CSS</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/css101/01-introduction.html" hreflang="cs">CSS&nbsp;101</a>&nbsp;&gt; Lekce&nbsp;5
+            </nav>
+            <hr>
+            <div class="margin"></div>
+            <p>V minulé lekci jsme si řekli, jak vybírat různé <strong>HTML elementy</strong> a aplikovat na ně <strong>styly</strong>. Existuje ale menší problém...Jak například <strong>stylovat</strong> jen určité sekce textu?</p>
+            <p>S tímto a dalšími problémy nám pomůžou <strong>HTML elementy &lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/div.html" hreflang="cs">div</a>&gt;</strong> a <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">span</a>&gt;</strong>.</p>
+            <h2>&lt;span&gt;</h2>
+            <p>Pokud jste absolvovali na tomto <strong>webu</strong> kurz <strong><a href="/courses/cs/web-development/front-end/html/html101/01-cs-introduction.html" hreflang="cs">HTML 101</a></strong>, možná si pamatujete, že jedna z lekcí byla o <strong>blokových</strong> a <strong>řádkových elementech</strong>. <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">span</a>&gt;</strong> je <strong>elementem řádkovým</strong>, což znamená, že zabírá jen tolik místa, kolik potřebují a automaticky nevytváří pro sebe nové řádky jako <strong>elementy blokové</strong>.</p>
+            <p><strong>Řádkové elementy</strong> se mohou nacházet uvnitř <strong>blokových</strong>. To znamená, že <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">span</a>&gt;</strong> může být <strong>potomkem &lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/p.html" hreflang="cs">p</a>&gt;</strong> a obalit v něm nějaký text.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Tohle je nějaký text. &lt;span;&gt;Tento je obalen elementem &amp;lt;span&amp;gt;&lt;/span&gt;, kdežto tento není.&lt;/p&gt;
+            </code><br><br>
+            <iframe height="50px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/04-div-span-EXAMPLE.html" title="Příklad elementu span bez aplikovaných stylů.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/04-div-span-EXAMPLE.html">zde</a>.</iframe>
+            <p><strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">span</a>&gt;</strong> je jedním ze dvou <strong>elementů</strong>, které defaultně nedělají absolutně nic a nemají nějaký <strong>sémantický význam</strong>...což to je přesně ten důvod, proč je perfektní pro <strong>stylování textu</strong>!</p>
+            <p>Pokud budete někdy potřebovat nějak <strong>ostylovat</strong> text, který nemá mít žádný <strong>sémantický význam</strong> - ať už změnit jeho <strong>barvu</strong>, <strong>podtrhnout</strong> ho, nebo změnit jeho <strong>velikost</strong> - nejlepší bude použít <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">span</a>&gt;</strong>. Je sice teoetický možné použít <strong>elementy</strong> jako <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/ins.html" hreflang="cs">ins</a>&gt;</strong> nebo <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/strong.html" hreflang="cs">strong</a>&gt;</strong>, ale ty všechny něco v <strong>HTML</strong> znamenají. Šlo by použít <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/b.html" hreflang="cs">b</a>&gt;</strong> jakožto <strong>element</strong>  bez jakéhokoliv významu, ale proč to dělat, když je na <strong>stylování</strong> specificky určen <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">span</a>&gt;</strong>?</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Tohle je nějaký text. &lt;span style=&quot;color:red;&quot;&gt;Tento je obalen elementem &amp;lt;span&amp;gt;&lt;/span&gt;, kdežto tento není.&lt;/p&gt;
+            </code><br><br>
+            <iframe height="50px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/04-div-span-EXAMPLE02.html" title="Příklad elementu span, který má mít červennou barvu.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/04-div-span-EXAMPLE02.html">zde</a>.</iframe>
+            <p><b>Poznámka:</b> O <strong>atributu &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/style.html" hreflang="cs">style</a>&apos;</strong> si řekneme v <strong><a href="/courses/cs/web-development/front-end/css/css101/05-external-internal-css.html" hreflang="cs" rel="next">příští lekci</a></strong>.</p>
+            <h2>&lt;div&gt;</h2>
+            <p><strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/div.html" hreflang="cs">div</a>&gt;</strong> je stejný jako <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">span</a>&gt;</strong>, jen je to místo <strong>řádkového elementu element blokový</strong>. Kvůli tomu se zatím může zdát méně užitečný než <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">span</a>&gt;</strong>, ale to se změní, až začneme probírat <strong>pozicování</strong>.</p>
+            <h2>Kaskádové styly</h2>
+            <p>Když už jsme u <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/div.html" hreflang="cs">div</a>&gt;</strong>, můžeme si rovnou říct o podstatě <strong>CSS</strong>.</p>
+            <p>Všechny <strong>styly</strong> se &quot;dědí&quot; z <strong>rodičovských elementů</strong> na <strong>potomky</strong>...</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p style=&quot;color:red;&quot;&gt;Tohle je nějaký text, který bude červeně. &lt;span&gt;Tento je obalen elementem &amp;lt;span&amp;gt; a přestože nemá sám o sobě žádné aplikované styly, je také červený&lt;/span&gt;.&lt;/p&gt;
+            </code><br><br>
+            <iframe height="50px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/04-div-span-EXAMPLE03.html" title="Příklad kaskádujícího stylu.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/04-div-span-EXAMPLE03.html">zde</a>.</iframe>
+            <p>...pokud není specifikováno jinak.</p>
+            <code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p style=&quot;color:red;&quot;&gt;Tohle je nějaký text, který bude červeně. &lt;span style=&quot;color:initial;&quot;&gt;Tento je obalen elementem &amp;lt;span&amp;gt; který červený nebude&lt;/span&gt;.&lt;/p&gt;
+            </code><br><br>
+            <iframe height="50px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/04-div-span-EXAMPLE04.html" title="Příklad spanu, který má jiný styl než rodičovský odstavec.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/04-div-span-EXAMPLE04.html">zde</a>.</iframe>
+            <h2>Shrnutí</h2>
+            <ul>
+                <li>V <strong>HTML</strong> jsou dva <strong>elementy</strong>, které nic nedělají a nemají žádný <strong>sémantický význam</strong>, díky čemuž se mohou použít na <strong>stylování</strong>:</li>
+                <ul>
+                    <li><strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">span</a>&gt;</strong> je <strong>řádkový element</strong>, který se hlavně používá na obalení textu, jež je potřeba nějak <strong>ostylovat</strong></li>
+                    <li><strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/div.html" hreflang="cs">div</a>&gt;</strong> je <strong>blokový element</strong>. Více o něm v příštích lekcích.</li>
+                </ul>
+                <li><strong>Styly</strong> v <strong>CSS</strong> se dědí z <strong>rodičovských elementů</strong> na <strong>potomky</strong></li>
+            </ul>
+            <br>&nbsp;<br>
+            <p>V následující lekci se pustíme do poslední věci, kterou bude nutné před <strong>stylováním</strong> znát - jak vůbec <strong>CSS</strong> s <strong>HTML</strong> propojit.</p>
+            <a href="/courses/cs/web-development/front-end/css/css101/03-selectors.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Selektory</a><br>
+            <a href="/courses/cs/web-development/front-end/css/css101/05-external-internal-css.html" rel="next" hreflang="cs">Příští lekce: Externí a interní CSS &gt;&gt;&gt;</a>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

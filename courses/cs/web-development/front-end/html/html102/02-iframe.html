@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML 102, lekce 2 - Co je iframe a jak ho použít?">
+    <meta name="keywords" content="HTML, ProStartup Learn, HTML 102, HTML kurz, HTML lekce, atributy, elementy, tagy, iframe, &lt;iframe&gt;, základy &lt;iframe&gt;, jak použít iframe, vkládání jiných webů na stránku, iframe tutoriál">
+    <title>2. Základy &lt;iframe&gt; | HTML 102 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html102.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">HTML 102</p>
+            <h1>2. Základy &lt;iframe&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/html102/01-cs-introduction.html" hreflang="cs">HTML&nbsp;102</a>&nbsp;&gt; Lekce&nbsp;2
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong>iframy</strong> &lpar;<b>i</b>nline <b>frame</b>&rpar; se používají pro vkládání jiného <strong>HTML dokumentu</strong> na <strong>stránku</strong>. To se nevztahuje jenom na <strong>lokální dokumenty</strong>, ale i na ty <strong>externí</strong> - na <strong>stránku</strong> je tak možné vložit obsah z jiného <strong>webu</strong>.</p>
+            <h2>Vytvoření základního iframu</h2>
+            <p><strong>iframy</strong> se vytváří s <strong>párovým tagem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/iframe.html" hreflang="cs">&lt;iframe&gt;</a></strong>. K tomu, aby byly užitečné, je potřeba ale jeden <strong>atribut</strong> - <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/iframe-src.html" hreflang="cs">src</a>&apos;</strong>, jehož <strong>hodnotou</strong> je <strong>odkaz</strong> na <strong>soubor</strong>.</p>
+            <p>Mezi <strong>počáteční</strong> a <strong>koncový tag</strong> by se měl vložit text pro <strong>uživatele</strong>, kterým se <strong>iframe</strong> z důvodu nekompatibility nenačte &lpar;např. Omlouváme se, ale váš prohlížeč nepodporuje element iframe&rpar;. Tento text by ale měl být obalen nějakým elementem &lpar;např. <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/p.html" hreflang="cs">&lt;p&gt;</a></strong>&rpar;! </p>
+            <div class="example" title="Příklad základních iframů">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Základní iframy</h3>
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">src</span>=<span class="r">&quot;/index-cs.html&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="b">p</span>Omlouváme se, ale váš prohlížeč bohužel nepodporuje element iframe :&lpar;<span class="b">/p</span><br>
+                        &lt;<span class="b">/iframe</span>&gt;<br>&lt;<span class="b">br</span>&gt;
+                        &lt;<span class="b">iframe</span> <span class="y">src</span>=<span class="r">&quot;https://peterme.com&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="b">p</span>Omlouváme se, ale váš prohlížeč bohužel nepodporuje element iframe :<span class="b">/p</span>&lpar;<br>
+                        &lt;<span class="b">/iframe</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleExplanationContainer">
+                    <div class="exampleExplanationLineNumber">1<br>2<br>3<br>4<br>5<br>6</div>
+                    <div class="exampleExplanation">
+                        Počáteční tag iframu s atributem &apos;src&apos;, jež odkazuje na lokální soubor &quot;index-cs.html&quot;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Text, jež se zobrazí v případě, že se iframe nenačte<br>
+                        Koncový tag iframu<br>
+                        Počáteční tag iframu s atributem &apos;src&apos;, jež odkazuje na externí webovou stránku s URL &quot;https://example.com&quot;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Text, jež se zobrazí v případě, že se iframe nenačte<br>
+                        Koncový tag iframu
+                    </div>
+                </div>
+                <div class="exampleIframe">
+                    <iframe style="height: 11.9em;" class="exampleIframe" src="/courses/cs/web-development/front-end/html/html102/02-iframe-example01.html" title="Příklad dvou iframů - jeden s relativním odkazem, druhý s absolutním" ><p>Váš prohlížeč nepodporuje element iframe D:</p></iframe>
+                </div>
+            </div>
+            <h2>Atributy &lt;iframe&gt;</h2>
+            <p><strong>Element &lt;iframe&gt;</strong> má kromě <strong>&apos;src&apos;</strong> několik dalších <strong>základních atributů</strong>:</p>
+            <ul>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/iframe-height-width.html" hreflang="cs">height</a>&apos;</strong>: Určuje výšku <strong>iframu</strong> v <u>pixelech</u>. <strong>Hodnotou</strong> může být libovolné číslo.</li>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/iframe-height-width.html" hreflang="cs">width</a>&apos;</strong>: Určuje šířku <strong>iframu</strong> v <u>pixelech</u>. <strong>Hodnotou</strong> může být libovolné číslo.</li>
+                <li><strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/title.html" hreflang="cs">type</a>&apos;</strong>: Určuje popis <strong>elementu</strong>. Užitečný pro <strong>čtečky obrazovek</strong>. <strong>Hodnotou</strong> je jakýkoliv text.</li>
+                <li><strong>&apos;&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/html4_0/iframe-frameborder.html" hreflang="cs">frameborder</a>&apos;</strong>: Určuje, jestli má <strong>iframe</strong> okraje nebo ne. Má dvě možné <strong>hodnoty</strong>: <strong>&quot;0&quot;</strong> &lpar;žádné okraje&rpar; a <strong>&quot;1&quot;</strong> &lpar;okraje; <strong>výchozí hodnota</strong>&rpar;. Tento <strong>atribut</strong> je již <b>zastaralý</b> a místo něj se používá <strong>CSS</strong> &lpar;které ale není subjektem tohoto kurzu, což je důvod, proč si ho ukazujeme&rpar;.</li>
+            </ul>
+            <div class="example" title="Příklad iframů a jejich atributů">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">iframe &lpar;skoro&rpar; bez atributů a iframe s atributy</h3>
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">iframe</span> <span class="y">src</span>=<span class="r">&quot;/index-cs.html&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="b">p</span>Omlouváme se, ale váš prohlížeč bohužel nepodporuje element iframe :&lpar;<span class="b">/p</span><br>
+                        &lt;<span class="b">/iframe</span>&gt;<br>&lt;<span class="b">br</span>&gt;
+                        <br>
+                        &lt;<span class="b">iframe</span> <span class="y">src</span>=<span class="r">&quot;/index-cs.html&quot;</span> <span class="y">height</span>=<span class="r">&quot;200&quot;</span> <span class="y">width</span>=<span class="r">&quot;750&quot;</span> <span class="y">title</span>=<span class="r">&quot;iframe vedoucí na hlavní stránku&quot;</span> <span class="y">frameborder</span>=<span class="r">&quot;0&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="b">p</span>Omlouváme se, ale váš prohlížeč bohužel nepodporuje element iframe :&lpar;<span class="b">/p</span><br>
+                        &lt;<span class="b">/iframe</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleExplanationContainer">
+                    <div class="exampleExplanationLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7</div>
+                    <div class="exampleExplanation">
+                        Počáteční tag iframu s atributem &apos;src&apos;, jež odkazuje na lokální soubor &quot;index-cs.html&quot;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Text, jež se zobrazí v případě, že se iframe nenačte<br>
+                        Koncový tag iframu<br>
+                        Nový řádek<br>
+                        Počáteční tag iframu s atributem &apos;src&apos;, jež odkazuje na lokální soubor &quot;index-cs.html&quot;, má výšku 200 pixelů a šířku 750 pixelů, má atribut &apos;title&apos; a nemá žádný okraj díky atributu &apos;frameborder&apos;, který má hodnotu &quot;0&quot;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Text, jež se zobrazí v případě, že se iframe nenačte<br>
+                        Koncový tag iframu&gt;
+                    </div>
+                </div>
+                <div class="exampleIframe">
+                    <iframe style="height: 12em;" class="exampleIframe" src="/courses/cs/web-development/front-end/html/html102/02-iframe-example02.html" title="Příklad dvou iframů - jeden bez atributů, druhý s atributy" >Váš prohlížeč nepodporuje element iframe D:</iframe>
+                </div>
+            </div>
+            <h2>Shrnutí</h2>
+            <ul>
+                <li><strong>iframy</strong> umožňují na <strong>stránku</strong> vložit jiné lokální i externí <strong>HTML dokumenty</strong></li>
+                <li><strong>iframy</strong> se vytváří s <strong>párovým tagem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/iframe.html" hreflang="cs">&lt;iframe&gt;</a></strong></li>
+                <li class="child">K tomu, aby <strong>iframe</strong> fungoval, se musí použít <strong>atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/iframe-src.html" hreflang="cs">src</a>&apos;</strong>, jehož <strong>hodnotou</strong> je cesta k <strong>HTML souboru</strong> nebo <strong>URL stránky</strong></li>
+                <li class="child"><strong>Atributy &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/iframe-height-width.html" hreflang="cs">height</a>&apos;</strong> a <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/iframe-height-width.html" hreflang="cs">width</a>&apos;</strong> určují výšku a šířku <strong>iframu</strong> v pixelech; jejich <strong>hodnotou</strong> může být libovolné číslo</li>
+                <li class="child"><strong>Atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/title.html" hreflang="cs">title</a>&apos;</strong> definuje popis <strong>iframu</strong> po <strong>čtečky obrazovek</strong>; <strong>hodnotou</strong> je libovolný text</li>
+                <li class="child"><strong>Atribut &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/html4_0/iframe-frameborder.html" hreflang="cs">frameborder</a>&apos;</strong> určuje, zda má <strong>iframe</strong> okraje nebo ne - pokud je <strong>hodnotou &quot;1&quot;</strong> &lpar;výchozí&rpar;, okraje budou; pokud je <strong>hodnotou &quot;0&quot;</strong>, okraje budou chybět</li>
+            </ul>
+            <br>
+            <p>V příští lekci se podíváme na rizika <strong>iframů</strong>.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html102/01-cs-introduction.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Úvod</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/html102/03-iframe-security.html" rel="next" hreflang="cs">Příští lekce: Rizika iframů &gt;&gt;&gt;</a>
+            </div>
+            </div>
+         </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

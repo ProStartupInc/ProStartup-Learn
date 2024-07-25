@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Deklarace &lt;!DOCTYPE&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, DOCTYPE, !DOCTYPE HTML tutorial, &lt;!DOCTYPE html&gt;, &lt;!DOCTYPE&gt;, element &lt;!DOCTYPE&gt;, co je &lt;!DOCTYPE&gt;, jak použít &lt;!DOCTYPE&gt;, co když nepoužiju &lt;!DOCTYPE&gt;">
+    <title>&lt;!DOCTYPE&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;!DOCTYPE&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;!DOCTYPE&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> je <strong>instrukce prohlížeči</strong>, která mu říká, že má <strong>.html soubor</strong> interpretovat jako <strong>.html soubor</strong>. Také specifikuje verzi <strong>HTML</strong>, kterou <strong>soubor</strong> používá. Nejde o <strong>HTML element</strong>!</p>
+            <h2>Syntaxe</h2>
+            <p>Zapisování <strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> je v současných verzích <strong>HTML</strong> velmi jednoduché. Nemusí se navíc dodržovat velikost písmen, což znamená, že všechno, co je v příkladu níže, je <u>kompletně validní</u>:</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">!DOCTYPE</span> <span class="y">html</span>&gt;<br>
+                    &lt;<span class="b">!doctype</span> <span class="y">html</span>&gt;<br>
+                    &lt;<span class="b">!dOcTyPe</span> <span class="y">hTmL</span>&gt;<br>
+                    &lt;<span class="b">!DOCTYPE</span> <span class="y">HTML</span>&gt;
+                </code>
+            </div>
+            <p><strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> <u>musí</u> být ale správně zapsán na to, aby fungoval. Níže jsou podmínky, které se musí dodržet:</p>
+            <ul>
+                <li><b>Správné umístění</b>: <strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> musí být <u>vždy</u> zapsán na prvním řádku <strong>HTML dokumentu</strong>.</li>
+                <li><b>Jen jednou</b>: Většina moderních <strong>prohlížečů</strong> bude ignorovat všechny ostatní deklarace <strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> <u>kromě</u> té první. U některých se ale mohou vyskytnout vykreslovací potíže, nebo se mohou dokonce přepnou do tzv. <strong>nekompatibilního módu</strong> &lpar;viz sekce <b>Invalidní &lt;!DOCTYPE&gt;</b>&rpar;.</li>
+            </ul>
+            <h2>Atributy</h2>
+            <p>Protože jde spíše o <strong>instrukci prohlížeči</strong> než o normální <strong>HTML element</strong>, <strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> nemá žádné <strong>atributy</strong>; i přesto by ale někteří mohli říct, že <strong>&apos;<span class="codeOutsidePage">html</span>&apos;</strong> je <strong>booleanovským atributem</strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> není pro <strong>uživatele</strong> viditelný a nijak neovlivňuje rozložení <strong>stránky</strong>. Nelze jej stylovat v <strong>CSS</strong>.</p>
+            <h2>Invalidní &lt;!DOCTYPE&gt;</h2>
+            <p>Když je <strong>deklarace <span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> invalidní nebo chybí, může to způsobit řadu potíží.</p>
+            <ul>
+                <li><strong>Nekompatibilní mód</strong>: Některé <strong>prohlížeče</strong> se mohou přepnout do <strong>nekompatibilního módu</strong>, který může způsobit mnoho potíži ve vzhledu <strong>stránky</strong>. Tento mód je totiž hlavně určen pro <strong>weby</strong> z dob, kdy byly hlavními <strong>prohlížeči</strong> na trhu <strong>Netscape</strong> a <strong>Internet Explorer</strong>. Stručně řečeno - tento mód není určen pro současné <strong>weby</strong>.</li>
+                <li><b>Nesprávné CSS</b>: S invalidním <strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> mohou být <strong>CSS vlastnosti</strong> a <strong>box model</strong> interpretovány špatně, což může narušit rozložení <strong>stránky</strong>.</li>
+                <li><b>Nekonzistence</b>: Každý <strong>prohlížeč</strong> si může <strong>stránku</strong> bez validního <strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> interpretovat jinak. To může způsobit nekonzistentní vzhled <strong>stránky</strong> mezi různými <strong>prohlížeči</strong>.</li>
+                <li><b>Kompatibilita</b>: Bez validního <strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> nemusí fungovat některé funkce.</li>
+                <li><b>SEO</b>: Invalidní <strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> může mít za následek horší umístění <strong>stránky</strong> ve vyhledávacích výsledcích.</li>
+                <li><b>Přístupnost</b>: Invalidní <strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong> může udělat <strong>stránku</strong> nepřístupnou pro uživatele s různými postiženími, protože <strong>čtečky obrazovek</strong> nemusí být schopny správně interpretovat její obsah.</li>
+            </ul>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/03-basics.html" hreflang="cs">HTML 101, lekce 3</a>: Základní vysvětlení <strong><span class="codeOutsidePage">&lt;!DOCTYPE&gt;</span></strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/list-101elements.html" hreflang="cs">Seznam elementů probraných v HTML 101</a></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/syntax.html#the-doctype" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-struktura/doctype-html-html-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: DOCTYPE - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_doctype.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;!DOCTYPE&gt; Declaration</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype" hreflang="en" target="_blank">developer.mozzila.org</a>: Doctype</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/comment.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;!-- --&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/a.html" rel="next" hreflang="cs">Příští element: &lt;a&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

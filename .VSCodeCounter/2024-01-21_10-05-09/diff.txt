@@ -1,0 +1,186 @@
+Date : 2024-01-21 10:05:09
+Directory : s:\Documents\GitHub\ProStartup-Learn\courses
+Total : 127 files,  1053 codes, 37 comments, 104 blanks, all 1194 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| HTML     |        125 |      2,223 |         49 |        323 |      2,595 |
+| CSS      |          2 |     -1,170 |        -12 |       -219 |     -1,401 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                   | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                      |        127 |      1,053 |         37 |        104 |      1,194 |
+| ..                                                                                                                     |         12 |     -1,455 |        -15 |       -219 |     -1,689 |
+| .. (Files)                                                                                                             |          1 |        -44 |         -3 |          0 |        -47 |
+| ..\CSS                                                                                                                 |          2 |     -1,170 |        -12 |       -219 |     -1,401 |
+| ..\SSI                                                                                                                 |          9 |       -241 |          0 |          0 |       -241 |
+| ..\SSI\cs                                                                                                              |          9 |       -241 |          0 |          0 |       -241 |
+| ..\SSI\cs (Files)                                                                                                      |          8 |       -226 |          0 |          0 |       -226 |
+| ..\SSI\cs\game-development                                                                                             |          1 |        -15 |          0 |          0 |        -15 |
+| ..\SSI\cs\game-development\web                                                                                         |          1 |        -15 |          0 |          0 |        -15 |
+| ..\SSI\cs\game-development\web\twine                                                                                   |          1 |        -15 |          0 |          0 |        -15 |
+| cs                                                                                                                     |        115 |      2,508 |         52 |        323 |      2,883 |
+| cs\game-development                                                                                                    |         17 |      1,356 |         48 |        324 |      1,728 |
+| cs\game-development\web                                                                                                |         17 |      1,356 |         48 |        324 |      1,728 |
+| cs\game-development\web\twine                                                                                          |         17 |      1,356 |         48 |        324 |      1,728 |
+| cs\game-development\web\twine\list                                                                                     |          1 |          0 |          0 |          1 |          1 |
+| cs\game-development\web\twine\twine101                                                                                 |         16 |      1,356 |         48 |        323 |      1,727 |
+| cs\networking                                                                                                          |         12 |      1,066 |          4 |         -1 |      1,069 |
+| cs\networking\protocols                                                                                                |          6 |      1,494 |          8 |          4 |      1,506 |
+| cs\networking\protocols (Files)                                                                                        |          1 |          0 |          0 |          1 |          1 |
+| cs\networking\protocols\http                                                                                           |          5 |      1,494 |          8 |          3 |      1,505 |
+| cs\networking\protocols\http (Files)                                                                                   |          1 |          0 |          0 |          1 |          1 |
+| cs\networking\protocols\http\mime-types                                                                                |          4 |      1,494 |          8 |          2 |      1,504 |
+| cs\networking\transmission-protocols                                                                                   |          6 |       -428 |         -4 |         -5 |       -437 |
+| cs\networking\transmission-protocols (Files)                                                                           |          1 |          0 |          0 |         -1 |         -1 |
+| cs\networking\transmission-protocols\http                                                                              |          5 |       -428 |         -4 |         -4 |       -436 |
+| cs\networking\transmission-protocols\http (Files)                                                                      |          1 |          0 |          0 |         -1 |         -1 |
+| cs\networking\transmission-protocols\http\mime-types                                                                   |          4 |       -428 |         -4 |         -3 |       -435 |
+| cs\web-development                                                                                                     |         86 |         86 |          0 |          0 |         86 |
+| cs\web-development\front-end                                                                                           |         86 |         86 |          0 |          0 |         86 |
+| cs\web-development\front-end\html                                                                                      |         86 |         86 |          0 |          0 |         86 |
+| cs\web-development\front-end\html\html101                                                                              |         12 |         12 |          0 |          0 |         12 |
+| cs\web-development\front-end\html\html102                                                                              |          8 |          8 |          0 |          0 |          8 |
+| cs\web-development\front-end\html\html103                                                                              |          9 |          9 |          0 |          0 |          9 |
+| cs\web-development\front-end\html\info-multimedia                                                                      |          1 |          1 |          0 |          0 |          1 |
+| cs\web-development\front-end\html\list                                                                                 |         56 |         56 |          0 |          0 |         56 |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                               | language | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| s:\Documents\GitHub\ProStartup-Learn\CSS\fonts.css                                                                     | CSS      |       -296 |          0 |        -65 |       -361 |
+| s:\Documents\GitHub\ProStartup-Learn\CSS\layout.css                                                                    | CSS      |       -874 |        -12 |       -154 |     -1,040 |
+| s:\Documents\GitHub\ProStartup-Learn\SSI\cs\footerLesson.shtml                                                         | HTML     |         -5 |          0 |          0 |         -5 |
+| s:\Documents\GitHub\ProStartup-Learn\SSI\cs\game-development\web\twine\sidenav-twine101.shtml                          | HTML     |        -15 |          0 |          0 |        -15 |
+| s:\Documents\GitHub\ProStartup-Learn\SSI\cs\headLinks.shtml                                                            | HTML     |         -2 |          0 |          0 |         -2 |
+| s:\Documents\GitHub\ProStartup-Learn\SSI\cs\img-vs-picture.shtml                                                       | HTML     |        -22 |          0 |          0 |        -22 |
+| s:\Documents\GitHub\ProStartup-Learn\SSI\cs\sidenav-html-elements.shtml                                                | HTML     |       -121 |          0 |          0 |       -121 |
+| s:\Documents\GitHub\ProStartup-Learn\SSI\cs\sidenav-html.shtml                                                         | HTML     |        -23 |          0 |          0 |        -23 |
+| s:\Documents\GitHub\ProStartup-Learn\SSI\cs\sidenav-html102.shtml                                                      | HTML     |        -29 |          0 |          0 |        -29 |
+| s:\Documents\GitHub\ProStartup-Learn\SSI\cs\sidenav-html103.shtml                                                      | HTML     |        -18 |          0 |          0 |        -18 |
+| s:\Documents\GitHub\ProStartup-Learn\SSI\cs\topnav.shtml                                                               | HTML     |         -6 |          0 |          0 |         -6 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\list\story-formats.html                     | HTML     |          0 |          0 |          1 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\01-introduction.html               | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\02-concepts.html                   | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\03-basics.html                     | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\04-links-EXAMPLE02.html            | HTML     |         34 |          0 |          2 |         36 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\04-links.html                      | HTML     |         26 |          0 |          0 |         26 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\05-formats-EXAMPLE.html            | HTML     |         80 |         28 |          1 |        109 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\05-formats-EXAMPLE02.html          | HTML     |         69 |          0 |          0 |         69 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\05-formats-EXAMPLE03.html          | HTML     |        653 |          0 |        317 |        970 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\05-formats.html                    | HTML     |         92 |          4 |          0 |         96 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\05-tags.html                       | HTML     |          0 |          0 |         -1 |         -1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\06-html-css-js-EXAMPLE.html        | HTML     |         34 |          0 |          2 |         36 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\06-html-css-js-EXAMPLE02.html      | HTML     |         36 |          0 |          2 |         38 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\06-html-css-js.html                | HTML     |        134 |          4 |          0 |        138 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\07-testing.html                    | HTML     |        105 |          4 |          0 |        109 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\08-exporting.html                  | HTML     |         55 |          4 |          0 |         59 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\game-development\web\twine\twine101\09-next.html                       | HTML     |         35 |          4 |          0 |         39 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\protocols\http\coursesList.html                             | HTML     |          0 |          0 |          1 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\protocols\http\mime-types\audio.html                        | HTML     |        987 |          4 |          0 |        991 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\protocols\http\mime-types\images.html                       | HTML     |        507 |          4 |          0 |        511 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\protocols\http\mime-types\introduction.html                 | HTML     |          0 |          0 |          1 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\protocols\http\mime-types\video.html                        | HTML     |          0 |          0 |          1 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\protocols\introduction.html                                 | HTML     |          0 |          0 |          1 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\transmission-protocols\http\coursesList.html                | HTML     |          0 |          0 |         -1 |         -1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\transmission-protocols\http\mime-types\audio.html           | HTML     |          0 |          0 |         -1 |         -1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\transmission-protocols\http\mime-types\images.html          | HTML     |       -428 |         -4 |          0 |       -432 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\transmission-protocols\http\mime-types\introduction.html    | HTML     |          0 |          0 |         -1 |         -1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\transmission-protocols\http\mime-types\video.html           | HTML     |          0 |          0 |         -1 |         -1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\networking\transmission-protocols\introduction.html                    | HTML     |          0 |          0 |         -1 |         -1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\01-cs-introduction.html         | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\02-concepts.html                | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\03-basics.html                  | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\04-text-formatting.html         | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\05-block-inline-elements.html   | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\06-entities.html                | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\07-directories.html             | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\08-links.html                   | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\09-images.html                  | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\10-lists.html                   | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\11-tables.html                  | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html101\12-next.html                    | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html102\01-cs-introduction.html         | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html102\02-iframe.html                  | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html102\03-iframe-security.html         | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html102\04-audio-element.html           | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html102\05-audio-external.html          | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html102\06-video-element.html           | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html102\07-video-external.html          | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html102\08-next.html                    | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html103\01-cs-introduction.html         | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html103\02-form-basics.html             | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html103\03-text-form.html               | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html103\04-basic-input-atts.html        | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html103\05-fieldset-and-legend.html     | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html103\06-textarea.html                | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html103\07-checkbox.html                | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html103\08-radio.html                   | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\html103\09-select-form.html             | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\info-multimedia\video-youtube.html      | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\att-1-height-and-width-global.html | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-DOCTYPE.html                   | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-a.html                         | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-abbr.html                      | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-address.html                   | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-area.html                      | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-article.html                   | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-aside.html                     | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-audio.html                     | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-b.html                         | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-base.html                      | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-bdi.html                       | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-bdo.html                       | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-blockquote.html                | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-body.html                      | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-br.html                        | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-button.html                    | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-canvas.html                    | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-caption.html                   | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-cite.html                      | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-code.html                      | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-col.html                       | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-colgroup.html                  | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-comment.html                   | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-data.html                      | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-datalist.html                  | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-dd.html                        | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-del.html                       | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-details.html                   | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-dfn.html                       | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-dialog.html                    | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-div.html                       | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-dl.html                        | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-dt.html                        | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-em.html                        | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-embed.html                     | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-fieldset.html                  | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-figcaption.html                | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-figure.html                    | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-footer.html                    | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-form.html                      | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-head.html                      | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-header.html                    | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-headings.html                  | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-hgroup.html                    | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-hr.html                        | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-html.html                      | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-i.html                         | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-iframe.html                    | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-img.html                       | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-input.html                     | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-ins.html                       | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-kbd.html                       | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-label.html                     | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-legend.html                    | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\courses\cs\web-development\front-end\html\list\tag-li.html                        | HTML     |          1 |          0 |          0 |          1 |
+| s:\Documents\GitHub\ProStartup-Learn\index-cs.html                                                                     | HTML     |        -44 |         -3 |          0 |        -47 |
+| Total                                                                                                                  |          |      1,053 |         37 |        104 |      1,194 |
++------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

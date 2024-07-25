@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS 101, lekce 8 - základy fontů, bezpečné fonty a písma z Google Fonts.">
+    <meta name="keywords" content="HTML, ProStartup Learn, CSS 101, CSS kurz, CSS lekce, CSS jak změnit barvu pozadí, změna pozadí CSS, CSS vlastnost background-color">
+    <title> 10. Vlastní fonty | CSS 101 | ProStartup Learn</title>
+    <style>
+        span.g {
+            color: #8BC34A;
+        }
+        span.r {
+            color: #F44336;
+        }
+        span.b {
+            color: #2196F3;
+        }
+        span.y {
+            color: #FFFF00;
+        }
+        span.cb {
+            color: #90c4ee;
+        }
+        span.cy {
+            color: #fafa83
+        }
+        span.cr {
+            color: #ff8c84;
+        }
+        span.cg {
+            color: #a8ca80;
+        }
+        nav.lessonBreadcrumbCSS {
+            background-color: #9db1fa;
+        }
+        div.LessonNameCSS {
+            background-color: #2465f1;
+        }
+        div.exampleCode {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        div.example {
+            background-color: #c2c2c2;
+        }
+        iframe {
+            background-color: white;
+        }
+        @font-face {
+            font-family: MontserratBold;
+            src: url("/fonts/Montserrat-Bold.ttf");
+            font-weight: normal;
+            font-style: normal;
+         }  
+        @font-face {
+                font-family: MontserratSemi;
+                src: url("/fonts/Montserrat-SemiBold.ttf");
+                font-weight: normal;
+                font-style: normal;
+        }  
+         @font-face {
+            font-family: MontserratRegular;
+            src: url("/fonts/Montserrat-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }  
+        @font-face {
+            font-family: RobotoBold;
+            src: url("/fonts/Roboto-Bold.ttf");
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: RobotoRegular;
+            src: url("/fonts/Roboto-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: BlinkerSemi;
+            src: url("/fonts/Blinker-SemiBold.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }  
+        @font-face {
+            font-family: BlinkerRegular;
+            src: url("/fonts/Blinker-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }  
+        body {
+            font-family: RobotoRegular, sans-serif;
+        }
+        @font-face {
+            font-family: RobotoItalic;
+            src: url("/fonts/RobotoCondensed-Regular.ttf");
+            font-weight: normal;
+            font-style: italic;
+        }  
+        @font-face {
+            font-family: UbuntuMono;
+            src: url("/fonts/UbuntuMono-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: UbuntuMonoItalic;
+            src: url("/fonts/UbuntuMono-Regular.ttf");
+            font-weight: normal;
+            font-style: italic;
+        }
+        p.codeExample, code, span.codeOutsidePage, a.codeOutside {
+            font-family: UbuntuMono, monospace;
+        }
+        a {
+            font-family: RobotoBold;
+        }
+        h1 {
+            font-family: BlinkerSemi;
+        }
+        h2, h2.white {
+            font-family: BlinkerSemi;
+        }
+        h3 {
+            font-family: BlinkerSemi;
+        }
+        p.courseSign {
+            font-family: BlinkerRegular;
+        }
+        a.codeOutside {
+            font-family: UbuntuMono, monospace;
+        }
+    </style>
+    <!--#include virtual="/SSI/cs/headLinksNoCSS.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/web-development/front-end/css/sidenav-css101.shtml" -->
+    <div class="lessonContentArea">
+        <main class="lessonContent">
+            <div class="LessonNameCSS">
+                <p class="courseSign">CSS 101</p>
+                <h1>10. Vlastní fonty</h1>
+            </div>
+            <nav class="lessonBreadcrumbCSS">
+                <hr>
+                <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/courses.html" hreflang="cs">CSS</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/css101/01-introduction.html" hreflang="cs">CSS&nbsp;101</a>&nbsp;&gt; Lekce&nbsp;10
+                <hr>
+            </nav>
+            <div class="margin"></div>
+            <p>Používat <strong>bezpečné fonty</strong> je často dostačující. Pokud chcete, aby váš <strong>web</strong> vypadal méně <strong>genericky</strong>, stačí využít <strong>písma</strong> z <strong><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></strong>. Co když ale chcete použít nějaký <strong>font</strong>, který ve službě není? Nebo co když se chcete spoléhat jen sami na sebe a neriskovat, že služba bude mít výpadek nebo že ji <strong>Google</strong> z nějakého důvodu ukončí?</p>
+            <p>Spoléhat se na co nejméně jiných <strong>webů</strong> se v současné době navíc skvělou praktikou. V této lekci si ukážeme, jak na <strong>stránku</strong> přidat lokálně uložené <strong>fonty</strong>.</p>
+            <p>V této lekci si řekneme, jak na <strong>web</strong> přidat s pomocí <strong>CSS</strong> lokální <strong>fonty</strong>.</p>
+            <h2>Stáhnutí fontu</h2>
+            <p><strong>Fonty</strong> se dají stáhnout na mnoha <strong>webových stránkách</strong> - včetně <strong>Google Fonts</strong>, který má tu výhodu, že veškerá <strong>písma</strong> tam jsou zdarma.</p>
+            <p>Stáhnutá <strong>písma</strong> budou většinou uložena ve <strong>formátu .ttf</strong>. Mnohé služby je nejdříve zkomprimují do <strong>souboru .zip</strong>, který budete muset nejdříve extrahovat. <strong>.ttf soubory</strong> by jste měli dát někam do složky svého <strong>webu</strong>.</p>
+            <p><b>Dávejte si pozor na autorská práva</b>! Vždy zkontrolujte licenci <strong>fontu</strong>, který chcete použít.</p>
+            <h2>Pravidlo @font-face</h2>
+            <p>V <strong>CSS</strong> existuje několik <strong>speciálních pravidel</strong> &lpar;anglicky <strong>at-rules</strong>&rpar;, které specifikují, jak se má <strong>CSS</strong> chovat. Jedním z nich je <strong>pravidlo <code>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/at-rules/font-face.html" hreflang="cs">@font-face</a>&apos;</code></strong>, se kterým lze specifikovat nové <strong>rodiny fontů</strong>. Zapisuje se jako normální <strong>pravidlo</strong>, jako <strong>selektor</strong> musí být ale místo <strong>elementu</strong> uvedeno <strong><code>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/at-rules/font-face.html" hreflang="cs">@font-face</a>&apos;</code></strong>. Mělo by se nacházet hned na začátku <strong>.css stylesheetu</strong>.</p>
+            <div class="exampleCode">
+                <code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cb">@font-face</span> {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-family</span>: <i><span class="cr">název fontu</span></i>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">src</span>: <i><span class="cr">cesta k souboru</span></i>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-weight</span>: <i><span class="cr">tloušťka fontu</span></i>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-style</span>: <i><span class="cr">styl fontu</span></i>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}
+                </code>
+            </div>
+            <p><strong>Pravidlo</strong> by mělo obsahovat čtyři <strong>vlastnosti</strong>:</p>
+            <ul>
+                <li><strong><code><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/font-family.html" hreflang="cs">font-family</a></code></strong>: Specifikuje název <strong>písma</strong>, který se bude v <strong>CSS souboru</strong> používat. Nezáleží na tom, zda se shoduje se skutečným názvem <strong>fontu</strong> či ne.</li>
+                <li><strong><code><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/src.html" hreflang="cs">src</a></code></strong>: Určuje umístění <strong>fontu</strong>, které se zapisuje stejným způsobem jako v <strong>HTML</strong> &lpar;viz <a href="/courses/cs/web-development/front-end/html/html101/07-directories.html" hreflang="cs">HTML 101, lekce 7</a>&rpar;. Umístění musí být obklopeno <strong>uvozokami</strong> a musí se nacházet v <strong>CSS funkci <code>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/function/url.html" hreflang="cs">url&lpar;&rpar;</a>&apos;</code></strong>.</li>
+                <li><strong><code><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/font-weight.html" hreflang="cs">font-weight</a></code></strong>: Specifikuje tloušťku <strong>font</strong>. Jde specifikovat buď slovně &lpar;<strong>hodnotou</strong> může být buď <code><strong>normal</strong></code> nebo <code><strong>bold</strong></code>; první určuje normální tloušťku a druhá určuje <strong>tučné písmo</strong>&lpar;, nebo jakýmkoliv číslem od 1 do 1000 &lpar;tloušťka <strong><code>400</code></strong> je ekvivalentem <strong><code>normal</code></strong> a <strong><code>700</code></strong> zase <strong><code>bold</code></strong>&rpar;.</li>
+                <li><strong><code><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/font-style.html" hreflang="cs">font-style</a></code></strong>: Specifikuje <strong>kurzívu fontu</strong>. Má tři slovní <strong>hodnoty</strong>: <strong><code>normal</code></strong> &lpar;bez <strong>kurzívy</strong>&rpar;, <strong><code>italic</code></strong> &lpar;s <strong>kurzívou</strong>&rpar; a <strong><code>oblique</code></strong> &lpar;s <strong>kurzívou</strong>, u které je možné úhel jejího sklonu nastavit - viz <strong><code><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/font-style.html" hreflang="cs">font-style</a></strong></code>&rpar;.</li>
+            </ul>
+            <p>Výsledné <strong>pravidlo</strong> může třeba vypadat takhle:</p>
+            <div class="exampleCode">
+                <code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cb">@font-face</span> {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-family</span>: <i><span class="cr">RobotoRegular</span></i>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">src</span>: <i><span class="cr">url&lpar;&quot;Roboto-Regular.ttf&quot;&rpar;</span></i>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-weight</span>: <i><span class="cr">normal</span></i>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-style</span>: <i><span class="cr">normal</span></i>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}
+                </code>
+            </div>
+            <h2>Použití nového fontu</h2>
+            <p>Vámi <strong>specifikovaný font</strong> lze použít kdekoliv, ať už jen v jednom <strong>elementu</strong>, nebo na celé <strong>stránce</strong>. Stačí jen u nějakého <strong>pravidla</strong> použít <strong>vlastnost <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/font-family.html" hreflang="cs">font-family</a></strong> a v ní jako <strong>hodnotu</strong> použít název <strong>písma</strong>, jež jste specifikovali ve <strong>vlastnosti <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/font-family.html" hreflang="cs">font-family</a></strong>.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">!DOCTYPE</span> <span class="y">html</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">html</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">head</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">link</span> <span class="y">rel</span>=<span class="r">&quot;stylesheet&quot;</span> <span class="y">href</span>=<span class="r">&quot;https://fonts.googleapis.com/css?family=Open+Sans|Montserrat&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">style</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cb">@font-face</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-family</span>: <span class="cr">Roboto</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">src</span>: <span class="cr">url&lpar;&quot;/fonts/Roboto-Regular.ttf&quot;&rpar;</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-weight</span>: <span class="cr">normal, serif-sans</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-style</span>: <span class="cr">normal, serif-sans</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cb">body</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-family</span>: <span class="cr">Roboto, serif-sans</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/style</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/head</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">body</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;&lt;<span class="b">strong</span>&gt;Lorem ipsum&lt;<span class="b">/strong</span>&gt; dolor sit amet. Praesent a vestibulum odio, &lt;<span class="b">em</span>&gt;at gravida ipsum&lt;<span class="b">em</span>&gt;.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/body</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/html</span>&gt;
+                    </code>
+                </div><br>
+                <iframe loading="lazy"  height="55px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/10-custom-fonts-EXAMPLE.html" title="Příklad písma specifikovaného přes @font-face.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/10-custom-fonts-EXAMPLE.html">zde</a>.</iframe>    
+            </div>
+            <p><strong>Fontů</strong> můžete specifikovat kolik chcete. Měli by jste ale mít na paměti, že si je bude muset <strong>uživatel</strong> stáhnout, takže to nepřežeňte. Nejlepší je použít dva až čtyři.</p>
+            <br>&nbsp;<br>
+            <p>V následující lekci probereme všeobecné <strong>stylování textu</strong>, od <strong>centrování</strong> po <strong>indentace</strong> a <strong>stíny</strong>.</p>
+            <a href="/courses/cs/web-development/front-end/css/css101/09-fonts.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Základy fontů</a><br>
+            <a href="/courses/cs/web-development/front-end/css/css101/11-text.html" rel="next" hreflang="cs">Příští lekce: Stylování textu &gt;&gt;&gt;</a>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

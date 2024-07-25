@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Popisek elementu &lt;figure&gt; -  &lt;figcaption&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, seskupování prvků formuláře html, &lt;figcaption&gt; HTML tutorial, &lt;figcaption&gt;, &lt;figcaption&gt; html, element &lt;figcaption&gt;, co je &lt;figcaption&gt;, jak použít &lt;figcaption&gt;">
+    <title>&lt;figcaption&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;figcaption&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;figcaption&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;figcaption&gt;</span></strong> je <strong>párový tag</strong> používaný pro vytváření popisků pro <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/figure.html" hreflang="cs">&lt;figure&gt;</a></strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;fieldset&gt;</span></strong> je <strong>párový tag</strong>. <u>Musí</u> být buď prvním, anebo posledním <strong>potomkem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/figure.html" hreflang="cs">&lt;figure&gt;</a></strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">figure</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">figcaption</span> <span class="y">atribut</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obsah.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/figcaption</span>&gt;<br>
+                    &lt;<span class="b">/figure</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;figcaption&gt;</span></strong> podporuje pouze <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;figcaption&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Defaultně jde o <strong>blokový element</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                <code class="exampleCode">
+                    <span class="cb">details</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">block</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;figcaption&gt;</span></strong> se používá na vytváření titulku nebo popisu obsahu <strong>rodičovského elementu <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/figure.html" hreflang="cs">&lt;figure&gt;</a></strong>. Může také obsahovat dodatečné informace např. o původu obsahu.</p>
+            <div class="example" title="Příklad &lt;figcaption&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">figure</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">img</span> <span class="y">src</span>=<span class="r">&quot;/graphics/priklad.webp&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">figcaption</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;&lt;<span class="b">i</span>&gt;Kombinace modré a červené&lt;<span class="b">/i</span>&gt;&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;Zdroj: &lt;<span class="b">cite</span>&gt;ProStartup Learn&lt;<span class="b">/cite</span>&gt;&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/figcaption</span>&gt;<br>
+                        &lt;<span class="b">/figure</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 17em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/figcaption-EXAMPLE.html" title="Příklad &lt;figcaption&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/figcaption-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/legend.html"><span class="codeOutside">&lt;figure&gt;</span></a>: </li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-figcaption-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-rozlozeni/figcaption-html-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: figcaption - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_figcaption.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;figcaption&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;fieldset&gt;: The Figure Caption element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/fieldset.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;fieldset&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/figure.html" rel="next" hreflang="cs">Příští element: &lt;figure&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

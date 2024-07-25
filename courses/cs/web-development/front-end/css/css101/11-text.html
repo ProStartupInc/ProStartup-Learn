@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS 101, lekce 8 - základy fontů, bezpečné fonty a písma z Google Fonts.">
+    <meta name="keywords" content="HTML, ProStartup Learn, CSS 101, CSS kurz, CSS lekce, CSS jak změnit barvu pozadí, změna pozadí CSS, CSS vlastnost background-color">
+    <title> 11. Stylování textu | CSS 101 | ProStartup Learn</title>
+    <style>
+        span.g {
+            color: #8BC34A;
+        }
+        span.r {
+            color: #F44336;
+        }
+        span.b {
+            color: #2196F3;
+        }
+        span.y {
+            color: #FFFF00;
+        }
+        span.cb {
+            color: #90c4ee;
+        }
+        span.cy {
+            color: #fafa83
+        }
+        span.cr {
+            color: #ff8c84;
+        }
+        span.cg {
+            color: #a8ca80;
+        }
+        nav.lessonBreadcrumbCSS {
+            background-color: #9db1fa;
+        }
+        div.LessonNameCSS {
+            background-color: #2465f1;
+        }
+        div.exampleCode {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        div.example {
+            background-color: #c2c2c2;
+        }
+        iframe {
+            background-color: white;
+        }
+        @font-face {
+            font-family: MontserratBold;
+            src: url("/fonts/Montserrat-Bold.ttf");
+            font-weight: normal;
+            font-style: normal;
+         }  
+        @font-face {
+                font-family: MontserratSemi;
+                src: url("/fonts/Montserrat-SemiBold.ttf");
+                font-weight: normal;
+                font-style: normal;
+        }  
+         @font-face {
+            font-family: MontserratRegular;
+            src: url("/fonts/Montserrat-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }  
+        @font-face {
+            font-family: RobotoBold;
+            src: url("/fonts/Roboto-Bold.ttf");
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: RobotoRegular;
+            src: url("/fonts/Roboto-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: BlinkerSemi;
+            src: url("/fonts/Blinker-SemiBold.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }  
+        @font-face {
+            font-family: BlinkerRegular;
+            src: url("/fonts/Blinker-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }  
+        body {
+            font-family: RobotoRegular, sans-serif;
+        }
+        @font-face {
+            font-family: RobotoItalic;
+            src: url("/fonts/RobotoCondensed-Regular.ttf");
+            font-weight: normal;
+            font-style: italic;
+        }  
+        @font-face {
+            font-family: UbuntuMono;
+            src: url("/fonts/UbuntuMono-Regular.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: UbuntuMonoItalic;
+            src: url("/fonts/UbuntuMono-Regular.ttf");
+            font-weight: normal;
+            font-style: italic;
+        }
+        p {
+            text-align: justify;
+            text-indent: 1.5em;
+            line-height: 1.3em;
+        }
+        p.codeExample, code, span.codeOutsidePage, a.codeOutside {
+            font-family: UbuntuMono, monospace;
+        }
+        p.codeExample {
+            font-size: 0.9em;
+        }
+        a {
+            font-family: RobotoBold;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            font-family: BlinkerSemi;
+            font-size: 3.5rem;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            color: white;
+        }
+        h2, h2.white {
+            font-family: BlinkerSemi;
+            font-size: 2rem;
+        }
+        h3 {
+            font-family: BlinkerSemi;
+            font-size: 1.5rem;
+        }
+        p.courseSign {
+            text-align: center;
+            text-indent: 0;
+            font-family: BlinkerSemi;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            color: white;
+        }
+        a.codeOutside {
+            font-family: UbuntuMono, monospace;
+        }
+    </style>
+    <!--#include virtual="/SSI/cs/headLinksNoCSS.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/web-development/front-end/css/sidenav-css101.shtml" -->
+    <div class="lessonContentArea">
+        <main class="lessonContent">
+            <div class="LessonNameCSS">
+                <p class="courseSign">CSS 101</p>
+                <h1>11. Stylování textu</h1>
+            </div>
+            <nav class="lessonBreadcrumbCSS">
+                <hr>
+                <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/courses.html" hreflang="cs">CSS</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/css/css101/01-introduction.html" hreflang="cs">CSS&nbsp;101</a>&nbsp;&gt; Lekce&nbsp;11
+                <hr>
+            </nav>
+            <div class="margin"></div>
+            <p>V <strong>HTML</strong> lze tak nějak <strong>text stylovat</strong>, a to s <strong>elementy</strong> jako <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/b.html" hreflang="cs">b</a>&gt;</strong> a <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/em.html" hreflang="cs">em</a>&gt;</strong>. Ty ale zase mají většinou nějaký <strong>sémantický význam</strong>, takže používat je pouze z estetických důvodů je považováno za špatnou praktiku. Navíc jsou jen velmi základní - <strong>&lt;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/mark.html" hreflang="cs">mark</a>&gt;</strong> třeba jen změní pozadí <strong>textu</strong> na <mark>žluté</mark>.</p>
+            <p>V této lekci si ukážeme, jak <strong>text zarovnat</strong>, jak implementovat <strong>indentaci odstavců</strong>, jak změnit výšku řádků, a podobně.</p>
+            <h2>Zarovnání textu</h2>
+            <p>Defaultně je <strong>text</strong> v <strong>HTML</strong> zarovnán vlevo, což je někdy např. u <strong>nadpisů</strong> nežádoucí. Naštěstí existuje <strong>CSS vlastnost <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/text-align.html" hreflang="cs">text-align</a></strong>, která to umožňuje změnit. Má celkem čtyři použitelné <strong>hodnoty</strong>:</p>
+            <ul>
+                <li><strong><code>left</code></strong>: Výchozí <strong>hodnota</strong>. Zarovná <strong>text</strong> vlevo.</li>
+                <li><strong><code>center</code></strong>: Zarovná <strong>text</strong> na střed.</li>
+                <li><strong><code>right</code></strong>: Zarovná <strong>text</strong> vpravo.</li>
+                <li><strong><code>justify</code></strong>: Zarovná <strong>text</strong> do bloku. Bude mít vliv pouze v případě, že má <strong>odstavec</strong> alespoň dva řádky.</li>
+            </ul>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-align: left&quot;</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-align: center&quot;</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-align: right&quot;</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-align: justify&quot;</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque feugiat arcu quis rhoncus volutpat. Phasellus eget massa pulvinar velit luctus vestibulum a sed ligula. Sed nec odio id tellus ornare tincidunt ac ut leo.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="180px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE.html" title="Příklad použití vlastnosti text-align.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE.html">zde</a>.</iframe>    
+            </div>
+            <p><b>Poznámka</b>: Nezapomeňte, že v CSS se všechny vlastnosti dědí z rodičovských elementů na potomky!</p>
+            <h2>Velikost textu</h2>
+            <p><strong>Velikost textu</strong> lze změnit s <strong>vlastností <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/font-size.html" hreflang="cs">font-size</a></strong>. Výchozí velikost je <strong>16 pixelů</strong> &lpar;<strong>1em</strong>&rpar;</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;Normální text.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-size: 150%&quot;</span>&gt;Text zvětšený o 50 procent.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;font-size: 0.8em&quot;</span>&gt;Text zmenšený o pětinu.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="140px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE02.html" title="Příklad použití vlastnosti font-size.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE02.html">zde</a>.</iframe>    
+            </div>
+            <h2>Indentace</h2>
+            <p><strong>Indentace</strong> je volný prostor, který se nachází před prvním slovem každého <strong>paragrafu</strong>. V základním <strong>HTML</strong> sice neexistuje, ale s pomocí <strong>CSS</strong> se dá snadno specifikovat s <strong>vlastností <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/text-indent.html" hreflang="cs">text-indent</a></strong>.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;Normální text bez indentace. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat non dolor vitae molestie. Proin eget dui quis dui vulputate vulputate et sed justo. Mauris eget massa elit. &lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-indent: 1.5em&quot;</span>&gt;Text s indentací. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat non dolor vitae molestie. Proin eget dui quis dui vulputate vulputate et sed justo. Mauris eget massa elit.&lt;<span class="b">/p</span>&gt;<br>
+                    </code>
+                </div><br>
+                <iframe height="130px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE03.html" title="Příklad použití vlastnosti text-indent.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE03.html">zde</a>.</iframe>    
+            </div>
+            <h2>Výška řádků</h2>
+            <p>Pokud vám přijde, že jsou řádky defaultně příliš těsně u sebe, nemějte obavy! S <strong>vlastností <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/line-height.html" hreflang="cs">line-height</a></strong> to můžete změnit.</p>
+            <p>Jako <strong>hodnotu</strong> můžete použít buď normální délku &lpar;např. <strong><code>6px</code></strong>&rpar;, nebo násobek velikosti <strong>písma</strong> &lpar;kterou je vždy <strong><code>1</code></strong>. Výchozí velikostí řádkování je ve velké části prohlížečů <strong><code>1.2</code></strong>, což znamená, že mezery mezi řádky budou mít velikost 20% písma.&rpar;.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;Normální odstavec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat non dolor vitae molestie. Proin eget dui quis dui vulputate vulputate et sed justo. Mauris eget massa elit. &lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;line-height: 1.7&quot;</span>&gt;Odstavec s velikostí řádku 1.7. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat non dolor vitae molestie. Proin eget dui quis dui vulputate vulputate et sed justo. Mauris eget massa elit.&lt;<span class="b">/p</span>&gt;<br>
+                    </code>
+                </div><br>
+                <iframe height="140px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE04.html" title="Příklad použití vlastnosti line-height.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE04.html">zde</a>.</iframe>    
+            </div>
+            <h2>Dekorace</h2>
+            <p>V <strong>CSS</strong> se &quot;dekoracemi textu&quot; myslí nějaká čára přes <strong>text</strong>, ať už jde o <span style="text-decoration-line: underline;">podtržení</span>, <span style="text-decoration-line: line-through;">přeškrtnutí</span>, nebo <span style="text-decoration-line: overline;">čáru nad textem</span>. Pro tohle všechno existuje několik <strong>vlastností</strong>...</p>
+            <p>Nejdříve začněme tou nejzákladnější -  <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/text-decoration-line.html" hreflang="cs">text-decoration-line</a></strong>. Tato <strong>vlastnost</strong> určuje, o který typ čáry se vlastně bude jednat. Má tři základní možné <strong>hodnoty</strong>:</p>
+            <ul>
+                <li><strong><code>underline</code></strong>: Text bude podtržen.</li>
+                <li><strong><code>line-through</code></strong>: Text bude přeškrtnut.</li>
+                <li><strong><code>overline</code></strong>: Čára bude vykreslena nad textem.</li>
+            </ul>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-decoration-line: underline&quot;</span>&gt;Podtržený text.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-decoration-line: line-through&quot;</span>&gt;Přeškrtnutý text.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-decoration-line: overline&quot;</span>&gt;Text s čarou nad sebou.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="140px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE05.html" title="Příklad použití vlastnosti text-decoration-line.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE05.html">zde</a>.</iframe>    
+            </div>
+            <p>Můžete použít i více <strong>hodnot</strong>.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-decoration-line: underline line-through overline&quot;</span>&gt;Lorem ipsum dolor sit amet.&lt;<span class="b">/p</span>&gt;<br>
+                    </code>
+                </div><br>
+                <iframe height="60px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE07.html" title="Příklad použití více hodnot u vlastnosti text-decoration-line.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE07.html">zde</a>.</iframe>    
+            </div>
+            <p>V případě, že budete chtít čáru jiné <strong>barvy</strong> než <strong>text</strong>, můžete použít <strong>vlastnost <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/text-decoration-color.html" hreflang="cs">text-decoration-color</a></strong>, jejíž <strong>hodnotou</strong> by měla být libovolná <strong>barva</strong>. Pokud se vám zase nelíbí čáry přímé, můžete použít <strong>vlastnost <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/text-decoration-style.html" hreflang="cs">text-decoration-style</a></strong>, která má pět vlastních použitelných <strong>hodnot</strong>:</p>
+            <ul>
+                <li><strong><code>solid</code></strong>: Výchozí <span style="text-decoration: underline solid;">rovná čára</span></li>
+                <li><strong><code>dashed</code></strong>: <span style="text-decoration: underline dashed;">Přerušovaná čára</span></li>
+                <li><strong><code>double</code></strong>: <span style="text-decoration: underline double;">Dvojitá čára</span></li>
+                <li><strong><code>dotted</code></strong>: <span style="text-decoration: underline dotted;">Tečkovaná čára</span></li>
+                <li><strong><code>wavy</code></strong>: <span style="text-decoration: underline wavy;">Vlnovka</span>.</li>
+            </ul>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-decoration-line: underline;  text-decoration-color: red; text-decoration-style: wavy;&quot;</span>&gt;Lorem ipsum...&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-decoration-line: line-through; text-decoration-style: double;&quot;</span>&gt;Lorem ipsum dolor sit amet.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-decoration-line: overline; text-decoration-style: dashed;&quot;</span>&gt;Lorem ipsum dolor sit amet.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="140px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE06.html" title="Příklad použití vlastností text-decoration-color a text-decoration-style.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE06.html">zde</a>.</iframe>    
+            </div>
+            <p>S <strong>vlastností <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/text-decoration-thickness.html" hreflang="cs">text-decoration-thickness</a></strong> můžete specifikovat tloušťku čáry.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-decoration-line: underline; text-decoration-thickness: 6px&quot;</span>&gt;Lorem ipsum dolor sit amet.&lt;<span class="b">/p</span>&gt;<br>
+                    </code>
+                </div><br>
+                <iframe height="60px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE08.html" title="Příklad použití více hodnot u vlastnosti text-decoration-line.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE08.html">zde</a>.</iframe>    
+            </div>
+            <p>Pokud se vám nechce psát tolik <strong>vlastností</strong>, žádný problém! Vše můžete zkrátit do jedné <strong>vlastnosti</strong> s více <strong>hodnotami</strong> &lpar;tzv. <strong>parametry</strong>&rpar;, <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/text-decoration.html" hreflang="cs">text-decoration</a></strong>. Její <strong>syntaxe</strong> vypadá následovně:</p>
+            <div class="exampleCode">
+                <code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">text-decoration</span>: <i><span class="cr">text-decoration-line</span></i> <i><span class="cr">text-decoration-color</span></i> <i><span class="cr">text-decoration-style</span></i> <i><span class="cr">text-decoration-thickness</span></i>;
+                </code>
+            </div>
+            <p>Pokud chcete např. jen tu čáru specifikovat s prvním <strong>parametrem</strong>, můžete ty ostatní přeskočit. Pokud ale chcete např. určit jen typ a styl čáry, barvu přeskočit nemůžete.</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-decoration: underline;&quot;</span>&gt;Lorem ipsum...&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-decoration: underline black wavy;&quot;</span>&gt;Lorem ipsum dolor sit amet.&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="y">style</span>=<span class="r">&quot;text-decoration: underline red double 6px;&quot;</span>&gt;Lorem ipsum dolor sit amet.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="140px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE09.html" title="Příklad použití vlastností text-decoration.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE09.html">zde</a>.</iframe>    
+            </div>
+            <h2>Stíny</h2>
+            <p>Na závěr se podíváme na to, jak <strong>textu</strong> dodat <strong>stíny</strong>. Ty se specifikují s <strong>vlastností <a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/text-shadow.html" hreflang="cs">text-shadow</a></strong>. Má následující syntaxi:</p>
+            <div class="exampleCode">
+                <code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">text-shadow</span>: <i><span class="cr">x</span></i> <i><span class="cr">y</span></i> <i><span class="cr">rozostření</span></i> <i><span class="cr">barva</span></i>;
+                </code>
+            </div>
+            <ul>
+                <li><strong><i><code>x</code></i></strong>: Horizontální pozice. Kladná <strong>hodnota</strong> specifikuje pozici doprava, záporná doleva &lpar;např. <strong><code>6px</code></strong> nebo <strong><code>-0.1em</code></strong>&rpar;.</li>
+                <li><strong><i><code>y</code></i></strong>: Vertikální pozice. Kladná <strong>hodnota</strong> specifikuje pozici dolů, záporná nahoru.</li>
+                <li><strong><i><code>rozostření</code></i></strong>: <strong>Hodnota</strong> specifikující, jak velká část <strong>stínu</strong> bude rozostřena &lpar;<strong><code>5px</code></strong>, <strong><code>0</code></strong>...&rpar;. Nepovinný parametr, ale v případě, že chcete specifikovat jen barvu a ne rozostření, <b>musíte</b> dosadit za něj nulu. Rozostřuje se od <u>vnějšího okraje</u> <strong>stínu</strong>.</li>
+                <li><strong><i><code>barva</code></i></strong>: Nepovinný parametr, jež specifikuje barvu <strong>stínu</strong>.</li>
+            </ul>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">h2</span> <span class="y">style</span>=<span class="r">&quot;text-shadow: 4px 3px 3px&quot;</span>&gt;Nadpis druhé úrovně se stínem.&lt;<span class="b">/h2</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">h2</span> <span class="y">style</span>=<span class="r">&quot;text-shadow: 4px -3px 3px gray&quot;</span>&gt;Nadpis druhé úrovně se stínem.&lt;<span class="b">/h2</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="100px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE10.html" title="Příklad použití vlastnosti text-shadow.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE10.html">zde</a>.</iframe>    
+            </div>
+            <p><b>Poznámka</b>: Stíny by neměly činit text nečitelným.</p>
+            <p>Pokud chcete mít vyšší úroveň kontroly nad všemi stranami <strong>stínu</strong> &lpar;nebo ho mít prostě na všech stranách <strong>textu</strong>, ne jen na dvou&rpar;, můžete specifikovat více <strong>parametrů</strong>, přičemž každý bude od té jiného oddělen čárkou. Každý z nich by měl mít stejnou <strong>syntaxi</strong> jako normální <strong>hodnota</strong> &lpar;viz výše&rpar;.</p>
+            <div class="exampleCode">
+                <code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">text-shadow</span>: <i><span class="cr">levá strana</span></i>, <i><span class="cr">horní strana</span></i>, <i><span class="cr">pravá strana</span></i>, <i><span class="cr">dolní strana</span></i>;
+                </code>
+            </div>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">h2</span> <span class="y">style</span>=<span class="r">&quot;text-shadow: -4px -3px 3px gray, 4px -3px 3px gray, -4px 3px 0 gray, 4px 3px 0 gray&quot;</span>&gt;Nadpis.&lt;<span class="b">/h2</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="60px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE11.html" title="Příklad použití vlastnosti text-shadow se čtyřmi parametry.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE11.html">zde</a>.</iframe>    
+            </div>
+            <h2>Obtáhnutí textu</h2>
+            <p>V <strong>CSS</strong> bohužel neexistuje žádná <strong>vlastnost</strong>, se kterou by šlo například obtáhnout bílý text černě. Lze na to ale použít <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/css/reference/text-shadow.html" hreflang="cs">text-shadow</a></strong>:</p>
+            <div class="example">
+                <h3>&nbsp;&nbsp;&nbsp;Příklad</h3>
+                <div class="exampleCode">
+                    <code>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">h2</span> <span class="y">style</span>=<span class="r">&quot;text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; color: white;&quot;</span>&gt;Nadpis.&lt;<span class="b">/h2</span>&gt;
+                    </code>
+                </div><br>
+                <iframe height="60px" width="99.5%" src="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE12.html" title="Obtáhnutí nadpisu s text-shadow.">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/css/css101/11-text-EXAMPLE12.html">zde</a>.</iframe>    
+            </div>
+            <br>&nbsp;<br>
+            <p>V příští lekci se podíváme na <strong>průhlednost elementů</strong>.</p>
+            <a href="/courses/cs/web-development/front-end/css/css101/10-custom-fonts.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Vlastní fonty</a><br>
+            <a href="/courses/cs/web-development/front-end/css/css101/12-opacity.html" rel="next" hreflang="cs">Příští lekce: Průhlednost &gt;&gt;&gt;</a>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

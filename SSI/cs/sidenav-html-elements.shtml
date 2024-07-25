@@ -1,0 +1,121 @@
+<div class="sidenavWrapper">
+  <nav class="sidenavWrapper">
+    <ul class="sidenav">
+        <li class="sidenavSection">Seznamy elementů</li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Abecední seznam</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/lists/elements-categorized.html" hreflang="cs">Kategorizovaný seznam</a></li>
+        <li class="sidenavSection">Seznamy atributů</li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs">Globální atributy</a></li>
+        <li class="sidenavSection">Elementy</li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/comment.html" hreflang="cs">&lt;!-- --&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/DOCTYPE.html" hreflang="cs">&lt;!DOCTYPE&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/a.html" hreflang="cs">&lt;a&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/abbr.html" hreflang="cs">&lt;abbr&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/address.html" hreflang="cs">&lt;address&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/area.html" hreflang="cs">&lt;area&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/article.html" hreflang="cs">&lt;article&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/aside.html" hreflang="cs">&lt;aside&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/audio.html" hreflang="cs">&lt;audio&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/b.html" hreflang="cs">&lt;b&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/base.html" hreflang="cs">&lt;base&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/bdi.html" hreflang="cs">&lt;bdi&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/bdo.html" hreflang="cs">&lt;bdo&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/blockquote.html" hreflang="cs">&lt;blockquote&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/body.html" hreflang="cs">&lt;body&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/br.html" hreflang="cs">&lt;br&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/button.html" hreflang="cs">&lt;button&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/canvas.html" hreflang="cs">&lt;canvas&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/caption.html" hreflang="cs">&lt;caption&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/code.html" hreflang="cs">&lt;code&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/col.html" hreflang="cs">&lt;col&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/colgroup.html" hreflang="cs">&lt;colgroup&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/data.html" hreflang="cs">&lt;data&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/datalist.html" hreflang="cs">&lt;datalist&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/dd.html" hreflang="cs">&lt;dd&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/del.html" hreflang="cs">&lt;del&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/details.html" hreflang="cs">&lt;details&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/dfn.html" hreflang="cs">&lt;dfn&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/dialog.html" hreflang="cs">&lt;dialog&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/div.html" hreflang="cs">&lt;div&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/dl.html" hreflang="cs">&lt;dl&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/dt.html" hreflang="cs">&lt;dt&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/em.html" hreflang="cs">&lt;em&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/embed.html" hreflang="cs">&lt;embed&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/fieldset.html" hreflang="cs">&lt;fieldset&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/figcaption.html" hreflang="cs">&lt;figcaption&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/figure.html" hreflang="cs">&lt;figure&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/footer.html" hreflang="cs">&lt;footer&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/form.html" hreflang="cs">&lt;form&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/headings.html" hreflang="cs">&lt;h1&gt; - &lt;h6&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/head.html" hreflang="cs">&lt;head&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/header.html" hreflang="cs">&lt;header&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/hgroup.html" hreflang="cs">&lt;hgroup&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/hr.html" hreflang="cs">&lt;hr&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/html.html" hreflang="cs">&lt;html&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/i.html" hreflang="cs">&lt;i&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/iframe.html" hreflang="cs">&lt;iframe&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/img.html" hreflang="cs">&lt;img&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/input.html" hreflang="cs">&lt;input&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/ins.html" hreflang="cs">&lt;ins&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/kbd.html" hreflang="cs">&lt;kbd&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/label.html" hreflang="cs">&lt;label&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/legend.html" hreflang="cs">&lt;legend&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/li.html" hreflang="cs">&lt;li&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/link.html" hreflang="cs">&lt;link&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/main.html" hreflang="cs">&lt;main&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/map.html" hreflang="cs">&lt;map&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/mark.html" hreflang="cs">&lt;mark&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/menu.html" hreflang="cs">&lt;menu&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/meta.html" hreflang="cs">&lt;meta&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/meter.html" hreflang="cs">&lt;meter&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/nav.html" hreflang="cs">&lt;nav&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/noscript.html" hreflang="cs">&lt;noscript&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/object.html" hreflang="cs">&lt;object&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/ol.html" hreflang="cs">&lt;ol&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/optgroup.html" hreflang="cs">&lt;optgroup&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/option.html" hreflang="cs">&lt;option&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/output.html" hreflang="cs">&lt;output&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/p.html" hreflang="cs">&lt;p&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/picture.html" hreflang="cs">&lt;picture&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/portal.html" hreflang="cs">&lt;portal&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/pre.html" hreflang="cs">&lt;pre&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/progress.html" hreflang="cs">&lt;progress&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/q.html" hreflang="cs">&lt;q&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/rp.html" hreflang="cs">&lt;rp&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/rt.html" hreflang="cs">&lt;rt&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/ruby.html" hreflang="cs">&lt;ruby&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/s.html" hreflang="cs">&lt;s&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/samp.html" hreflang="cs">&lt;samp&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/script.html" hreflang="cs">&lt;script&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/section.html" hreflang="cs">&lt;section&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/select.html" hreflang="cs">&lt;select&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/slot.html" hreflang="cs">&lt;slot&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/small.html" hreflang="cs">&lt;small&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/section.html" hreflang="cs">&lt;section&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/source.html" hreflang="cs">&lt;source&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">&lt;span&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/strong.html" hreflang="cs">&lt;strong&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/style.html" hreflang="cs">&lt;style&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/sub.html" hreflang="cs">&lt;sub&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/summary.html" hreflang="cs">&lt;summary&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/sup.html" hreflang="cs">&lt;sup&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/table.html" hreflang="cs">&lt;table&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/tbody.html" hreflang="cs">&lt;tbody&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/td.html" hreflang="cs">&lt;td&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/template.html" hreflang="cs">&lt;template&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/textarea.html" hreflang="cs">&lt;textarea&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/tfoot.html" hreflang="cs">&lt;tfoot&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/th.html" hreflang="cs">&lt;th&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/thead.html" hreflang="cs">&lt;thead&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/time.html" hreflang="cs">&lt;time&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/title.html" hreflang="cs">&lt;title&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/tr.html" hreflang="cs">&lt;tr&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/track.html" hreflang="cs">&lt;track&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/u.html" hreflang="cs">&lt;u&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/ul.html" hreflang="cs">&lt;ul&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/var.html" hreflang="cs">&lt;var&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/video.html" hreflang="cs">&lt;video&gt;</a></li>
+        <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/reference/tag/wbr.html" hreflang="cs">&lt;wbr&gt;</a></li>
+    </ul>
+  </nav>
+</div>

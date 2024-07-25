@@ -1,0 +1,29 @@
+<div class="sidenavWrapper">
+    <nav class="sidenavWrapper">
+        <ul class="sidenav">
+            <li class="sidenavSection">HTML 102</li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html102/01-cs-introduction.html" hreflang="cs">1. Úvod</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html102/02-iframe.html" hreflang="cs">2. Základy &lt;iframe&gt;</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html102/03-iframe-security.html" hreflang="cs">3. Rizika iframů</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html102/04-audio-element.html" hreflang="cs">4. Element &lt;audio&gt;</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html102/05-audio-external.html" hreflang="cs">5. Externí audio</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html102/06-video-element.html" hreflang="cs">6. Element &lt;video&gt;</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html102/07-video-external.html" hreflang="cs">7. Externí videa</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html102/08-next.html" hreflang="cs">8. Jak pokračovat?</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html102/list-102elements.html" hreflang="cs">Probrané elementy</a></li>
+            <li class="sidenavSection">Audio</li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/info-multimedia/audio-spotify" hreflang="cs">Spotify</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/info-multimedia/audio-soundcloud" hreflang="cs">Soundcloud</a></li>
+            <li class="sidenavSection">Videa</li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/info-multimedia/video-youtube.html" hreflang="cs">YouTube</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/info-multimedia/video-vimeo" hreflang="cs">Soundcloud</a></li>
+            <li class="sidenavSection">Hodnoty &apos;type&apos;; formáty souborů</li>
+            <li class="sidenavNormal"><a href="/courses/cs/networking/protocols/http/mime-types/images.html" hreflang="cs">Obrázky</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/networking/protocols/http/mime-types/audio.html" hreflang="cs">Audio</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/networking/protocols/http/mime-types/video.html" hreflang="cs">Videa</a></li>
+            <li class="sidenavSection">Ostatní informace</li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Seznam všech elementů</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/general-info/list-lang-codes.html" hreflang="cs">Seznam kódů ISO-396-1</a></li>
+        </ul>
+    </nav>
+</div>

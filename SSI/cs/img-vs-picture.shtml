@@ -1,0 +1,22 @@
+<table style="table-layout: fixed;">
+    <tr>
+        <th></th>
+        <th>&lt;img&gt;</th>
+        <th>&lt;picture&gt;</th>
+    </tr>
+    <tr>
+        <th>Podpora</th>
+        <td>U všech prohlížečů.</td>
+        <td>Přestože je již podporován u většiny prohlížečů, některé starší podporu nemají.</td>
+    </tr>
+    <tr>
+        <th>Počet specifikovatelných souborů</th>
+        <td>Jen jeden, což může v některých případech omezit kompatibilitu, když je použit formát souboru, který je v nějakém prohlížeči nepodporován.</td>
+        <td>S pomocí <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/source.html" hreflang="cs">&lt;source&gt;</a> jich lze specifikovat neomezeně mnoho, což výrazně zvyšuje kompatibilitu a - při správném použití - uživatelský zážitek. Této možnosti je totiž možné využít k optimalizaci načítacích časů tak, že se mezi první specifikované soubory dají ty s nejmenší velikostí.</td>
+    </tr>
+    <tr>
+        <th>Podmínky</th>
+        <td>Žádné. Ve všech scénářích je dostupný jen jeden soubor, jedna velikost &lpar;lze ale ovlivnit s CSS&rpar;.</td>
+        <td>Lze specifikovat soubory například podle orientace obrazovky, její velikosti, nebo hustoty pixelů. To umožňuje mnohem větší úroveň kontroly a versatility.</td>
+    </tr>
+</table>

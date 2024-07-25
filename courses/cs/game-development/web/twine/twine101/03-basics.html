@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twine 101, lekce 3 - vytvoření nového příběhu a první editace.">
+    <meta name="keywords" content="Twine, ProStartup Learn, Twine 101, Twine kurz, Twine lekce, Twine hry, Twine vývoj her, Twine game dev, Twine engine, vývoj webových her, interaktivní fikce, hypertextové hry, hypertextové fikce, interaktivní hry, jak vytvořit textovou hru, vývoj textových her, jak vytvořit nový projekt Twine">
+    <title>3. První editace | Twine 101 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/game-development/web/twine/sidenav-twine101.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameTwine">
+            <p class="courseSign">Twine 101</p>
+            <h1>3. První editace</h1>
+        </div>
+        <nav class="lessonBreadcrumbTwine">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/game-development/introduction.html" hreflang="cs">Videohry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/introduction.html" hreflang="cs">Webové hry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/twine/courses.html" hreflang="cs">Twine</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/twine/twine101/01-introduction.html" hreflang="cs">Twine&nbsp;101</a>&gt; Lekce&nbsp;3
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p>V <a href="/courses/cs/game-development/web/twine/twine101/02-concepts.html" hreflang="cs" rel="prev">minulé lekci</a> jsme si řekli o několika <strong>konceptech</strong>, se kterými se v <strong>Twine</strong> budete setkávat často - konkrétně o <strong>knihovně</strong>, <strong>příbězích</strong> a <strong>pasážích</strong>. V této se konečně pustíme do &quot;akce&quot; - založíme si <strong>nový příběh</strong>, ve kterém provedeme několik základních <strong>editací</strong>.</p>
+            <h2>Nový příběh</h2>
+            <p>Vytvoření nového <strong>příběhu</strong> je přímočaré - stačí jen v <strong>knihovně</strong> &lpar;první věci, která se po načtení aplikace ukáže&rpar; stisknout tlačítko <strong>Nové</strong>. Mezi <strong>desktopovou</strong> a <strong>prohlížečovou</strong> verzí nejsou v tomto &lpar;a vlastně ve většině jiných&rpar; aspektu žádné rozdíly.</p>
+            <div class="photoGallery">
+                <div class="photoGalleryContainer">
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-01.webp" alt="Knihovna ve Twine.">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-01.webp" alt="Knihovna ve Twine.">
+                            <p class="photoGalleryDropdown">1. Otevřete Twine. Ukáže se vám knihovna.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-02.webp" alt="Twine: Zakládání nového příběhu.">
+                        <div class="photoGalleryDropdown">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-02.webp" alt="Twine: Zakládání nového příběhu.">
+                            <p class="photoGalleryDropdown">2. Klikněte na tlačítko <strong>Nové</strong> v horním panelu. Ukáže se vám okno, kam můžete napsat název příběhu a potvrdit jeho založení.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-03.webp" alt="Twine: Potvrzení vytvoření nového příběhu.">
+                        <div class="photoGalleryDropdownRight">
+            				<img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-03.webp" alt="Twine: Potvrzení vytvoření nového příběhu.">
+                            <p class="photoGalleryDropdown">3. Nějak pojmenujte svůj příběh &lpar;pravděpodobně ho nebudete nazývat &quot;<strong>Nepojmenovaný příběh</strong>&quot;&rpar; a potvrďte jeho založení stisknutím tlačítka <strong>Potvrdit</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="photoGalleryInitial">
+                        <img class="photoGalleryInitial" src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-04.webp" alt="Twine: Příběhová mapa nového příběhu.">
+                        <div class="photoGalleryDropdownRight">
+                            <img class="photoGalleryDropdown" loading="lazy"  src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-04.webp" alt="Twine: Příběhová mapa nového příběhu.">
+                            <p class="photoGalleryDropdown">4. Hotovo! Příběh je založen a Twine vás přesměroval na jeho příběhovou mapu.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="photoGalleryHint">Pro instrukce a zobrazení obrázku ve větší velikosti musíte nad ním přejet myší &lpar;případně ho můžete otevřít v nové kartě&rpar;.</p>
+            </div>
+            <h2>Počáteční pasáž</h2>
+            <div class="imageFloatR" style="margin-top: -1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-05.webp" class="imageFloatR" alt="Twine: Prázdná pasáž vedle té počáteční" style="height: 9em;" loading="lazy">
+                <p class="imageFloatR">Počáteční pasáž.</p>
+            </div>
+            <p>Po založení nového <strong>příběhu</strong> vás <strong>Twine</strong> automaticky přesměruje na jeho <strong>příběhovou mapu</strong>, kde se nachází všechny <strong>pasáže</strong>.</p>
+            <p>V tuto chvíli by se na <strong>mapě</strong> měla nacházet jen jedna <strong>pasáž</strong>, která by vedle sebe měla mít ikonu rakety. Jde o <strong>počáteční pasáž</strong>. V každém <strong>příběhu</strong> se musí nějaká nacházet - může jí být však jen jedna.</p>
+            <p><strong>Počáteční pasáž</strong> je první <strong>pasáží</strong>, která se <strong>hráčovi</strong> ukáže.</p><br>
+            <h2>Editace pasáží</h2>
+            <p>A teď se pustíme do menšího editování. <strong>Pasáž</strong> lze začít upravovat buď dvojklikem na ni, nebo jedním kliknutím na ni a následovným stisknutím možnosti <strong>&quot;Upravit&quot;</strong> v horním panelu.</p>
+            <p>Po započnutí editování se v pravé části obrazovky ukáže okno, kde lze <strong>pasáž</strong> upravovat. Nachází se v něm sice mnoho možností a prvků, ale nás zatím budou zajímat jen dvě - položka <strong>&quot;Přejmenovat&quot;</strong> v horním panelu okna, se kterou lze změnit název &lpar;de facto ID&rpar; <strong>pasáže</strong> a textové pole, které zabírá většinu jeho plochy a lze v něm měnit její obsah.</p>
+            <div class="center" style="margin-top: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-06.webp" alt="Twine: Okno úprav pasáže." class="imageNormal" style="width: 99.999%;" loading="lazy">
+            </div>
+            <h2>Vyzkoušení hry</h2>
+            <div class="center" style="margin-bottom: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-07.webp" alt="Twine: Horní panel s nástroji z kategorie &quot;Nástroje&quot;." class="imageNormal" style="width: 99.999%;" loading="lazy">
+            </div>
+            <p>Ať už jste <strong>počáteční pasáž</strong> už upravili nebo ne, bude vás pravděpodobně zajímat, jak si hru, kterou v <strong>Twine</strong> vytvoříte, zahrát. Je to jednoduché - v nejvýše umístěném panelu nejdříve vyberete položku <strong>&quot;Nástroje&quot;</strong>. Po kliknutí si určitě všimnete toho, že se v panelu níže nyní zobrazují jiné možnosti než předtím - pro vyzkoušení vašeho <strong>projektu</strong> stiskněte položku <strong>&quot;Přehrát&quot;</strong>. Ve vašem <strong>prohlížeči</strong> se poté otevře nová karta, ve které můžete <strong>příběh</strong> vyzkoušet.</p>
+            <p>Pokud jste do <strong>počáteční pasáže</strong> nic nenapsali, pravděpodobně se v nové kartě nachází jen černé pozadí bez ničeho. Pokud jste ale do ní něco zadali, tak se vám ten text určitě zobrazuje.</p>
+            <div class="center" style="margin-bottom: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/03-basics-08.webp" alt="Twine: Přehrávaná hra." class="imageNormal" style="width: 99.999%; margin-top: 1em;" loading="lazy">
+            </div>
+            <br>&nbsp;<br>&nbsp;<br>
+            <p>Tohle je ale jen naprostý začátek. V příští lekci se pustíme do hlavního prvku <strong>Twine her</strong> a <strong>interaktivní fikce</strong> celkově - <strong>odkazy</strong>.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/game-development/web/twine/twine101/02-concepts.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Koncepty</a>
+                <a class="lesson" href="/courses/cs/game-development/web/twine/twine101/04-links.html" rel="next" hreflang="cs">Příští lekce: Nové pasáže a odkazy &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

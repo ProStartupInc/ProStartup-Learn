@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - vložený text / sémantické podtržení &lt;ins&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, &lt;ins&gt; HTML tutorial, &lt;ins&gt;, &lt;ins&gt; html, element &lt;ins&gt;, co je &lt;ins&gt;, jak použít &lt;ins&gt;, podtržení textu html">
+    <title>&lt;ins&gt;| ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;ins&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html" hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;ins&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;ins&gt;</span></strong> je <strong>element</strong> využívaný pro podtrhování textu v <strong>dokumentu</strong>, který byl přidán po jeho zveřejnění.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;ins&gt;</span></strong> je <strong>párový tag</strong>. Mezi tím <strong>počátečním</strong> a <strong>koncovým</strong> se nachází text, jež má být podtržen. <em>Neměl</em> by přesahovat přes hranice <strong>odstavců</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">ins</span> <span class="y">atribut</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;Text&lt;<span class="b">/ins</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;ins&gt;</span></strong> podporuje pouze dva <strong>vlastní atributy</strong>, přičemž ani jeden z nich není povinný.</p>
+            <table>
+                <tr>
+                    <th>Název</th>
+                    <th>Povinné?</th>
+                    <th>Popis</th>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/ins-cite.html" hreflang="cs">cite</a></th>
+                    <td>Ne</td>
+                    <td>Odkaz na stránku/dokument, kde je vysvětlen důvod, proč byl text přidán.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/ins-datetime.html" hreflang="cs">datetime</a></th>
+                    <td>Ne</td>
+                    <td>Poskytuje datum a čas změny.</td>
+                </tr>
+            </table>
+            <p><strong>Element</strong> také podporuje <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;ins&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Defaultně jde o <strong>řádkový element</strong>, který vypadá - až na podtržení - jako normální text.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                <code class="exampleCode">
+                    <span class="cb">ins</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">inline</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">text-decoration</span>: <span class="cr">underline</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;ins&gt;</span></strong> se používá na vyznačování textu, který byl do <strong>dokumentu</strong> přidán až po jeho zveřejnění. Využívá se někdy v kombinaci s <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/del.html" hreflang="cs">&lt;del&gt;</a></strong>, který slouží k přeškrtávání již neplatného nebo prostě nepotřebného textu.</p>
+            <div class="example" title="Příklad &lt;ins&gt;">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">p</span>&gt;Moravský Krumlov je jihomoravské město nacházející se poblíž Ivančic. Jeho populace &lt;<span class="b">del</span>&gt;je kolem 5 tisíc&lt;<span class="b">/del</span>&gt; &lt;<span class="b">ins</span>&gt;činila k roku 2019 kolem 5 700&lt;<span class="b">/ins</span>&gt; obyvatel.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height:4em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/ins-EXAMPLE.html" title="Příklad &lt;ins&gt;" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/ins-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Alternativy</h2>
+            <p>Pokud nechcete vyznačovat přídavky do <strong>dokumentu</strong> a místo toho podtrhnout text jen dekorativně, můžete použít <strong>CSS vlastnost <span class="codeOutsidePage">text&NoBreak;-&NoBreak;decoration</span></strong> v kombinaci s <strong>elementem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/span.html" hreflang="cs">&lt;span&gt;</a></strong>. Pokud vám ale na podtržení nezáleží a chcete prostě jen nějak vyznačit &lpar;ať už <strong>sémanticky</strong> nebo ne&rpar; text, pravděpodobně budete lepší použít jeden z následujících <strong>elementů</strong>:</p>
+            <ul>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/b.html" hreflang="cs">&lt;b&gt;</a></strong>: Tučné vyznačení textu, který nemá žádnou důležitost.</li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/em.html" hreflang="cs">&lt;em&gt;</a></strong>: <strong>Kurzíva</strong> používaná na <strong>sémantické</strong> zdůraznění označeného textu.</li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/i.html" hreflang="cs">&lt;i&gt;</a></strong>: <strong>Kurzíva</strong> používaná pro zvýraznění textu v jiném tónu &lpar;například odborné termíny&rpar;.</li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/mark.html" hreflang="cs">&lt;mark&gt;</a></strong>: Zvýraznění textu, který je relevantní i v jiném kontextu.</li>
+                <li><strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/strong.html" hreflang="cs">&lt;strong&gt;</a></strong>: <strong>Sémantické</strong> zdůraznění důležitosti označeného textu, který bude v <strong>dokumentu</strong> zobrazen tučně.</li>
+            </ul>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/04-text-formatting.html">HTML 101, lekce 4</a>: <strong>Formátování textu</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements-categorized.html#text">Kategorizovaný seznam všech elementů</a>: <strong>Formátování textu</strong></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/edits.html#the-ins-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-text/ins-html-5-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: ins - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_ins.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;ins&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;ins&gt;: The Inserted Text element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/input.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;input&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/kbd.html" rel="next" hreflang="cs">Příští element: &lt;kbd&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

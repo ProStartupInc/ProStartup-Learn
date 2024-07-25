@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - HTML dokument &lt;html&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, html, &lt;html&gt; HTML tutorial, &lt;html&gt;, &lt;html&gt; html, element &lt;html&gt;, co je &lt;html&gt;, jak použít &lt;html&gt;">
+    <title>&lt;html&gt;| ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;html&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html" hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;html&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;html&gt;</span></strong> je <strong>element</strong> využívaný pro specifikaci celého <strong>HTML dokumentu</strong>, k jehož správnému fungování je <em>povinný</em>. Označuje se jako <strong>kořenový</strong> &lpar;<strong>root</strong>&rpar; - je totiž <strong>rodičem</strong> všech ostatních <strong>elementů</strong> na <strong>stránce</strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;html&gt;</span></strong> je <strong>párový tag</strong>, jehož <strong>potomkem</strong> je jakýkoliv jiný <strong>element</strong>. V kódu se <em>musí</em> nacházet po <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/DOCTYPE.html" hreflang="cs">&lt;!DOCTYPE&gt;</a></strong>, a to <em>pouze jednou</em>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">!DOCTYPE</span> <span class="y">html</span>&gt;<br>
+                    &lt;<span class="b">html</span> <span class="y">lang</span>=<span class="r">&quot;hodnota&quot;</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Obsah dokumentu<br>
+                    &lt;<span class="b">/html</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong>Element</strong> má jeden <strong>vlastní atribut</strong> - <strong>&apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/html-xmlns.html" hreflang="cs">xmlns</a>&apos;</strong>. Tento <strong>atribut</strong> specifikuje <strong>jmenný prostor XML</strong>, ke kterému <strong>dokument</strong> náleží. <strong>Výchozí hodnotou</strong> je <strong><span class=codeOutsidePage>http://www.w3.org/1999/xhtml</span></strong>, která bude případně dosazena v případě, že není specifikována. <strong>Atribut</strong> je povinný v <strong>dokumentech</strong>, které jsou parsovány <strong>XML parsery</strong> &lpar;což zahrnuje i <strong>XHTML</strong>&rpar;.</p>
+            <p><strong><span class="codeOutsidePage">&lt;html&gt;</span></strong> podporuje <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>. Měl by měl správně zahrnovat <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs">globální atribut</a> &apos;<a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/att/global/lang.html" hreflang="cs">lang</a>&apos;</strong>, který v kontextu <strong>elementu</strong> určuje jazyk <strong>stránky</strong>. Sice to není povinné, ale jeho zahrnutí pomáhá <strong>SEO</strong>; <strong>čtečkám obrazovek</strong>, které mohou na základě jeho <strong>hodnoty</strong> vybrat výslovnost; <strong>překladačům</strong>, které mohou správně určit jazyk k přeložení; a podobně.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;html&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Defaultně je o <strong>blokový element</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                <code class="exampleCode">
+                    <span class="cb">html</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">block</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;html&gt;</span></strong> má jediné využití, a to jako <strong>rodičovský element</strong> všech ostatních.</p>
+            <div class="example" title="Příklad &lt;html&gt;">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">!DOCTYPE</span> <span class="y">html</span>&gt;<br>
+                        &lt;<span class="b">html</span> <span class="y">lang</span>=<span class="r">&quot;cs&quot;</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">head</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">title</span>&gt;Základní stránka&lt;<span class="b">/title</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/head</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">body</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;Příklad...&lt;<span class="b">/p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">/body</span>&gt;<br>
+                        &lt;<span class="b">/html</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 4.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/html-EXAMPLE.html" title="Příklad &lt;html&gt;" >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/html-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/04-text-formatting.html">HTML 101, lekce 3</a>: Základní vysvětlení <strong><span class="codeOutsidePage">&lt;html&gt;</span></strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/semantics.html#the-html-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-struktura/html-html-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: html - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_html.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;html&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;hr&gt;: The HTML Document / Root element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/hr.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;hr&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/i.html" rel="next" hreflang="cs">Příští element: &lt;i&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

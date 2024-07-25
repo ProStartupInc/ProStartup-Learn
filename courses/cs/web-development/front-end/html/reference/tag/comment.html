@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Komentáře &lt;!-- --&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, komentáře, komentáře HTML tutorial, &lt;!-- --&gt;, komentáře html, element &lt;!-- --&gt;, co je &lt;!-- --&gt;, jak použít &lt;!-- --&gt;, jak použít komentáře html">
+    <title>&lt;!-- --&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;!-- --&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;!--&nbsp;--&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;!-- --&gt;</span></strong> je <strong>element</strong> používaný k vytváření <strong>komentářů</strong>. Ty se <strong>uživateli</strong> nezobrazí, což je dělá užitečnými pro popisování částí <strong>kódu</strong> nebo dočasného odstranění několika jeho částí.</p>
+            <h2>Syntaxe</h2>
+            <p>Obsah <strong>komentáře</strong> se nachází mezi <strong><span class="codeOutsidePage">&lt;!--</span></strong> a <strong><span class="codeOutsidePage">--&gt;</span></strong>. Může se v něm nacházet cokoliv, protože <strong>prohlížeče komentáře</strong> naprosto ignorují. Můžou také zasahovat přes více řádků.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    <span class="g">&lt;!-- Obsah komentáře --&gt;</span>
+                </code>
+            </div>
+            <p>Níže je několik věcí, které je u <strong>komentářů</strong> potřeba dodržovat:</p>
+            <ul>
+                <li><b>Umístění</b>: <strong>Komentáře</strong> se mohou nacházet <u>téměř</u> kdekoliv v <strong>kódu</strong>. Téměř - nesmí se totiž nacházet před <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/DOCTYPE.html" hreflang="cs">&lt;!DOCTYPE&gt;</a></strong>.</li>
+                <li><b>Správné uzavření</b>: Tohle pravidlo by se sice mělo dodržovat u <u>všech <strong>elementů</strong></u>, ale jeho nedodržení může mít u <strong>komentářů</strong> obzvláště ničivé účinky - pokud nejsou správně uzavřeny, <u>všechno</u> od jejich začátku až po konec <strong>dokumentu</strong> bude <strong>prohlížečem</strong> ignorováno. V mnohých <strong>editorech kódu</strong> si toho ale lze naštěstí snadno všimnout, protože mají jinou barvu &lt;většinou <b><span class="g">zelenou</span></b>&gt; než jiné části <strong>kódu</strong>.</li>
+            </ul>
+            <div class="example" title="Příklad použítí komentářů.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">h1</span>&gt;Komentáře&lt;<span class="b">/h1</span>&gt;<br>
+                        &lt;<span class="b">p</span>&gt;První odstavec&lt;<span class="b">/p</span>&gt;<br>
+                        <span class="g">&lt;!-- &lt;p&gt;Druhý odstavec.<br>Nezobrazí se, ale všimněte si, jak se komentář rozléhá přes dva řádky.&lt;/p&gt; --&gt;</span><br>
+                        &lt;<span class="b">p</span>&gt;Třetí odstavec, který se ale díky komentářům zobrazí jako druhý&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/comment-EXAMPLE.html" title="Příklad komentáře" >Váš prohlížeč nepodporuje element iframe D:</iframe>
+                </div>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;!-- --&gt;</a></strong> nemá žádné vlastní <strong>atributy</strong> a nepodporuje ani ty <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs">globální</a></strong>.</p>
+            <h2>Zabezpečení</h2>
+            <p>To, že se <strong>komentář</strong> <strong>uživateli</strong> nezobrazí neznamená, že si ho nemůže prohlédnout během prohlížení <strong>zdrojového kódu stránky</strong>. Tuto možnost podporují snad všechny moderní <strong>prohlížeče</strong>, proto by se do <strong>komentářů</strong> neměly dávat nějaké citlivé a/nebo soukromé údaje &lpar;např. hesla...Snad by ale nikoho nenapadlo dávat hesla do <strong>komentářů</strong> v <strong>kódu</strong> nějaké veřejně přístupné <strong>stránky</strong> bez toho, aby jim někdo řekl, aby to nedělal, ne?&rpar;.</p>
+            <h2>Vzhled</h2>
+            <p><strong>Komentáře</strong> jsou <strong>prohlížečem</strong> ignorovány a <strong>uživateli</strong> se neukážou. Nelze je v <strong>CSS</strong> stylovat.</p>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/03-basics.html" hreflang="cs">HTML 101, lekce 3</a>: Základní vysvětlení <strong>komentářů</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/html101/list-101elements.html" hreflang="cs">Seznam elementů probraných v HTML 101</a></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/syntax.html#comments" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-ostatni/komentar-html-5-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: Komentáře - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/html/html_comments.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML Comments</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_comment.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;!-- --&gt; Tag</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/DOCTYPE.html" rel="next" hreflang="cs">Příští element: &lt;!DOCTYPE&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

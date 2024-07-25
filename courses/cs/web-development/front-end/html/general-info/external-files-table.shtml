@@ -1,0 +1,37 @@
+<table>
+    <tr>
+        <th></th>
+        <th>Lokální soubory</th>
+        <th>Externí soubory</th>
+    </tr>
+    <tr>
+        <th><abbr title="Jak rychle se soubory načtou.">Načítání</abbr></th>
+        <td>Většinou se načtou rychleji než <strong>externí soubory</strong>, protože <strong>server</strong> nemusí přistupovat k <strong>souborům</strong> mimo něj.</td>
+        <td>Většinou se načítají pomaleji než <strong>lokální soubory</strong>.</td>
+    </tr>
+    <tr>
+        <th><abbr title="Jak často jsou soubory dostupné.">Přístupnost</abbr></th>
+        <td><strong>Lokální soubory</strong> jsou dostupné vždycky &lpar;pokud je <strong>stránka</strong> online a nestal se žádný výpadek u poskytovatele <strong>hostingu</strong>&rpar;.</td>
+        <td>U <strong>externích souborů</strong> záleží na <strong>stránce</strong>, ze které se <strong>soubor</strong> vložil. Je nejlepší vybrat si nějaký <strong>spolehlivý web</strong>, který netrpí častými výpadky a je co nejčastěji dostupný. U některých <strong>webů</strong> &lpar;např. <strong>YouTube</strong>&rpar; hrozí navíc riziko, že <strong>soubor</strong> bude smazán nebo zablokován.</td>
+    </tr>
+    <tr>
+        <th><abbr title="Jak snadné je soubory upravit.">Upravitelnost</abbr></th>
+        <td><strong>Lokální soubory</strong> lze upravit, jak chcete.</td>
+        <td>Úprava <strong>externích souborů</strong> je nemožná &lpar;pokud ovšem nejde o <strong>stránky</strong> jako <strong>Google Drive</strong> nebo <strong>MediaFire</strong>&rpar;.</td>
+    </tr>
+    <tr>
+        <th><abbr title="Podmínky použití.">Podmínky</abbr></th>
+        <td>Vzhledem k tomu, že se <strong>soubor</strong> nachází přímo ve složce vašeho <strong>webu</strong>, nemusíte nikomu odsouhlasovávat nebo se řídit cizími pravidly použití. Samozřejmě je pořád povinné zachovat a dodržovat <strong>pravidla použití</strong>!</td>
+        <td>Pokud chcete použít <strong>externí soubor</strong> nacházející se na jiné <strong>stránce</strong>, musíte většinou odsouhlasit a dodržovat pravidl použití. Ta se mohou měnit, proto je nutné tato pravidla sledovat &lpar;pochybuji, že to ale někdo někdy udělal&rpar;.</td>
+    </tr>
+    <tr>
+        <th>Zabezpečení</th>
+        <td>Když se někdo dostane k <strong>souborům</strong> vaší <strong>stránky</strong> a smaže je nebo nějak upraví, můžete mýt naštvaní leda tak na sebe &lpar;a možná na poskytovatele <strong>hostingu</strong>&rpar;. Mít <strong>soubory</strong> uložené <strong>lokálně</strong> umožňuje implementovat vlastní <s>a lepší</s> zabezpečení.</td>
+        <td>U <strong>externích souborů</strong> se musíte spoléhat na zabezpečení <strong>webu</strong>, kde <strong>soubor</strong> je.</td>
+    </tr>
+    <tr>
+        <th><abbr title="Velikost na disku">Velikost</abbr></th>
+        <td>S velkými <strong>lokálními soubory</strong> se může <strong>hosting</strong> pěkně prodražit.</td>
+        <td>U velkých <strong>souborů</strong> &lpar;např. <strong>videa</strong>&rpar; je mnohdy lepší nahrát je na <strong>externí službu</strong> &lpar;např. <strong>YouTube</strong>&rpar;.</td>
+    </tr>
+</table>

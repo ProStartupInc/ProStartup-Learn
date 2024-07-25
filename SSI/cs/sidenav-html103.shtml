@@ -1,0 +1,18 @@
+<div class="sidenavWrapper">
+    <nav class="sidenavWrapper">
+        <ul class="sidenav">
+            <li class="sidenavSection">HTML 103</li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html103/01-cs-introduction.html">1. Úvod</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html103/02-form-basics.html">2. Základy formulářů</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html103/03-text-form.html">3. Textové formuláře</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html103/04-basic-input-atts.html">4. Atributy &lt;input&gt;</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html103/05-fieldset-and-legend.html">5. &lt;fieldset&gt; a &lt;legend&gt;</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html103/06-textarea.html">6. Víceřádková pole</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html103/07-checkbox.html">7. Zaškrtávací formuláře</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html103/08-radio.html">8. Přepínací formuláře</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html103/09-select-form.html">9. Listovací formuláře</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html103/10-next.html">10. Jak pokračovat?</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/html/html103/list-103element.html">Probrané elementy</a></li>
+        </ul>
+    </nav>
+</div>

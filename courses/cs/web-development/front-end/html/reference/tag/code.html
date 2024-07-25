@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Reprezentace kódu &lt;code&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, reprezentace kódu html, &lt;code&gt; HTML tutorial, &lt;code&gt;, &lt;code&gt; html, element &lt;code&gt;, co je &lt;code&gt;, jak použít &lt;code&gt;, jak reprezentovat kód v HTML">
+    <title>&lt;code&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;code&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;code&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;code&gt;</span></strong> je <strong>párový tag</strong> používaný k reprezentaci <strong>kódu</strong> na <strong>stránce</strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;code&gt;</span></strong> je <strong>párový tag</strong>. Mezi ten <strong>počáteční</strong> a <strong>koncový</strong> se dává <strong>&quot;kód&quot;</strong>, jež se má <strong>uživateli</strong> zobrazit jako text.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">code</span> <span class="y">globální-atribut</span>=<span class="r">&quot;hodnota&quot;</span>&gt;Text&lt;<span class="b">/code</span>&gt;<br>
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;code&gt;</span></strong> podporuje jen <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;code&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Text v něm je defaultně vykreslen ve výchozím neproporciálním &lpar;v angličtině <i>monospace</i>&rpar; písmu <strong>uživatelova prohlížeče</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                <code class="exampleCode">
+                    <span class="cb">code</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">inline</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">font-family</span>: <span class="cr">monospace</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;code&gt;</span></strong> se využívá pro reprezentaci počítačového <strong>kódu</strong> na <strong>stránce</strong> v textové formě. Je ale třeba mít na paměti, že je stále nutné používat <strong>entity</strong> a dodržovat pravidla <strong>syntaxe HTML</strong> - pokud nechcete, aby byl text uvnitř <strong><span class="codeOutsidePage">&lt;code&gt;</span></strong> formátován podle výchozích <strong>HTML</strong> pravidel, můžete obsah v <strong>elementu</strong> ještě obalit <strong>elementem <a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/pre.html" hreflang="cs">&lt;pre&gt;</a></strong>.</p>
+            <div class="example" title="První příklad &lt;code&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">p</span>&gt;Pro reprezentaci kódu v HTML dokumentu použijte &lt;<span class="b">code</span>&gt;&amp;<span class="b">lt</span>;code&amp;<span class="b">gt</span>;&lt;<span class="b">/code</span>&gt;.&lt;<span class="b">/p</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 4.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/code-EXAMPLE.html" title="První příklad &lt;code&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/code-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <div class="example" title="Druhý příklad &lt;code&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">code</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&amp;<span class="b">lt</span>;!DOCTYPE html&amp;<span class="b">gt</span>;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&amp;<span class="b">lt</span>;html&amp;<span class="b">gt</span>;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">lt</span>;head&amp;<span class="b">gt</span>;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">lt</span>;title&amp;<span class="b">gt</span>;Příklad&amp;<span class="b">lt</span>;/title&amp;<span class="b">gt</span>;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">lt</span>;/head&amp;<span class="b">gt</span>;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">lt</span>;body&amp;<span class="b">gt</span>;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">lt</span>;p&amp;<span class="b">gt</span>;Odstavec&amp;<span class="b">lt</span>;/p&amp;<span class="b">gt</span>;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">nbsp</span>;&amp;<span class="b">lt</span>;/body&amp;<span class="b">gt</span>;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&amp;<span class="b">lt</span>;/html&amp;<span class="b">gt</span>;&lt;<span class="b">br</span>&gt;<br>
+                        &lt;<span class="b">/code</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="min-height: 12.5em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/code-EXAMPLE02.html" title="Druhý příklad &lt;code&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/code-EXAMPLE02.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/kdb.html"><span class="codeOutside">&lt;kdb&gt;</span></a>: Reprezentace <strong>uživatelského vstupu</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/samp.html"><span class="codeOutside">&lt;samp&gt;</span></a>: <strong>Výstup</strong> počítačového programu</li>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/var.html"><span class="codeOutside">&lt;var&gt;</span></a>: Reprezentace <strong>proměnných</strong> &lpar;ať už těch v <strong>kódu</strong>, nebo těch matematických&rpar;</li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-text/code-html-tag-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: caption - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_code.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;code&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;code&gt;: The Inline Code element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/cite.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;cite&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/col.html" rel="next" hreflang="cs">Příští element: &lt;col&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

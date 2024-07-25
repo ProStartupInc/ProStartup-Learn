@@ -1,0 +1,352 @@
+:root {
+    --code-outside: #F44336;
+    --link: #07305f; 
+    --link-hover: #ff6600;
+    --link-active: #ff0000;
+    font-size: 1rem;
+}
+
+@font-face {
+    font-family: BlinkerSemi;
+    src: url("../fonts/Blinker-SemiBold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: UbuntuMono;
+    src: url("/fonts/UbuntuMono-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: UbuntuMonoItalic;
+    src: url("/fonts/UbuntuMono-Regular.ttf");
+    font-weight: normal;
+    font-style: italic;
+}  
+
+@font-face {
+    font-family: BlinkerRegular;
+    src: url("../fonts/Blinker-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: MontserratSemi;
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: MontserratBold;
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: RobotoRegular;
+    color: black;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    text-indent: 1.5em;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+p.noIndent, p.center, p.imageFloatR {
+    text-indent: 0;
+}
+
+ins {
+    text-decoration: underline solid 0.1em;
+    text-underline-offset: 0.2em;
+}
+
+p.codeExample {
+    font-family: UbuntuMono, monospace;
+}
+
+div.margin {
+    height: 0.5em;
+}
+
+span.g {
+    color: #8BC34A;
+}
+
+span.r {
+    color: #F44336;
+}
+
+span.b {
+    color: #2196F3;
+}
+
+span.y {
+    color: #FFFF00;
+}
+
+span.cb {
+    color: #90c4ee;
+}
+
+span.cy {
+    color: #fafa83
+}
+
+span.cr {
+    color: #ff8c84;
+}
+
+span.cg {
+    color: #a8ca80;
+}
+
+span.jy {
+    color: #dcdcaa; /* whatever comes before methods */
+}
+
+span.jyy {
+    color: #ffff5c; /* methods */
+}
+
+span.jr {
+    color: #e79c7e; /* Data (integers, strings...) */
+}
+
+span.jlb {
+    color: #a8d7f0; /* variables */
+}
+
+span.jdb {
+    color: #56c4ff; /* key words */
+}
+
+span.jp {
+    color: #e466c4; /* functions */
+}
+
+span.jg {
+    color: #93ca75;
+}
+
+a.codeOutside, span.codeOutsidePage {
+    font-family: UbuntuMono;
+    background-color: #e7e7e7;
+}
+
+td a.codeOutside, td a.codeOutside:hover, td a.codeOutside:active {
+    background: none;
+}
+
+td a.codeOutside {
+    color: var(--link);
+    text-decoration: underline 1px solid var(--link);
+}
+
+td a.codeOutside:hover {
+    color: var(--link-hover);
+    text-decoration: underline 1px solid var(--link-hover);
+}
+
+td a.codeOutside:active {
+    color: var(--link-active);
+    text-decoration: underline 1px solid var(--link-active);
+}
+
+li.sidenavNormal a {
+    text-decoration: none;
+}
+a.codeOutside {
+    color: var(--code-outside);
+    text-decoration: underline 1px solid var(--code-outside);
+}
+
+a.codeOutside:hover {
+    color: var(--code-outside);
+    text-decoration: underline 0.1em solid var(--code-outside);
+    background-color: #d1d1d1;
+}
+
+a.codeOutside:active {
+    color: var(--code-outside);
+    text-decoration: underline 0.1em solid var(--code-outside);
+    background-color: #b8b8b8;
+}
+
+span.codeOutside a:hover {
+    font-family: inherit;
+    color: inherit;
+    text-decoration: 0.1em solid var(--code-outside) !important;
+}
+
+span.codeOutside a:active {
+    font-family: inherit;
+    color: inherit;
+    text-decoration: 0.1em solid var(--code-outside) !important;
+}
+
+a {
+    color: hsl(212, 86%, 20%); 
+    font-weight: bold;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6600;
+    text-decoration: underline 0.1em solid #ff6600;
+}
+
+a:active, th:hover a:active {
+    color: hsl(0, 100%, 50%);
+    text-decoration: underline 0.1em solid hsl(0, 100%, 50%);
+}
+
+a.black, a.sidenav, nav.lessonBreadcrumbHTML a, nav.lessonBreadcrumbTwine a, th:hover a {
+    color: black; 
+}
+
+th a {
+    display: inline-block;
+}
+
+th:hover a {
+    text-decoration: underline 0.1em solid black;
+}
+
+a.white, a.lesson, a.topnav, a.topnavMain {
+    color: white; 
+}
+
+a.white {
+    font-weight: normal !important;
+    font-family: inherit;
+}
+
+a.lesson, a.topnav, a.topnavMain, a.black, a.sidenav, a.htmlCourseName, a.white {
+    text-decoration: none !important;
+}
+
+p.companyNameWelcome {
+    font-family: BlinkerSemi;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1.5em;
+    margin: 1em auto 1em;
+    color: white;
+    text-indent: 0;
+}
+
+p.center {
+    text-align: center;
+}
+
+abbr {
+    cursor: help;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+}
+
+h1 {
+    font-family: BlinkerSemi;
+    font-size: 3.5em;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1.companyName {
+    font-size: 5em;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    padding: 0 0 0.1em;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2, h2.white {
+    font-family: BlinkerSemi;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    padding: 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    padding: 0;
+    text-align: center;
+    font-family: BlinkerSemi;
+    display: block;
+}
+
+h2.white {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+h2:hover {
+    text-decoration: none;
+}
+
+p.courseSign {
+    font-family: BlinkerSemi;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1em;
+    margin: 0 0 1em;
+    padding: 0 0 0.25em;
+    color: white;
+    text-indent: 0;
+    text-align: center;
+}
+
+@supports (-moz-appearance: none) {
+    p.courseSign, a.lesson, li.sidenavNormal a, a.topnavMain, a.topnav, header.topnav, table, th {
+      font-weight: 200 !important; /* Light version for Firefox */
+    }
+    h1, h3, h2, h2.exampleCodeLineNumberCorrect {
+        font-weight: 1000;
+    }
+    a.codeOutside {
+        font-weight: bold;
+    }
+  }
+
+kbd {
+    background-color: #e7e7e7;
+    font-family: UbuntuMono;
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 3px;
+    font-size: 0.9em;
+    padding: 0.1em 0.2em;
+}

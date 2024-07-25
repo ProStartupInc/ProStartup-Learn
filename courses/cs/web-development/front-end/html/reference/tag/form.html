@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML elementy - Formulář &lt;form&gt;">
+    <meta name="keywords" content="HTML, ProStartup Learn, formuláře html, &lt;form&gt; HTML tutorial, &lt;form&gt;, &lt;form&gt; html, element &lt;form&gt;, co je &lt;form&gt;, jak použít &lt;form&gt;">
+    <title>&lt;form&gt; | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/sidenav-html-elements.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameHTML">
+            <p class="courseSign">Současné HTML elementy</p>
+            <h1>&lt;form&gt;</h1>
+        </div>
+        <nav class="lessonBreadcrumbHTML">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/web-development/introduction.html" hreflang="cs">Web</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/introduction.html" hreflang="cs">Front&NoBreak;-&NoBreak;End</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/courses.html"
+ hreflang="cs">HTML</a>&nbsp;&gt; <a href="/courses/cs/web-development/front-end/html/lists/elements.html" hreflang="cs">Elementy&nbsp;</a>&gt; &lt;form&gt;
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong><span class="codeOutsidePage">&lt;form&gt;</span></strong> je <strong>element</strong> používaný pro vytváření <strong>formulářů</strong>.</p>
+            <h2>Syntaxe</h2>
+            <p><strong><span class="codeOutsidePage">&lt;form&gt;</span></strong> je <strong>párový tag</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                <code class="exampleCode">
+                    &lt;<span class="b">form</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Obsah.<br>
+                    &lt;<span class="b">/form</span>&gt;
+                </code>
+            </div>
+            <h2>Atributy</h2>
+            <p><strong><span class="codeOutsidePage">&lt;form&gt;</span></strong> má poměrně velké množství vlastních <strong>atributů</strong>. Podporuje také <strong><a href="/courses/cs/web-development/front-end/html/lists/global-attributes.html" hreflang="cs" rel="prev">globální atributy</a></strong>.</p>
+            <table>
+                <tr>
+                    <th>Název</th>
+                    <th>Povinné?</th>
+                    <th>Popis</th>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/form-accept-charset.html" hreflang="cs">accept-&NoBreak;charset</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje, v jakých znakových sadách jsou hodnoty na server příjmány.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/form-action.html" hreflang="cs">action</a></th>
+                    <td>Ano</td>
+                    <td>Specifikuje URL, které zpracuje data odeslaná z formuláře.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/form-autocapitalize.html" hreflang="cs">autocapitalize</a></th>
+                    <td>Ne</td>
+                    <td>Nestandartní atribut vztahující se pouze na iOS verzi Safari. Určuje, jak budou automaticky zvětšována písmena v hodnotách odeslaných na server &lpar;např. začátku věty nebo na začátku každého slova&rpar;</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/form-autocomplete.html" hreflang="cs">autocomplete</a></th>
+                    <td>Ne</td>
+                    <td>Určuje, zda bude prohlížeč uživateli navrhovat během zadávání hodnoty, které již dříve zadal v podobných formulářích.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/form-enctype.html" hreflang="cs">enctype</a></th>
+                    <td>Ne</td>
+                    <td>???.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/form-method.html" hreflang="cs">method</a></th>
+                    <td>Ne</td>
+                    <td>Určuje, jaká HTTP metoda bude během odesílání dat použita.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/form-name.html" hreflang="cs">name</a></th>
+                    <td>Ano</td>
+                    <td>Určuje název formuláře, podle kterého bude možné identifikovat v databázích, z jakého formuláře byla data odeslána.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/form-novalidate.html" hreflang="cs">novalidate</a></th>
+                    <td>Ne</td>
+                    <td>Booleanovský atribut. Pokud je přítomen, data odeslaná z formuláře nebudou validována</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/form-rel.html" hreflang="cs">rel</a></th>
+                    <td>Ne</td>
+                    <td>???.</td>
+                </tr>
+                <tr>
+                    <th><a href="/courses/cs/web-development/front-end/html/reference/att/form-target.html" hreflang="cs">target</a></th>
+                    <td>Ne</td>
+                    <td>Specifikuje, kam uživateli ukázat odpověď po odeslání formuláře.</td>
+                </tr>
+            </table>
+            <h2>Vzhled</h2>
+            <p><strong><span class="codeOutsidePage">&lt;form&gt;</span></strong> lze v <strong>CSS</strong> stylovat. Defaultně jde o <strong>blokový element</strong>.</p>
+            <div class="exampleCodeOutsideContainer">
+                <div class="exampleCodeLineNumber">1<br>2<br>3<br>4</div>
+                <code class="exampleCode">
+                    <span class="cb">form</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">display</span>: <span class="cr">block</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">margin-top</span>: <span class="cr">0</span>;<br>
+                    }
+                </code>
+            </div>
+            <h2>Využití</h2>
+            <p><strong><span class="codeOutsidePage">&lt;form&gt;</span></strong> se používá na vytváření <strong>formulářů</strong>. K tomu je ale potřeba ještě potomek <strong><a class="codeOutside" href="/courses/cs/web-development/front-end/html/reference/tag/input.html" hreflang="cs">&lt;input&gt;</a></strong>, který specifikuje jednotlivá <strong>pole</strong>, do kterých lze <strong>hodnoty</strong> zadat.</p>
+            <div class="example" title="Příklad &lt;figure&gt;.">
+                <div class="exampleCodeContainer">
+                    <div class="exampleCodeLineNumber">1<br>2<br>3<br>4<br>5</div>
+                    <code class="exampleCode">
+                        &lt;<span class="b">form</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">label</span> <span class="y">for</span>=<span class="r">&quot;formular&quot;</span>&gt;Jméno: &lt;<span class="b">/label</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;text&quot;</span> <span class="y">id</span>=<span class="r">&quot;formular&quot;</span> <span class="y">name</span>=<span class="r">&quot;jmeno&quot;</span>&gt;&lt;<span class="b">br</span>&gt;&lt;<span class="b">br</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">input</span> <span class="y">type</span>=<span class="r">&quot;submit&quot;</span>&gt;<br>
+                        &lt;<span class="b">/form</span>&gt;
+                    </code>
+                </div>
+                <div class="exampleIframe" style="max-height: 6em;">
+                    <iframe class="exampleIframe" src="/courses/cs/web-development/front-end/html/reference/tag/form-EXAMPLE.html" title="Příklad &lt;footer&gt;." >Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/web-development/front-end/html/reference/tag/form-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+            </div>
+            <h2>Související</h2>
+            <ul>
+                <li><a href="/courses/cs/web-development/front-end/html/reference/tag/input.html"><span class="codeOutside">&lt;input&gt;</span></a>: Jednotlivá <strong>pole formulářů</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/html103/01-cs-introduction.html">HTML 103</a>: Začátečnický kurz o <strong>formulářích</strong></li>
+                <li><a href="/courses/cs/web-development/front-end/html/lists/elements.html">Abecední seznam všech elementů</a></li>
+            </ul>
+            <h2>Externí odkazy</h2>
+            <ul>
+                <li><a rel="external" href="https://html.spec.whatwg.org/multipage/forms.html#the-form-element" hreflang="en" target="_blank">Oficiální HTML specifikace</a></li>
+                <li><a rel="external" href="https://www.itnetwork.cz/html-css/html5/html-manual/html-css-html-manual-formulare/html-formulare-form-cesky-manual" hreflang="cs" target="_blank">itnetwork.cz</a>: Formuláře - Český HTML 5 manuál</li>
+                <li><a rel="external" href="https://www.w3schools.com/tags/tag_form.asp" hreflang="en" target="_blank">w3schools.com</a>: HTML &lt;form&gt; Tag</li>
+                <li><a rel="external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" hreflang="en" target="_blank">developer.mozzila.org</a>: &lt;form&gt;: The Form element</li>
+            </ul>
+            <h2>Navigace</h2>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/footer.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Minulý element: &lt;footer&gt;</a>
+                <a class="lesson" href="/courses/cs/web-development/front-end/html/reference/tag/headings.html" rel="next" hreflang="cs">Příští element: &lt;h1&gt; - &lt;h6&gt; &gt;&gt;&gt;</a>
+            </div>
+            </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>

@@ -1,0 +1,25 @@
+<div class="sidenavWrapper">
+    <nav class="sidenavWrapper">
+        <ul class="sidenav">
+            <li class="sidenavSection">CSS 101</li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/01-introduction.html" hreflang="cs">1. Úvod</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/02-syntax.html" hreflang="cs">2. Syntaxe</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/03-selectors.html" hreflang="cs">3. Selektory</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/04-div-span.html" hreflang="cs">4. &lt;div&gt; a &lt;span&gt;</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/05-external-internal-css.html" hreflang="cs">5. Externí a interní CSS</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/06-colors.html" hreflang="cs">6. Barva elementů</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/07-background.html" hreflang="cs">7. Pozadí</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/08-units.html" hreflang="cs">8. Jednotky délky</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/09-fonts.html" hreflang="cs">9. Základy fontů</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/10-custom-fonts.html" hreflang="cs">10. Vlastní fonty</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/11-text.html" hreflang="cs">11. Stylování textu</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/12-opacity.html" hreflang="cs">12. Průhlednost</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/13-combinators.html" hreflang="cs">13. Kombinátory</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/14-variables.html" hreflang="cs">14. Proměnné</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/15-links.html" hreflang="cs">15. Odkazy</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/16-lists.html" hreflang="cs">16. Seznamy</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/17-tables.html" hreflang="cs">17. Tabulky</a></li>
+            <li class="sidenavNormal"><a href="/courses/cs/web-development/front-end/css/css101/18-next.html" hreflang="cs">18. Jak pokračovat?</a></li>
+        </ul>
+    </nav>
+</div>

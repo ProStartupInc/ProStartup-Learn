@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MasterStudioCZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twine 101, lekce 6 - integrace HTML, CSS a JavaScriptu to Twine příběhů.">
+    <meta name="keywords" content="Twine, ProStartup Learn, Twine 101, Twine kurz, Twine lekce, Twine hry, Twine vývoj her, Twine game dev, Twine engine, vývoj webových her, interaktivní fikce, hypertextové hry, hypertextové fikce, interaktivní hry, jak vytvořit textovou hru, vývoj textových her, HTML Twine, CSS Twine, JavaScript Twine, jak použít HTML v Twine, jak použít CSS v Twine, jak použít JavaScript v Twine">
+    <title>6. HTML, CSS, JS | Twine 101 | ProStartup Learn</title>
+    <!--#include virtual="/SSI/cs/headLinks.shtml" -->
+</head>
+<body class="lesson">
+    <!--#include virtual="/SSI/cs/topnav.shtml" -->
+    <!--#include virtual="/SSI/cs/game-development/web/twine/sidenav-twine101.shtml" -->
+    <div class="lessonContentArea">
+        <div class="LessonNameTwine">
+            <p class="courseSign">Twine 101</p>
+            <h1>6. HTML, CSS, JS</h1>
+        </div>
+        <nav class="lessonBreadcrumbTwine">
+            <a href="/index-cs.html" hreflang="cs">Hlavní&nbsp;strana</a>&nbsp;&gt; <a href="/courses/cs/game-development/introduction.html" hreflang="cs">Videohry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/introduction.html" hreflang="cs">Webové hry</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/twine/courses.html" hreflang="cs">Twine</a>&nbsp;&gt; <a href="/courses/cs/game-development/web/twine/twine101/01-introduction.html" hreflang="cs">Twine&nbsp;101</a>&gt; Lekce&nbsp;6
+        </nav>
+        <main class="lessonContent">
+            <div class="margin"></div>
+            <p><strong>HTML</strong>, <strong>CSS</strong> a <strong>JavaScript</strong>. Tři absolutně základní technologie, co se týče vývoje <strong>webových stránek</strong> a <strong>aplikací</strong>. Tyto technologie ale hrají významnou roli i ve vývoji <strong>Twine her</strong> - ty jsou přece také <strong>webové aplikace</strong>. V této lekci si proto ukážeme, jak je použít.</p>
+            <p><b>Poznámka</b>: Pokud nechcete tyto tři technologie používat nebo je neumíte, můžete tuto lekci přeskočit.</p>
+            <h2>HTML</h2>
+            <p><strong>HTML</strong> je <strong>značkovací jazyk</strong> používaný k vytváření <strong>webových stránek</strong> a jejich obsahu.</p>
+            <p>Hry vytvořené v <strong>Twine</strong> nejsou ničím jiným než obyčejnými <strong>.html soubory</strong> &lpar;ačkoliv obsahují rozsáhlý <strong>JavaScript</strong>, který do nich vložil vybraný <strong>příběhový formát</strong>&rpar;. To znamená, že <strong>HTML</strong> v nich můžete používat tak, jak se vám zachce - můžete například každé <strong>pasáži</strong> vytvořit vlastní <strong>rozložení</strong> &lpar;v kombinaci s <strong>CSS</strong>&rpar; nebo jednoduše vkládat <strong>multimédia</strong>.</p>
+            <div class="example" title="Příklad použití odkazu.">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Použití HTML v pasáži</h3>
+                <div class="columns">
+                    <div class="exampleCodeHeadingContainer">
+                        <p class="exampleCodeHeading">Pasáž: Špicberky</p>
+                        <div class="exampleCodeContainerInHeading">
+                            <div class="exampleCodeLineNumber">1<br>2</div>
+                            <code class="exampleCode">
+                                &lt;<span class="b">img</span> <span class="y">src</span>=<span class="r">&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/W_W_Svalbard_LandSat7_21.14475E_78.71545N.png/640px-W_W_Svalbard_LandSat7_21.14475E_78.71545N.png?20050706152221&quot;</span> <span class="y">height</span>=<span class="r">&quot;150&quot;</span>&gt;<br>
+                                Špicberky jsou norské souostroví nacházející se severně od evropské pevniny. Žije zde okolo 2700 byvatel, přičemž většina z nich bydlí v hlavním městě [[<span class="b">Longyearbyen</span>]].
+                            </code>
+                        </div>
+                    </div>
+                    <div class="exampleCodeHeadingContainer">
+                        <p class="exampleCodeHeading">Pasáž: Longyearbyen</p>
+                        <div class="exampleCodeContainerInHeading">
+                            <div class="exampleCodeLineNumber">1<br>2</div>
+                            <code class="exampleCode">
+                                &lt;<span class="b">img</span> <span class="y">src</span>=<span class="r">&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Longyearbyen_Community_Council_buiobuione.jpg/800px-Longyearbyen_Community_Council_buiobuione.jpg?20211203110348&quot;</span> <span class="y">height</span>=<span class="r">&quot;150&quot;</span>&gt;<br>
+                                &lt;<span class="b">b</span>&gt;Longyearbyen&lt;/<span class="b">b</span>&gt; je hlavní a zároveň největší město Špicberk. Žije zde zhruba 2100 obyvatel.
+                            </code>
+                        </div>
+                    </div>   
+                </div>
+                <div class="exampleIframe" style="margin-bottom: 1vh;">
+                    <iframe style="min-height:20em;" class="exampleIframe" src="/courses/cs/game-development/web/twine/twine101/06-html-css-js-EXAMPLE.html" title="Twine: Přehrávaná hra">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/game-development/web/twine/twine101/06-html-css-js-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+                <div class="examplePhotoContainer">
+                    <img src="/courses/cs/game-development/web/twine/twine101/pictures/06-html-css-js-01.webp" alt="Twine: Použití HTML v příběhu." class="examplePhoto" loading="lazy">
+                </div>
+            </div>
+            <p><b>Poznámka</b>: Obrázek v pasáži <strong>Longyearbyen</strong> byl vytvořen uživatelem <a href="https://commons.wikimedia.org/wiki/User:Buiobuione" hreflang="en" rel="external">Buiobuione</a> na Wikimedia Commons. Je pod licencí <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.en" hreflang="en" rel="external">Creative Commons BY-SA 4.0</a>.</p>
+            <h2>CSS</h2>
+            <div class="center" style="margin-bottom: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/06-html-css-js-02.webp" alt="Twine: Horní panel s nástroji z kategorie &quot;Příběh&quot;." class="imageNormal" style="width: 99.999%;" loading="lazy">
+            </div>
+            <div class="imageFloatR" style="margin-top: 0;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/06-html-css-js-03.webp" class="imageFloatR" alt="Twine: Okno stylesheetu." style="width: 20em;">
+                <p class="imageFloatR">Okno, kde lze editovat CSS příběhu.</p>
+            </div>
+            <p><strong>CSS</strong> je většinou používán v kombinaci s <strong>HTML</strong>. Stará se o vzhled a &lpar;ve většině případů&rpar; <strong>rozložení HTML dokumentů</strong>. A k přesně stejnému účelu ho lze použít v <strong>Twine</strong>.</p>
+            <p>U každého <strong>příběhového formátu</strong> se používání <strong>CSS</strong> liší, proto je nutné si vše v příslušných dokumentacích zjistit. Většinou ho lze editovat v okně, které se otevře po kliknutí na položku <strong>&quot;Stylesheet&quot;</strong> v kategorii <strong>&quot;Příběh&quot;</strong>.</p>
+            <p><b>Poznámka:</b> Příklad níže používá <strong>Harlowe</strong>.</p>
+            <div class="example" title="Příklad použití CSS v příběhu.">
+                <p class="exampleSub">Příklad</p>
+                <h3 class="exampleHeading">Použití CSS v příběhu</h3>
+                <div class="exampleCodeHeadingContainer">
+                    <p class="exampleCodeHeading">Stylesheet</p>
+                    <div class="exampleCodeContainerInHeading">
+                        <div class="exampleCodeLineNumber">1<br>2<br>3</div>
+                        <code class="exampleCode">
+                            <span class="cb">tw-story </span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">color</span>: <span class="cr">black</span>;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="cy">background-color</span>: <span class="cr">white</span>;<br>
+                            }
+                        </code>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="exampleCodeHeadingContainer">
+                        <p class="exampleCodeHeading">Pasáž: Start</p>
+                        <div class="exampleCodeContainerInHeading">
+                            <div class="exampleCodeLineNumber">1<br>2</div>
+                            <code class="exampleCode">
+                                Hello, World!<br>
+                                [[Co to znamená?|<span class="b">Význam</span>]]
+                            </code>
+                        </div>
+                    </div>
+                    <div class="exampleCodeHeadingContainer">
+                        <p class="exampleCodeHeading">Pasáž: Význam</p>
+                        <div class="exampleCodeContainerInHeading">
+                            <div class="exampleCodeLineNumber">1<br>2</div>
+                            <code class="exampleCode">
+                                &quot;Hello, World!&quot; je většinou první program, který někdo, kdo se učí nový programovací jazyk, napíše. Jedinou funkcí toho programu je vypsat do [[<span class="b">konzole</span>]] frázi &quot;Hello, World!&quot; (proto ten název).
+                            </code>
+                        </div>
+                    </div>   
+                </div>
+                <div class="exampleIframe" style="margin-bottom: 1vh;">
+                    <iframe loading="lazy" style="min-height:16em;" class="exampleIframe" src="/courses/cs/game-development/web/twine/twine101/06-html-css-js-EXAMPLE02.html" title="Twine: Přehrávaná hra">Váš prohlížeč bohužel nepodporuje element iframe D:<br>Na příklad se můžete podívat <a href="/courses/cs/game-development/web/twine/twine101/06-html-css-js-EXAMPLE.html">zde</a>.</iframe>
+                </div>
+                <div class="examplePhotoContainer">
+                    <img src="/courses/cs/game-development/web/twine/twine101/pictures/06-html-css-js-04.webp" alt="Twine: Použití HTML v příběhu." class="examplePhoto" loading="lazy">
+                </div>
+            </div>
+            <h2>JavaScript</h2>
+            <div class="center" style="margin-bottom: 1em;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/06-html-css-js-05.webp" alt="Twine: Horní panel s nástroji z kategorie &quot;Příběh&quot;." class="imageNormal" style="width: 99.999%;" loading="lazy">
+            </div>
+            <div class="imageFloatR" style="margin-top: 0;">
+                <img src="/courses/cs/game-development/web/twine/twine101/pictures/06-html-css-js-06.webp" class="imageFloatR" alt="Twine: Okno JavaScriptu." style="width: 20em;">
+                <p class="imageFloatR">Okno, kde lze editovat JavaScript příběhu.</p>
+            </div>
+            <p><strong>JavaScript</strong> &lpar;zkráceně <strong>JS</strong>&rpar; je jazyk, který <strong>webovým stránkám</strong> přidává interaktivitu. Hry vytvořené v <strong>Twine</strong> sice nějakou mají, ale <strong>JS</strong> to může posunout za hranice &quot;obyčejného&quot; klikání na <strong>odkazy</strong>.</p>
+            <p>Implementace <strong>JS</strong> do <strong>příběhu</strong> se opět liší <strong>formát</strong> od <strong>formátu</strong>, takže bude zase nutné se podívat na příslušné dokumentace - zatímco některé <strong>formáty</strong> podporují pouze obyčejný <strong>JS</strong>, mnohé jeho funkce nahrazují s vlastními tzv. <strong>makry</strong>. Všeobecně lze <strong>JS</strong> editovat kliknutím na položku <strong>&quot;JavaScript&quot;</strong>, které se nachází v horním panelu hned vedle tlačítka <strong>&quot;Stylesheet&quot;</strong>.</p>
+            <h2>TwineScript</h2>
+            <p><strong>TwineScript</strong> je <strong>skriptovací jazyk</strong> založen na <strong>JavaScriptu</strong>, jež je specificky určen pro vývoj v <strong>Twine</strong>. Přestože není vázán k nějakému specifickému <strong>příběhovému formátu</strong>, každý ho implementuje jinak. Budeme ho probírat až v kurzech o jednotlivých <strong>příběhových formátech</strong>.</p>
+            <br>&nbsp;<br>&nbsp;<br>
+            <p style="clear: both;">V příští lekci se podíváme na proces, který je ve vývoji jakékoliv <strong>aplikace</strong> nebo <strong>hry</strong> absolutně vitální - <strong>debuggování</strong>.</p>
+            <div class="lessonButtons">
+                <a class="lesson" href="/courses/cs/game-development/web/twine/twine101/05-formats.html" rel="prev" hreflang="cs">&lt;&lt;&lt; Předchozí lekce: Příběhové formáty</a>
+                <a class="lesson" href="/courses/cs/game-development/web/twine/twine101/07-testing.html" rel="next" hreflang="cs">Příští lekce: Debuggování &gt;&gt;&gt;</a>
+            </div>
+        </main>
+    </div>
+    <!--#include virtual="/SSI/cs/footerLesson.shtml" -->
+</body>
+</html>
